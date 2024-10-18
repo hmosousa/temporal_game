@@ -1,6 +1,6 @@
 import logging
 
-from src.agents import BeforeAgent
+from src.agents import LMAgentNoContext
 from src.env import TemporalGame
 
 
@@ -14,7 +14,7 @@ def main():
     setup_logging()
     logger = logging.getLogger(__name__)
 
-    agent = BeforeAgent()
+    agent = LMAgentNoContext("meta-llama/Llama-3.2-1B")
     env = TemporalGame()
 
     logger.info("Starting the game")

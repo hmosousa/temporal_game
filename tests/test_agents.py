@@ -1,5 +1,6 @@
 import pytest
 
+from src.agents import BeforeAgent, LMAgentNoContext
 from src.base import Timeline, Relation
 from src.env import State, EntityPair
 
@@ -23,3 +24,19 @@ def state():
             ]
         ),
     )
+
+
+class TestBeforeAgent:
+    def test_act(self, state):
+        agent = BeforeAgent()
+        assert agent.act(state) == Relation(
+            source="start ei2026", target="start ei2027", type="<"
+        )
+
+
+class TestLMAgentNoContext:
+    def test_act(self, state):
+        agent = LMAgentNoContext("HuggingFaceTB/SmolLM-135M-Instruct")
+        action = agent.act(state)
+        assert action.source == "start ei2026"
+        assert action.target == "start ei2027"
