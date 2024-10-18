@@ -39,10 +39,14 @@ class LMAgentNoContext:
 
     def __init__(self, model_name: str):
         model = transformers.AutoModelForCausalLM.from_pretrained(
-            model_name, token=HF_TOKEN
+            model_name,
+            token=HF_TOKEN,
+            device_map="auto",
         )
         tokenizer = transformers.AutoTokenizer.from_pretrained(
-            model_name, token=HF_TOKEN
+            model_name,
+            token=HF_TOKEN,
+            device_map="auto",
         )
         self._pipe = transformers.pipeline(
             "text-generation",
@@ -59,9 +63,9 @@ class LMAgentNoContext:
 
         generation_args = {
             "max_new_tokens": 1,
-            "temperature": 0.0,
             "return_full_text": False,
             "do_sample": False,
+            "temperature": 0.0,
         }
 
         relation_type = self._pipe(prompt, **generation_args)[0]["generated_text"][-1]
