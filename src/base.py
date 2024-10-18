@@ -5,24 +5,6 @@ from src.closure import compute_temporal_closure
 
 _RELATIONS = ["<", ">", "=", "-"]
 
-_TRANSITION_RELATIONS = {
-    "<": {
-        "<": "<",
-        "=": "<",
-        "-": "-",
-    },
-    "=": {
-        "<": "<",
-        "=": "=",
-        "-": "-",
-    },
-    "-": {
-        "<": "-",
-        "=": "-",
-        "-": "-",
-    },
-}
-
 
 _INVERT_RELATION = {
     "<": ">",

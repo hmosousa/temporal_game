@@ -1,89 +1,96 @@
-from typing import Set, Tuple
+from typing import List, TypedDict
 
 import networkx as nx
 
+_TRANSITION_RELATIONS = {
+    "<": {
+        "<": "<",
+        "=": "<",
+        "-": "-",
+    },
+    "=": {
+        "<": "<",
+        "=": "=",
+        "-": "-",
+    },
+    "-": {
+        "<": "-",
+        "=": "-",
+        "-": "-",
+    },
+}
 
-def compute_temporal_closure(relations):
-    # make all relations "<" or "="
-    edges = set()
-    equal_nodes = set()
-    null_relations = set()
+
+class _DictRelation(TypedDict):
+    source: str
+    target: str
+    relation: str
+
+
+def compute_temporal_closure(relations: List[_DictRelation]):
+    """
+    Compute the temporal closure of a set of temporal relations.
+
+    This algorithm performs the following steps:
+    1. Create a directed graph from the input relations.
+    2. Infer new relations by traversing the graph and applying transition rules.
+    3. Combine inferred relations with single-hop relations.
+
+    The algorithm uses depth-first search (DFS) to explore paths between nodes
+    and applies the transition rules defined in _TRANSITION_RELATIONS to infer
+    new relations along these paths.
+
+    Args:
+        relations (List[_DictRelation]): A list of dictionaries representing
+            temporal relations. Each dictionary contains 'source', 'target',
+            and 'relation' keys.
+
+    Returns:
+        List[_DictRelation]: A list of dictionaries representing the temporal
+        closure, including both original and inferred relations.
+
+    Note:
+        - The '>' relation is converted to '<' by swapping source and target.
+        - The algorithm handles three types of relations: '<', '=', and '-'.
+        - Inferred relations are determined using the _TRANSITION_RELATIONS table.
+    """
+    graph = nx.DiGraph()
+
     for relation in relations:
-        if relation["relation"] == "<":
-            edges.add((relation["source"], relation["target"]))
+        source, target, rel_type = (
+            relation["source"],
+            relation["target"],
+            relation["relation"],
+        )
+        if rel_type == ">":
+            graph.add_edge(target, source, relation="<")
+        else:
+            graph.add_edge(source, target, relation=rel_type)
 
-        elif relation["relation"] == ">":
-            edges.add((relation["target"], relation["source"]))
+    # Infer relations using _TRANSITION_RELATIONS
+    inferred_relations = set()
+    for source in graph.nodes():
+        for target in nx.dfs_preorder_nodes(graph, source=source):
+            if source == target:
+                continue
 
-        elif relation["relation"] == "=":
-            sorted_nodes = tuple(sorted((relation["source"], relation["target"])))
-            equal_nodes.add(sorted_nodes)
+            path = nx.shortest_path(graph, source, target)
+            current_relation = graph[path[0]][path[1]]["relation"]
 
-        elif relation["relation"] == "-":
-            null_relations.add(
-                (relation["source"], relation["relation"], relation["target"])
-            )
+            for i in range(2, len(path)):
+                next_node = path[i]
+                next_relation = graph[path[i - 1]][next_node]["relation"]
+                inferred_relation = _TRANSITION_RELATIONS[current_relation][
+                    next_relation
+                ]
+                inferred_relations.add((source, inferred_relation, next_node))
+                current_relation = inferred_relation
 
-    # build to equal graph
-    equal_graph = nx.Graph()
-    equal_graph.add_edges_from(equal_nodes)
-
-    equal_point_relations = set()
-    for connected_nodes in nx.connected_components(equal_graph):
-        while len(connected_nodes) > 1:
-            n1 = connected_nodes.pop()
-            for n2 in connected_nodes:
-                equal_point_relations.add((n1, "=", n2))
-
-    # build temporal graph
-    tempgraph = nx.DiGraph()
-    tempgraph.add_edges_from(edges)
-    inferred_point_relations = _get_connected_nodes(tempgraph)
-    inferred_point_relations = set((n1, "<", n2) for n1, n2 in inferred_point_relations)
-
-    # add relations to points that are equivalent
-    new_point_relations = set()
-    for relation in inferred_point_relations:
-        for node1_eq, _, node2_eq in equal_point_relations:
-            if node2_eq in relation:
-                new_point_relations.update(
-                    [tuple(map(lambda x: x.replace(node2_eq, node1_eq), relation))]
-                )
-
-            if node1_eq in relation:
-                new_point_relations.update(
-                    [tuple(map(lambda x: x.replace(node1_eq, node2_eq), relation))]
-                )
-
-    inferred_point_relations.update(new_point_relations)
-    inferred_point_relations.update(equal_point_relations)
-    inferred_point_relations.update(null_relations)
+    # Add single-hop relations to the inferred set
+    for edge in graph.edges(data=True):
+        inferred_relations.add((edge[0], edge[2]["relation"], edge[1]))
 
     return [
         {"source": source, "target": target, "relation": relation}
-        for source, relation, target in inferred_point_relations
+        for source, relation, target in inferred_relations
     ]
-
-
-def _get_connected_nodes(graph: nx.Graph) -> Set[Tuple[str, str]]:
-    """Retrieve the pairs of nodes that are connected by a path
-
-    :param graph: A directed graph.
-    :type: nx.Graph
-
-    :return: Set[Tuple[str, str]]
-    """
-
-    # segment the temporal graph in disconnected graphs
-    undirected = graph.to_undirected()
-    sub_graphs_nodes = nx.connected_components(undirected)
-    sub_graphs = [graph.subgraph(nodes) for nodes in sub_graphs_nodes]
-
-    # retrieve all the possible paths between root and leaf nodes
-    node_pairs = set()
-    for sub_graph in sub_graphs:
-        for node in sub_graph.nodes:
-            descendants = nx.algorithms.descendants(sub_graph, node)
-            node_pairs.update(list(zip([node] * len(descendants), descendants)))
-
-    return node_pairs

@@ -3,7 +3,9 @@ from src.base import _INVERT_RELATION
 
 
 def _compare_results(result, expected):
-    result = sorted(result, key=lambda x: (x["source"], x["target"]))
+    if len(result) != len(expected):
+        return False
+
     for relation in result:
         inverted_relation = {
             "source": relation["target"],
@@ -59,27 +61,42 @@ def test_null_relation():
     expected = [
         {"source": "A", "target": "B", "relation": "-"},
         {"source": "B", "target": "C", "relation": "<"},
+        {"source": "A", "target": "C", "relation": "-"},
     ]
     assert _compare_results(result, expected)
 
 
-# def test_complex_scenario():
-#     relations = [
-#         {"source": "A", "target": "B", "relation": "<"},
-#         {"source": "B", "target": "C", "relation": "="},
-#         {"source": "C", "target": "D", "relation": "<"},
-#         {"source": "E", "target": "F", "relation": ">"},
-#         {"source": "G", "target": "H", "relation": "-"},
-#     ]
-#     result = compute_temporal_closure(relations)
-#     expected = [
-#         {"source": "A", "target": "B", "relation": "<"},
-#         {"source": "A", "target": "C", "relation": "<"},
-#         {"source": "A", "target": "D", "relation": "<"},
-#         {"source": "B", "target": "C", "relation": "="},
-#         {"source": "B", "target": "D", "relation": "<"},
-#         {"source": "C", "target": "D", "relation": "<"},
-#         {"source": "F", "target": "E", "relation": "<"},
-#         {"source": "G", "target": "H", "relation": "-"},
-#     ]
-#     assert result == expected
+def test_multi_hop():
+    relations = [
+        {"source": "A", "target": "B", "relation": "<"},
+        {"source": "B", "target": "C", "relation": "<"},
+        {"source": "C", "target": "D", "relation": "<"},
+    ]
+    result = compute_temporal_closure(relations)
+    expected = [
+        {"source": "A", "target": "B", "relation": "<"},
+        {"source": "B", "target": "C", "relation": "<"},
+        {"source": "C", "target": "D", "relation": "<"},
+        {"source": "A", "target": "C", "relation": "<"},
+        {"source": "A", "target": "D", "relation": "<"},
+        {"source": "B", "target": "D", "relation": "<"},
+    ]
+    assert _compare_results(result, expected)
+
+
+def test_complex_scenario():
+    relations = [
+        {"source": "A", "target": "B", "relation": "<"},
+        {"source": "B", "target": "C", "relation": "="},
+        {"source": "C", "target": "D", "relation": "<"},
+    ]
+    result = compute_temporal_closure(relations)
+    expected = [
+        {"source": "A", "target": "B", "relation": "<"},
+        {"source": "A", "target": "C", "relation": "<"},
+        {"source": "A", "target": "D", "relation": "<"},
+        {"source": "B", "target": "C", "relation": "="},
+        {"source": "B", "target": "D", "relation": "<"},
+        {"source": "C", "target": "D", "relation": "<"},
+    ]
+    assert _compare_results(result, expected)
