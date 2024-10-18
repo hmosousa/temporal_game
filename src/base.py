@@ -1,5 +1,5 @@
 import itertools
-from typing import Literal, List, Tuple
+from typing import List, Literal, Tuple
 
 from src.closure import compute_temporal_closure
 
@@ -17,7 +17,10 @@ _INVERT_RELATION = {
 class Relation:
     def __init__(self, source: str, target: str, type: Literal["<", ">", "=", "-"]):
         if type not in _RELATIONS:
-            raise ValueError(f"Invalid relation type: {type}")
+            if type == "_":
+                type = "-"
+            else:
+                raise ValueError(f"Invalid relation type: {type}")
         self.source = source
         self.target = target
         self.type = type
@@ -53,7 +56,7 @@ class Relation:
 
 
 class Timeline:
-    def __init__(self, relations: List[Relation]):
+    def __init__(self, relations: List[Relation] = []):
         self.relations = relations
         self.entities = self._get_entities()
 
@@ -67,6 +70,12 @@ class Timeline:
 
     def __ne__(self, other: "Timeline") -> bool:
         return not self == other
+
+    def __len__(self) -> int:
+        return len(self.relations)
+
+    def __contains__(self, relation: Relation) -> bool:
+        return relation in self.relations
 
     def _get_entities(self) -> List[str]:
         entities = set()
@@ -129,3 +138,7 @@ class Timeline:
     @property
     def possible_relation_pairs(self) -> List[Tuple[str, str]]:
         return list(itertools.combinations(self.entities, 2))
+
+    def add(self, relation: Relation) -> None:
+        self.relations.append(relation)
+        self.entities = self._get_entities()

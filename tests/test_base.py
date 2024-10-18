@@ -156,3 +156,31 @@ class TestTimeline:
         t = Timeline(relations=[Relation(source="A", target="B", type="<")])
         assert t["A", "B"] == [Relation(source="A", target="B", type="<")]
         assert t["B", "A"] == [Relation(source="B", target="A", type=">")]
+
+    def test_len(self, relations):
+        t = Timeline(relations=relations)
+        assert len(t) == 5
+
+    def test_contains(self):
+        t = Timeline(
+            relations=[
+                Relation(source="A", target="B", type="<"),
+            ]
+        )
+        assert Relation(source="A", target="B", type="<") in t
+        assert Relation(source="B", target="A", type=">") in t
+        assert Relation(source="B", target="C", type="<") not in t
+
+    def test_add_relation(self):
+        t = Timeline()
+
+        t.add(Relation(source="A", target="B", type="<"))
+        assert t == Timeline(relations=[Relation(source="A", target="B", type="<")])
+
+        t.add(Relation(source="B", target="C", type="<"))
+        assert t == Timeline(
+            relations=[
+                Relation(source="A", target="B", type="<"),
+                Relation(source="B", target="C", type="<"),
+            ]
+        )

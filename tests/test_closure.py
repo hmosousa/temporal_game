@@ -1,5 +1,5 @@
-from src.closure import compute_temporal_closure
 from src.base import _INVERT_RELATION
+from src.closure import compute_temporal_closure
 
 
 def _compare_results(result, expected):

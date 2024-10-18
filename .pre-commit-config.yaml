@@ -1,12 +1,10 @@
 repos:
-  - repo: local
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.0
     hooks:
-    - id: ruff format & sort imports
-      name: ruff format & sort imports
-      entry: bash -c 'ruff check --select I --fix && ruff format'
-      language: system
-      types: [python]
-      pass_filenames: false
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format
 
   - repo: local
     hooks:
