@@ -1,4 +1,4 @@
-from src.timeline import compute_temporal_closure
+from src.closure import compute_temporal_closure
 
 
 def test_simple_less_than():

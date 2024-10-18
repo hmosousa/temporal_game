@@ -1,36 +1,6 @@
-from typing import List, Set, Tuple
+from typing import Set, Tuple
 
 import networkx as nx
-from src.base import Relation
-
-
-TRANSITION_RELATIONS = {
-    "<": {
-        "<": "<",
-        "=": "<",
-        "-": "-",
-    },
-    "=": {
-        "<": "<",
-        "=": "=",
-        "-": "-",
-    },
-    "-": {
-        "<": "-",
-        "=": "-",
-        "-": "-",
-    }
-}
-
-class Timeline:
-    def __init__(self, relations: List[Relation]):
-        self.relations = relations
-    
-    @property
-    def is_valid(self) -> bool:
-        """Check if the timeline is valid"""
-        pass
-        
 
 
 def compute_temporal_closure(relations):

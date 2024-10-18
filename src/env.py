@@ -27,7 +27,7 @@ class TemporalGame:
                             f"{source_prefix}_{source['name']}",
                             f"{target_prefix}_{target['name']}",
                         )
-        
+
         state = {
             "context": self._doc["context"],
             "relations": relations,
