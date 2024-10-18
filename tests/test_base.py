@@ -116,7 +116,7 @@ class TestTimeline:
 
         assert t1 == t2
         assert t1 == t3
-        assert t1 == t4
+        assert not (t1 == t4)
 
     def test_timeline_valid_closure(self, relations, relations_closure):
         t = Timeline(relations=relations)

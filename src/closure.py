@@ -60,7 +60,7 @@ def compute_temporal_closure(relations):
     inferred_point_relations.update(null_relations)
 
     return [
-        {"relation": relation, "source": source, "target": target}
+        {"source": source, "target": target, "relation": relation}
         for source, relation, target in inferred_point_relations
     ]
 

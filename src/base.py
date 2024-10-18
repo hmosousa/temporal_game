@@ -61,6 +61,9 @@ class Relation:
             return True
         return False
 
+    def __ne__(self, other: "Relation") -> bool:
+        return not self == other
+
     def __invert__(self) -> "Relation":
         return Relation(
             source=self.target, target=self.source, type=_INVERT_RELATION[self.type]
@@ -79,6 +82,9 @@ class Timeline:
             if relation not in other.relations:
                 return False
         return True
+
+    def __ne__(self, other: "Timeline") -> bool:
+        return not self == other
 
     def _get_entities(self) -> List[str]:
         entities = set()
