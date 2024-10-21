@@ -18,7 +18,7 @@ def setup_logging():
 def test(agent: Agent, logger: logging.Logger):
     env = TemporalGame(test=True)
     results = []
-    for i in range(5):  # tqdm(range(env.num_docs)):
+    for i in range(30):  # tqdm(range(env.num_docs)):
         episode_reward = 0
         step_count = 0
 
@@ -43,7 +43,7 @@ def test(agent: Agent, logger: logging.Logger):
     return mean_results
 
 
-def main(agent_name: str, model_name: str = None):
+def main(agent_name: str = "before", model_name: str = None):
     """Run the baseline agent on the test set.
 
     Args:

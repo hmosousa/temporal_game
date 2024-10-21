@@ -1,5 +1,4 @@
 import random
-from copy import deepcopy
 from typing import Any, Dict, List, Tuple, TypedDict
 
 import datasets
@@ -55,19 +54,14 @@ class TemporalGame:
         )
         self._doc_timeline = self._doc_timeline.closure()
 
-        entity_pairs = []
-        entities = deepcopy(self._doc["entities"])
-        while entities:
-            source = entities.pop()
-            for target in entities:
-                for source_prefix in ["start", "end"]:
-                    for target_prefix in ["start", "end"]:
-                        entity_pairs.append(
-                            EntityPair(
-                                source=f"{source_prefix} {source}",
-                                target=f"{target_prefix} {target}",
-                            )
-                        )
+        entities = self._doc["entities"]
+        entity_pairs = [
+            EntityPair(source=f"{s_prefix} {source}", target=f"{t_prefix} {target}")
+            for i, source in enumerate(entities)
+            for target in entities[i + 1 :]
+            for s_prefix in ["start", "end"]
+            for t_prefix in ["start", "end"]
+        ]
 
         self._context = self._doc["context"]
         self._entity_pairs = entity_pairs
@@ -107,22 +101,14 @@ class TemporalGame:
         terminated = False
         truncated = False
 
-        # remove the relation from the entity pairs
-        for entity_pair in self._entity_pairs:
-            if (
-                entity_pair["source"] == action.source
-                and entity_pair["target"] == action.target
-            ):
-                self._entity_pairs.remove(entity_pair)
-                break
-            elif (
-                entity_pair["source"] == action.target
-                and entity_pair["target"] == action.source
-            ):
-                self._entity_pairs.remove(entity_pair)
-                break
-        else:
-            raise ValueError(f"Entity pair {action.source} {action.target} not found")
+        self._entity_pairs = [
+            ep
+            for ep in self._entity_pairs
+            if not (
+                (ep["source"] == action.source and ep["target"] == action.target)
+                or (ep["source"] == action.target and ep["target"] == action.source)
+            )
+        ]
 
         if len(self._entity_pairs) == 0:
             terminated = True
@@ -137,8 +123,7 @@ class TemporalGame:
         reward += n_inferable_relations
 
         # if the relation is in the original annotation, we get 10 point
-        if action in self._doc_timeline:
-            reward += 10
+        reward += 10 if action in self._doc_timeline else 0
 
         state = State(
             context=self._context,

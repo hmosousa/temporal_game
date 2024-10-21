@@ -1,5 +1,5 @@
 import itertools
-from typing import List, Literal, Tuple
+from typing import List, Literal, Tuple, Dict
 
 from src.closure import compute_temporal_closure
 
@@ -61,6 +61,8 @@ class Timeline:
             relations = []
         self.relations = relations
         self.entities = self._get_entities()
+        self._relation_dict = self._build_relation_dict()
+        self._closure_cache = None
 
     def __str__(self) -> str:
         return "\n".join([str(relation) for relation in self.relations])
@@ -93,35 +95,31 @@ class Timeline:
         return sorted(list(entities))
 
     def closure(self) -> "Timeline":
-        relations_dict = [
-            {
-                "source": relation.source,
-                "target": relation.target,
-                "relation": relation.type,
-            }
-            for relation in self.relations
-        ]
-        inferred_relations = compute_temporal_closure(relations_dict)
-        inferred_timeline = Timeline(
-            [
-                Relation(
-                    source=relation["source"],
-                    target=relation["target"],
-                    type=relation["relation"],
-                )
-                for relation in inferred_relations
+        if self._closure_cache is None:
+            relations_dict = [
+                {
+                    "source": relation.source,
+                    "target": relation.target,
+                    "relation": relation.type,
+                }
+                for relation in self.relations
             ]
-        )
-        return inferred_timeline
+            inferred_relations = compute_temporal_closure(relations_dict)
+            self._closure_cache = Timeline(
+                [
+                    Relation(
+                        source=relation["source"],
+                        target=relation["target"],
+                        type=relation["relation"],
+                    )
+                    for relation in inferred_relations
+                ]
+            )
+        return self._closure_cache
 
     def __getitem__(self, key: Tuple[str, str]) -> List[Relation]:
-        source, target = key
-        return [
-            relation
-            for relation in self.relations
-            if (relation.source == source and relation.target == target)
-            or (relation.source == target and relation.target == source)
-        ]
+        key = tuple(sorted(key))
+        return self._relation_dict.get(key, [])
 
     @property
     def is_valid(self) -> bool:
@@ -150,6 +148,11 @@ class Timeline:
     def add(self, relation: Relation) -> None:
         self.relations.append(relation)
         self.entities = self._get_entities()
+        key = tuple(sorted([relation.source, relation.target]))
+        if key not in self._relation_dict:
+            self._relation_dict[key] = []
+        self._relation_dict[key].append(relation)
+        self._closure_cache = None  # Invalidate the cache
 
     def __and__(self, other: "Timeline") -> "Timeline":
         """
@@ -161,3 +164,12 @@ class Timeline:
         return Timeline(
             [relation for relation in self.relations if relation in other.relations]
         )
+
+    def _build_relation_dict(self) -> Dict[Tuple[str, str], List[Relation]]:
+        relation_dict = {}
+        for relation in self.relations:
+            key = tuple(sorted([relation.source, relation.target]))
+            if key not in relation_dict:
+                relation_dict[key] = []
+            relation_dict[key].append(relation)
+        return relation_dict

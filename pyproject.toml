@@ -21,6 +21,7 @@ fire = "^0.7.0"
 pytest = "^8.3.3"
 ruff = "^0.7.0"
 pre-commit = "^4.0.1"
+snakeviz = "^2.2.0"
 
 [build-system]
 requires = ["poetry-core"]
