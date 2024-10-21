@@ -2,6 +2,7 @@ import logging
 
 import numpy as np
 from fire import Fire
+from tqdm import tqdm
 
 from src.agents import Agent, load_agent
 from src.env import TemporalGame
@@ -18,11 +19,14 @@ def setup_logging():
 def test(agent: Agent, logger: logging.Logger):
     env = TemporalGame(test=True)
     results = []
-    for i in range(30):  # tqdm(range(env.num_docs)):
+    logger.info(f"Starting test with {env.num_docs} documents")
+    for i in tqdm(range(env.num_docs)):
         episode_reward = 0
         step_count = 0
 
         state, info = env.reset(i)
+        logger.debug(f"Starting episode {i+1}")
+
         while True:
             action = agent.act(state)
             state, reward, terminated, truncated, _ = env.step(action)
@@ -39,7 +43,12 @@ def test(agent: Agent, logger: logging.Logger):
         episode_result["reward"] = episode_reward
         results.append(episode_result)
 
+        logger.debug(
+            f"Episode {i+1} completed. Reward: {episode_reward}, Steps: {step_count}"
+        )
+
     mean_results = {k: np.mean([r[k] for r in results]) for k in results[0].keys()}
+    logger.info(f"Test completed. Mean results: {mean_results}")
     return mean_results
 
 

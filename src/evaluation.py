@@ -47,6 +47,8 @@ def recall(predicted_timeline: Timeline, true_timeline: Timeline) -> float:
 def f1(predicted_timeline: Timeline, true_timeline: Timeline) -> float:
     p = precision(predicted_timeline, true_timeline)
     r = recall(predicted_timeline, true_timeline)
+    if p + r == 0:
+        return 0.0
     return 2 * p * r / (p + r)
 
 
