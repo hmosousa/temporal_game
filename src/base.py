@@ -118,8 +118,13 @@ class Timeline:
         return self._closure_cache
 
     def __getitem__(self, key: Tuple[str, str]) -> List[Relation]:
-        key = tuple(sorted(key))
-        return self._relation_dict.get(key, [])
+        sorted_key = tuple(sorted(key))
+        relations = self._relation_dict.get(sorted_key, [])
+        relations = [
+            relation if relation.source == key[0] else ~relation
+            for relation in relations
+        ]
+        return relations
 
     @property
     def is_valid(self) -> bool:

@@ -7,7 +7,7 @@ from tqdm import tqdm
 from src.agents import Agent, load_agent
 from src.env import TemporalGame
 from src.evaluation import evaluate
-from src.utils import store_results
+from src.utils import store_results, cache_results
 
 
 def setup_logging():
@@ -38,10 +38,42 @@ def test(agent: Agent, logger: logging.Logger):
 
         predicted_timeline = state["timeline"]
         true_timeline = info["doc_timeline"]
+
         episode_result = evaluate(predicted_timeline, true_timeline)
         episode_result["step_count"] = step_count
         episode_result["reward"] = episode_reward
         results.append(episode_result)
+
+        # make copy of episode_result to add extra info
+        episode_result = episode_result.copy()
+        episode_result["context"] = state["context"]
+
+        annot_diff = []
+        for true_rel in true_timeline.relations:
+            pred_rels = predicted_timeline[true_rel.source, true_rel.target]
+            if len(pred_rels) == 0:
+                annot_diff.append(
+                    {
+                        "source": true_rel.source,
+                        "target": true_rel.target,
+                        "true": true_rel.type,
+                        "pred": None,
+                    }
+                )
+            else:
+                for pred_rel in pred_rels:
+                    annot_diff.append(
+                        {
+                            "source": true_rel.source,
+                            "target": true_rel.target,
+                            "true": true_rel.type,
+                            "pred": pred_rel.type,
+                        }
+                    )
+
+        episode_result["timeline"] = annot_diff
+
+        cache_results(episode_result, agent.name, i)
 
         logger.debug(
             f"Episode {i+1} completed. Reward: {episode_reward}, Steps: {step_count}"

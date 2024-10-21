@@ -157,6 +157,20 @@ class TestTimeline:
         assert t["A", "B"] == [Relation(source="A", target="B", type="<")]
         assert t["B", "A"] == [Relation(source="B", target="A", type=">")]
 
+    def test_get_item_source_target(self):
+        t = Timeline(relations=[Relation(source="A", target="B", type="<")])
+        rel = t["A", "B"][0]
+        assert rel.source == "A"
+        assert rel.target == "B"
+        assert rel.type == "<"
+
+    def test_get_item_source_target_swap(self):
+        t = Timeline(relations=[Relation(source="A", target="B", type="<")])
+        rel = t["B", "A"][0]
+        assert rel.source == "B"
+        assert rel.target == "A"
+        assert rel.type == ">"
+
     def test_len(self, relations):
         t = Timeline(relations=relations)
         assert len(t) == 5

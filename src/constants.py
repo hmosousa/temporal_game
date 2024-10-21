@@ -9,3 +9,4 @@ HF_TOKEN = os.getenv("HF_TOKEN")
 
 ROOT_DIR = Path(__file__).parent.parent
 RESULTS_DIR = ROOT_DIR / "results"
+CACHE_DIR = ROOT_DIR / "cache"

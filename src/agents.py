@@ -12,6 +12,10 @@ class Agent:
     def act(self, state: State) -> Relation:
         raise NotImplementedError
 
+    @property
+    def name(self) -> str:
+        raise NotImplementedError
+
 
 class BeforeAgent(Agent):
     """Agent that always classifies the first entity pair as before."""
@@ -24,6 +28,10 @@ class BeforeAgent(Agent):
             type="<",
         )
         return relation
+
+    @property
+    def name(self) -> str:
+        return "before"
 
 
 _NO_CONTEXT_PROMPT = """Context:
@@ -87,6 +95,10 @@ class LMAgentNoContext(Agent):
             type=relation_type,
         )
         return relation
+
+    @property
+    def name(self) -> str:
+        return "lm"
 
 
 class AgentType(Enum):
