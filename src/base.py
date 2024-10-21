@@ -56,9 +56,17 @@ class Relation:
 
 
 class Timeline:
-    def __init__(self, relations: List[Relation] = []):
+    def __init__(self, relations: List[Relation] = None):
+        if relations is None:
+            relations = []
         self.relations = relations
         self.entities = self._get_entities()
+
+    def __str__(self) -> str:
+        return "\n".join([str(relation) for relation in self.relations])
+
+    def __repr__(self) -> str:
+        return f"Timeline({self.relations})"
 
     def __eq__(self, other: "Timeline") -> bool:
         if len(self.relations) != len(other.relations):
@@ -142,3 +150,14 @@ class Timeline:
     def add(self, relation: Relation) -> None:
         self.relations.append(relation)
         self.entities = self._get_entities()
+
+    def __and__(self, other: "Timeline") -> "Timeline":
+        """
+        example:
+        a = Timeline([Relation("A", "B", "<"), Relation("B", "C", "<")])
+        b = Timeline([Relation("A", "B", "<"), Relation("B", "D", "<")])
+        a & b = Timeline([Relation("A", "B", "<")])
+        """
+        return Timeline(
+            [relation for relation in self.relations if relation in other.relations]
+        )

@@ -1,11 +1,19 @@
+from typing import Dict, Type
+from enum import Enum
+
 import transformers
 
-from src.base import Relation, _RELATIONS
-from src.env import State
+from src.base import _RELATIONS, Relation
 from src.constants import HF_TOKEN
+from src.env import State
 
 
-class BeforeAgent:
+class Agent:
+    def act(self, state: State) -> Relation:
+        raise NotImplementedError
+
+
+class BeforeAgent(Agent):
     """Agent that always classifies the first entity pair as before."""
 
     def act(self, state: State) -> Relation:
@@ -34,7 +42,7 @@ Answer:
 """
 
 
-class LMAgentNoContext:
+class LMAgentNoContext(Agent):
     """Agent that uses a language model to classify the first entity pair as before."""
 
     def __init__(self, model_name: str):
@@ -79,3 +87,25 @@ class LMAgentNoContext:
             type=relation_type,
         )
         return relation
+
+
+class AgentType(Enum):
+    BEFORE = "before"
+    LM = "lm"
+
+
+AGENT_MAP: Dict[AgentType, Type[Agent]] = {
+    AgentType.BEFORE: BeforeAgent,
+    AgentType.LM: LMAgentNoContext,
+}
+
+
+def load_agent(agent_name: str, model_name: str = None) -> Agent:
+    try:
+        agent_type = AgentType(agent_name.lower())
+        agent_class = AGENT_MAP[agent_type]
+        return agent_class(model_name) if agent_type == AgentType.LM else agent_class()
+    except ValueError:
+        raise ValueError(
+            f"Agent '{agent_name}' not found. Valid agents are: {', '.join([a.value for a in AgentType])}"
+        )

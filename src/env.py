@@ -19,14 +19,23 @@ class State(TypedDict):
 
 
 class TemporalGame:
-    def __init__(self):
-        self._data = datasets.load_dataset(
-            "hugosousa/SmallTimelines", "one", split="train"
-        )
+    def __init__(self, test: bool = False):
+        if test:
+            self._data = datasets.load_dataset(
+                "hugosousa/SmallTimelines", "one", split="test"
+            )
+        else:
+            self._data = datasets.load_dataset(
+                "hugosousa/SmallTimelines", "one", split="train"
+            )
         self._doc = None
         self._context = None
         self._entity_pairs = None
         self._timeline = None
+
+    @property
+    def num_docs(self) -> int:
+        return len(self._data)
 
     def reset(self, id: int = None) -> Tuple[State, Dict[str, Any]]:
         if id is None:
@@ -72,6 +81,7 @@ class TemporalGame:
 
         self._info = {
             "id": self._id,
+            "doc_timeline": self._doc_timeline,
         }
 
         return state, self._info

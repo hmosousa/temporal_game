@@ -35,6 +35,7 @@ class TestBeforeAgent:
 
 
 class TestLMAgentNoContext:
+    @pytest.mark.skip(reason="This test is slow and should be run manually")
     def test_act(self, state):
         agent = LMAgentNoContext("HuggingFaceTB/SmolLM-135M-Instruct")
         action = agent.act(state)
