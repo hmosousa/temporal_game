@@ -4,6 +4,12 @@ Train an agent to build a timeline of events.
 
 ## Setup
 
+Create `.env` file with the following:
+
+```
+HF_TOKEN=<your-huggingface-token>
+```
+
 For users:
 
 ```sh
