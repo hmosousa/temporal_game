@@ -5,7 +5,7 @@ import datasets
 import wandb
 from tqdm import tqdm
 
-from src.constants import DEVICE
+from src.constants import DEVICE, MODELS_DIR
 from src.base import RELATIONS2ID
 
 
@@ -42,9 +42,14 @@ class SupervisedFineTuner:
         train_data = self.prepare_dataset(train_data)
         valid_data = self.prepare_dataset(valid_data)
 
+        best_val_loss = float("inf")
         for epoch in range(self.n_epochs):
             train_loss, train_acc = self.train_epoch(train_data)
             val_loss, val_acc = self.eval_epoch(valid_data)
+
+            if val_loss < best_val_loss:
+                best_val_loss = val_loss
+                self.save_model(MODELS_DIR / f"{wandb.run.name}.pt")
 
             wandb.log(
                 {

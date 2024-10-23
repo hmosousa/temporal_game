@@ -12,6 +12,6 @@ ROOT_DIR = Path(__file__).parent.parent
 RESULTS_DIR = ROOT_DIR / "results"
 CACHE_DIR = ROOT_DIR / "cache"
 CONFIGS_DIR = ROOT_DIR / "configs"
-
+MODELS_DIR = ROOT_DIR / "models"
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"

@@ -11,5 +11,5 @@ trainer:
   type: "sft"
   params:
     lr: 1e-3
-    batch_size: 32
-    n_epochs: 1
+    batch_size: 128
+    n_epochs: 10
