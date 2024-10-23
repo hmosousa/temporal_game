@@ -1,14 +1,19 @@
-from src.agents.base import Agent, AgentType, AGENT_MAP
+from enum import Enum
+
+from src.agents.base import Agent
 from src.agents.before import BeforeAgent
 from src.agents.lm import LMAgentNoContext
 
 
-AGENT_MAP.update(
-    {
-        AgentType.BEFORE: BeforeAgent,
-        AgentType.LM: LMAgentNoContext,
-    }
-)
+class AgentType(Enum):
+    BEFORE = "before"
+    LM = "lm"
+
+
+AGENT_MAP = {
+    AgentType.BEFORE: BeforeAgent,
+    AgentType.LM: LMAgentNoContext,
+}
 
 
 def load_agent(agent_name: str, model_name: str = None) -> Agent:

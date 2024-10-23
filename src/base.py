@@ -5,6 +5,7 @@ from src.closure import compute_temporal_closure
 
 _RELATIONS = ["<", ">", "=", "-"]
 
+N_RELATIONS = len(_RELATIONS)
 
 _INVERT_RELATION = {
     "<": ">",
@@ -12,6 +13,16 @@ _INVERT_RELATION = {
     "=": "=",
     "-": "-",
 }
+
+RELATIONS2ID = {
+    ">": 0,
+    "<": 1,
+    "=": 2,
+    "-": 3,
+    "_": 3,  # TODO: remove this relation from dataset
+}
+
+ID2RELATION = {v: k for k, v in RELATIONS2ID.items()}
 
 
 class Relation:

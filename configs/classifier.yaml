@@ -1,0 +1,15 @@
+model:
+  type: "classifier"
+  params:
+    model_name: "google-bert/bert-base-uncased"
+
+dataset:
+  type: "q_timelines"
+  params: {}
+
+trainer:
+  type: "sft"
+  params:
+    lr: 1e-3
+    batch_size: 32
+    n_epochs: 1
