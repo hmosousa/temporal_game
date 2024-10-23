@@ -1,12 +1,13 @@
+from typing import Tuple
+
+import datasets
 import torch
 from torch.utils.data import DataLoader
-from typing import Tuple
-import datasets
-import wandb
 from tqdm import tqdm
 
-from src.constants import DEVICE, MODELS_DIR
+import wandb
 from src.base import RELATIONS2ID
+from src.constants import DEVICE, MODELS_DIR
 
 
 class SupervisedFineTuner:
@@ -39,13 +40,12 @@ class SupervisedFineTuner:
         wandb.watch(self.model)
 
     def train(self, train_data: datasets.Dataset, valid_data: datasets.Dataset):
-        train_data = self.prepare_dataset(train_data)
-        valid_data = self.prepare_dataset(valid_data)
-
+        valid_dataloader = self.prepare_dataset(valid_data)
         best_val_loss = float("inf")
         for epoch in range(self.n_epochs):
-            train_loss, train_acc = self.train_epoch(train_data)
-            val_loss, val_acc = self.eval_epoch(valid_data)
+            train_dataloader = self.prepare_dataset(train_data)
+            train_loss, train_acc = self.train_epoch(train_dataloader)
+            val_loss, val_acc = self.eval_epoch(valid_dataloader)
 
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
