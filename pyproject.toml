@@ -16,6 +16,7 @@ python-dotenv = "^1.0.1"
 accelerate = "^1.0.1"
 fire = "^0.7.0"
 omegaconf = "^2.3.0"
+wandb = "^0.18.5"
 
 
 [tool.poetry.group.dev.dependencies]

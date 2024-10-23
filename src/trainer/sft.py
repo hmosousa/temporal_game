@@ -2,6 +2,8 @@ import torch
 from torch.utils.data import DataLoader
 from typing import Tuple
 import datasets
+import wandb
+from tqdm import tqdm
 
 from src.constants import DEVICE
 from src.base import RELATIONS2ID
@@ -15,6 +17,7 @@ class SupervisedFineTuner:
         lr: float,
         n_epochs: int,
         batch_size: int,
+        project_name: str = "Temporal Game",
     ):
         self.model = model.to(DEVICE)
         self.tokenizer = tokenizer
@@ -23,6 +26,17 @@ class SupervisedFineTuner:
         self.batch_size = batch_size
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
+        self.global_step = 0
+
+        wandb.init(
+            project=project_name,
+            config={
+                "learning_rate": lr,
+                "epochs": n_epochs,
+                "batch_size": batch_size,
+            },
+        )
+        wandb.watch(self.model)
 
     def train(self, train_data: datasets.Dataset, valid_data: datasets.Dataset):
         train_data = self.prepare_dataset(train_data)
@@ -32,8 +46,18 @@ class SupervisedFineTuner:
             train_loss, train_acc = self.train_epoch(train_data)
             val_loss, val_acc = self.eval_epoch(valid_data)
 
+            wandb.log(
+                {
+                    "epoch": epoch + 1,
+                    "train_loss": train_loss,
+                    "train_acc": train_acc,
+                    "val_loss": val_loss,
+                    "val_acc": val_acc,
+                }
+            )
+
             print(
-                f"Epoch {epoch+1}/{self.config.n_epochs} - Train Loss: {train_loss:.4f} - Train Acc: {train_acc:.4f} - Val Loss: {val_loss:.4f} - Val Acc: {val_acc:.4f}"
+                f"Epoch {epoch+1}/{self.n_epochs} - Train Loss: {train_loss:.4f} - Train Acc: {train_acc:.4f} - Val Loss: {val_loss:.4f} - Val Acc: {val_acc:.4f}"
             )
 
     def train_epoch(self, dataloader: DataLoader) -> Tuple[float, float]:
@@ -41,7 +65,7 @@ class SupervisedFineTuner:
         total_loss = 0
         total_correct = 0
         n = 0
-        for batch in dataloader:
+        for batch in tqdm(dataloader, desc="Training"):
             labels = batch.pop("label").to(DEVICE)
             inputs = {k: v.to(DEVICE) for k, v in batch.items()}
 
@@ -51,13 +75,26 @@ class SupervisedFineTuner:
             loss.backward()
             self.optimizer.step()
 
-            total_loss += loss.item()
-            total_correct += (logits.argmax(dim=-1) == labels).sum().item()
-            n += logits.size(0)
+            batch_loss = loss.item()
+            batch_correct = (logits.argmax(dim=-1) == labels).sum().item()
+            batch_size = logits.size(0)
 
-        loss = total_loss / n
-        acc = total_correct / n
-        return loss, acc
+            total_loss += batch_loss
+            total_correct += batch_correct
+            n += batch_size
+
+            self.global_step += 1
+            wandb.log(
+                {
+                    "step": self.global_step,
+                    "step_train_loss": batch_loss / batch_size,
+                    "step_train_acc": batch_correct / batch_size,
+                }
+            )
+
+        epoch_loss = total_loss / n
+        epoch_acc = total_correct / n
+        return epoch_loss, epoch_acc
 
     def eval_epoch(self, dataloader: DataLoader) -> Tuple[float, float]:
         self.model.eval()
@@ -65,22 +102,32 @@ class SupervisedFineTuner:
         total_correct = 0
         n = 0
         with torch.no_grad():
-            for batch in dataloader:
+            for batch in tqdm(dataloader, desc="Evaluating"):
                 labels = batch.pop("label").to(DEVICE)
                 inputs = {k: v.to(DEVICE) for k, v in batch.items()}
 
                 logits = self.model(**inputs)
                 loss = self.criterion(logits, labels)
-                total_loss += loss.item()
-                total_correct += (logits.argmax(dim=-1) == labels).sum().item()
-                n += logits.size(0)
 
-        loss = total_loss / n
-        acc = total_correct / n
-        return loss, acc
+                batch_loss = loss.item()
+                batch_correct = (logits.argmax(dim=-1) == labels).sum().item()
+                batch_size = logits.size(0)
+
+                total_loss += batch_loss
+                total_correct += batch_correct
+                n += batch_size
+
+        epoch_loss = total_loss / n
+        epoch_acc = total_correct / n
+        return epoch_loss, epoch_acc
 
     def save_model(self, path):
         torch.save(self.model.state_dict(), path)
+
+        # Log the model as an artifact
+        artifact = wandb.Artifact("trained_model", type="model")
+        artifact.add_file(path)
+        wandb.log_artifact(artifact)
 
     def prepare_dataset(self, dataset):
         dataset = dataset.map(lambda x: {"label": RELATIONS2ID[x["label"]]})
