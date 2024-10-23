@@ -18,7 +18,9 @@ class SupervisedFineTuner:
         lr: float,
         n_epochs: int,
         batch_size: int,
+        output_path: str,
         project_name: str = "Temporal Game",
+        **kwargs,
     ):
         self.model = model.to(DEVICE)
         self.tokenizer = tokenizer
@@ -28,6 +30,7 @@ class SupervisedFineTuner:
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
         self.global_step = 0
+        self.output_path = output_path
 
         wandb.init(
             project=project_name,
@@ -49,7 +52,7 @@ class SupervisedFineTuner:
 
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
-                model_path = MODELS_DIR / self.model.name / f"{wandb.run.name}.pt"
+                model_path = MODELS_DIR / self.output_path / f"{wandb.run.name}.pt"
                 model_path.parent.mkdir(parents=True, exist_ok=True)
                 self.save_model(model_path)
 

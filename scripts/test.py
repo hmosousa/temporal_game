@@ -84,7 +84,7 @@ def test(agent: Agent, logger: logging.Logger):
     return mean_results
 
 
-def main(agent_name: str = "before", model_name: str = None):
+def main(agent_name: str = "trained", model_name: str = None):
     """Run the baseline agent on the test set.
 
     Args:

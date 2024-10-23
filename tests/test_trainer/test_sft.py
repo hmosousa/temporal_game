@@ -36,7 +36,9 @@ class TestSupervisedFineTuner:
         return dataset
 
     def test_supervised_fine_tuner_init(self, model, tokenizer):
-        sft = SupervisedFineTuner(model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16)
+        sft = SupervisedFineTuner(
+            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+        )
 
         assert isinstance(sft.model, torch.nn.Module)
         assert sft.tokenizer == tokenizer
@@ -47,7 +49,9 @@ class TestSupervisedFineTuner:
         assert isinstance(sft.criterion, torch.nn.CrossEntropyLoss)
 
     def test_train_epoch(self, model, tokenizer, dummy_data):
-        sft = SupervisedFineTuner(model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16)
+        sft = SupervisedFineTuner(
+            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+        )
         dataloader = dummy_data.batch(16)
 
         loss, acc = sft.train_epoch(dataloader)
@@ -58,7 +62,9 @@ class TestSupervisedFineTuner:
         assert 0 <= acc <= 1
 
     def test_eval_epoch(self, model, tokenizer, dummy_data):
-        sft = SupervisedFineTuner(model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16)
+        sft = SupervisedFineTuner(
+            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+        )
         dataloader = dummy_data.batch(16)
 
         loss, acc = sft.eval_epoch(dataloader)
@@ -70,7 +76,9 @@ class TestSupervisedFineTuner:
 
     @pytest.mark.skip(reason="Takes too long to run.")
     def test_save_model(self, model, tokenizer, tmp_path):
-        sft = SupervisedFineTuner(model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16)
+        sft = SupervisedFineTuner(
+            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+        )
         save_path = tmp_path / "model.pth"
 
         sft.save_model(save_path)

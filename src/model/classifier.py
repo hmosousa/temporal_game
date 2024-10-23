@@ -5,7 +5,7 @@ from src.base import N_RELATIONS
 
 
 class Classifier(nn.Module):
-    def __init__(self, model_name: str):
+    def __init__(self, model_name: str, **kwargs):
         super().__init__()
         self.encoder = AutoModel.from_pretrained(model_name)
         self.head = nn.Linear(self.encoder.config.hidden_size, N_RELATIONS)
@@ -19,7 +19,3 @@ class Classifier(nn.Module):
         cls_output = outputs.last_hidden_state[:, 0, :]
         logits = self.head(cls_output)
         return logits
-
-    @property
-    def name(self):
-        return "classifier"
