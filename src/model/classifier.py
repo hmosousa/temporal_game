@@ -19,3 +19,7 @@ class Classifier(nn.Module):
         cls_output = outputs.last_hidden_state[:, 0, :]
         logits = self.head(cls_output)
         return logits
+
+    @property
+    def name(self):
+        return "classifier"

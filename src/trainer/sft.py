@@ -49,7 +49,9 @@ class SupervisedFineTuner:
 
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
-                self.save_model(MODELS_DIR / f"{wandb.run.name}.pt")
+                model_path = MODELS_DIR / self.model.name / f"{wandb.run.name}.pt"
+                model_path.parent.mkdir(parents=True, exist_ok=True)
+                self.save_model(model_path)
 
             wandb.log(
                 {
@@ -129,7 +131,6 @@ class SupervisedFineTuner:
     def save_model(self, path):
         torch.save(self.model.state_dict(), path)
 
-        # Log the model as an artifact
         artifact = wandb.Artifact("trained_model", type="model")
         artifact.add_file(path)
         wandb.log_artifact(artifact)

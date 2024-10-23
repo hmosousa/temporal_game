@@ -25,6 +25,10 @@ ruff = "^0.7.0"
 pre-commit = "^4.0.1"
 snakeviz = "^2.2.0"
 
+
+[tool.poetry.group.notebooks.dependencies]
+matplotlib = "^3.9.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

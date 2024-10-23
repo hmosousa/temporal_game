@@ -10,7 +10,9 @@ DATASETS = {
 }
 
 
-def load_dataset(dataset_name: str, config: Dict[str, Any]) -> Tuple[Dataset, Dataset]:
+def load_dataset(
+    dataset_name: str, config: Dict[str, Any] = {}
+) -> Tuple[Dataset, Dataset]:
     if dataset_name not in DATASETS:
         raise ValueError(
             f"Dataset {dataset_name} not found. Valid datasets are: {list(DATASETS.keys())}"
