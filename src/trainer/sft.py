@@ -12,6 +12,7 @@ from src.base import RELATIONS2ID
 from src.constants import DEVICE, MODELS_DIR
 
 transformers.logging.set_verbosity_error()
+datasets.disable_progress_bar()
 
 MAX_GPU_BATCH_SIZE = 32
 
@@ -53,7 +54,7 @@ class SupervisedFineTuner:
 
         self.use_wandb = use_wandb  # Store the parameter
 
-        if self.use_wandb:
+        if self.use_wandb and self.accelerator.is_main_process:
             wandb.init(
                 project=project_name,
                 config={
@@ -65,6 +66,9 @@ class SupervisedFineTuner:
             wandb.watch(self.model)
 
     def train(self, train_data: datasets.Dataset, valid_data: datasets.Dataset):
+        if self.accelerator.is_main_process:
+            print("Preparing dataloaders")
+
         valid_dataloader = self.get_dataloader(
             valid_data, batch_size=2 * self.batch_size
         )
@@ -83,13 +87,13 @@ class SupervisedFineTuner:
             train_loss, train_acc = self.train_epoch(train_dataloader)
             val_loss, val_acc = self.eval_epoch(valid_dataloader)
 
-            if val_loss < best_val_loss:
+            if val_loss < best_val_loss and self.accelerator.is_main_process:
                 best_val_loss = val_loss
                 model_path = MODELS_DIR / self.output_path
                 model_path.parent.mkdir(parents=True, exist_ok=True)
                 self.save_model(model_path)
 
-            if self.use_wandb:
+            if self.use_wandb and self.accelerator.is_main_process:
                 wandb.log(
                     {
                         "epoch": epoch + 1,
@@ -100,9 +104,10 @@ class SupervisedFineTuner:
                     }
                 )
 
-            print(
-                f"Epoch {epoch+1}/{self.n_epochs} - Train Loss: {train_loss:.4f} - Train Acc: {train_acc:.4f} - Val Loss: {val_loss:.4f} - Val Acc: {val_acc:.4f}"
-            )
+            if self.accelerator.is_main_process:
+                print(
+                    f"Epoch {epoch+1}/{self.n_epochs} - Train Loss: {train_loss:.4f} - Train Acc: {train_acc:.4f} - Val Loss: {val_loss:.4f} - Val Acc: {val_acc:.4f}"
+                )
 
     def train_epoch(self, dataloader: DataLoader) -> Tuple[float, float]:
         self.model.train()
@@ -110,9 +115,14 @@ class SupervisedFineTuner:
         total_correct = 0
         n = 0
         total_steps = len(dataloader)
-        for step, batch in tqdm(
-            enumerate(dataloader), desc="Training", total=total_steps
-        ):
+
+        progress_bar = (
+            tqdm(enumerate(dataloader), desc="Training", total=total_steps)
+            if self.accelerator.is_main_process
+            else enumerate(dataloader)
+        )
+
+        for step, batch in progress_bar:
             batch = {k: v.to(self.accelerator.device) for k, v in batch.items()}
 
             outputs = self.model(**batch)
@@ -134,7 +144,7 @@ class SupervisedFineTuner:
             n += batch_size
 
             self.global_step += 1
-            if self.use_wandb:
+            if self.use_wandb and self.accelerator.is_main_process:
                 wandb.log(
                     {
                         "step": self.global_step,
@@ -153,7 +163,13 @@ class SupervisedFineTuner:
         total_correct = 0
         n = 0
         with torch.no_grad():
-            for batch in tqdm(dataloader, desc="Evaluating"):
+            progress_bar = (
+                tqdm(dataloader, desc="Evaluating")
+                if self.accelerator.is_main_process
+                else dataloader
+            )
+
+            for batch in progress_bar:
                 batch.to(self.accelerator.device)
 
                 outputs = self.model(**batch)
@@ -174,7 +190,7 @@ class SupervisedFineTuner:
     def save_model(self, path):
         torch.save(self.model.state_dict(), path)
 
-        if self.use_wandb:
+        if self.use_wandb and self.accelerator.is_main_process:
             artifact = wandb.Artifact("trained_model", type="model")
             artifact.add_file(path)
             wandb.log_artifact(artifact)
