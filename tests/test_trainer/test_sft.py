@@ -1,33 +1,20 @@
 import pytest
 import torch
-from transformers import AutoTokenizer
 import datasets
 
 from src.trainer.sft import SupervisedFineTuner
-from src.model.classifier import Classifier
+from src.model import load_classifier
 
 
 class TestSupervisedFineTuner:
     @pytest.fixture
-    def model(self):
-        return Classifier(model_name="bert-base-uncased")
-
-    @pytest.fixture
-    def tokenizer(self):
-        return AutoTokenizer.from_pretrained("bert-base-uncased")
-
-    @pytest.fixture
     def dummy_data(self):
-        input_ids = torch.randint(0, 1000, (100, 10))
-        attention_mask = torch.ones_like(input_ids)
-        token_type_ids = torch.zeros_like(input_ids)
-        labels = torch.randint(0, 2, (100,))
+        text = ["hi"] * 100
+        labels = ["<"] * 100
 
         dataset = datasets.Dataset.from_dict(
             {
-                "input_ids": input_ids,
-                "attention_mask": attention_mask,
-                "token_type_ids": token_type_ids,
+                "text": text,
                 "label": labels,
             }
         )
@@ -35,7 +22,9 @@ class TestSupervisedFineTuner:
         dataset = dataset.with_format("torch")
         return dataset
 
-    def test_supervised_fine_tuner_init(self, model, tokenizer):
+    def test_supervised_fine_tuner_init(self):
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
+
         sft = SupervisedFineTuner(
             model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
         )
@@ -48,11 +37,12 @@ class TestSupervisedFineTuner:
         assert isinstance(sft.optimizer, torch.optim.AdamW)
         assert isinstance(sft.criterion, torch.nn.CrossEntropyLoss)
 
-    def test_train_epoch(self, model, tokenizer, dummy_data):
+    def test_train_epoch(self, dummy_data):
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
             model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
         )
-        dataloader = dummy_data.batch(16)
+        dataloader = sft.get_dataloader(dummy_data, 16)
 
         loss, acc = sft.train_epoch(dataloader)
 
@@ -61,11 +51,12 @@ class TestSupervisedFineTuner:
         assert loss > 0
         assert 0 <= acc <= 1
 
-    def test_eval_epoch(self, model, tokenizer, dummy_data):
+    def test_eval_epoch(self, dummy_data):
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
             model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
         )
-        dataloader = dummy_data.batch(16)
+        dataloader = sft.get_dataloader(dummy_data, 16)
 
         loss, acc = sft.eval_epoch(dataloader)
 
@@ -75,7 +66,8 @@ class TestSupervisedFineTuner:
         assert 0 <= acc <= 1
 
     @pytest.mark.skip(reason="Takes too long to run.")
-    def test_save_model(self, model, tokenizer, tmp_path):
+    def test_save_model(self, tmp_path):
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
             model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
         )

@@ -30,6 +30,12 @@ poetry run pre-commit install
 
 The developer setup installs Poetry for dependency management, installs all project dependencies, and sets up pre-commit hooks to maintain code quality and consistency across the project.
 
+## Training
+
+```sh
+accelerate config
+accelerate launch train_hf.py
+```
 
 ### Profile the code
 

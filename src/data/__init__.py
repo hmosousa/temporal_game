@@ -3,10 +3,10 @@ from typing import Dict, Any
 
 from torch.utils.data import Dataset
 
-from src.data.q_timelines import load_qtimelines_dataset
+from src.data.q_timelines import load_qtimelines
 
 DATASETS = {
-    "q_timelines": load_qtimelines_dataset,
+    "q_timelines": load_qtimelines,
 }
 
 
@@ -22,4 +22,4 @@ def load_dataset(
     return trainset, validset
 
 
-__all__ = ["load_dataset", "load_qtimelines_dataset"]
+__all__ = ["load_dataset", "load_qtimelines"]

@@ -4,10 +4,14 @@ import datasets
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+from accelerate import Accelerator, DistributedType
 
 import wandb
 from src.base import RELATIONS2ID
 from src.constants import DEVICE, MODELS_DIR
+
+
+MAX_GPU_BATCH_SIZE = 32
 
 
 class SupervisedFineTuner:
@@ -19,14 +23,26 @@ class SupervisedFineTuner:
         n_epochs: int,
         batch_size: int,
         output_path: str,
+        cpu: bool = False,
         project_name: str = "Temporal Game",
         **kwargs,
     ):
         self.model = model.to(DEVICE)
         self.tokenizer = tokenizer
+        self.accelerator = Accelerator(cpu=cpu)
         self.lr = lr
         self.n_epochs = n_epochs
+
+        # If the batch size is too big we use gradient accumulation
         self.batch_size = batch_size
+        self.gradient_accumulation_steps = 1
+        if (
+            batch_size > MAX_GPU_BATCH_SIZE
+            and self.accelerator.distributed_type != DistributedType.XLA
+        ):
+            self.gradient_accumulation_steps = self.batch_size // MAX_GPU_BATCH_SIZE
+            self.batch_size = MAX_GPU_BATCH_SIZE
+
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
         self.global_step = 0
@@ -43,8 +59,18 @@ class SupervisedFineTuner:
         wandb.watch(self.model)
 
     def train(self, train_data: datasets.Dataset, valid_data: datasets.Dataset):
-        valid_dataloader = self.prepare_dataset(valid_data)
-        train_dataloader = self.prepare_dataset(train_data)
+        valid_dataloader = self.get_dataloader(
+            valid_data, batch_size=2 * self.batch_size
+        )
+        train_dataloader = self.get_dataloader(
+            train_data, shuffle=True, batch_size=self.batch_size
+        )
+
+        self.model, self.optimizer, train_dataloader, valid_dataloader = (
+            self.accelerator.prepare(
+                self.model, self.optimizer, train_dataloader, valid_dataloader
+            )
+        )
 
         best_val_loss = float("inf")
         for epoch in range(self.n_epochs):
@@ -76,19 +102,22 @@ class SupervisedFineTuner:
         total_loss = 0
         total_correct = 0
         n = 0
-        for batch in tqdm(dataloader, desc="Training"):
-            labels = batch.pop("label").to(DEVICE)
-            inputs = {k: v.to(DEVICE) for k, v in batch.items()}
+        for step, batch in tqdm(enumerate(dataloader), desc="Training"):
+            batch = {k: v.to(self.accelerator.device) for k, v in batch.items()}
 
-            self.optimizer.zero_grad()
-            logits = self.model(**inputs)
-            loss = self.criterion(logits, labels)
-            loss.backward()
-            self.optimizer.step()
+            outputs = self.model(**batch)
+            loss = outputs.loss
+            loss = loss / self.gradient_accumulation_steps
+            self.accelerator.backward(loss)
+            if step % self.gradient_accumulation_steps == 0:
+                self.optimizer.step()
+                self.optimizer.zero_grad()
 
             batch_loss = loss.item()
-            batch_correct = (logits.argmax(dim=-1) == labels).sum().item()
-            batch_size = logits.size(0)
+            batch_correct = (
+                (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
+            )
+            batch_size = outputs.logits.size(0)
 
             total_loss += batch_loss
             total_correct += batch_correct
@@ -114,17 +143,16 @@ class SupervisedFineTuner:
         n = 0
         with torch.no_grad():
             for batch in tqdm(dataloader, desc="Evaluating"):
-                labels = batch.pop("label").to(DEVICE)
-                inputs = {k: v.to(DEVICE) for k, v in batch.items()}
+                batch.to(self.accelerator.device)
 
-                logits = self.model(**inputs)
-                loss = self.criterion(logits, labels)
+                outputs = self.model(**batch)
 
-                batch_loss = loss.item()
-                batch_correct = (logits.argmax(dim=-1) == labels).sum().item()
-                batch_size = logits.size(0)
+                batch_correct = (
+                    (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
+                )
+                batch_size = outputs.logits.size(0)
 
-                total_loss += batch_loss
+                total_loss += outputs.loss.item()
                 total_correct += batch_correct
                 n += batch_size
 
@@ -139,23 +167,50 @@ class SupervisedFineTuner:
         artifact.add_file(path)
         wandb.log_artifact(artifact)
 
-    def prepare_dataset(self, dataset):
+    def get_dataloader(
+        self, dataset: datasets.Dataset, batch_size: float, shuffle: bool = False
+    ):
+        # Rename the 'label' column to 'labels' which is the expected name for labels by the models of the
+        # transformers library
         dataset = dataset.map(lambda x: {"label": RELATIONS2ID[x["label"]]})
-        dataset = self.tokenize_dataset(dataset)
-        return dataset
+        dataset = dataset.rename_column("label", "labels")
 
-    def tokenize_dataset(self, dataset):
         def tokenize_function(examples):
-            return self.tokenizer(
-                examples["text"],
-                padding="max_length",
-                truncation=True,
+            outputs = self.tokenizer(examples["text"], truncation=True, max_length=None)
+            return outputs
+
+        # Apply the method we just defined to all the examples in all the splits of the dataset
+        # starting with the main process first:
+        with self.accelerator.main_process_first():
+            tokenized_dataset = dataset.map(
+                tokenize_function,
+                batched=True,
+                remove_columns=["text"],
+            )
+
+        def collate_fn(examples):
+            # When using mixed precision we want round multiples of 8/16
+            if self.accelerator.mixed_precision == "fp8":
+                pad_to_multiple_of = 16
+            elif self.accelerator.mixed_precision != "no":
+                pad_to_multiple_of = 8
+            else:
+                pad_to_multiple_of = None
+
+            return self.tokenizer.pad(
+                examples,
+                padding="longest",
+                pad_to_multiple_of=pad_to_multiple_of,
                 return_tensors="pt",
             )
 
-        dataset = dataset.batch(self.batch_size)
+        # Instantiate dataloaders.
+        dataloader = DataLoader(
+            tokenized_dataset,
+            shuffle=shuffle,
+            collate_fn=collate_fn,
+            batch_size=batch_size,
+            drop_last=True,
+        )
 
-        tokenized_dataset = dataset.map(tokenize_function)
-        tokenized_dataset = tokenized_dataset.remove_columns(["text"])
-        tokenized_dataset.set_format("torch")
-        return tokenized_dataset
+        return dataloader

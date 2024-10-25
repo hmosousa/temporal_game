@@ -17,6 +17,9 @@ accelerate = "^1.0.1"
 fire = "^0.7.0"
 omegaconf = "^2.3.0"
 wandb = "^0.18.5"
+evaluate = "^0.4.3"
+scipy = "^1.14.1"
+scikit-learn = "^1.5.2"
 
 
 [tool.poetry.group.dev.dependencies]

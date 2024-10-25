@@ -1,20 +1,19 @@
 import torch
 
 from src.base import N_RELATIONS
-from src.model.classifier import Classifier
+from src.model.classifier import load_classifier
 
 
 class TestClassifier:
     def test_classifier_initialization(self):
-        classifier = Classifier(model_name="bert-base-uncased")
-        assert isinstance(classifier, Classifier)
-        assert isinstance(classifier.encoder, torch.nn.Module)
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
+        assert isinstance(model, torch.nn.Module)
+        assert tokenizer is not None
 
     def test_classifier_output_shape(self):
-        classifier = Classifier(model_name="bert-base-uncased")
-        batch_size = 2
-        seq_length = 10
-        input_ids = torch.randint(0, 1000, (batch_size, seq_length))
-        attention_mask = torch.ones((batch_size, seq_length), dtype=torch.long)
-        output = classifier(input_ids=input_ids, attention_mask=attention_mask)
-        assert output.shape == (batch_size, N_RELATIONS)
+        model, tokenizer = load_classifier(model_name="bert-base-uncased")
+        texts = ["Hello, world!", "This is a test."]
+        batch_size = len(texts)
+        inputs = tokenizer(texts, return_tensors="pt", padding=True)
+        output = model(**inputs)
+        assert output.logits.shape == (batch_size, N_RELATIONS)
