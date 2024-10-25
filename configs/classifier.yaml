@@ -12,5 +12,5 @@ trainer:
   params:
     lr: 1e-3
     batch_size: 128
-    n_epochs: 10
-    output_path: classifier
+    n_epochs: 1
+    output_path: classifier/bert-base-uncased/weights.pt
