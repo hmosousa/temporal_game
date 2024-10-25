@@ -44,9 +44,10 @@ class SupervisedFineTuner:
 
     def train(self, train_data: datasets.Dataset, valid_data: datasets.Dataset):
         valid_dataloader = self.prepare_dataset(valid_data)
+        train_dataloader = self.prepare_dataset(train_data)
+
         best_val_loss = float("inf")
         for epoch in range(self.n_epochs):
-            train_dataloader = self.prepare_dataset(train_data)
             train_loss, train_acc = self.train_epoch(train_dataloader)
             val_loss, val_acc = self.eval_epoch(valid_dataloader)
 
