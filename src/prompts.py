@@ -1,4 +1,4 @@
-_NO_CONTEXT_PROMPT = """Context:
+NO_CONTEXT_PROMPT = """Context:
 {context}
 
 Question:

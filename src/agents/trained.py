@@ -4,7 +4,7 @@ from src.env import State
 from src.model import load_model
 from src.utils import load_config
 from src.constants import DEVICE
-from src.prompts import _NO_CONTEXT_PROMPT
+from src.prompts import NO_CONTEXT_PROMPT
 
 
 class TrainedAgent(Agent):
@@ -22,7 +22,7 @@ class TrainedAgent(Agent):
 
     def act(self, state: State) -> Relation:
         pair = state["entity_pairs"][0]
-        prompt = _NO_CONTEXT_PROMPT.format(
+        prompt = NO_CONTEXT_PROMPT.format(
             context=state["context"], source=pair["source"], target=pair["target"]
         )
 

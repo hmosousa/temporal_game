@@ -4,7 +4,7 @@ from src.agents.base import Agent
 from src.base import _RELATIONS, Relation
 from src.constants import HF_TOKEN
 from src.env import State
-from src.prompts import _NO_CONTEXT_PROMPT
+from src.prompts import NO_CONTEXT_PROMPT
 
 
 class LMAgentNoContext(Agent):
@@ -30,7 +30,7 @@ class LMAgentNoContext(Agent):
 
     def act(self, state: State) -> Relation:
         pair = state["entity_pairs"][0]
-        prompt = _NO_CONTEXT_PROMPT.format(
+        prompt = NO_CONTEXT_PROMPT.format(
             context=state["context"], source=pair["source"], target=pair["target"]
         )
 
