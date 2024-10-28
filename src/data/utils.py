@@ -1,6 +1,7 @@
-import datasets
-from collections import Counter
 import random
+from collections import Counter
+
+import datasets
 
 
 def balance_dataset_classes(dataset: datasets.Dataset, column: str) -> datasets.Dataset:
