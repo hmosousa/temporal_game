@@ -7,13 +7,13 @@ from src.model import load_model
 from src.trainer import load_trainer
 
 
-def main(config_name: str = "classifier"):
+def main(config_path: str = "classifier/bert.yaml"):
     """Train a model with a given configuration.
 
     Args:
-        config_name: The name of the configuration file to use. Check `configs/` for available configurations.
+        config_path: The path to the configuration file to use.
     """
-    config = OmegaConf.load(CONFIGS_DIR / f"{config_name}.yaml")
+    config = OmegaConf.load(CONFIGS_DIR / config_path)
 
     model, tokenizer = load_model(
         model_name=config.model.type, config=config.model.params

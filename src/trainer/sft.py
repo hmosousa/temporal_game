@@ -14,8 +14,6 @@ from src.constants import DEVICE, MODELS_DIR, HF_USERNAME
 transformers.logging.set_verbosity_error()
 datasets.disable_progress_bar()
 
-MAX_GPU_BATCH_SIZE = 2
-
 
 class SupervisedFineTuner:
     def __init__(
@@ -32,6 +30,7 @@ class SupervisedFineTuner:
         patience: int = 5,
         push_to_hub: bool = False,
         hf_dir: str = None,
+        max_gpu_batch_size: int = None,
         **kwargs,
     ):
         self.model = model.to(DEVICE)
@@ -44,11 +43,12 @@ class SupervisedFineTuner:
         self.batch_size = batch_size
         self.gradient_accumulation_steps = 1
         if (
-            batch_size > MAX_GPU_BATCH_SIZE
+            max_gpu_batch_size is not None
+            and batch_size > max_gpu_batch_size
             and self.accelerator.distributed_type != DistributedType.XLA
         ):
-            self.gradient_accumulation_steps = self.batch_size // MAX_GPU_BATCH_SIZE
-            self.batch_size = MAX_GPU_BATCH_SIZE
+            self.gradient_accumulation_steps = self.batch_size // max_gpu_batch_size
+            self.batch_size = max_gpu_batch_size
 
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
