@@ -1,12 +1,15 @@
+import json
 import logging
+from pathlib import Path
+from typing import Dict
 
 import numpy as np
 from fire import Fire
 
 from src.agents import Agent, load_agent
+from src.constants import CACHE_DIR, RESULTS_DIR
 from src.env import TemporalGame
 from src.evaluation import evaluate
-from src.utils import cache_results, store_results
 from tqdm import tqdm
 
 
@@ -14,6 +17,22 @@ def setup_logging():
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
     )
+
+
+def _save_dict(results: Dict, opath: Path):
+    opath.parent.mkdir(exist_ok=True)
+    with open(opath, "w") as f:
+        json.dump(results, f, indent=4)
+
+
+def store_results(results: Dict, agent_name: str):
+    opath = RESULTS_DIR / "agents" / f"{agent_name}.json"
+    _save_dict(results, opath)
+
+
+def cache_results(results: Dict, agent_name: str, doc_id: int):
+    opath = CACHE_DIR / "agents" / f"{agent_name}" / f"{doc_id}.json"
+    _save_dict(results, opath)
 
 
 def test(agent: Agent, logger: logging.Logger):
