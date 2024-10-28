@@ -2,7 +2,7 @@ import pytest
 import torch
 import datasets
 
-from src.trainer.sft import SupervisedFineTuner
+from src.trainer.sft import SupervisedFineTuner, MAX_GPU_BATCH_SIZE
 from src.model import load_classifier
 
 
@@ -33,7 +33,7 @@ class TestSupervisedFineTuner:
         assert sft.tokenizer == tokenizer
         assert sft.lr == 1e-5
         assert sft.n_epochs == 3
-        assert sft.batch_size == 16
+        assert sft.batch_size == MAX_GPU_BATCH_SIZE
         assert isinstance(sft.optimizer, torch.optim.AdamW)
         assert isinstance(sft.criterion, torch.nn.CrossEntropyLoss)
 

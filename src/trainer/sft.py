@@ -14,7 +14,7 @@ from src.constants import DEVICE, MODELS_DIR
 transformers.logging.set_verbosity_error()
 datasets.disable_progress_bar()
 
-MAX_GPU_BATCH_SIZE = 32
+MAX_GPU_BATCH_SIZE = 2
 
 
 class SupervisedFineTuner:
@@ -29,6 +29,7 @@ class SupervisedFineTuner:
         cpu: bool = False,
         project_name: str = "Temporal Game",
         use_wandb: bool = False,
+        patience: int = 5,  # Add a patience parameter for early stopping
         **kwargs,
     ):
         self.model = model.to(DEVICE)
@@ -52,7 +53,9 @@ class SupervisedFineTuner:
         self.global_step = 0
         self.output_path = output_path
 
-        self.use_wandb = use_wandb  # Store the parameter
+        self.use_wandb = use_wandb
+        self.patience = patience
+        self.early_stopping_counter = 0
 
         if self.use_wandb and self.accelerator.is_main_process:
             wandb.init(
@@ -89,9 +92,17 @@ class SupervisedFineTuner:
 
             if val_loss < best_val_loss and self.accelerator.is_main_process:
                 best_val_loss = val_loss
+                self.early_stopping_counter = 0
                 model_path = MODELS_DIR / self.output_path
                 model_path.parent.mkdir(parents=True, exist_ok=True)
                 self.save_model(model_path)
+            else:
+                self.early_stopping_counter += 1
+
+            if self.early_stopping_counter >= self.patience:
+                if self.accelerator.is_main_process:
+                    print(f"Early stopping triggered after {epoch+1} epochs.")
+                break  # Stop training if patience is exceeded
 
             if self.use_wandb and self.accelerator.is_main_process:
                 wandb.log(
