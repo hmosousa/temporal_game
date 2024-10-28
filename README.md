@@ -47,6 +47,97 @@ snakeviz profile.prof
 
 ## Results
 
+### Classifier
+
+<table>
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Label</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1-Score</th>
+            <th>Support</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="5">LLAMA 1B</td>
+            <td>&lt;</td>
+            <td>57.50</td>
+            <td>98.61</td>
+            <td>72.64</td>
+            <td>2088</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>143</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>68.15</td>
+            <td>6.21</td>
+            <td>11.39</td>
+            <td>1481</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><strong>Overall</strong></td>
+            <td><strong>57.88</strong></td>
+            <td><strong>57.88</strong></td>
+            <td><strong>45.35</strong></td>
+            <td><strong>3716</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="5">BERT</td>
+            <td>&lt;</td>
+            <td>56.19</td>
+            <td>100.00</td>
+            <td>71.95</td>
+            <td>2088</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>143</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1481</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><strong>Overall</strong></td>
+            <td><strong>56.19</strong></td>
+            <td><strong>56.19</strong></td>
+            <td><strong>40.43</strong></td>
+            <td><strong>3716</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+### Game
+
 | Model                   | Accuracy | Precision | Recall | F1    | Step Count | Reward |
 |-------------------------|----------|-----------|--------|-------|------------|--------|
 | before                  | 51.63    | 54.96     | 51.63  | 53.21 | 57.26      | 228.79 |
