@@ -11,12 +11,20 @@ class TrainedAgent(Agent):
     """Agent that was trained the temporal relations independently."""
 
     def __init__(self, model_name: str):
-        self.classifier = pipeline(
-            "text-classification",
-            model=model_name,
-            device_map="auto",
-            torch_dtype=torch.bfloat16,
-        )
+        try:
+            self.classifier = pipeline(
+                "text-classification",
+                model=model_name,
+                device_map="auto",
+                torch_dtype=torch.bfloat16,
+            )
+        except ValueError:
+            self.classifier = pipeline(
+                "text-classification",
+                model=model_name,
+                torch_dtype=torch.bfloat16,
+                device="cuda",
+            )
 
     def act(self, state: State) -> Relation:
         pair = state["entity_pairs"][0]

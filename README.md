@@ -61,6 +61,42 @@ snakeviz profile.prof
         </tr>
     </thead>
     <tbody>
+    <tr>
+            <td rowspan="5">BERT</td>
+            <td>&lt;</td>
+            <td>56.19</td>
+            <td>100.00</td>
+            <td>71.95</td>
+            <td>2088</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>143</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>1481</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><strong>Overall</strong></td>
+            <td><strong>56.19</strong></td>
+            <td><strong>56.19</strong></td>
+            <td><strong>40.43</strong></td>
+            <td><strong>3716</strong></td>
+        </tr>
         <tr>
             <td rowspan="5">LLAMA 1B</td>
             <td>&lt;</td>
@@ -97,51 +133,67 @@ snakeviz profile.prof
             <td><strong>45.35</strong></td>
             <td><strong>3716</strong></td>
         </tr>
-        <tr>
-            <td rowspan="5">BERT</td>
-            <td>&lt;</td>
-            <td>56.19</td>
-            <td>100.00</td>
-            <td>71.95</td>
-            <td>2088</td>
-        </tr>
-        <tr>
-            <td>=</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>143</td>
-        </tr>
-        <tr>
-            <td>&gt;</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>1481</td>
-        </tr>
-        <tr>
-            <td>_</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td><strong>Overall</strong></td>
-            <td><strong>56.19</strong></td>
-            <td><strong>56.19</strong></td>
-            <td><strong>40.43</strong></td>
-            <td><strong>3716</strong></td>
-        </tr>
+        
     </tbody>
 </table>
 
 ### Game
 
-| Model                   | Accuracy | Precision | Recall | F1    | Step Count | Reward |
-|-------------------------|----------|-----------|--------|-------|------------|--------|
-| before                  | 51.63    | 54.96     | 51.63  | 53.21 | 57.26      | 228.79 |
-| llama-3.1-8b-instruct   | 36.14    | 43.03     | 36.14  | 38.61 | 40.72      | 139.23 |
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Accuracy</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1</th>
+            <th>Step Count</th>
+            <th>Reward</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Naive</td>
+            <td>Before</td>
+            <td>51.63</td>
+            <td>54.96</td>
+            <td>51.63</td>
+            <td>53.21</td>
+            <td>57.26</td>
+            <td>228.79</td>
+        </tr>
+        <tr>
+            <td>Prompt</td>
+            <td>Llama 3.1 8B Instruct</td>
+            <td>36.14</td>
+            <td>43.03</td>
+            <td>36.14</td>
+            <td>38.61</td>
+            <td>40.72</td>
+            <td>139.23</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Classifier</td>
+            <td>BERT</td>
+            <td>51.63</td>
+            <td>54.96</td>
+            <td>51.63</td>
+            <td>53.21</td>
+            <td>57.26</td>
+            <td>228.79</td>
+        </tr>
+        <tr>
+            <td>Llama 1b</td>
+            <td>43.87</td>
+            <td>48.30</td>
+            <td>43.87</td>
+            <td>45.83</td>
+            <td>45.87</td>
+            <td>179.11</td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## Load Models from Hugging Face
