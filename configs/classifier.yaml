@@ -15,3 +15,5 @@ trainer:
     n_epochs: 5
     output_path: classifier/meta-llama/weights.pt
     use_wandb: true
+    push_to_hub: true
+    hf_dir: classifier_llama_1b

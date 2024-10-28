@@ -8,6 +8,7 @@ Create `.env` file with the following:
 
 ```
 HF_TOKEN=<your-huggingface-token>
+HF_USERNAME=<your-huggingface-username>
 ```
 
 For users:

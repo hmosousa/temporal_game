@@ -9,7 +9,7 @@ import transformers
 
 import wandb
 from src.base import RELATIONS2ID
-from src.constants import DEVICE, MODELS_DIR
+from src.constants import DEVICE, MODELS_DIR, HF_USERNAME
 
 transformers.logging.set_verbosity_error()
 datasets.disable_progress_bar()
@@ -29,7 +29,9 @@ class SupervisedFineTuner:
         cpu: bool = False,
         project_name: str = "Temporal Game",
         use_wandb: bool = False,
-        patience: int = 5,  # Add a patience parameter for early stopping
+        patience: int = 5,
+        push_to_hub: bool = False,
+        hf_dir: str = None,
         **kwargs,
     ):
         self.model = model.to(DEVICE)
@@ -56,6 +58,9 @@ class SupervisedFineTuner:
         self.use_wandb = use_wandb
         self.patience = patience
         self.early_stopping_counter = 0
+
+        self._push_to_hub = push_to_hub
+        self.hf_dir = f"{HF_USERNAME}/{hf_dir}"
 
         if self.use_wandb and self.accelerator.is_main_process:
             wandb.init(
@@ -96,6 +101,8 @@ class SupervisedFineTuner:
                 model_path = MODELS_DIR / self.output_path
                 model_path.parent.mkdir(parents=True, exist_ok=True)
                 self.save_model(model_path)
+                if self._push_to_hub:
+                    self.push_to_hub()
             else:
                 self.early_stopping_counter += 1
 
@@ -205,6 +212,9 @@ class SupervisedFineTuner:
             artifact = wandb.Artifact("trained_model", type="model")
             artifact.add_file(path)
             wandb.log_artifact(artifact)
+
+    def push_to_hub(self):
+        self.model.push_to_hub(self.hf_dir)
 
     def get_dataloader(
         self, dataset: datasets.Dataset, batch_size: float, shuffle: bool = False
