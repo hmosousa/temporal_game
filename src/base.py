@@ -19,7 +19,6 @@ RELATIONS2ID = {
     "<": 1,
     "=": 2,
     "-": 3,
-    "_": 3,  # TODO: remove this relation from dataset
 }
 
 ID2RELATION = {v: k for k, v in RELATIONS2ID.items()}
@@ -28,10 +27,7 @@ ID2RELATION = {v: k for k, v in RELATIONS2ID.items()}
 class Relation:
     def __init__(self, source: str, target: str, type: Literal["<", ">", "=", "-"]):
         if type not in _RELATIONS:
-            if type == "_":
-                type = "-"
-            else:
-                raise ValueError(f"Invalid relation type: {type}")
+            raise ValueError(f"Invalid relation type: {type}")
         self.source = source
         self.target = target
         self.type = type
