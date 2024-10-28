@@ -1,0 +1,44 @@
+{
+    "accuracy": {
+        "before": 51.63,
+        "classifier_bert": 51.63,
+        "classifier_llama_1b_balanced": 33.25,
+        "classifier_llama_1b": 43.87,
+        "llama-3.1-8b-instruct": 36.14
+    },
+    "precision": {
+        "before": 54.96,
+        "classifier_bert": 54.96,
+        "classifier_llama_1b_balanced": 35.66,
+        "classifier_llama_1b": 48.3,
+        "llama-3.1-8b-instruct": 43.03
+    },
+    "recall": {
+        "before": 51.63,
+        "classifier_bert": 51.63,
+        "classifier_llama_1b_balanced": 33.25,
+        "classifier_llama_1b": 43.87,
+        "llama-3.1-8b-instruct": 36.14
+    },
+    "f1": {
+        "before": 53.21,
+        "classifier_bert": 53.21,
+        "classifier_llama_1b_balanced": 34.39,
+        "classifier_llama_1b": 45.83,
+        "llama-3.1-8b-instruct": 38.61
+    },
+    "step_count": {
+        "before": 57.26,
+        "classifier_bert": 57.26,
+        "classifier_llama_1b_balanced": 56.73,
+        "classifier_llama_1b": 45.87,
+        "llama-3.1-8b-instruct": 40.72
+    },
+    "reward": {
+        "before": 228.79,
+        "classifier_bert": 228.79,
+        "classifier_llama_1b_balanced": 168.81,
+        "classifier_llama_1b": 179.11,
+        "llama-3.1-8b-instruct": 139.23
+    }
+}

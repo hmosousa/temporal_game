@@ -20,7 +20,7 @@ def setup_logging():
 
 
 def _save_dict(results: Dict, opath: Path):
-    opath.parent.mkdir(exist_ok=True)
+    opath.parent.mkdir(exist_ok=True, parents=True)
     with open(opath, "w") as f:
         json.dump(results, f, indent=4)
 

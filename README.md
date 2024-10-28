@@ -61,7 +61,7 @@ snakeviz profile.prof
         </tr>
     </thead>
     <tbody>
-    <tr>
+        <tr>
             <td rowspan="5">BERT</td>
             <td>&lt;</td>
             <td>56.19</td>
@@ -133,7 +133,42 @@ snakeviz profile.prof
             <td><strong>45.35</strong></td>
             <td><strong>3716</strong></td>
         </tr>
-        
+        <tr>
+            <td rowspan="5">LLAMA 1B (Balanced)</td>
+            <td>&lt;</td>
+            <td>55.74</td>
+            <td>58.38</td>
+            <td>57.03</td>
+            <td>2088</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>7.74</td>
+            <td>80.42</td>
+            <td>14.12</td>
+            <td>143</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>100.00</td>
+            <td>0.07</td>
+            <td>0.13</td>
+            <td>1481</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><strong>Overall</strong></td>
+            <td><strong>71.47</strong></td>
+            <td><strong>35.93</strong></td>
+            <td><strong>32.64</strong></td>
+            <td><strong>3716</strong></td>
+        </tr>
     </tbody>
 </table>
 
@@ -174,7 +209,7 @@ snakeviz profile.prof
             <td>139.23</td>
         </tr>
         <tr>
-            <td rowspan="2">Classifier</td>
+            <td rowspan="3">Classifier</td>
             <td>BERT</td>
             <td>51.63</td>
             <td>54.96</td>
@@ -192,9 +227,17 @@ snakeviz profile.prof
             <td>45.87</td>
             <td>179.11</td>
         </tr>
+        <tr>
+            <td>Llama 1b (Balanced)</td>
+            <td>33.25</td>
+            <td>35.66</td>
+            <td>33.25</td>
+            <td>34.39</td>
+            <td>56.73</td>
+            <td>168.81</td>
+        </tr>
     </tbody>
 </table>
-
 
 ## Load Models from Hugging Face
 
