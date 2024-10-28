@@ -5,14 +5,17 @@ import datasets
 from src.prompts import NO_CONTEXT_PROMPT
 
 
-def load_qtimelines(split: Literal["train", "valid"]) -> datasets.Dataset:
-    data = datasets.load_dataset("hugosousa/SmallTimelines", "one", split="train")
+def load_qtimelines(split: Literal["train", "valid", "test"]) -> datasets.Dataset:
+    if split == "test":
+        data = datasets.load_dataset("hugosousa/SmallTimelines", "one", split="test")
+    else:
+        data = datasets.load_dataset("hugosousa/SmallTimelines", "one", split="train")
 
-    cutoff = int(len(data) * 0.8)
-    if split == "train":
-        data = data.select(range(0, cutoff))
-    else:  # valid
-        data = data.select(range(cutoff, len(data)))
+        cutoff = int(len(data) * 0.8)
+        if split == "train":
+            data = data.select(range(0, cutoff))
+        else:  # valid
+            data = data.select(range(cutoff, len(data)))
 
     def process_example(example):
         new_examples = []
