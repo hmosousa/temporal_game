@@ -2,10 +2,16 @@ from typing import Literal
 
 import datasets
 
+from src.constants import CACHE_DIR
+
 from src.prompts import NO_CONTEXT_PROMPT
 
 
 def load_qtimelines(split: Literal["train", "valid", "test"]) -> datasets.Dataset:
+    cache_path = CACHE_DIR / "data" / f"q_timelines_{split}"
+    if cache_path.exists():
+        return datasets.load_from_disk(cache_path)
+
     if split == "test":
         data = datasets.load_dataset("hugosousa/SmallTimelines", "one", split="test")
     else:
@@ -30,4 +36,7 @@ def load_qtimelines(split: Literal["train", "valid", "test"]) -> datasets.Datase
     for doc in data:
         new_data.extend(process_example(doc))
 
-    return datasets.Dataset.from_list(new_data)
+    dataset = datasets.Dataset.from_list(new_data)
+    dataset.save_to_disk(cache_path)
+
+    return dataset

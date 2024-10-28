@@ -13,22 +13,12 @@ def balance_dataset_classes(dataset: datasets.Dataset, column: str) -> datasets.
 
     max_count = max(class_counts.values())
 
-    # Create a new balanced dataset
-    balanced_data = {key: [] for key in dataset.features.keys()}
-
+    label_datasets = []
     for ref_label in class_counts:
-        # Get all samples of the current class
-        class_samples = [
-            i for i, label in enumerate(dataset["label"]) if label == ref_label
-        ]
+        label_dataset = dataset.filter(lambda x: x[column] == ref_label)
+        oversampled_indices = random.choices(range(len(label_dataset)), k=max_count)
+        label_dataset = label_dataset.select(oversampled_indices)
+        label_datasets.append(label_dataset)
+    balanced_dataset = datasets.concatenate_datasets(label_datasets)
 
-        # Oversample the class samples to match the max_count
-        oversampled_indices = random.choices(class_samples, k=max_count)
-
-        for idx in oversampled_indices:
-            for key in dataset.features.keys():
-                balanced_data[key].append(dataset[key][idx])
-
-    # Create a new dataset from the balanced data
-    balanced_dataset = datasets.Dataset.from_dict(balanced_data)
     return balanced_dataset
