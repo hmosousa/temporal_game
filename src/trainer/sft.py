@@ -27,7 +27,7 @@ class SupervisedFineTuner:
         cpu: bool = False,
         project_name: str = "Temporal Game",
         use_wandb: bool = False,
-        patience: int = 5,
+        patience: int = 3,
         push_to_hub: bool = False,
         hf_dir: str = None,
         max_gpu_batch_size: int = None,
