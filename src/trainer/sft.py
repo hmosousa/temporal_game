@@ -215,6 +215,7 @@ class SupervisedFineTuner:
 
     def push_to_hub(self):
         self.model.push_to_hub(self.hf_dir)
+        self.tokenizer.push_to_hub(self.hf_dir)
 
     def get_dataloader(
         self, dataset: datasets.Dataset, batch_size: float, shuffle: bool = False

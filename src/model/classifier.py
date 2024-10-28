@@ -1,11 +1,17 @@
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from src.base import N_RELATIONS
+import torch
+
+from src.base import N_RELATIONS, ID2RELATION, RELATIONS2ID
 
 
 def load_classifier(model_name: str):
     model = AutoModelForSequenceClassification.from_pretrained(
-        model_name, num_labels=N_RELATIONS
+        model_name,
+        num_labels=N_RELATIONS,
+        torch_dtype=torch.bfloat16,
+        id2label=ID2RELATION,
+        label2id=RELATIONS2ID,
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
