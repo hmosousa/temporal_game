@@ -12,7 +12,6 @@ trainer:
   params:
     lr: 1e-3
     batch_size: 16
-    max_gpu_batch_size: 4
     n_epochs: 5
     output_path: classifier/meta-llama/weights_balanced.pt
     use_wandb: true
