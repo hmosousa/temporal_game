@@ -10,6 +10,12 @@ repos:
     rev: v1.0.7
     hooks:
       - id: usort
+    
+  - repo: https://github.com/jsh9/pydoclint
+    rev: 81704368e3368c4f7b6d6ea6b16b163608579d65
+    hooks:
+      - id: pydoclint
+        args: [--config=pyproject.toml]
 
   - repo: local
     hooks:
