@@ -10,6 +10,7 @@ import transformers
 import wandb
 from src.base import RELATIONS2ID
 from src.constants import DEVICE, MODELS_DIR, HF_USERNAME
+from src.data import balance_dataset_classes
 
 transformers.logging.set_verbosity_error()
 datasets.disable_progress_bar()
@@ -26,6 +27,7 @@ class SupervisedFineTuner:
         output_path: str,
         cpu: bool = False,
         project_name: str = "Temporal Game",
+        balance_classes: bool = False,
         use_wandb: bool = False,
         patience: int = 3,
         push_to_hub: bool = False,
@@ -61,6 +63,8 @@ class SupervisedFineTuner:
 
         self._push_to_hub = push_to_hub
         self.hf_dir = f"{HF_USERNAME}/{hf_dir}"
+
+        self._balance_classes = balance_classes
 
         if self.use_wandb and self.accelerator.is_main_process:
             wandb.init(
@@ -217,6 +221,9 @@ class SupervisedFineTuner:
         self.model.push_to_hub(self.hf_dir)
         self.tokenizer.push_to_hub(self.hf_dir)
 
+    def balance_classes(self, dataset: datasets.Dataset) -> datasets.Dataset:
+        return balance_dataset_classes(dataset, "labels")
+
     def get_dataloader(
         self, dataset: datasets.Dataset, batch_size: float, shuffle: bool = False
     ):
@@ -224,6 +231,9 @@ class SupervisedFineTuner:
         # transformers library
         dataset = dataset.map(lambda x: {"label": RELATIONS2ID[x["label"]]})
         dataset = dataset.rename_column("label", "labels")
+
+        if self._balance_classes:
+            dataset = self.balance_classes(dataset)
 
         def tokenize_function(examples):
             outputs = self.tokenizer(examples["text"], truncation=True, max_length=None)

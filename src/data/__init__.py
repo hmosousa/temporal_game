@@ -4,6 +4,7 @@ from typing import Dict, Any
 from torch.utils.data import Dataset
 
 from src.data.q_timelines import load_qtimelines
+from src.data.utils import balance_dataset_classes
 
 DATASETS = {
     "q_timelines": load_qtimelines,
@@ -22,4 +23,4 @@ def load_dataset(
     return trainset, validset
 
 
-__all__ = ["load_dataset", "load_qtimelines"]
+__all__ = ["load_dataset", "load_qtimelines", "balance_dataset_classes"]
