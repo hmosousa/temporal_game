@@ -1,8 +1,9 @@
 import pytest
 
-from src.agents import BeforeAgent, LMAgentNoContext
-from src.base import Timeline, Relation
-from src.env import State, EntityPair
+from src.agents import BeforeAgent, LMAgentNoContext, TrainedAgent
+from src.base import Relation, Timeline
+from src.constants import HF_USERNAME
+from src.env import EntityPair, State
 
 
 @pytest.fixture
@@ -38,6 +39,14 @@ class TestLMAgentNoContext:
     @pytest.mark.skip(reason="This test is slow and should be run manually")
     def test_act(self, state):
         agent = LMAgentNoContext("HuggingFaceTB/SmolLM-135M-Instruct")
+        action = agent.act(state)
+        assert action.source == "start ei2026"
+        assert action.target == "start ei2027"
+
+
+class TestTrainedAgent:
+    def test_act(self, state):
+        agent = TrainedAgent(f"{HF_USERNAME}/classifier_llama_1b")
         action = agent.act(state)
         assert action.source == "start ei2026"
         assert action.target == "start ei2027"

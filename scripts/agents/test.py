@@ -2,12 +2,12 @@ import logging
 
 import numpy as np
 from fire import Fire
-from tqdm import tqdm
 
 from src.agents import Agent, load_agent
 from src.env import TemporalGame
 from src.evaluation import evaluate
-from src.utils import store_results, cache_results
+from src.utils import cache_results, store_results
+from tqdm import tqdm
 
 
 def setup_logging():

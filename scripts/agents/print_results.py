@@ -1,4 +1,5 @@
 import json
+
 import pandas as pd
 
 from src.constants import RESULTS_DIR
@@ -6,7 +7,8 @@ from src.constants import RESULTS_DIR
 
 def main():
     data = {}
-    for file in RESULTS_DIR.glob("**/*.json"):
+    ipath = RESULTS_DIR / "agents"
+    for file in ipath.glob("**/*.json"):
         with open(file, "r") as f:
             data[file.stem] = json.load(f)
 
