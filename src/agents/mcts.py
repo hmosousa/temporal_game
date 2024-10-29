@@ -107,24 +107,37 @@ class MCTSAgent:
 
     def expand(
         self, node: Node, valid_actions: List[Relation], env: TemporalGame
-    ) -> Node:
-        """Expand the node by adding a new child."""
+    ) -> Tuple[Node, bool, float]:
+        """Expand the node by adding a new child.
 
+        Returns:
+            Tuple containing:
+            - The new node
+            - Whether it's a terminal state
+            - The reward if it's a terminal state
+        """
         # Choose a random unexplored action
         unexplored = [a for a in valid_actions if a not in node.children]
         if not unexplored:
-            return node
+            return node, False, 0.0
 
         action = random.choice(unexplored)
 
         # Create new state
-        new_state, reward, terminated, truncated, _ = env.step(action)
+        new_state, reward, terminated, truncated, info = env.step(action)
 
         # Create new node
         child = Node(new_state, parent=node, action=action)
         node.children[action] = child
 
-        return child
+        # If terminal state, return the reward directly
+        if terminated or truncated:
+            # Calculate reward ratio for terminal state
+            max_reward_from_state = info["max_reward"] - env.running_reward
+            reward_ratio = reward / max_reward_from_state
+            return child, True, reward_ratio
+
+        return child, False, 0.0
 
     def simulate(self, state: State, env: TemporalGame) -> float:
         """Run a random simulation from the state."""
@@ -166,8 +179,17 @@ class MCTSAgent:
             mcts_env = self.get_env_to_node(mcts_env, selected_node)
 
             if actions:
-                child = self.expand(selected_node, actions, mcts_env)
-                value = self.simulate(child.state, mcts_env)
+                child, is_terminal, terminal_reward = self.expand(
+                    selected_node, actions, mcts_env
+                )
+
+                if is_terminal:
+                    # If terminal state, use the reward directly
+                    value = terminal_reward
+                else:
+                    # Otherwise, simulate from this state
+                    value = self.simulate(child.state, mcts_env)
+
                 self.backpropagate(child, value)
 
         # Choose the action with the highest number of visits
