@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Tuple, TypedDict
 
 import datasets
 
-from src.base import Relation, Timeline
+from src.base import Relation, RELATIONS, Timeline
 
 
 class EntityPair(TypedDict):
@@ -18,6 +18,9 @@ class State(TypedDict):
 
 
 class TemporalGame:
+    REWARD_PER_STEP = 1
+    REWARD_PER_ANNOTATED_RELATION = 10
+
     def __init__(self, test: bool = False):
         if test:
             self._data = datasets.load_dataset(
@@ -35,6 +38,14 @@ class TemporalGame:
     @property
     def num_docs(self) -> int:
         return len(self._data)
+
+    @property
+    def relation_types(self) -> List[str]:
+        return RELATIONS
+
+    @property
+    def started(self) -> bool:
+        return self._timeline is not None
 
     def reset(self, id: int = None) -> Tuple[State, Dict[str, Any]]:
         if id is None:
@@ -73,9 +84,18 @@ class TemporalGame:
             timeline=self._timeline,
         )
 
+        # Calculate max reward
+        n_annot_relations = len(self._doc_timeline)
+        n_relations = len(self._entity_pairs)
+        max_reward = (
+            self.REWARD_PER_ANNOTATED_RELATION * n_annot_relations
+            + self.REWARD_PER_STEP * (n_relations - n_annot_relations)
+        )
+
         self._info = {
             "id": self._id,
             "doc_timeline": self._doc_timeline,
+            "max_reward": max_reward,
         }
 
         return state, self._info
@@ -113,17 +133,19 @@ class TemporalGame:
         if len(self._entity_pairs) == 0:
             terminated = True
 
-        # for making a step forward, we get 1 point
-        reward = 1
+        # for making a step forward
+        reward = self.REWARD_PER_STEP
 
-        # for each inferable relation, we get 1 point
+        # for each inferable relation
         n_relations = len(self._timeline)
         self._timeline = self._timeline.closure()
         n_inferable_relations = len(self._timeline) - n_relations
-        reward += n_inferable_relations
+        reward += self.REWARD_PER_STEP * n_inferable_relations
 
-        # if the relation is in the original annotation, we get 10 point
-        reward += 10 if action in self._doc_timeline else 0
+        # if the relation is in the original annotation
+        reward += (
+            self.REWARD_PER_ANNOTATED_RELATION if action in self._doc_timeline else 0
+        )
 
         state = State(
             context=self._context,

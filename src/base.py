@@ -1,11 +1,11 @@
 import itertools
-from typing import List, Literal, Tuple, Dict
+from typing import Dict, List, Literal, Tuple
 
 from src.closure import compute_temporal_closure
 
-_RELATIONS = ["<", ">", "=", "-"]
+RELATIONS = ["<", ">", "=", "-"]
 
-N_RELATIONS = len(_RELATIONS)
+N_RELATIONS = len(RELATIONS)
 
 _INVERT_RELATION = {
     "<": ">",
@@ -26,7 +26,7 @@ ID2RELATION = {v: k for k, v in RELATIONS2ID.items()}
 
 class Relation:
     def __init__(self, source: str, target: str, type: Literal["<", ">", "=", "-"]):
-        if type not in _RELATIONS:
+        if type not in RELATIONS:
             raise ValueError(f"Invalid relation type: {type}")
         self.source = source
         self.target = target
@@ -60,6 +60,13 @@ class Relation:
         return Relation(
             source=self.target, target=self.source, type=_INVERT_RELATION[self.type]
         )
+
+    def __hash__(self) -> int:
+        tmp = sorted([self.source, self.target])
+        if tmp[0] == self.source:
+            return hash(tuple([self.source, self.target, self.type]))
+        else:
+            return hash(tuple([self.target, self.source, _INVERT_RELATION[self.type]]))
 
 
 class Timeline:

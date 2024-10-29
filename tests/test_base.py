@@ -83,6 +83,11 @@ class TestRelation:
         assert r2 in relations
         assert r3 in relations
 
+    def test_hash(self):
+        r1 = Relation(source="A", target="B", type="<")
+        r2 = Relation(source="B", target="A", type=">")
+        assert hash(r1) == hash(r2)
+
 
 class TestTimeline:
     @pytest.fixture

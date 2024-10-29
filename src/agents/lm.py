@@ -1,7 +1,7 @@
 import transformers
 
 from src.agents.base import Agent
-from src.base import _RELATIONS, Relation
+from src.base import Relation, RELATIONS
 from src.constants import HF_TOKEN
 from src.env import State
 from src.prompts import NO_CONTEXT_PROMPT
@@ -43,7 +43,7 @@ class LMAgentNoContext(Agent):
 
         relation_type = self._pipe(prompt, **generation_args)[0]["generated_text"][-1]
 
-        if relation_type not in _RELATIONS:
+        if relation_type not in RELATIONS:
             relation_type = "-"
 
         relation = Relation(
