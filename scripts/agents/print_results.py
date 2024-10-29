@@ -9,6 +9,8 @@ def main(store: bool = True):
     data = {}
     ipath = RESULTS_DIR / "agents"
     for file in ipath.glob("**/*.json"):
+        if file.name == "results.json":
+            continue
         with open(file, "r") as f:
             data[file.stem] = json.load(f)
 

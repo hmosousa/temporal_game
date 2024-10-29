@@ -6,6 +6,10 @@ from src.env import State
 
 
 class RandomAgent(Agent):
+    @property
+    def name(self) -> str:
+        return "random"
+
     def act(self, state: State, seed: int = None) -> Relation:
         random.seed(seed)
         entity_pair = random.choice(state["entity_pairs"])

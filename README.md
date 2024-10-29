@@ -189,7 +189,16 @@ snakeviz profile.prof
     </thead>
     <tbody>
         <tr>
-            <td>Naive</td>
+            <td rowspan="2">Naive</td>
+            <td>Random</td>
+            <td>14.94</td>
+            <td>24.26</td>
+            <td>14.94</td>
+            <td>17.57</td>
+            <td>16.35</td>
+            <td>54.66</td>
+        </tr>
+        <tr>
             <td>Before</td>
             <td>51.63</td>
             <td>54.96</td>
