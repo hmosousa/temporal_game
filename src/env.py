@@ -34,6 +34,7 @@ class TemporalGame:
         self._context = None
         self._entity_pairs = None
         self._timeline = None
+        self._running_reward = None
 
     @property
     def num_docs(self) -> int:
@@ -46,6 +47,10 @@ class TemporalGame:
     @property
     def started(self) -> bool:
         return self._timeline is not None
+
+    @property
+    def running_reward(self) -> int:
+        return self._running_reward
 
     def reset(self, id: int = None) -> Tuple[State, Dict[str, Any]]:
         if id is None:
@@ -77,6 +82,7 @@ class TemporalGame:
         self._context = self._doc["context"]
         self._entity_pairs = entity_pairs
         self._timeline = Timeline()
+        self._running_reward = 0
 
         state = State(
             context=self._context,
@@ -146,7 +152,7 @@ class TemporalGame:
         reward += (
             self.REWARD_PER_ANNOTATED_RELATION if action in self._doc_timeline else 0
         )
-
+        self._running_reward += reward
         state = State(
             context=self._context,
             entity_pairs=self._entity_pairs,

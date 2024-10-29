@@ -32,6 +32,12 @@ class Node:
         self.visits = 0
         self.value = 0.0
 
+    def __repr__(self) -> str:
+        return f"Node(action={self.action}, visits={self.visits}, value={self.value})"
+
+    def __str__(self) -> str:
+        return self.__repr__()
+
     def is_fully_expanded(self, valid_actions: List[Relation]) -> bool:
         return len(self.children) == len(valid_actions)
 
@@ -63,9 +69,9 @@ class MCTSAgent:
     def select(self, node: Node, env: TemporalGame) -> Tuple[Node, List[Relation]]:
         """Select a node to expand using UCB1."""
         current = node
-        valid_actions = self.get_actions(current.state, env)
+        actions = self.get_actions(current.state, env)
 
-        while current.is_fully_expanded(valid_actions) and valid_actions:
+        while current.is_fully_expanded(actions) and actions:
             best_ucb = float("-inf")
             best_child = None
 
@@ -79,9 +85,9 @@ class MCTSAgent:
                 break
 
             current = best_child
-            valid_actions = self.get_actions(current.state, env)
+            actions = self.get_actions(current.state, env)
 
-        return current, valid_actions
+        return current, actions
 
     def get_actions_to_node(self, node: Node) -> List[Relation]:
         """Get the actions that lead to the node."""
@@ -126,18 +132,20 @@ class MCTSAgent:
         total_reward = 0
 
         while True:
-            valid_actions = self.get_actions(current_state, env)
-            if not valid_actions:
+            actions = self.get_actions(current_state, env)
+            if not actions:
                 break
 
-            action = random.choice(valid_actions)
-            current_state, reward, terminated, truncated, _ = env.step(action)
+            action = random.choice(actions)
+            current_state, reward, terminated, truncated, info = env.step(action)
             total_reward += reward
-
             if terminated or truncated:
                 break
 
-        return total_reward
+        # the percentage of reward obtained from the current state
+        max_reward_from_state = info["max_reward"] - env.running_reward
+        reward_ratio = total_reward / max_reward_from_state
+        return reward_ratio
 
     def backpropagate(self, node: Node, value: float):
         """Backpropagate the value up the tree."""
@@ -152,20 +160,14 @@ class MCTSAgent:
         root = Node(state)
 
         for _ in tqdm(range(self.num_simulations), desc="Simulating"):
-            # Selection
-            selected_node, valid_actions = self.select(root, env)
+            selected_node, actions = self.select(root, env)
 
             mcts_env = copy.deepcopy(env)
             mcts_env = self.get_env_to_node(mcts_env, selected_node)
 
-            # Expansion
-            if valid_actions:
-                child = self.expand(selected_node, valid_actions, mcts_env)
-
-                # Simulation
+            if actions:
+                child = self.expand(selected_node, actions, mcts_env)
                 value = self.simulate(child.state, mcts_env)
-
-                # Backpropagation
                 self.backpropagate(child, value)
 
         # Choose the action with the highest number of visits
