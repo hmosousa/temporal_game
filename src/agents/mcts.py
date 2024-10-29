@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Tuple
 
 from tqdm import tqdm
 
-from src.base import Relation, Timeline
+from src.base import Relation
 from src.env import State, TemporalGame
 
 
@@ -51,24 +51,19 @@ class MCTSAgent:
     def __init__(self, num_simulations: int = 100):
         self.num_simulations = num_simulations
 
-    def get_valid_actions(self, state: State, env: TemporalGame) -> List[Relation]:
+    def get_actions(self, state: State, env: TemporalGame) -> List[Relation]:
         """Get all valid actions from the current state."""
-        valid_actions = []
-        for pair in state["entity_pairs"]:
-            for relation_type in env.relation_types:
-                action = Relation(
-                    source=pair["source"], target=pair["target"], type=relation_type
-                )
-                # Create a temporary timeline to check if the action would be valid
-                temp_timeline = Timeline(state["timeline"].relations + [action])
-                if temp_timeline.is_valid:
-                    valid_actions.append(action)
-        return valid_actions
+        actions = [
+            Relation(source=pair["source"], target=pair["target"], type=relation_type)
+            for pair in state["entity_pairs"]
+            for relation_type in env.relation_types
+        ]
+        return actions
 
     def select(self, node: Node, env: TemporalGame) -> Tuple[Node, List[Relation]]:
         """Select a node to expand using UCB1."""
         current = node
-        valid_actions = self.get_valid_actions(current.state, env)
+        valid_actions = self.get_actions(current.state, env)
 
         while current.is_fully_expanded(valid_actions) and valid_actions:
             best_ucb = float("-inf")
@@ -84,7 +79,7 @@ class MCTSAgent:
                 break
 
             current = best_child
-            valid_actions = self.get_valid_actions(current.state, env)
+            valid_actions = self.get_actions(current.state, env)
 
         return current, valid_actions
 
@@ -131,7 +126,7 @@ class MCTSAgent:
         total_reward = 0
 
         while True:
-            valid_actions = self.get_valid_actions(current_state, env)
+            valid_actions = self.get_actions(current_state, env)
             if not valid_actions:
                 break
 
