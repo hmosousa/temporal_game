@@ -2,6 +2,7 @@ from src.agents.base import Agent
 from src.agents.before import BeforeAgent
 from src.agents.lm import LMAgentNoContext
 from src.agents.mcts import MCTSAgent
+from src.agents.random import RandomAgent
 from src.agents.trained import TrainedAgent
 from src.env import TemporalGame
 
@@ -11,6 +12,7 @@ AGENT_MAP = {
     "lm": LMAgentNoContext,
     "trained": TrainedAgent,
     "mcts": MCTSAgent,
+    "random": RandomAgent,
 }
 
 
@@ -42,5 +44,6 @@ __all__ = [
     "BeforeAgent",
     "LMAgentNoContext",
     "TrainedAgent",
+    "RandomAgent",
     "load_agent",
 ]

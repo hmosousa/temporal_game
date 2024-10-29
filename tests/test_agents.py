@@ -1,6 +1,6 @@
 import pytest
 
-from src.agents import BeforeAgent, LMAgentNoContext, TrainedAgent
+from src.agents import BeforeAgent, LMAgentNoContext, RandomAgent, TrainedAgent
 from src.base import Relation, Timeline
 from src.constants import HF_USERNAME
 from src.env import EntityPair, State
@@ -50,3 +50,19 @@ class TestTrainedAgent:
         action = agent.act(state)
         assert action.source == "start ei2026"
         assert action.target == "start ei2027"
+
+
+class TestRandomAgent:
+    def test_act_42(self, state):
+        agent = RandomAgent()
+        action = agent.act(state, seed=42)
+        assert action.source == "start ei2026"
+        assert action.target == "start ei2027"
+        assert action.type == "<"
+
+    def test_act_43(self, state):
+        agent = RandomAgent()
+        action = agent.act(state, seed=43)
+        assert action.source == "start ei2026"
+        assert action.target == "start ei2027"
+        assert action.type == "="
