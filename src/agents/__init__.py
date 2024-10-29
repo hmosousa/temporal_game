@@ -4,7 +4,6 @@ from src.agents.lm import LMAgentNoContext
 from src.agents.mcts import MCTSAgent
 from src.agents.random import RandomAgent
 from src.agents.trained import TrainedAgent
-from src.env import TemporalGame
 
 
 AGENT_MAP = {
@@ -19,8 +18,7 @@ AGENT_MAP = {
 def load_agent(
     agent_name: str,
     model_name: str = None,
-    env: TemporalGame = None,
-    num_simulations: int = 100,
+    num_simulations: int = None,
 ) -> Agent:
     if agent_name not in AGENT_MAP:
         raise ValueError(
@@ -34,7 +32,7 @@ def load_agent(
         case "trained":
             return agent_class(model_name)
         case "mcts":
-            return agent_class(env, num_simulations)
+            return agent_class(num_simulations)
         case _:
             return agent_class()
 
@@ -46,4 +44,5 @@ __all__ = [
     "TrainedAgent",
     "RandomAgent",
     "load_agent",
+    "MCTSAgent",
 ]

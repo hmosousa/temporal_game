@@ -4,8 +4,7 @@ import random
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
 
-from tqdm import tqdm
-
+from src.agents.base import Agent
 from src.base import Relation
 from src.env import State, TemporalGame
 
@@ -53,7 +52,7 @@ class Node:
         return exploitation + exploration
 
 
-class MCTSAgent:
+class MCTS:
     def __init__(self, num_simulations: int = 100):
         self.num_simulations = num_simulations
 
@@ -172,7 +171,7 @@ class MCTSAgent:
         """Perform MCTS and return the best action."""
         root = Node(state)
 
-        for _ in tqdm(range(self.num_simulations), desc="Simulating"):
+        for _ in range(self.num_simulations):
             selected_node, actions = self.select(root, env)
 
             mcts_env = copy.deepcopy(env)
@@ -202,3 +201,15 @@ class MCTSAgent:
         search_env = copy.deepcopy(env)
         action = self.search(state, search_env)
         return action
+
+
+class MCTSAgent(Agent):
+    def __init__(self, num_simulations: int = 100):
+        self.mcts = MCTS(num_simulations)
+
+    @property
+    def name(self) -> str:
+        return "mcts"
+
+    def act(self, state: State, env: TemporalGame) -> Relation:
+        return self.mcts.act(state, env)

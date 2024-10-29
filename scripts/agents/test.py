@@ -47,7 +47,10 @@ def test(agent: Agent, logger: logging.Logger):
         logger.debug(f"Starting episode {i+1}")
 
         while True:
-            action = agent.act(state)
+            if agent.name == "mcts":
+                action = agent.act(state, env)
+            else:
+                action = agent.act(state)
             state, reward, terminated, truncated, _ = env.step(action)
             episode_reward += reward
             step_count += 1
@@ -103,7 +106,9 @@ def test(agent: Agent, logger: logging.Logger):
     return mean_results
 
 
-def main(agent_name: str = "trained", model_name: str = None):
+def main(
+    agent_name: str = "trained", model_name: str = None, num_simulations: int = None
+):
     """Run the baseline agent on the test set.
 
     Args:
@@ -113,7 +118,7 @@ def main(agent_name: str = "trained", model_name: str = None):
     setup_logging()
     logger = logging.getLogger(__name__)
 
-    agent = load_agent(agent_name, model_name)
+    agent = load_agent(agent_name, model_name, num_simulations)
     results = test(agent, logger)
 
     filename = (
