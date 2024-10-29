@@ -35,7 +35,7 @@ The developer setup installs Poetry for dependency management, installs all proj
 
 ```sh
 accelerate config
-accelerate launch train_hf.py
+accelerate launch scripts/classifier/train.py
 ```
 
 ### Profile the code
