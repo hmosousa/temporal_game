@@ -1,8 +1,8 @@
 import pytest
-
-from src.agents.mcts import MCTS, Node
 from src.base import Relation
 from src.env import TemporalGame
+
+from src.mcts import MCTS, Node
 
 
 @pytest.fixture
@@ -91,12 +91,6 @@ def test_mcts_backpropagate(env, mcts):
 def test_mcts_search(env, mcts):
     state, _ = env.reset(0)
     action = mcts.search(state, env)
-    assert isinstance(action, Relation)
-
-
-def test_mcts_act(env, mcts):
-    state, _ = env.reset(0)
-    action = mcts.act(state, env)
     assert isinstance(action, Relation)
 
 
