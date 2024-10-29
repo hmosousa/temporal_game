@@ -208,6 +208,25 @@ snakeviz profile.prof
             <td>228.79</td>
         </tr>
         <tr>
+            <td rowspan="2">MCTS</td>
+            <td>MCTS 100</td>
+            <td>19.29</td>
+            <td>26.85</td>
+            <td>19.29</td>
+            <td>21.69</td>
+            <td>18.80</td>
+            <td>64.33</td>
+        </tr>
+        <tr>
+            <td>MCTS 200</td>
+            <td>24.21</td>
+            <td>31.09</td>
+            <td>24.21</td>
+            <td>26.26</td>
+            <td>21.68</td>
+            <td>75.39</td>
+        </tr>
+        <tr>
             <td>Prompt</td>
             <td>Llama 3.1 8B Instruct</td>
             <td>36.14</td>
