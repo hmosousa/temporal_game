@@ -8,6 +8,7 @@ from src.prompts import NO_CONTEXT_PROMPT
 
 
 def load_qtimelines(split: Literal["train", "valid", "test"]) -> datasets.Dataset:
+    """Used to train classification models."""
     cache_path = CACHE_DIR / "data" / f"q_timelines_{split}"
     if cache_path.exists():
         return datasets.load_from_disk(cache_path)

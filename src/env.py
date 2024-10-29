@@ -1,9 +1,8 @@
 import random
 from typing import Any, Dict, List, Tuple, TypedDict
 
-import datasets
-
 from src.base import Relation, RELATIONS, Timeline
+from src.data import load_small_timelines
 
 
 class EntityPair(TypedDict):
@@ -23,13 +22,9 @@ class TemporalGame:
 
     def __init__(self, test: bool = False):
         if test:
-            self._data = datasets.load_dataset(
-                "hugosousa/SmallTimelines", "one", split="test"
-            )
+            self._data = load_small_timelines(split="test")
         else:
-            self._data = datasets.load_dataset(
-                "hugosousa/SmallTimelines", "one", split="train"
-            )
+            self._data = load_small_timelines(split="train")
         self._doc = None
         self._context = None
         self._entity_pairs = None

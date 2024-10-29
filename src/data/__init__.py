@@ -1,9 +1,9 @@
-from typing import Tuple
-from typing import Dict, Any
+from typing import Any, Dict, Tuple
 
 from torch.utils.data import Dataset
 
 from src.data.q_timelines import load_qtimelines
+from src.data.small_timelines import load_small_timelines
 from src.data.utils import balance_dataset_classes
 
 DATASETS = {
@@ -23,4 +23,9 @@ def load_dataset(
     return trainset, validset
 
 
-__all__ = ["load_dataset", "load_qtimelines", "balance_dataset_classes"]
+__all__ = [
+    "load_dataset",
+    "load_qtimelines",
+    "load_small_timelines",
+    "balance_dataset_classes",
+]
