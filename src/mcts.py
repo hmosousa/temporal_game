@@ -143,11 +143,14 @@ class MCTS:
         total_reward = 0
 
         while True:
-            actions = self.get_actions(current_state, env)
-            if not actions:
-                break
+            entity_pair = random.choice(current_state["entity_pairs"])
+            relation_type = random.choice(env.relation_types)
+            action = Relation(
+                source=entity_pair["source"],
+                target=entity_pair["target"],
+                type=relation_type,
+            )
 
-            action = random.choice(actions)
             current_state, reward, terminated, truncated, info = env.step(action)
             total_reward += reward
             if terminated or truncated:
