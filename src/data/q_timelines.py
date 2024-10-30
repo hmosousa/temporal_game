@@ -3,7 +3,6 @@ from typing import Literal
 import datasets
 
 from src.base import INVERT_RELATION
-
 from src.constants import CACHE_DIR
 from src.prompts import NO_CONTEXT_PROMPT
 
