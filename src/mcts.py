@@ -1,76 +1,59 @@
 import copy
+import math
 import random
+from dataclasses import dataclass
 from typing import Dict, List, Optional, Tuple
-
-import numpy as np
 
 from src.base import Relation
 from src.env import State, TemporalGame
 
 
+@dataclass
 class Node:
+    state: State
+    parent: Optional["Node"]
+    action: Optional[Relation]  # Action that led to this state
+    children: Dict[Relation, "Node"]
+    visits: int
+    value: float
+
     def __init__(
         self,
         state: State,
         parent: Optional["Node"] = None,
         action: Optional[Relation] = None,
-        action_index: Optional[int] = None,
-        n_actions: int = 0,
     ):
         self.state = state
         self.parent = parent
         self.action = action
-        self.action_index = action_index
-        self.is_expanded = False
-        self.children: Dict[Relation, "Node"] = {}
-
-        # Use numpy arrays for child statistics
-        self.child_total_value = np.zeros(n_actions, dtype=np.float32)
-        self.child_visits = np.zeros(n_actions, dtype=np.float32)
+        self.children = {}
+        self.visits = 0
+        self.value = 0.0
 
     def __repr__(self) -> str:
-        return f"Node(action={self.action}, visits={self.n_visits}, value={self.total_value})"
+        return f"Node(action={self.action}, visits={self.visits}, value={self.value})"
 
-    @property
-    def n_visits(self):
-        return self.parent.child_visits[self.action_index] if self.parent else 0
+    def __str__(self) -> str:
+        return self.__repr__()
 
-    @n_visits.setter
-    def n_visits(self, value):
-        if self.parent:
-            self.parent.child_visits[self.action_index] = value
+    def is_fully_expanded(self, valid_actions: List[Relation]) -> bool:
+        return len(self.children) == len(valid_actions)
 
-    @property
-    def total_value(self):
-        return self.parent.child_total_value[self.action_index] if self.parent else 0
-
-    @total_value.setter
-    def total_value(self, value):
-        if self.parent:
-            self.parent.child_total_value[self.action_index] = value
-
-    def child_Q(self) -> np.ndarray:
-        """Vectorized Q value calculation"""
-        return self.child_total_value / (1 + self.child_visits)
-
-    def child_U(self, exploration_constant: float = 1.41) -> np.ndarray:
-        """Vectorized UCB calculation"""
-        return exploration_constant * np.sqrt(
-            np.log(self.n_visits) / (1 + self.child_visits)
+    def get_ucb_score(
+        self, parent_visits: int, exploration_constant: float = 1.41
+    ) -> float:
+        if self.visits == 0:
+            return float("inf")
+        exploitation = self.value / self.visits
+        exploration = exploration_constant * math.sqrt(
+            math.log(parent_visits) / self.visits
         )
-
-    def get_ucb_score(self, exploration_constant: float = 1.41) -> np.ndarray:
-        """Vectorized UCB calculation"""
-        return self.child_Q() + self.child_U(exploration_constant)
-
-    def best_child(self) -> int:
-        """Returns index of best child using vectorized operations"""
-        return np.argmax(self.get_ucb_score())
+        return exploitation + exploration
 
 
 class MCTS:
-    def __init__(self, n_simulations: int = 100):
-        self.n_simulations = n_simulations
+    def __init__(self, num_simulations: int = 100):
+        self.num_simulations = num_simulations
 
     def get_actions(self, state: State, env: TemporalGame) -> List[Relation]:
         """Get all valid actions from the current state."""
@@ -82,18 +65,24 @@ class MCTS:
         return actions
 
     def select(self, node: Node, env: TemporalGame) -> Tuple[Node, List[Relation]]:
-        """Select a node using UCB"""
+        """Select a node to expand using UCB1."""
         current = node
         actions = self.get_actions(current.state, env)
 
-        while current.is_expanded and actions:
-            action_idx = current.best_child()
+        while current.is_fully_expanded(actions) and actions:
+            best_ucb = float("-inf")
+            best_child = None
 
-            action = actions[action_idx]
-            if action not in current.children:
+            for child in current.children.values():
+                ucb = child.get_ucb_score(current.visits)
+                if ucb > best_ucb:
+                    best_ucb = ucb
+                    best_child = child
+
+            if best_child is None:
                 break
 
-            current = current.children[action]
+            current = best_child
             actions = self.get_actions(current.state, env)
 
         return current, actions
@@ -117,37 +106,33 @@ class MCTS:
     def expand(
         self, node: Node, valid_actions: List[Relation], env: TemporalGame
     ) -> Tuple[Node, bool, float]:
-        """Expand the node by adding a new child."""
+        """Expand the node by adding a new child.
+
+        Returns:
+            Tuple containing:
+            - The new node
+            - Whether it's a terminal state
+            - The reward if it's a terminal state
+        """
         # Choose a random unexplored action
-        unexplored_indices = [
-            i for i, a in enumerate(valid_actions) if a not in node.children
-        ]
-        if not unexplored_indices:
+        unexplored = [a for a in valid_actions if a not in node.children]
+        if not unexplored:
             return node, False, 0.0
 
-        action_idx = random.choice(unexplored_indices)
-        action = valid_actions[action_idx]
+        action = random.choice(unexplored)
 
         # Create new state
         new_state, reward, terminated, truncated, info = env.step(action)
 
         # Create new node
-        n_actions = len(self.get_actions(new_state, env))
-        child = Node(
-            state=new_state,
-            parent=node,
-            action=action,
-            action_index=action_idx,
-            n_actions=n_actions,
-        )
+        child = Node(new_state, parent=node, action=action)
         node.children[action] = child
 
         # If terminal state, return the reward directly
         if terminated or truncated:
+            # Calculate reward ratio for terminal state
             max_reward_from_state = info["max_reward"] - env.running_reward
-            reward_ratio = (
-                reward / max_reward_from_state if max_reward_from_state > 0 else 0
-            )
+            reward_ratio = reward / max_reward_from_state
             return child, True, reward_ratio
 
         return child, False, 0.0
@@ -171,40 +156,44 @@ class MCTS:
             if terminated or truncated:
                 break
 
+        # the percentage of reward obtained from the current state
         max_reward_from_state = info["max_reward"] - env.running_reward
-        reward_ratio = (
-            total_reward / max_reward_from_state if max_reward_from_state > 0 else 0
-        )
+        reward_ratio = total_reward / max_reward_from_state
         return reward_ratio
 
     def backpropagate(self, node: Node, value: float):
         """Backpropagate the value up the tree."""
         current = node
         while current is not None:
-            current.n_visits += 1
-            current.total_value += value
+            current.visits += 1
+            current.value += value
             current = current.parent
 
     def search(self, state: State, env: TemporalGame) -> Relation:
         """Perform MCTS and return the best action."""
-        n_actions = len(self.get_actions(state, env))
-        root = Node(state=state, n_actions=n_actions)
+        root = Node(state)
 
-        for _ in range(self.n_simulations):
+        for _ in range(self.num_simulations):
             selected_node, actions = self.select(root, env)
 
-            mcts_env = self.get_env_to_node(copy.deepcopy(env), selected_node)
+            mcts_env = copy.deepcopy(env)
+            mcts_env = self.get_env_to_node(mcts_env, selected_node)
 
             if actions:
-                child, is_terminal, value = self.expand(
+                child, is_terminal, terminal_reward = self.expand(
                     selected_node, actions, mcts_env
                 )
-                if not is_terminal:
+
+                if is_terminal:
+                    # If terminal state, use the reward directly
+                    value = terminal_reward
+                else:
+                    # Otherwise, simulate from this state
                     value = self.simulate(child.state, mcts_env)
 
                 self.backpropagate(child, value)
 
-        # Choose action with highest visit count
-        visit_counts = root.child_visits
-        actions = self.get_actions(state, env)
-        return actions[np.argmax(visit_counts)]
+        # Choose the action with the highest number of visits
+        best_action = max(root.children.items(), key=lambda x: x[1].visits)[0]
+
+        return best_action

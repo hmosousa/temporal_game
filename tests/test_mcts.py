@@ -1,4 +1,3 @@
-import numpy as np
 import pytest
 from src.base import Relation
 from src.env import TemporalGame
@@ -13,7 +12,7 @@ def env():
 
 @pytest.fixture
 def mcts():
-    return MCTS(n_simulations=100)
+    return MCTS(num_simulations=100)
 
 
 def test_node_initialization():
@@ -23,24 +22,20 @@ def test_node_initialization():
     assert node.parent is None
     assert node.action is None
     assert node.children == {}
-    assert node.n_visits == 0
-    assert node.total_value == 0.0
+    assert node.visits == 0
+    assert node.value == 0.0
 
 
 def test_node_ucb_score():
     state = {"context": "", "entity_pairs": [], "timeline": []}
-    parent = Node(state, n_actions=1)
-    node = Node(state, parent=parent, n_actions=1)
-    parent.children[Relation("start A", "start B", "<")] = node
-    node.n_visits = 10
-    node.total_value = 5.0
-    parent.n_visits = 20
-    parent.total_value = 10.0
+    node = Node(state)
+    node.visits = 10
+    node.value = 5.0
+    parent_visits = 20
 
-    ucb_score = node.get_ucb_score()
-    assert isinstance(ucb_score, np.ndarray)
-    assert ucb_score.shape == (1, 1)
-    assert ucb_score[0, 0] > 0
+    ucb_score = node.get_ucb_score(parent_visits)
+    assert isinstance(ucb_score, float)
+    assert ucb_score > 0
 
 
 def test_mcts_get_actions(env, mcts):
@@ -80,14 +75,17 @@ def test_mcts_simulate(env, mcts):
 
 def test_mcts_backpropagate(env, mcts):
     state, _ = env.reset(0)
-    root = Node(state, n_actions=1)
-    child = Node(state, parent=root, n_actions=1)
+    root = Node(state)
+    child = Node(state, parent=root)
     root.children[Relation("start A", "start B", "<")] = child
+
+    initial_root_visits = root.visits
+    initial_child_visits = child.visits
 
     mcts.backpropagate(child, 1.0)
 
-    assert root.n_visits == 0
-    assert child.n_visits == np.array([[1]])
+    assert root.visits == initial_root_visits + 1
+    assert child.visits == initial_child_visits + 1
 
 
 def test_mcts_search(env, mcts):
