@@ -1,11 +1,24 @@
 import pytest
 from datasets import Dataset
 
-from src.data import load_dataset
+from src.data import load_dataset, load_qtimelines
 
 
 def test_load_q_timelines():
-    trainset, validset = load_dataset("q_timelines", {})
+    trainset = load_qtimelines("train")
+
+    assert isinstance(trainset, Dataset)
+    assert set(trainset.column_names) == {"text", "label"}
+    assert len(trainset) == 48660
+
+
+def test_load_q_timelines_augment():
+    trainset = load_qtimelines("train", augment=True)
+    assert len(trainset) == 97320
+
+
+def test_load_dataset_q_timelines():
+    trainset, validset = load_dataset("q_timelines")
 
     assert isinstance(trainset, Dataset)
     assert isinstance(validset, Dataset)
@@ -13,8 +26,21 @@ def test_load_q_timelines():
     assert set(trainset.column_names) == {"text", "label"}
     assert set(validset.column_names) == {"text", "label"}
 
-    assert len(trainset) > 0
-    assert len(validset) > 0
+    assert len(trainset) == 48660
+    assert len(validset) == 14424
+
+
+def test_load_dataset_q_timelines_augment():
+    trainset, validset = load_dataset("q_timelines", {"augment": True})
+
+    assert isinstance(trainset, Dataset)
+    assert isinstance(validset, Dataset)
+
+    assert set(trainset.column_names) == {"text", "label"}
+    assert set(validset.column_names) == {"text", "label"}
+
+    assert len(trainset) == 97320
+    assert len(validset) == 28848
 
 
 def test_load_dataset_invalid():

@@ -1,6 +1,6 @@
 import pytest
 
-from src.base import _INVERT_RELATION, Relation, Timeline
+from src.base import INVERT_RELATION, Relation, Timeline
 
 
 class TestRelation:
@@ -42,7 +42,7 @@ class TestRelation:
             assert inverted.type == expected.type
 
     def test_relation_invert_relation_consistency(self):
-        for rel_type, inverted_type in _INVERT_RELATION.items():
+        for rel_type, inverted_type in INVERT_RELATION.items():
             r = Relation(source="A", target="B", type=rel_type)
             inverted = ~r
             assert inverted.type == inverted_type

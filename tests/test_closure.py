@@ -1,4 +1,4 @@
-from src.base import _INVERT_RELATION
+from src.base import INVERT_RELATION
 from src.closure import compute_temporal_closure
 
 
@@ -10,7 +10,7 @@ def _compare_results(result, expected):
         inverted_relation = {
             "source": relation["target"],
             "target": relation["source"],
-            "relation": _INVERT_RELATION[relation["relation"]],
+            "relation": INVERT_RELATION[relation["relation"]],
         }
         if relation not in expected and inverted_relation not in expected:
             return False

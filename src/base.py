@@ -7,7 +7,7 @@ RELATIONS = ["<", ">", "=", "-"]
 
 N_RELATIONS = len(RELATIONS)
 
-_INVERT_RELATION = {
+INVERT_RELATION = {
     "<": ">",
     ">": "<",
     "=": "=",
@@ -48,7 +48,7 @@ class Relation:
         elif (
             self.source == other.target
             and self.target == other.source
-            and self.type == _INVERT_RELATION[other.type]
+            and self.type == INVERT_RELATION[other.type]
         ):
             return True
         return False
@@ -58,7 +58,7 @@ class Relation:
 
     def __invert__(self) -> "Relation":
         return Relation(
-            source=self.target, target=self.source, type=_INVERT_RELATION[self.type]
+            source=self.target, target=self.source, type=INVERT_RELATION[self.type]
         )
 
     def __hash__(self) -> int:
@@ -66,7 +66,7 @@ class Relation:
         if tmp[0] == self.source:
             return hash(tuple([self.source, self.target, self.type]))
         else:
-            return hash(tuple([self.target, self.source, _INVERT_RELATION[self.type]]))
+            return hash(tuple([self.target, self.source, INVERT_RELATION[self.type]]))
 
 
 class Timeline:
