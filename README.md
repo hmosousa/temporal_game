@@ -169,6 +169,42 @@ snakeviz profile.prof
             <td><strong>32.64</strong></td>
             <td><strong>3716</strong></td>
         </tr>
+                <tr>
+            <td rowspan="5">LLAMA 3B (Balanced)</td>
+            <td>&lt;</td>
+            <td>55.93</td>
+            <td>74.71</td>
+            <td>63.97</td>
+            <td>2088</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>8.17</td>
+            <td>32.87</td>
+            <td>13.09</td>
+            <td>143</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>65.22</td>
+            <td>3.04</td>
+            <td>5.81</td>
+            <td>1481</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><strong>Overall</strong></td>
+            <td><strong>57.74</strong></td>
+            <td><strong>44.46</strong></td>
+            <td><strong>38.76</strong></td>
+            <td><strong>3716</strong></td>
+        </tr>
     </tbody>
 </table>
 
