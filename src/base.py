@@ -21,7 +21,7 @@ RELATIONS2ID = {
     "-": 3,
 }
 
-ID2RELATION = {v: k for k, v in RELATIONS2ID.items()}
+ID2RELATIONS = {v: k for k, v in RELATIONS2ID.items()}
 
 
 class Relation:

@@ -13,7 +13,7 @@ trainer:
     lr: 1e-3
     batch_size: 16
     n_epochs: 5
-    output_path: classifier/bert/weights.pt
     use_wandb: true
     push_to_hub: true
     hf_dir: classifier_bert
+    patience: 10

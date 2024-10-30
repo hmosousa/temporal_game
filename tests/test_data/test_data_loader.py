@@ -40,7 +40,7 @@ def test_load_dataset_q_timelines_augment():
     assert set(validset.column_names) == {"text", "label"}
 
     assert len(trainset) == 56500 * 2
-    assert len(validset) == 6584 * 2
+    assert len(validset) == 6584
 
 
 def test_load_dataset_invalid():

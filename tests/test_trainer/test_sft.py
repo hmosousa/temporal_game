@@ -1,9 +1,9 @@
+import datasets
 import pytest
 import torch
-import datasets
+from src.model import load_classifier
 
 from src.trainer.sft import SupervisedFineTuner
-from src.model import load_classifier
 
 
 class TestSupervisedFineTuner:
@@ -37,33 +37,20 @@ class TestSupervisedFineTuner:
         assert isinstance(sft.optimizer, torch.optim.AdamW)
         assert isinstance(sft.criterion, torch.nn.CrossEntropyLoss)
 
-    def test_train_epoch(self, dummy_data):
+    def test_eval(self, dummy_data):
         model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
             model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
         )
         dataloader = sft.get_dataloader(dummy_data, 16)
 
-        loss, acc = sft.train_epoch(dataloader)
+        metrics = sft.eval(dataloader)
 
-        assert isinstance(loss, float)
-        assert isinstance(acc, float)
-        assert loss > 0
-        assert 0 <= acc <= 1
-
-    def test_eval_epoch(self, dummy_data):
-        model, tokenizer = load_classifier(model_name="bert-base-uncased")
-        sft = SupervisedFineTuner(
-            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
-        )
-        dataloader = sft.get_dataloader(dummy_data, 16)
-
-        loss, acc = sft.eval_epoch(dataloader)
-
-        assert isinstance(loss, float)
-        assert isinstance(acc, float)
-        assert loss > 0
-        assert 0 <= acc <= 1
+        assert isinstance(metrics["loss"], float)
+        assert isinstance(metrics["acc"], float)
+        assert metrics["loss"] > 0
+        assert 0 <= metrics["acc"] <= 1
+        assert isinstance(metrics["acc_per_class"], dict)
 
     @pytest.mark.skip(reason="Takes too long to run.")
     def test_save_model(self, tmp_path):

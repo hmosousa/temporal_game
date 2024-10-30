@@ -1,15 +1,16 @@
-from typing import Tuple
+from typing import Dict
 
 import datasets
 import torch
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from accelerate import Accelerator, DistributedType
 import transformers
 
 import wandb
-from src.base import RELATIONS2ID
-from src.constants import DEVICE, MODELS_DIR, HF_USERNAME
+from accelerate import Accelerator, DistributedType
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+
+from src.base import ID2RELATIONS, RELATIONS2ID
+from src.constants import DEVICE, HF_USERNAME
 from src.data import balance_dataset_classes
 
 transformers.logging.set_verbosity_error()
@@ -24,7 +25,6 @@ class SupervisedFineTuner:
         lr: float,
         n_epochs: int,
         batch_size: int,
-        output_path: str,
         cpu: bool = False,
         project_name: str = "Temporal Game",
         balance_classes: bool = False,
@@ -54,8 +54,7 @@ class SupervisedFineTuner:
 
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
-        self.global_step = 0
-        self.output_path = output_path
+        self.n_examples = 0
 
         self.use_wandb = use_wandb
         self.patience = patience
@@ -65,14 +64,18 @@ class SupervisedFineTuner:
         self.hf_dir = f"{HF_USERNAME}/{hf_dir}"
 
         self._balance_classes = balance_classes
+        self._best_val_loss = float("inf")
 
         if self.use_wandb and self.accelerator.is_main_process:
             wandb.init(
+                name=hf_dir,
                 project=project_name,
                 config={
                     "learning_rate": lr,
                     "epochs": n_epochs,
                     "batch_size": batch_size,
+                    "patience": patience,
+                    "balance_classes": balance_classes,
                 },
             )
             wandb.watch(self.model)
@@ -94,96 +97,87 @@ class SupervisedFineTuner:
             )
         )
 
-        best_val_loss = float("inf")
-        for epoch in range(self.n_epochs):
-            train_loss, train_acc = self.train_epoch(train_dataloader)
-            val_loss, val_acc = self.eval_epoch(valid_dataloader)
+        self.train_loop(train_dataloader, valid_dataloader)
 
-            if val_loss < best_val_loss and self.accelerator.is_main_process:
-                best_val_loss = val_loss
-                self.early_stopping_counter = 0
-                model_path = MODELS_DIR / self.output_path
-                model_path.parent.mkdir(parents=True, exist_ok=True)
-                self.save_model(model_path)
-                if self._push_to_hub:
-                    self.push_to_hub()
-            else:
-                self.early_stopping_counter += 1
+    def train_loop(self, train_dataloader: DataLoader, valid_dataloader: DataLoader):
+        log_step = 1
+        for _ in range(self.n_epochs):
+            self.model.train()
 
-            if self.early_stopping_counter >= self.patience:
-                if self.accelerator.is_main_process:
-                    print(f"Early stopping triggered after {epoch+1} epochs.")
-                break  # Stop training if patience is exceeded
+            total_steps = len(train_dataloader)
 
-            if self.use_wandb and self.accelerator.is_main_process:
-                wandb.log(
-                    {
-                        "epoch": epoch + 1,
-                        "train_loss": train_loss,
-                        "train_acc": train_acc,
-                        "val_loss": val_loss,
-                        "val_acc": val_acc,
-                    }
-                )
-
-            if self.accelerator.is_main_process:
-                print(
-                    f"Epoch {epoch+1}/{self.n_epochs} - Train Loss: {train_loss:.4f} - Train Acc: {train_acc:.4f} - Val Loss: {val_loss:.4f} - Val Acc: {val_acc:.4f}"
-                )
-
-    def train_epoch(self, dataloader: DataLoader) -> Tuple[float, float]:
-        self.model.train()
-        total_loss = 0
-        total_correct = 0
-        n = 0
-        total_steps = len(dataloader)
-
-        progress_bar = (
-            tqdm(enumerate(dataloader), desc="Training", total=total_steps)
-            if self.accelerator.is_main_process
-            else enumerate(dataloader)
-        )
-
-        for step, batch in progress_bar:
-            batch = {k: v.to(self.accelerator.device) for k, v in batch.items()}
-
-            outputs = self.model(**batch)
-            loss = outputs.loss
-            loss = loss / self.gradient_accumulation_steps
-            self.accelerator.backward(loss)
-            if step % self.gradient_accumulation_steps == 0:
-                self.optimizer.step()
-                self.optimizer.zero_grad()
-
-            batch_loss = loss.item()
-            batch_correct = (
-                (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
+            progress_bar = (
+                tqdm(enumerate(train_dataloader), desc="Training", total=total_steps)
+                if self.accelerator.is_main_process
+                else enumerate(train_dataloader)
             )
-            batch_size = outputs.logits.size(0)
 
-            total_loss += batch_loss
-            total_correct += batch_correct
-            n += batch_size
+            for step, batch in progress_bar:
+                batch = {k: v.to(self.accelerator.device) for k, v in batch.items()}
 
-            self.global_step += 1
-            if self.use_wandb and self.accelerator.is_main_process:
-                wandb.log(
-                    {
-                        "step": self.global_step,
-                        "step_train_loss": batch_loss / batch_size,
-                        "step_train_acc": batch_correct / batch_size,
-                    }
+                outputs = self.model(**batch)
+                loss = outputs.loss
+                loss = loss / self.gradient_accumulation_steps
+                self.accelerator.backward(loss)
+                if step % self.gradient_accumulation_steps == 0:
+                    self.optimizer.step()
+                    self.optimizer.zero_grad()
+
+                batch_loss = loss.item()
+                batch_correct = (
+                    (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
                 )
+                batch_size = outputs.logits.size(0)
+                self.n_examples += batch_size
 
-        epoch_loss = total_loss / n
-        epoch_acc = total_correct / n
-        return epoch_loss, epoch_acc
+                if self.use_wandb and self.accelerator.is_main_process:
+                    wandb.log(
+                        {
+                            "n_examples": self.n_examples,
+                            "train_loss": batch_loss / batch_size,
+                            "train_acc": batch_correct / batch_size,
+                        }
+                    )
 
-    def eval_epoch(self, dataloader: DataLoader) -> Tuple[float, float]:
+                if self.n_examples > log_step * 5_000:
+                    val_metrics = self.eval(valid_dataloader)
+                    log_step += 1
+
+                    if self.use_wandb and self.accelerator.is_main_process:
+                        wandb.log(
+                            {
+                                "n_examples": self.n_examples,
+                                "val_loss": val_metrics["loss"],
+                                "val_acc": val_metrics["acc"],
+                                "val_acc_per_class": val_metrics["acc_per_class"],
+                            }
+                        )
+
+                    if (
+                        val_metrics["loss"] < self._best_val_loss
+                        and self.accelerator.is_main_process
+                    ):
+                        self._best_val_loss = val_metrics["loss"]
+                        self.early_stopping_counter = 0
+                        if self._push_to_hub:
+                            self.push_to_hub()
+                    else:
+                        self.early_stopping_counter += 1
+
+                    if self.early_stopping_counter >= self.patience:
+                        if self.accelerator.is_main_process:
+                            print(
+                                f"Early stopping triggered after {self.n_examples} examples."
+                            )
+                        return  # Stop training if patience is exceeded
+
+    def eval(self, dataloader: DataLoader) -> Dict[str, float]:
         self.model.eval()
         total_loss = 0
         total_correct = 0
         n = 0
+        correct_per_class = {id: 0 for id in ID2RELATIONS}
+        total_per_class = {id: 0 for id in ID2RELATIONS}
         with torch.no_grad():
             progress_bar = (
                 tqdm(dataloader, desc="Evaluating")
@@ -192,22 +186,40 @@ class SupervisedFineTuner:
             )
 
             for batch in progress_bar:
-                batch.to(self.accelerator.device)
+                batch = {k: v.to(self.accelerator.device) for k, v in batch.items()}
 
                 outputs = self.model(**batch)
-
-                batch_correct = (
-                    (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
-                )
+                pred = outputs.logits.argmax(dim=-1)
+                true = batch["labels"]
+                batch_correct = (pred == true).sum().item()
                 batch_size = outputs.logits.size(0)
 
                 total_loss += outputs.loss.item()
                 total_correct += batch_correct
                 n += batch_size
 
+                for id in ID2RELATIONS:
+                    id_idxs = true == id
+                    pred_id = pred[id_idxs]
+                    true_id = true[id_idxs]
+                    if pred_id.size(0) > 0:
+                        correct_per_class[id] += (pred_id == true_id).sum().item()
+                        total_per_class[id] += pred_id.size(0)
+
         epoch_loss = total_loss / n
         epoch_acc = total_correct / n
-        return epoch_loss, epoch_acc
+        accuracy_per_class = {
+            relation: correct_per_class[id] / total_per_class[id]
+            if total_per_class[id] > 0
+            else 0.0
+            for id, relation in ID2RELATIONS.items()
+        }
+
+        return {
+            "loss": epoch_loss,
+            "acc": epoch_acc,
+            "acc_per_class": accuracy_per_class,
+        }
 
     def save_model(self, path):
         torch.save(self.model.state_dict(), path)

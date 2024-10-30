@@ -13,10 +13,9 @@ trainer:
     lr: 1e-3
     batch_size: 8
     n_epochs: 20
-    output_path: classifier/meta-llama/weights_balanced.pt
     use_wandb: true
     push_to_hub: true
     hf_dir: classifier_llama_3b_balanced
     balance_classes: true
-    patience: 3
+    patience: 10
 
