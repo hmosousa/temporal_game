@@ -1,0 +1,22 @@
+model:
+  type: classifier
+  params:
+    model_name: HuggingFaceTB/SmolLM-135M 
+
+dataset:
+  type: q_timelines
+  params:
+    augment: false
+
+trainer:
+  type: sft
+  params:
+    lr: 1e-3
+    batch_size: 32
+    n_epochs: 20
+    output_path: classifier/HuggingFaceTB/SmolLM-135M.pt
+    use_wandb: true
+    push_to_hub: true
+    hf_dir: classifier_smoll_135m
+    balance_classes: true
+    patience: 3

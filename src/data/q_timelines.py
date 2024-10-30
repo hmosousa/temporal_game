@@ -21,7 +21,7 @@ def load_qtimelines(
     else:
         data = datasets.load_dataset("hugosousa/SmallTimelines", "one", split="train")
 
-        cutoff = int(len(data) * 0.8)
+        cutoff = int(len(data) * 0.9)
         if split == "train":
             data = data.select(range(0, cutoff))
         else:  # valid
