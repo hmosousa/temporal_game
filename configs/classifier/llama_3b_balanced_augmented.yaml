@@ -1,7 +1,7 @@
 model:
   type: classifier
   params:
-    model_name: HuggingFaceTB/SmolLM-135M 
+    model_name: meta-llama/Llama-3.2-3B-Instruct
 
 dataset:
   type: q_timelines
@@ -11,14 +11,13 @@ dataset:
 trainer:
   type: sft
   params:
-    lr: 1e-3
-    batch_size: 32
+    lr: 1e-4
+    batch_size: 64
+    max_gpu_batch_size: 4
     n_epochs: 20
     use_wandb: true
     push_to_hub: true
-    hf_dir: classifier_smoll_135m_b_a
+    hf_dir: classifier_llama_3b_balanced_augment
     balance_classes: true
     patience: 10
-
-
 

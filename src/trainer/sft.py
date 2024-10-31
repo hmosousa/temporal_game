@@ -25,6 +25,7 @@ class SupervisedFineTuner:
         lr: float,
         n_epochs: int,
         batch_size: int,
+        max_gpu_batch_size: int = None,
         cpu: bool = False,
         project_name: str = "Temporal Game",
         balance_classes: bool = False,
@@ -32,7 +33,6 @@ class SupervisedFineTuner:
         patience: int = 3,
         push_to_hub: bool = False,
         hf_dir: str = None,
-        max_gpu_batch_size: int = None,
         **kwargs,
     ):
         self.model = model.to(DEVICE)
@@ -143,16 +143,6 @@ class SupervisedFineTuner:
                     val_metrics = self.eval(valid_dataloader)
                     log_step += 1
 
-                    if self.use_wandb and self.accelerator.is_main_process:
-                        wandb.log(
-                            {
-                                "n_examples": self.n_examples,
-                                "val_loss": val_metrics["loss"],
-                                "val_acc": val_metrics["acc"],
-                                "val_acc_per_class": val_metrics["acc_per_class"],
-                            }
-                        )
-
                     if (
                         val_metrics["loss"] < self._best_val_loss
                         and self.accelerator.is_main_process
@@ -163,6 +153,17 @@ class SupervisedFineTuner:
                             self.push_to_hub()
                     else:
                         self.early_stopping_counter += 1
+
+                    if self.use_wandb and self.accelerator.is_main_process:
+                        wandb.log(
+                            {
+                                "n_examples": self.n_examples,
+                                "val_loss": val_metrics["loss"],
+                                "val_acc": val_metrics["acc"],
+                                "best_val_loss": self._best_val_loss,
+                                "val_acc_per_class": val_metrics["acc_per_class"],
+                            }
+                        )
 
                     if self.early_stopping_counter >= self.patience:
                         if self.accelerator.is_main_process:

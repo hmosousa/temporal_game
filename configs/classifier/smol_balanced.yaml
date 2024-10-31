@@ -16,6 +16,6 @@ trainer:
     n_epochs: 20
     use_wandb: true
     push_to_hub: true
-    hf_dir: classifier_smoll_135m
+    hf_dir: classifier_smoll_135m_b
     balance_classes: true
     patience: 10

@@ -5,8 +5,8 @@ model:
 
 dataset:
   type: q_timelines
-  params: {}
-
+  params:
+    augment: false
 trainer:
   type: sft
   params:
@@ -17,3 +17,4 @@ trainer:
     push_to_hub: true
     hf_dir: classifier_bert
     patience: 10
+    balance_classes: false
