@@ -9,12 +9,12 @@ def test_load_q_timelines():
 
     assert isinstance(trainset, Dataset)
     assert set(trainset.column_names) == {"text", "label"}
-    assert len(trainset) == 56500
+    assert len(trainset) == 64612
 
 
 def test_load_q_timelines_augment():
     trainset = load_qtimelines("train", augment=True)
-    assert len(trainset) == 56500 * 2
+    assert len(trainset) == 64612 * 2
 
 
 def test_load_dataset_q_timelines():
@@ -26,8 +26,8 @@ def test_load_dataset_q_timelines():
     assert set(trainset.column_names) == {"text", "label"}
     assert set(validset.column_names) == {"text", "label"}
 
-    assert len(trainset) == 56500
-    assert len(validset) == 6584
+    assert len(trainset) == 64612
+    assert len(validset) == 5616
 
 
 def test_load_dataset_q_timelines_augment():
@@ -39,8 +39,8 @@ def test_load_dataset_q_timelines_augment():
     assert set(trainset.column_names) == {"text", "label"}
     assert set(validset.column_names) == {"text", "label"}
 
-    assert len(trainset) == 56500 * 2
-    assert len(validset) == 6584
+    assert len(trainset) == 64612 * 2
+    assert len(validset) == 5616
 
 
 def test_load_dataset_invalid():
