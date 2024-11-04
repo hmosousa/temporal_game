@@ -236,15 +236,15 @@ snakeviz profile.prof
         </tr>
         <tr>
             <td>Before</td>
-            <td>51.63</td>
-            <td>54.96</td>
-            <td>51.63</td>
-            <td>53.21</td>
+            <td>52.55</td>
+            <td>56.00</td>
+            <td>52.55</td>
+            <td>54.18</td>
             <td>57.26</td>
-            <td>228.79</td>
+            <td>232.66</td>
         </tr>
         <tr>
-            <td rowspan="2">MCTS</td>
+            <td rowspan="3">MCTS</td>
             <td>MCTS 100</td>
             <td>19.29</td>
             <td>26.85</td>
@@ -261,6 +261,15 @@ snakeviz profile.prof
             <td>26.26</td>
             <td>21.68</td>
             <td>75.39</td>
+        </tr>
+        <tr>
+            <td>MCTS 500</td>
+            <td>31.24</td>
+            <td>35.08</td>
+            <td>31.24</td>
+            <td>32.7</td>
+            <td>27.93</td>
+            <td>101.94</td>
         </tr>
         <tr>
             <td>Prompt</td>
