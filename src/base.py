@@ -68,6 +68,13 @@ class Relation:
         else:
             return hash(tuple([self.target, self.source, INVERT_RELATION[self.type]]))
 
+    def to_dict(self) -> Dict:
+        return {
+            "source": self.source,
+            "target": self.target,
+            "type": self.type,
+        }
+
 
 class Timeline:
     def __init__(self, relations: List[Relation] = None):
@@ -192,3 +199,9 @@ class Timeline:
                 relation_dict[key] = []
             relation_dict[key].append(relation)
         return relation_dict
+
+    def to_dict(self) -> Dict:
+        return {
+            "relations": [relation.to_dict() for relation in self.relations],
+            "entities": self.entities,
+        }

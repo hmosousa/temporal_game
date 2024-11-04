@@ -1,8 +1,9 @@
 import os
 from pathlib import Path
 
-import torch
 import dotenv
+
+import torch
 
 dotenv.load_dotenv()
 
@@ -14,5 +15,6 @@ RESULTS_DIR = ROOT_DIR / "results"
 CACHE_DIR = ROOT_DIR / "cache"
 CONFIGS_DIR = ROOT_DIR / "configs"
 MODELS_DIR = ROOT_DIR / "models"
+LOGS_DIR = ROOT_DIR / "logs"
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"

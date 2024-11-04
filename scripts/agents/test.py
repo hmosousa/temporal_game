@@ -10,7 +10,7 @@ import numpy as np
 from fire import Fire
 
 from src.agents import Agent, load_agent
-from src.constants import CACHE_DIR, RESULTS_DIR
+from src.constants import CACHE_DIR, LOGS_DIR, RESULTS_DIR
 from src.env import TemporalGame
 from src.evaluation import evaluate
 from tqdm import tqdm
@@ -38,6 +38,12 @@ def cache_results(results: Dict, agent_name: str, doc_id: int):
     _save_dict(results, opath)
 
 
+def _save_logs(logs: Dict, agent_name: str, episode_id: int):
+    opath = LOGS_DIR / "agents" / f"{agent_name}" / f"{episode_id}.json"
+    opath.parent.mkdir(exist_ok=True, parents=True)
+    _save_dict(logs, opath)
+
+
 def test_one_episode(episode_id, agent, env, logger):
     episode_reward = 0
     step_count = 0
@@ -45,17 +51,44 @@ def test_one_episode(episode_id, agent, env, logger):
     state, info = env.reset(episode_id)
     logger.debug(f"Starting episode {episode_id+1}")
 
+    annotated_timeline = info["doc_timeline"].to_dict()
+    episode_logs = {
+        "context": state["context"],
+        "annotated_timeline": annotated_timeline["relations"],
+        "entities": annotated_timeline["entities"],
+        "steps": [
+            {
+                "step": 0,
+                "action": None,
+                "timeline": state["timeline"].to_dict()["relations"],
+                "reward": 0,
+            }
+        ],
+    }
+
     while True:
         if agent.name == "mcts":
             action = agent.act(state, env)
         else:
             action = agent.act(state)
+
         state, reward, terminated, truncated, _ = env.step(action)
         episode_reward += reward
         step_count += 1
 
+        episode_logs["steps"].append(
+            {
+                "step": step_count,
+                "action": action.to_dict(),
+                "timeline": state["timeline"].to_dict()["relations"],
+                "reward": reward,
+            }
+        )
+
         if terminated or truncated:
             break
+
+    _save_logs(episode_logs, agent.name, episode_id)
 
     predicted_timeline = state["timeline"]
     true_timeline = info["doc_timeline"]
@@ -147,7 +180,10 @@ def test(agent: Agent, logger: logging.Logger, in_parallel: bool = True):
 
 
 def main(
-    agent_name: str = "trained", model_name: str = None, num_simulations: int = None
+    agent_name: str = "before",
+    model_name: str = None,
+    num_simulations: int = None,
+    in_parallel: bool = False,
 ):
     """Run the baseline agent on the test set.
 
@@ -159,7 +195,7 @@ def main(
     logger = logging.getLogger(__name__)
 
     agent = load_agent(agent_name, model_name, num_simulations)
-    results = test(agent, logger)
+    results = test(agent, logger, in_parallel)
 
     filename = (
         f"{agent_name}_{model_name}".lower() if model_name else agent_name.lower()
