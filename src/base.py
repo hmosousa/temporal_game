@@ -205,3 +205,7 @@ class Timeline:
             "relations": [relation.to_dict() for relation in self.relations],
             "entities": self.entities,
         }
+
+    @classmethod
+    def from_relations(cls, relations: List[Dict]) -> "Timeline":
+        return cls([Relation(**r) for r in relations])
