@@ -346,3 +346,12 @@ classifier = pipeline(
 print(classifier(["Hello, world!"]))
 
 ```
+
+
+## Demo Application
+
+To lunch the app run:
+
+```sh
+python app/app.py
+```
