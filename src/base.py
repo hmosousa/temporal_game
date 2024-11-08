@@ -77,11 +77,17 @@ class Relation:
 
 
 class Timeline:
-    def __init__(self, relations: List[Relation] = None):
+    """If on_endpoints is True, add implicit relations between the start and end of each entity."""
+
+    def __init__(self, relations: List[Relation] = None, on_endpoints: bool = True):
         if relations is None:
-            relations = []
-        self.relations = relations
+            relations = set()
+
+        self.relations = set(relations)
         self.entities = self._get_entities()
+        self._on_endpoints = on_endpoints
+        if on_endpoints:
+            self.relations.update(self._expand_relations())
         self._relation_dict = self._build_relation_dict()
         self._closure_cache = None
 
@@ -92,12 +98,7 @@ class Timeline:
         return f"Timeline({self.relations})"
 
     def __eq__(self, other: "Timeline") -> bool:
-        if len(self.relations) != len(other.relations):
-            return False
-        for relation in self.relations:
-            if relation not in other.relations:
-                return False
-        return True
+        return self.relations == other.relations
 
     def __ne__(self, other: "Timeline") -> bool:
         return not self == other
@@ -114,6 +115,17 @@ class Timeline:
             entities.add(relation.source)
             entities.add(relation.target)
         return sorted(list(entities))
+
+    def _expand_relations(self) -> List[Dict]:
+        """Add implicit relations between the start and end of each entity.
+        This is useful for computing the temporal closure."""
+        relations = []
+        unique_entities = set(ent.split(" ")[1] for ent in self.entities)
+        for entity in unique_entities:
+            relations.append(
+                Relation(source=f"start {entity}", target=f"end {entity}", type="<")
+            )
+        return relations
 
     def closure(self) -> "Timeline":
         if self._closure_cache is None:
@@ -134,7 +146,8 @@ class Timeline:
                         type=relation["relation"],
                     )
                     for relation in inferred_relations
-                ]
+                ],
+                on_endpoints=self._on_endpoints,
             )
         return self._closure_cache
 
@@ -172,7 +185,7 @@ class Timeline:
         return list(itertools.combinations(self.entities, 2))
 
     def add(self, relation: Relation) -> None:
-        self.relations.append(relation)
+        self.relations.add(relation)
         self.entities = self._get_entities()
         key = tuple(sorted([relation.source, relation.target]))
         if key not in self._relation_dict:
@@ -181,14 +194,9 @@ class Timeline:
         self._closure_cache = None  # Invalidate the cache
 
     def __and__(self, other: "Timeline") -> "Timeline":
-        """
-        example:
-        a = Timeline([Relation("A", "B", "<"), Relation("B", "C", "<")])
-        b = Timeline([Relation("A", "B", "<"), Relation("B", "D", "<")])
-        a & b = Timeline([Relation("A", "B", "<")])
-        """
         return Timeline(
-            [relation for relation in self.relations if relation in other.relations]
+            list(self.relations & other.relations),
+            on_endpoints=self._on_endpoints,
         )
 
     def _build_relation_dict(self) -> Dict[Tuple[str, str], List[Relation]]:

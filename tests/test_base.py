@@ -114,18 +114,26 @@ class TestTimeline:
         ]
 
     def test_timeline_equality(self):
-        t1 = Timeline(relations=[Relation(source="A", target="B", type="<")])
-        t2 = Timeline(relations=[Relation(source="A", target="B", type="<")])
-        t3 = Timeline(relations=[Relation(source="B", target="A", type=">")])
-        t4 = Timeline(relations=[Relation(source="A", target="B", type="=")])
+        t1 = Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
+        t2 = Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
+        t3 = Timeline(
+            relations=[Relation(source="B", target="A", type=">")], on_endpoints=False
+        )
+        t4 = Timeline(
+            relations=[Relation(source="A", target="B", type="=")], on_endpoints=False
+        )
 
         assert t1 == t2
         assert t1 == t3
         assert not (t1 == t4)
 
     def test_timeline_valid_closure(self, relations, relations_closure):
-        t = Timeline(relations=relations)
-        expected_tc = Timeline(relations=relations_closure)
+        t = Timeline(relations=relations, on_endpoints=False)
+        expected_tc = Timeline(relations=relations_closure, on_endpoints=False)
         tc = t.closure()
         assert tc == expected_tc
 
@@ -136,12 +144,12 @@ class TestTimeline:
             Relation(source="A", target="C", type=">"),
             Relation(source="D", target="E", type=">"),
         ]
-        timeline = Timeline(relations=relations)
+        timeline = Timeline(relations=relations, on_endpoints=False)
         assert not timeline.is_valid
         assert len(timeline.invalid_relations) == 6
 
     def test_entities(self, relations):
-        t = Timeline(relations=relations)
+        t = Timeline(relations=relations, on_endpoints=False)
         assert t.entities == ["A", "B", "C", "D", "E", "F", "G", "H"]
 
     def test_possible_relation_pairs(self):
@@ -149,7 +157,8 @@ class TestTimeline:
             relations=[
                 Relation(source="A", target="B", type="<"),
                 Relation(source="B", target="C", type="<"),
-            ]
+            ],
+            on_endpoints=False,
         )
         assert t.possible_relation_pairs == [
             ("A", "B"),
@@ -158,48 +167,70 @@ class TestTimeline:
         ]
 
     def test_get_item(self):
-        t = Timeline(relations=[Relation(source="A", target="B", type="<")])
+        t = Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
         assert t["A", "B"] == [Relation(source="A", target="B", type="<")]
         assert t["B", "A"] == [Relation(source="B", target="A", type=">")]
 
     def test_get_item_source_target(self):
-        t = Timeline(relations=[Relation(source="A", target="B", type="<")])
+        t = Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
         rel = t["A", "B"][0]
         assert rel.source == "A"
         assert rel.target == "B"
         assert rel.type == "<"
 
     def test_get_item_source_target_swap(self):
-        t = Timeline(relations=[Relation(source="A", target="B", type="<")])
+        t = Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
         rel = t["B", "A"][0]
         assert rel.source == "B"
         assert rel.target == "A"
         assert rel.type == ">"
 
     def test_len(self, relations):
-        t = Timeline(relations=relations)
+        t = Timeline(relations=relations, on_endpoints=False)
         assert len(t) == 5
 
     def test_contains(self):
         t = Timeline(
             relations=[
                 Relation(source="A", target="B", type="<"),
-            ]
+            ],
+            on_endpoints=False,
         )
         assert Relation(source="A", target="B", type="<") in t
         assert Relation(source="B", target="A", type=">") in t
         assert Relation(source="B", target="C", type="<") not in t
 
     def test_add_relation(self):
-        t = Timeline()
+        t = Timeline(on_endpoints=False)
 
         t.add(Relation(source="A", target="B", type="<"))
-        assert t == Timeline(relations=[Relation(source="A", target="B", type="<")])
+        assert t == Timeline(
+            relations=[Relation(source="A", target="B", type="<")], on_endpoints=False
+        )
 
         t.add(Relation(source="B", target="C", type="<"))
         assert t == Timeline(
             relations=[
                 Relation(source="A", target="B", type="<"),
                 Relation(source="B", target="C", type="<"),
-            ]
+            ],
+            on_endpoints=False,
         )
+
+    def test_from_relations(self):
+        relations = [
+            {"source": "end A", "target": "start B", "type": "<"},
+        ]
+        t = Timeline.from_relations(relations)
+        expected_relations = [
+            Relation(source="end A", target="start B", type="<"),
+            Relation(source="start A", target="end A", type="<"),
+            Relation(source="start B", target="end B", type="<"),
+        ]
+        assert t == Timeline(relations=expected_relations)

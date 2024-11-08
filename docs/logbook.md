@@ -10,3 +10,16 @@ To address 1., we will need to create basic tests where the selection is obvious
 <img src="assets/muzero_dash.png" alt="MuZero Dashboard" height="400">
 
 Regarding 2., after doing some profiling one can conclude that most of the time is spend on computing the temporal closure of the the timeline, and therefore, not a problem with the MCTS agent itself. However, improvements can still be made by using arrays rather than the Node class.
+
+## 2024-11-07
+
+To simplify the task, a new dataset, [Temporal Games](https://huggingface.co/datasets/hugosousa/TemporalGames), was build. This dataset has some partitions, "two", "three", ..., that represent the number of entities per entry in the corpus. That is, all the documents in the "two" partition have two entities. Important to note that all the entries have at least one temporal link that was manually annotated. This data should be better to identify what are the relation types that the classification models struggle more to label.
+
+## 2024-11-08
+
+To train the Temporal Game agent it would be useful to first build a classification model that matches human agreement or is close to it. This model should be useful to answer to a few questions. 
+
+1. What is the relation type that is harder to predict.
+2. what is the endpoint pair that is harder to classify? Is it start-start, start-end, end-start or end-end?
+
+To access this, one can train classification models that focus in just one of the questions at a time. For instance, to find what is the relation type that is harder to predict we can train a model on a corpus only has two labels: 1 for the relations we want to estimate the complexity of the classification; 0 if the relation is not that. This will also help to identify what are the relations that the model confuses the most.

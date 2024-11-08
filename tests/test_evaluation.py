@@ -6,9 +6,12 @@ from src.evaluation import accuracy, f1, precision, recall
 
 @pytest.fixture
 def sample_timelines():
-    true_timeline = Timeline([Relation("A", "B", "<"), Relation("B", "C", "<")])
+    true_timeline = Timeline(
+        [Relation("A", "B", "<"), Relation("B", "C", "<")], on_endpoints=False
+    )
     predicted_timeline = Timeline(
-        [Relation("A", "B", "<"), Relation("B", "C", ">"), Relation("C", "E", "<")]
+        [Relation("A", "B", "<"), Relation("B", "C", ">"), Relation("C", "E", "<")],
+        on_endpoints=False,
     )
     return true_timeline, predicted_timeline
 

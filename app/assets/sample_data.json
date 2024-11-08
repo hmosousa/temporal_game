@@ -8,6 +8,21 @@
     },
     {
       "relation": "<",
+      "source": "start ei386",
+      "target": "end ei386"
+    },
+    {
+      "relation": "<",
+      "source": "start t92",
+      "target": "end t92"
+    },
+    {
+      "relation": "<",
+      "source": "start ei387",
+      "target": "end ei387"
+    },
+    {
+      "relation": "<",
       "source": "end ei386",
       "target": "end t92"
     },

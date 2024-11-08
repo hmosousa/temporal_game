@@ -67,8 +67,8 @@ def temporal_closure():
 
     timeline = Timeline.from_relations(relations)
     closed_timeline = timeline.closure()  # Compute the temporal closure
-    closed_relations = closed_timeline.to_dict()
-    app.logger.info(f"Computed timeline: {closed_relations}")
+    closed_relations = closed_timeline.to_dict()["relations"]
+    app.logger.info(f"Computed timeline: {json.dumps(closed_relations, indent=2)}")
 
     return jsonify({"timeline": closed_relations})
 
