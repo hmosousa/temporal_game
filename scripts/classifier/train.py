@@ -26,8 +26,11 @@ def main(config_path: str = "classifier/bert.yaml"):
         config=config.trainer.params,
     )
 
-    trainset, validset = load_dataset(
-        dataset_name=config.dataset.type, config=config.dataset.params
+    trainset = load_dataset(
+        dataset_name=config.dataset.type, split="train", config=config.dataset.params
+    )
+    validset = load_dataset(
+        dataset_name=config.dataset.type, split="valid", config=config.dataset.params
     )
 
     trainer.train(trainset, validset)

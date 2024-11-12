@@ -4,10 +4,10 @@ import torch
 from fire import Fire
 from omegaconf import OmegaConf
 from sklearn.metrics import classification_report
-from transformers import pipeline
 
 from src.constants import CONFIGS_DIR, HF_USERNAME, RESULTS_DIR
-from src.data import load_qtimelines
+from src.data import load_qtimelines, load_timeset
+from transformers import pipeline
 
 
 def main(config_path: str = "classifier/bert.yaml", verbose: bool = False):
@@ -34,20 +34,21 @@ def main(config_path: str = "classifier/bert.yaml", verbose: bool = False):
             device_map="cuda",
         )
 
-    testset = load_qtimelines(split="test")
+    q_timelines = load_qtimelines(split="test")
+    timeset = load_timeset(split="test")
+    for dataset in [q_timelines, timeset]:
+        preds = classifier(dataset["text"], batch_size=32)
+        preds = [p["label"] for p in preds]
+        labels = dataset["label"]
 
-    preds = classifier(testset["text"], batch_size=32)
-    preds = [p["label"] for p in preds]
-    labels = testset["label"]
+        results = classification_report(labels, preds, output_dict=True)
+        if verbose:
+            print(classification_report(labels, preds))
 
-    results = classification_report(labels, preds, output_dict=True)
-    if verbose:
-        print(classification_report(labels, preds))
-
-    outpath = RESULTS_DIR / "classifier" / f"{config.trainer.params.hf_dir}.json"
-    outpath.parent.mkdir(parents=True, exist_ok=True)
-    with open(outpath, "w") as f:
-        json.dump(results, f, indent=4)
+        outpath = RESULTS_DIR / "classifier" / f"{config.trainer.params.hf_dir}.json"
+        outpath.parent.mkdir(parents=True, exist_ok=True)
+        with open(outpath, "w") as f:
+            json.dump(results, f, indent=4)
 
 
 if __name__ == "__main__":

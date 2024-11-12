@@ -33,3 +33,5 @@ Increasing the batch size improved the generalization of the model that trains w
 Cosine annealing also seems to help on the training process. Initially it was set to only decrease once, with the number of steps set to the total number of training steps, however setting it to decrease in one epoch and increase in the following one seems to be better.
 
 Considered using MATRES as part of the evaluation. However, MATRES results from the annotation of documents from TimeBank dense, which in itself, resulted from the annotation of documents from TimeBank, which we use in the training process. Therefore, we will only add TimeSET for our evaluation.
+
+When adding the timeset dataset we found that the number of unique texts in the dataset is 4044. With 1671 of the relation BEFORE, 1671 of the relation AFTER, and 702 of the relation COEX. Upon closer inspection, we found that the after entries are in fact before relations that were inverted. Furthermore, there seems to be some duplicates as if one checks what are the unique texts + arg1 + arg2 in the 1671 AFTER entries there are 1663 unique texts (the same is true for the BEFORE entries). The COEX entries are unique.
