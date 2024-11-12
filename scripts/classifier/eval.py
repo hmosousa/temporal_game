@@ -1,54 +1,56 @@
 import json
+from typing import Literal
 
 import torch
 from fire import Fire
-from omegaconf import OmegaConf
 from sklearn.metrics import classification_report
 
-from src.constants import CONFIGS_DIR, HF_USERNAME, RESULTS_DIR
-from src.data import load_qtimelines, load_timeset
+from src.constants import RESULTS_DIR
+from src.data import load_dataset
 from transformers import pipeline
 
 
-def main(config_path: str = "classifier/bert.yaml", verbose: bool = False):
+def main(
+    model_name: str,
+    dataset_name: Literal["q_timelines", "timeset"],
+    verbose: bool = False,
+):
     """Evaluate a model with a given configuration.
 
     Args:
-        config_path: The path to the configuration file used to train the model.
+        model_name: The HuggingFace name of the model to evaluate.
+        dataset_name: The name of the dataset to evaluate on.
     """
-    config = OmegaConf.load(CONFIGS_DIR / config_path)
-    hf_dir = f"{HF_USERNAME}/{config.trainer.params.hf_dir}"
 
     try:
         classifier = pipeline(
             "text-classification",
-            model=hf_dir,
+            model=model_name,
             torch_dtype=torch.bfloat16,
             device_map="auto",
         )
     except ValueError:
         classifier = pipeline(
             "text-classification",
-            model=hf_dir,
+            model=model_name,
             torch_dtype=torch.bfloat16,
             device_map="cuda",
         )
 
-    q_timelines = load_qtimelines(split="test")
-    timeset = load_timeset(split="test")
-    for dataset in [q_timelines, timeset]:
-        preds = classifier(dataset["text"], batch_size=32)
-        preds = [p["label"] for p in preds]
-        labels = dataset["label"]
+    dataset = load_dataset(dataset_name, split="test")
+    preds = classifier(dataset["text"], batch_size=32)
+    preds = [p["label"] for p in preds]
+    labels = dataset["label"]
 
-        results = classification_report(labels, preds, output_dict=True)
-        if verbose:
-            print(classification_report(labels, preds))
+    results = classification_report(labels, preds, output_dict=True)
+    if verbose:
+        print(classification_report(labels, preds))
 
-        outpath = RESULTS_DIR / "classifier" / f"{config.trainer.params.hf_dir}.json"
-        outpath.parent.mkdir(parents=True, exist_ok=True)
-        with open(outpath, "w") as f:
-            json.dump(results, f, indent=4)
+    model_id = model_name.split("/")[-1]
+    outpath = RESULTS_DIR / "classifier" / dataset_name / f"{model_id}.json"
+    outpath.parent.mkdir(parents=True, exist_ok=True)
+    with open(outpath, "w") as f:
+        json.dump(results, f, indent=4)
 
 
 if __name__ == "__main__":
