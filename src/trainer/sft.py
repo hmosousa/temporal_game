@@ -85,27 +85,36 @@ class SupervisedFineTuner:
             train_data, shuffle=True, batch_size=self.batch_size
         )
 
-        self.model, self.optimizer, train_dataloader, valid_dataloader = (
-            self.accelerator.prepare(
-                self.model, self.optimizer, train_dataloader, valid_dataloader
-            )
+        T_max = len(train_dataloader) / self.gradient_accumulation_steps
+        self.lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(self.optimizer, T_max)
+
+        (
+            self.model,
+            self.optimizer,
+            self.lr_scheduler,
+            train_dataloader,
+            valid_dataloader,
+        ) = self.accelerator.prepare(
+            self.model,
+            self.optimizer,
+            self.lr_scheduler,
+            train_dataloader,
+            valid_dataloader,
         )
 
         self.train_loop(train_dataloader, valid_dataloader)
 
     def train_loop(self, train_dataloader: DataLoader, valid_dataloader: DataLoader):
         log_step = 1
-        epoch_n_steps = len(train_dataloader)
-        total_n_steps = (
-            epoch_n_steps / self.gradient_accumulation_steps
-        ) * self.n_epochs
-        lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(
-            self.optimizer, T_max=total_n_steps
-        )
         for _ in range(self.n_epochs):
             self.model.train()
+
             progress_bar = (
-                tqdm(enumerate(train_dataloader), desc="Training", total=epoch_n_steps)
+                tqdm(
+                    enumerate(train_dataloader),
+                    desc="Training",
+                    total=len(train_dataloader),
+                )
                 if self.accelerator.is_main_process
                 else enumerate(train_dataloader)
             )
@@ -118,7 +127,7 @@ class SupervisedFineTuner:
                 loss = loss / self.gradient_accumulation_steps
                 self.accelerator.backward(loss)
                 if step % self.gradient_accumulation_steps == 0:
-                    lr_scheduler.step()
+                    self.lr_scheduler.step()
                     self.optimizer.step()
                     self.optimizer.zero_grad()
 
@@ -135,7 +144,7 @@ class SupervisedFineTuner:
                             "n_examples": self.n_examples,
                             "train_loss": batch_loss / batch_size,
                             "train_acc": batch_correct / batch_size,
-                            "lr": lr_scheduler.get_last_lr()[0],
+                            "lr": self.lr_scheduler.get_last_lr()[0],
                         }
                     )
 

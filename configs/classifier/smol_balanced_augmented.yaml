@@ -11,8 +11,8 @@ dataset:
 trainer:
   type: sft
   params:
-    lr: 5e-4
-    batch_size: 4
+    lr: 1e-3
+    batch_size: 32
     gradient_accumulation_steps: 8
     n_epochs: 20
     use_wandb: true
