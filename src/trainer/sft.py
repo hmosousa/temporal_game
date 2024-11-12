@@ -30,7 +30,7 @@ class SupervisedFineTuner:
         project_name: str = "Temporal Game",
         balance_classes: bool = False,
         use_wandb: bool = False,
-        patience: int = 3,
+        patience: int = None,
         push_to_hub: bool = False,
         hf_dir: str = None,
         **kwargs,
@@ -174,7 +174,7 @@ class SupervisedFineTuner:
                             }
                         )
 
-                    if self.early_stopping_counter >= self.patience:
+                    if self.patience and self.early_stopping_counter >= self.patience:
                         if self.accelerator.is_main_process:
                             print(
                                 f"Early stopping triggered after {self.n_examples} examples."

@@ -14,7 +14,7 @@ def load_qtimelines(
     use_cache: bool = False,
 ) -> datasets.Dataset:
     """Used to train classification models."""
-    if split in ["valid", "test"]:  # No augmentation for validation and test
+    if split in ["test"]:  # No augmentation for validation and test
         augment = False
 
     cache_path = CACHE_DIR / "data" / f"q_timelines_{split}_{augment}"
