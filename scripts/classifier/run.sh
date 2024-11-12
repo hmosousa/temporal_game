@@ -12,3 +12,5 @@ accelerate launch --config_file configs/accelerate/zero2.yaml scripts/classifier
 
 # Evaluate the classifiers
 python scripts/classifier/eval.py -c classifier/llama_3b_balanced.yaml
+
+python scripts/classifier/train.py -c classifier/smol.yaml

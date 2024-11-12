@@ -3,9 +3,9 @@ from typing import Dict
 import datasets
 import torch
 import transformers
-
 import wandb
 from accelerate import Accelerator
+from torch import optim
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -45,7 +45,7 @@ class SupervisedFineTuner:
         self.batch_size = batch_size
         self.gradient_accumulation_steps = gradient_accumulation_steps
 
-        self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
+        self.optimizer = optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()
         self.n_examples = 0
 
@@ -67,6 +67,7 @@ class SupervisedFineTuner:
                     "learning_rate": lr,
                     "epochs": n_epochs,
                     "batch_size": batch_size,
+                    "gradient_accumulation_steps": gradient_accumulation_steps,
                     "patience": patience,
                     "balance_classes": balance_classes,
                 },
@@ -94,13 +95,17 @@ class SupervisedFineTuner:
 
     def train_loop(self, train_dataloader: DataLoader, valid_dataloader: DataLoader):
         log_step = 1
+        epoch_n_steps = len(train_dataloader)
+        total_n_steps = (
+            epoch_n_steps / self.gradient_accumulation_steps
+        ) * self.n_epochs
+        lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(
+            self.optimizer, T_max=total_n_steps
+        )
         for _ in range(self.n_epochs):
             self.model.train()
-
-            total_steps = len(train_dataloader)
-
             progress_bar = (
-                tqdm(enumerate(train_dataloader), desc="Training", total=total_steps)
+                tqdm(enumerate(train_dataloader), desc="Training", total=epoch_n_steps)
                 if self.accelerator.is_main_process
                 else enumerate(train_dataloader)
             )
@@ -113,6 +118,7 @@ class SupervisedFineTuner:
                 loss = loss / self.gradient_accumulation_steps
                 self.accelerator.backward(loss)
                 if step % self.gradient_accumulation_steps == 0:
+                    lr_scheduler.step()
                     self.optimizer.step()
                     self.optimizer.zero_grad()
 
@@ -129,10 +135,11 @@ class SupervisedFineTuner:
                             "n_examples": self.n_examples,
                             "train_loss": batch_loss / batch_size,
                             "train_acc": batch_correct / batch_size,
+                            "lr": lr_scheduler.get_last_lr()[0],
                         }
                     )
 
-                if self.n_examples > log_step * 5_000:
+                if self.n_examples > log_step * 10_000:
                     val_metrics = self.eval(valid_dataloader)
                     log_step += 1
 
