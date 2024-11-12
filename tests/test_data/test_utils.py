@@ -3,7 +3,7 @@ from collections import Counter
 import datasets
 import pytest
 
-from src.data.utils import balance_dataset_classes
+from src.data.utils import balance_dataset_classes, get_entity_mapping
 
 
 @pytest.fixture
@@ -61,3 +61,19 @@ def test_balance_classes_single_class():
 def test_balance_classes_invalid_column(imbalanced_dataset):
     with pytest.raises(KeyError):
         balance_dataset_classes(imbalanced_dataset, "invalid_column")
+
+
+def test_get_entity_mapping_simple():
+    context = "The <e1>New York Times</e1> is a newspaper."
+    mapping = get_entity_mapping(context)
+    assert mapping == {"e1": "New York Times"}
+
+
+def test_get_entity_mapping_multiple():
+    context = "The <e1>New York Times</e1> is a newspaper. <ei2>The Wall Street Journal</ei2> is a newspaper. <t1>2024</t1> is a year."
+    mapping = get_entity_mapping(context)
+    assert mapping == {
+        "e1": "New York Times",
+        "ei2": "The Wall Street Journal",
+        "t1": "2024",
+    }

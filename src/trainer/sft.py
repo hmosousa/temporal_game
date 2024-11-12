@@ -5,7 +5,7 @@ import torch
 import transformers
 
 import wandb
-from accelerate import Accelerator, DistributedType
+from accelerate import Accelerator
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
@@ -25,7 +25,7 @@ class SupervisedFineTuner:
         lr: float,
         n_epochs: int,
         batch_size: int,
-        max_gpu_batch_size: int = None,
+        gradient_accumulation_steps: int,
         cpu: bool = False,
         project_name: str = "Temporal Game",
         balance_classes: bool = False,
@@ -43,14 +43,7 @@ class SupervisedFineTuner:
 
         # If the batch size is too big we use gradient accumulation
         self.batch_size = batch_size
-        self.gradient_accumulation_steps = 1
-        if (
-            max_gpu_batch_size is not None
-            and batch_size > max_gpu_batch_size
-            and self.accelerator.distributed_type != DistributedType.XLA
-        ):
-            self.gradient_accumulation_steps = self.batch_size // max_gpu_batch_size
-            self.batch_size = max_gpu_batch_size
+        self.gradient_accumulation_steps = gradient_accumulation_steps
 
         self.optimizer = torch.optim.AdamW(self.model.parameters(), lr=lr)
         self.criterion = torch.nn.CrossEntropyLoss()

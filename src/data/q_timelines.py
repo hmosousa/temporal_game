@@ -4,18 +4,21 @@ import datasets
 
 from src.base import INVERT_RELATION
 from src.constants import CACHE_DIR
+from src.data.utils import get_entity_mapping
 from src.prompts import NO_CONTEXT_PROMPT
 
 
 def load_qtimelines(
-    split: Literal["train", "valid", "test"], augment: bool = False
+    split: Literal["train", "valid", "test"],
+    augment: bool = False,
+    use_cache: bool = False,
 ) -> datasets.Dataset:
     """Used to train classification models."""
     if split in ["valid", "test"]:  # No augmentation for validation and test
         augment = False
 
     cache_path = CACHE_DIR / "data" / f"q_timelines_{split}_{augment}"
-    if cache_path.exists():
+    if use_cache and cache_path.exists():
         return datasets.load_from_disk(cache_path)
 
     if split == "test":
@@ -31,9 +34,18 @@ def load_qtimelines(
 
     def process_example(example, augment: bool = False):
         new_examples = []
+        eid2text = get_entity_mapping(example["context"])
         for rel in example["timeline"]:
+            src_endpoint, src_id = rel["source"].split(" ")
+            src_text = eid2text[src_id]
+            source = f"{src_endpoint} <{src_id}>{src_text}</{src_id}>"
+
+            tgt_endpoint, tgt_id = rel["target"].split(" ")
+            tgt_text = eid2text[tgt_id]
+            target = f"{tgt_endpoint} <{tgt_id}>{tgt_text}</{tgt_id}>"
+
             prompt = NO_CONTEXT_PROMPT.format(
-                context=example["context"], source=rel["source"], target=rel["target"]
+                context=example["context"], source=source, target=target
             )
             new_examples.append({"text": prompt, "label": rel["relation"]})
 
@@ -41,8 +53,8 @@ def load_qtimelines(
                 inverted_rel = INVERT_RELATION[rel["relation"]]
                 inverted_prompt = NO_CONTEXT_PROMPT.format(
                     context=example["context"],
-                    source=rel["target"],
-                    target=rel["source"],
+                    source=target,
+                    target=source,
                 )
                 new_examples.append({"text": inverted_prompt, "label": inverted_rel})
         return new_examples

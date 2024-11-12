@@ -1,8 +1,8 @@
 import datasets
 import pytest
 import torch
-from src.model import load_classifier
 
+from src.model import load_classifier
 from src.trainer.sft import SupervisedFineTuner
 
 
@@ -26,7 +26,13 @@ class TestSupervisedFineTuner:
         model, tokenizer = load_classifier(model_name="bert-base-uncased")
 
         sft = SupervisedFineTuner(
-            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+            model,
+            tokenizer,
+            lr=1e-5,
+            n_epochs=3,
+            batch_size=16,
+            output_path="test",
+            gradient_accumulation_steps=1,
         )
 
         assert isinstance(sft.model, torch.nn.Module)
@@ -40,7 +46,13 @@ class TestSupervisedFineTuner:
     def test_eval(self, dummy_data):
         model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
-            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+            model,
+            tokenizer,
+            lr=1e-5,
+            n_epochs=3,
+            batch_size=16,
+            output_path="test",
+            gradient_accumulation_steps=1,
         )
         dataloader = sft.get_dataloader(dummy_data, 16)
 
@@ -56,7 +68,13 @@ class TestSupervisedFineTuner:
     def test_save_model(self, tmp_path):
         model, tokenizer = load_classifier(model_name="bert-base-uncased")
         sft = SupervisedFineTuner(
-            model, tokenizer, lr=1e-5, n_epochs=3, batch_size=16, output_path="test"
+            model,
+            tokenizer,
+            lr=1e-5,
+            n_epochs=3,
+            batch_size=16,
+            output_path="test",
+            gradient_accumulation_steps=1,
         )
         save_path = tmp_path / "model.pth"
 

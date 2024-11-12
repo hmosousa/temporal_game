@@ -1,4 +1,5 @@
 import random
+import re
 from collections import Counter
 
 import datasets
@@ -22,3 +23,25 @@ def balance_dataset_classes(dataset: datasets.Dataset, column: str) -> datasets.
     balanced_dataset = datasets.concatenate_datasets(label_datasets)
 
     return balanced_dataset
+
+
+def get_entity_mapping(context: str) -> dict:
+    """Get entity id to entity text mapping from context.
+
+    context (str): Context tagged with the entities. Example:
+    ```
+    The <e1>New York Times</e1> is a newspaper.
+    ```
+
+    Returns:
+        dict: Entity id to entity text mapping.
+
+    Example:
+    ```
+    {"e1": "New York Times"}
+    ```
+    """
+
+    pattern = re.compile(r"<(.*?)>(.*?)</\1>")
+    matches = pattern.findall(context)
+    return {id: text for id, text in matches}
