@@ -4,7 +4,7 @@ import datasets
 
 from src.base import INVERT_RELATION
 from src.constants import CACHE_DIR
-from src.data.utils import get_entity_mapping
+from src.data.utils import drop_context_tags, get_entity_mapping
 from src.prompts import NO_CONTEXT_PROMPT
 
 
@@ -44,8 +44,14 @@ def load_qtimelines(
             tgt_text = eid2text[tgt_id]
             target = f"{tgt_endpoint} <{tgt_id}>{tgt_text}</{tgt_id}>"
 
+            if src_id == tgt_id:
+                # The dataset contains relations between start and end of the same entity
+                continue
+
+            context = drop_context_tags(example["context"], exceptions=[src_id, tgt_id])
+
             prompt = NO_CONTEXT_PROMPT.format(
-                context=example["context"], source=source, target=target
+                context=context, source=source, target=target
             )
             new_examples.append({"text": prompt, "label": rel["relation"]})
 

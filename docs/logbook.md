@@ -35,3 +35,7 @@ Cosine annealing also seems to help on the training process. Initially it was se
 Considered using MATRES as part of the evaluation. However, MATRES results from the annotation of documents from TimeBank dense, which in itself, resulted from the annotation of documents from TimeBank, which we use in the training process. Therefore, we will only add TimeSET for our evaluation.
 
 When adding the timeset dataset we found that the number of unique texts in the dataset is 4044. With 1671 of the relation BEFORE, 1671 of the relation AFTER, and 702 of the relation COEX. Upon closer inspection, we found that the after entries are in fact before relations that were inverted. Furthermore, there seems to be some duplicates as if one checks what are the unique texts + arg1 + arg2 in the 1671 AFTER entries there are 1663 unique texts (the same is true for the BEFORE entries). The COEX entries are unique.
+
+Forgot to drop the relations between the start and the end of the same entity of the q timelines dataset (which is always "before"). This has been inflating the effectiveness of the model. This has been fixed.
+
+On another note, the q timelines context now only has tagged the entities being classified. This should increase the quality of the data and improve the learning process.
