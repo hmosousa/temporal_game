@@ -51,6 +51,6 @@ def drop_context_tags(context: str, exceptions: list[str] = []) -> str:
     pattern = re.compile(r"<(.*?)>(.*?)</\1>")
     matches = pattern.findall(context)
     for id, text in matches:
-        if id in exceptions:
+        if id not in exceptions:
             context = context.replace(f"<{id}>{text}</{id}>", text)
     return context

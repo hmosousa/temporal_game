@@ -58,7 +58,7 @@ def load_qtimelines(
             if augment:
                 inverted_rel = INVERT_RELATION[rel["relation"]]
                 inverted_prompt = NO_CONTEXT_PROMPT.format(
-                    context=example["context"],
+                    context=context,
                     source=target,
                     target=source,
                 )
