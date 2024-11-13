@@ -12,10 +12,10 @@ trainer:
   params:
     lr: 1e-3
     batch_size: 16
-    gradient_accumulation_steps: 1
+    gradient_accumulation_steps: 2
     n_epochs: 5
-    use_wandb: true
-    push_to_hub: true
+    use_wandb: false
+    push_to_hub: false
     hf_dir: classifier_bert
     patience: 10
     balance_classes: false

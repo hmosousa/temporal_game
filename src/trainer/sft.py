@@ -140,7 +140,7 @@ class SupervisedFineTuner:
                     self.optimizer.step()
                     self.optimizer.zero_grad()
 
-                batch_loss = loss.item()
+                batch_loss = outputs.loss.item()
                 batch_correct = (
                     (outputs.logits.argmax(dim=-1) == batch["labels"]).sum().item()
                 )
