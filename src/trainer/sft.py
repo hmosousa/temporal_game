@@ -1,4 +1,5 @@
-from typing import Dict
+from datetime import datetime
+from typing import Dict, List
 
 import datasets
 import torch
@@ -15,6 +16,10 @@ from src.data import balance_dataset_classes
 
 transformers.logging.set_verbosity_error()
 datasets.disable_progress_bar()
+
+
+def generate_id() -> str:
+    return datetime.now().strftime("%Y%m%d%H%M%S")
 
 
 class SupervisedFineTuner:
@@ -54,7 +59,8 @@ class SupervisedFineTuner:
         self.early_stopping_counter = 0
 
         self._push_to_hub = push_to_hub
-        self.hf_dir = f"{HF_USERNAME}/{hf_dir}"
+        self.run_id = generate_id()
+        self.hf_dir = f"{HF_USERNAME}/{hf_dir}_{self.run_id}"
 
         self._balance_classes = balance_classes
         self._best_val_loss = float("inf")
@@ -85,8 +91,11 @@ class SupervisedFineTuner:
             train_data, shuffle=True, batch_size=self.batch_size
         )
 
-        T_max = len(train_dataloader) / self.gradient_accumulation_steps
-        self.lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(self.optimizer, T_max)
+        T_0 = int(len(train_dataloader) / self.gradient_accumulation_steps)
+        T_mult = 1
+        self.lr_scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
+            self.optimizer, T_0, T_mult
+        )
 
         (
             self.model,
@@ -152,14 +161,17 @@ class SupervisedFineTuner:
                     val_metrics = self.eval(valid_dataloader)
                     log_step += 1
 
-                    if (
-                        val_metrics["loss"] < self._best_val_loss
-                        and self.accelerator.is_main_process
-                    ):
-                        self._best_val_loss = val_metrics["loss"]
-                        self.early_stopping_counter = 0
+                    if self.accelerator.is_main_process:
+                        if val_metrics["loss"] < self._best_val_loss:
+                            self._best_val_loss = val_metrics["loss"]
+                            self.early_stopping_counter = 0
+                            tags = ["best_valid_loss"]
+                        else:
+                            tags = []
+
                         if self._push_to_hub:
-                            self.push_to_hub()
+                            msg = f"Save with {self.n_examples} examples"
+                            self.push_to_hub(msg, tags)
                     else:
                         self.early_stopping_counter += 1
 
@@ -180,6 +192,9 @@ class SupervisedFineTuner:
                                 f"Early stopping triggered after {self.n_examples} examples."
                             )
                         return  # Stop training if patience is exceeded
+
+            # Reduce maximum learning rate
+            self.lr_scheduler.scheduler.base_lrs[0] *= 0.95
 
     def eval(self, dataloader: DataLoader) -> Dict[str, float]:
         self.model.eval()
@@ -239,9 +254,11 @@ class SupervisedFineTuner:
             artifact.add_file(path)
             wandb.log_artifact(artifact)
 
-    def push_to_hub(self):
-        self.model.push_to_hub(self.hf_dir)
-        self.tokenizer.push_to_hub(self.hf_dir)
+    def push_to_hub(self, commit_message: str = "Update model", tags: List[str] = None):
+        self.model.push_to_hub(self.hf_dir, commit_message=commit_message, tags=tags)
+        self.tokenizer.push_to_hub(
+            self.hf_dir, commit_message=commit_message, tags=tags
+        )
 
     def balance_classes(self, dataset: datasets.Dataset) -> datasets.Dataset:
         return balance_dataset_classes(dataset, "labels")

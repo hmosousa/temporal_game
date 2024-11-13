@@ -39,3 +39,17 @@ When adding the timeset dataset we found that the number of unique texts in the 
 Forgot to drop the relations between the start and the end of the same entity of the q timelines dataset (which is always "before"). This has been inflating the effectiveness of the model. This has been fixed.
 
 On another note, the q timelines context now only has tagged the entities being classified. This should increase the quality of the data and improve the learning process.
+
+## 2024-11-13
+
+Now the learning rate decreases after each epoch restart. That is, we are using a cosine annealing scheduler with restarts that at the end of each epoch reduces the learning rate by 5%.
+
+Why does the validation loss increases while the validation accuracy is stable?
+
+Looking at the image bellow one can see that the model is still learning from the training data. However, the validation loss is increasing. Furthermore, the validation accuracy is stable.
+
+<img src="assets/wandb_valid_loss.png" alt="Loss and Accuracy" height="400">
+
+Another interesting remark is the fact that the accuracy for the None label is 0% throughout the all training procedure. It could be that the model is not able to learn the label, or that can be that the data has low quality for this label.
+
+

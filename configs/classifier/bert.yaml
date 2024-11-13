@@ -12,6 +12,7 @@ trainer:
   params:
     lr: 1e-3
     batch_size: 16
+    gradient_accumulation_steps: 1
     n_epochs: 5
     use_wandb: true
     push_to_hub: true
