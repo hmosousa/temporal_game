@@ -85,13 +85,15 @@ body {
     box-sizing: border-box;
 }
 
-#relation-buttons {
+#relation-buttons,
+#answer-buttons {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
 
-.relation-button {
+.relation-button,
+.answer-button {
     width: 50px;
     height: 50px;
     border: 1px solid #ccc;
@@ -100,7 +102,12 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    cursor: move;
+    cursor: pointer;
+}
+
+.relation-button:hover,
+.answer-button:hover {
+    background-color: #e0e0e0;
 }
 
 #guidelines {

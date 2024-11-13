@@ -5,11 +5,14 @@ from pathlib import Path
 from flask import Flask, jsonify, render_template, request
 
 from src.base import Timeline
+from src.data import load_qtimelines
 
 ROOT_DIR = Path(__file__).parent
 ASSETS_DIR = ROOT_DIR / "assets"
 
 app = Flask(__name__)
+
+Q_TIMELINES = load_qtimelines("train", augment=False, use_cache=False)
 
 
 def highlight_entities(text):
@@ -71,6 +74,25 @@ def temporal_closure():
     app.logger.info(f"Computed timeline: {json.dumps(closed_relations, indent=2)}")
 
     return jsonify({"timeline": closed_relations})
+
+
+@app.route("/questions")
+def questions():
+    # Load a sample question from the QTimelines dataset
+    question_data = Q_TIMELINES[0]
+    question_data["text"] = highlight_entities(question_data["text"])
+    return render_template("questions.html", question=question_data)
+
+
+@app.route("/api/submit_answer", methods=["POST"])
+def submit_answer():
+    data = request.json
+    user_answer = data.get("answer")
+    question = data.get("question")
+    app.logger.info(f"User answered: {user_answer} for question: {question['text']}")
+
+    # Here you can add logic to evaluate the answer or store it
+    return jsonify({"status": "success", "message": "Answer submitted successfully"})
 
 
 if __name__ == "__main__":
