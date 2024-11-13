@@ -24,12 +24,12 @@ def q_timelines_sample(n_samples=100):
     before_data = data.filter(lambda x: x["label"] == "<").select(range(n_samples // 4))
     after_data = data.filter(lambda x: x["label"] == ">").select(range(n_samples // 4))
     equal_data = data.filter(lambda x: x["label"] == "=").select(range(n_samples // 4))
-    none_data = data.filter(lambda x: x["label"] == "").select(
-        n_samples - 3 * (n_samples // 4)
-    )
+    none_data = data.filter(lambda x: x["label"] == "").select(range(n_samples // 4))
+
     sample = datasets.concatenate_datasets(
         [before_data, after_data, equal_data, none_data]
     )
+    sample = sample.shuffle(seed=42)
     return sample
 
 
