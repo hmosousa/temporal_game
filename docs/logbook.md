@@ -52,4 +52,4 @@ Looking at the image bellow one can see that the model is still learning from th
 
 Another interesting remark is the fact that the accuracy for the None label is 0% throughout the all training procedure. It could be that the model is not able to learn the label, or that can be that the data has low quality for this label.
 
-
+Found some bad entries in the data. Samples from like "Putin <5>faced</5> whistleswhistleswhistles and boosboosboos" which seem to come from GraphEve as that is the only dataset for which the entities is just a number. This was due ot the fact that GrahEve had several ids to the same entity. This has been fixed.
