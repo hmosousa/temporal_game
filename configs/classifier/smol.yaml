@@ -14,7 +14,7 @@ trainer:
     lr: 1e-2
     batch_size: 32
     gradient_accumulation_steps: 16
-    n_epochs: 20
+    n_epochs: 30
     use_wandb: true
     push_to_hub: true
     hf_dir: classifier_smoll_135m

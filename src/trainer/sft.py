@@ -194,7 +194,7 @@ class SupervisedFineTuner:
                         return  # Stop training if patience is exceeded
 
             # Reduce maximum learning rate
-            self.lr_scheduler.scheduler.base_lrs[0] *= 0.95
+            self.lr_scheduler.scheduler.base_lrs[0] *= 0.8
 
     def eval(self, dataloader: DataLoader) -> Dict[str, float]:
         self.model.eval()
