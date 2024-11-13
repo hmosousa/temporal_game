@@ -9,17 +9,35 @@
 <body>
     <h1>Answer the Question</h1>
 
+    <div class="question-controls">
+        <label>User ID: <span id="user-id">{{ user_id }}</span></label>
+    </div>
+
     <div id="context">{{ question.text | safe }}</div>
     
     <div id="relation-buttons">
-        <div class="relation-button" draggable="true" data-relation=">">></div>
-        <div class="relation-button" draggable="true" data-relation="<"><</div>
-        <div class="relation-button" draggable="true" data-relation="=">=</div>
-        <div class="relation-button" draggable="true" data-relation="-">-</div>
+        <div class="relation-button" data-relation=">">></div>
+        <div class="relation-button" data-relation="<"><</div>
+        <div class="relation-button" data-relation="=">=</div>
+        <div class="relation-button" data-relation="-">-</div>
+    </div>
+
+    <div id="feedback" style="display: none;">
+        <div id="feedback-message"></div>
+        <div id="correct-answer-container">
+            <span>Correct answer was: </span>
+            <span id="correct-answer" class="answer-symbol"></span>
+        </div>
+        <form action="{{ url_for('questions') }}" method="POST">
+            <input type="hidden" name="user_id" value="{{ user_id }}">
+            <button type="submit" class="next-button">Next Question</button>
+        </form>
     </div>
 
     <script>
         const questionData = {{ question | tojson | safe }};
+        const currentIdx = {{ current_idx }};
+        const userId = "{{ user_id }}";
     </script>
     <script src="{{ url_for('static', filename='js/questions.js') }}"></script>
 </body>

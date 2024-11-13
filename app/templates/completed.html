@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotation Completed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Annotation Completed</h1>
+    <p>Thank you! You have completed all available questions for this session.</p>
+    <p>Your session ID: <strong>{{ session['session_id'] }}</strong></p>
+    
+    <button onclick="window.location.href='/'">Return to Home</button>
+</body>
+</html> 

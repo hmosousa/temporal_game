@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter User ID</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome to QTimelines Annotation</h1>
+        <form action="{{ url_for('questions') }}" method="POST">
+            <div class="form-group">
+                <label for="user_id">Enter your User ID:</label>
+                <input type="text" id="user_id" name="user_id" required 
+                       placeholder="Enter your ID or create a new one">
+            </div>
+            {% if error %}
+            <div class="error-message">{{ error }}</div>
+            {% endif %}
+            <button type="submit" class="submit-button">Start Annotation</button>
+        </form>
+    </div>
+</body>
+</html> 
