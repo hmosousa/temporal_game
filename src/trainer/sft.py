@@ -32,6 +32,7 @@ class SupervisedFineTuner:
         batch_size: int,
         gradient_accumulation_steps: int,
         cpu: bool = False,
+        clip_grad_norm: float = 1.0,
         project_name: str = "Temporal Game",
         balance_classes: bool = False,
         use_wandb: bool = False,
@@ -57,6 +58,7 @@ class SupervisedFineTuner:
         self.use_wandb = use_wandb
         self.patience = patience
         self.early_stopping_counter = 0
+        self.clip_grad_norm = clip_grad_norm
 
         self._push_to_hub = push_to_hub
         self.run_id = generate_id()
@@ -137,6 +139,10 @@ class SupervisedFineTuner:
                 self.accelerator.backward(loss)
                 if step % self.gradient_accumulation_steps == 0:
                     self.lr_scheduler.step()
+
+                    torch.nn.utils.clip_grad_norm_(
+                        self.model.parameters(), self.clip_grad_norm
+                    )
                     self.optimizer.step()
                     self.optimizer.zero_grad()
 
