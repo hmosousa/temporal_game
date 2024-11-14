@@ -92,7 +92,7 @@ class SupervisedFineTuner:
         )
 
         T_0 = int(len(train_dataloader) / self.gradient_accumulation_steps)
-        T_mult = 1
+        T_mult = 2
         self.lr_scheduler = optim.lr_scheduler.CosineAnnealingWarmRestarts(
             self.optimizer, T_0, T_mult
         )
