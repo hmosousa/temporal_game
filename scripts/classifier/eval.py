@@ -11,8 +11,8 @@ from transformers import pipeline
 
 
 def main(
-    model_name: str,
-    dataset_name: Literal["q_timelines", "timeset"],
+    model_name: str = "hugosousa/classifier_smoll_135m_20241113151941",
+    dataset_name: Literal["q_timelines", "timeset"] = "q_timelines",
     verbose: bool = False,
 ):
     """Evaluate a model with a given configuration.
