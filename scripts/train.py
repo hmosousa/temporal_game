@@ -3,7 +3,7 @@ from omegaconf import OmegaConf
 
 from src.constants import CONFIGS_DIR
 from src.data import load_dataset
-from src.model import load_model
+from src.model import load_model_train
 from src.trainer import load_trainer
 
 
@@ -15,7 +15,7 @@ def main(config_path: str = "classifier/levels/smol.yaml"):
     """
     config = OmegaConf.load(CONFIGS_DIR / config_path)
 
-    model, tokenizer = load_model(
+    model, tokenizer = load_model_train(
         model_name=config.model.type, config=config.model.params
     )
 

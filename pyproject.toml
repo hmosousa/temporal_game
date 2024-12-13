@@ -21,6 +21,7 @@ evaluate = "^0.4.3"
 scipy = "^1.14.1"
 scikit-learn = "^1.5.2"
 deepspeed = "^0.15.3"
+google-generativeai = "^0.8.3"
 
 
 [tool.poetry.group.dev.dependencies]

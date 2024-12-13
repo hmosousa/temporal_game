@@ -12,7 +12,7 @@ from transformers import pipeline
 
 def main(
     model_name: str,
-    dataset_name: Literal["q_timelines", "timeset"],
+    dataset_name: Literal["q_timelines", "timeset", "levels"],
     verbose: bool = False,
 ):
     """Evaluate a model with a given configuration.
