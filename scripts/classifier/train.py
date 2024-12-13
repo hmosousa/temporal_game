@@ -7,7 +7,7 @@ from src.model import load_model
 from src.trainer import load_trainer
 
 
-def main(config_path: str = "classifier/bert.yaml"):
+def main(config_path: str = "classifier/levels/smol.yaml"):
     """Train a model with a given configuration.
 
     Args:
