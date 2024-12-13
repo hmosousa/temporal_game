@@ -1,8 +1,0 @@
-{
-    "accuracy": 0.5255,
-    "precision": 0.56,
-    "recall": 0.5255,
-    "f1": 0.5418,
-    "step_count": 57.2555,
-    "reward": 232.6569
-}
