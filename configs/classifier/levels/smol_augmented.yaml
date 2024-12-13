@@ -4,19 +4,20 @@ model:
     model_name: HuggingFaceTB/SmolLM-135M 
 
 dataset:
-  type: q_timelines
+  type: levels
   params:
     augment: true
+    level: 2
 
 trainer:
   type: sft
   params:
-    lr: 1e-2
-    batch_size: 32
-    gradient_accumulation_steps: 16
+    lr: 1e-3
+    batch_size: 64
+    gradient_accumulation_steps: 8
     n_epochs: 30
     use_wandb: true
     push_to_hub: true
-    hf_dir: classifier_smoll_135m_a
+    hf_dir: smoll_135m_levels_augmented
     balance_classes: false
     patience: null

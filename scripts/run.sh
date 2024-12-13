@@ -10,7 +10,8 @@ accelerate launch --config_file configs/accelerate/zero2.yaml scripts/classifier
 accelerate launch --config_file configs/accelerate/zero2.yaml scripts/classifier/train.py -c classifier/smol_balanced.yaml
 accelerate launch --config_file configs/accelerate/zero2.yaml scripts/classifier/train.py -c classifier/smol.yaml
 
-CUDA_VISIBLE_DEVICES=3 python scripts/classifier/train.py -c classifier/levels/smol.yaml
+CUDA_VISIBLE_DEVICES=3 python scripts/train.py -c classifier/levels/smol.yaml
+CUDA_VISIBLE_DEVICES=2 python scripts/train.py -c classifier/levels/smol_augmented.yaml
 
 # Evaluate the classifiers
 CUDA_VISIBLE_DEVICES=0 python scripts/classifier/eval.py -m hugosousa/classifier_smoll_135m_b -d timeset
