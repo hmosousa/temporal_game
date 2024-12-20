@@ -1,0 +1,60 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0124</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0067 = 891102 891102-0067.
+Who's News: @ Citadel Names Walbrecher @ As Chief Executive Officer 11/02/89 WALL STREET JOURNAL (J) CDL WNEWS EARNINGS (ERN) GLENDALE, Calif.
+</EXTRAINFO>
+<TEXT>William C. Walbrecher Jr., an executive at San Francisco-based 1st Nationwide Bank, was <EVENT eid="e1" class="I_ACTION" offsets="88 93" sent_idx="0">named</EVENT> president and chief executive officer of Citadel Holding Corp. and its principal operating unit, Fidelity Federal Bank.
+The <EVENT eid="e2" class="OCCURRENCE" offsets="218 229" sent_idx="1">appointment</EVENT> <EVENT eid="e3" class="ASPECTUAL" offsets="230 235" sent_idx="1">takes</EVENT> <EVENT eid="e63" class="ASPECTUAL" offsets="236 242" sent_idx="1">effect</EVENT> <TIMEX3 tid="t23" type="DATE" value="1989-11-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="243 250" sent_idx="1">Nov. 13</TIMEX3>. He <EVENT eid="e4" class="ASPECTUAL" offsets="255 263" sent_idx="1">succeeds</EVENT> James A. Taylor, who <EVENT eid="e5" class="ASPECTUAL" offsets="285 292" sent_idx="1">stepped</EVENT> down as <EVENT eid="e3000" class="STATE" offsets="301 309" sent_idx="1">chairman</EVENT>, president and chief executive in <TIMEX3 tid="t27" type="DATE" value="1989-03" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="344 349" sent_idx="1">March</TIMEX3> for health reasons. Edward L. Kane succeeded Mr. Taylor as chairman.
+Separately, Citadel <EVENT eid="e8" class="REPORTING" offsets="439 445" sent_idx="2">posted</EVENT> a <TIMEX3 tid="t29" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="448 461" sent_idx="2">third-quarter</TIMEX3> net <EVENT eid="e9" class="OCCURRENCE" offsets="466 470" sent_idx="2">loss</EVENT> of $2.3 million, or 68 cents a share, versus net <EVENT eid="e30" class="OCCURRENCE" offsets="520 526" sent_idx="2">income</EVENT> of $5.3 million, or $1.61 a share, <TIMEX3 tid="t31" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t29" offsets="562 576" sent_idx="2">a year earlier</TIMEX3>.
+The latest <EVENT eid="e10" class="OCCURRENCE" offsets="589 596" sent_idx="3">results</EVENT> <EVENT eid="e11" class="REPORTING" offsets="597 604" sent_idx="3">include</EVENT> some unusual <EVENT eid="e32" class="OCCURRENCE" offsets="618 629" sent_idx="3">write-downs</EVENT>, which had an after-tax impact of $4.9 million. Those <EVENT eid="e13" class="REPORTING" offsets="684 692" sent_idx="3">included</EVENT> costs associated with the potential Valley Federal Savings and Loan Association <EVENT eid="e34" class="OCCURRENCE" offsets="773 784" sent_idx="3">acquisition</EVENT>, which was <EVENT eid="e15" class="ASPECTUAL" offsets="796 806" sent_idx="3">terminated</EVENT> on <TIMEX3 tid="t36" type="DATE" value="1989-11-27" temporalFunction="false" functionInDocument="NONE" offsets="810 824" sent_idx="3">Sept. 27, 1989</TIMEX3>. In addition, operating <EVENT eid="e17" class="OCCURRENCE" offsets="849 856" sent_idx="3">results</EVENT> were <EVENT eid="e18" class="OCCURRENCE" offsets="862 865" sent_idx="3">hit</EVENT> by an <EVENT eid="e19" class="OCCURRENCE" offsets="872 880" sent_idx="3">increase</EVENT> in loan and real estate loss reserves.
+In American Stock Exchange composite trading, Citadel shares <EVENT eid="e20" class="OCCURRENCE" offsets="981 987" sent_idx="4">closed</EVENT> <TIMEX3 tid="t37" type="DATE" value="1989-11-01" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="988 997" sent_idx="4">yesterday</TIMEX3> at $45.75, down 25 cents.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei307" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei310" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei311" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei312" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e4" eiid="ei313" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei314" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei320" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei321" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e30" eiid="ei322" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e10" eiid="ei323" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei324" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei325" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei326" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei327" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="potential" />
+<MAKEINSTANCE eid="e15" eiid="ei328" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei329" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e18" eiid="ei330" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei331" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e20" eiid="ei332" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l33" relType="BEFORE" from="ei327" to="t36" />
+<TLINK lid="l31" relType="IDENTITY" from="ei310" to="ei307" />
+<TLINK lid="l1" relType="AFTER" from="t0" to="ei307" />
+<TLINK lid="l2" relType="IDENTITY" from="ei311" to="ei312" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei312" to="t23" />
+<TLINK lid="l4" relType="AFTER" from="t23" to="t0" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei313" to="t23" />
+<TLINK lid="l6" relType="AFTER" from="ei313" to="ei314" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei314" to="t27" />
+<TLINK lid="l8" relType="BEFORE" from="t27" to="t0" />
+<TLINK lid="l10" relType="BEFORE" from="ei307" to="ei313" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei320" to="t0" />
+<TLINK lid="l12" relType="ENDS" from="ei321" to="t29" />
+<TLINK lid="l13" relType="BEFORE" from="t29" to="t0" />
+<TLINK lid="l14" relType="ENDS" from="ei322" to="t31" />
+<TLINK lid="l15" relType="BEFORE" from="t31" to="t29" />
+<TLINK lid="l16" relType="SIMULTANEOUS" from="ei323" to="ei321" />
+<TLINK lid="l19" relType="IS_INCLUDED" from="ei328" to="t36" />
+<TLINK lid="l20" relType="BEFORE" from="t36" to="t0" />
+<TLINK lid="l21" relType="SIMULTANEOUS" from="ei329" to="ei323" />
+<TLINK lid="l22" relType="BEFORE" from="ei331" to="ei330" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei332" to="t37" />
+<TLINK lid="l24" relType="BEFORE" from="t37" to="t0" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei320" to="ei321" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei320" to="ei322" />
+<SLINK lid="l27" relType="MODAL" from="ei323" to="ei325" />
+<ALINK lid="l28" relType="INITIATES" from="ei311" to="ei310" />
+<ALINK lid="l29" relType="TERMINATES" from="ei328" to="ei327" />
+</TimeML>

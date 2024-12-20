@@ -1,0 +1,123 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0570</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0130 = 891030 891030-0130.
+Crane Co.
+Holds 8.9% @ Of Milton Roy Corp., @ May Seek Control 10/30/89 WALL STREET JOURNAL (J) CR MRC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) NEW YORK
+</EXTRAINFO>
+<TEXT>Crane Co. <EVENT eid="e1" class="REPORTING" stem="say" offsets="10 14" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="STATE" stem="hold" offsets="18 23" sent_idx="0">holds</EVENT> an 8.9% stake in Milton Roy Corp., an analytical-instruments maker, and may <EVENT eid="e4" class="I_STATE" stem="seek" offsets="100 104" sent_idx="0">seek</EVENT> control of the company.
+Crane, a maker of engineered products for aerospace, construction, defense and other uses, <EVENT eid="e8" class="OCCURRENCE" stem="make" offsets="220 224" sent_idx="1">made</EVENT> the <EVENT eid="e9" class="REPORTING" stem="disclosure" offsets="229 239" sent_idx="1">disclosure</EVENT> in a Securities and Exchange Commission <EVENT eid="e81" class="OCCURRENCE" stem="file" offsets="280 286" sent_idx="1">filing</EVENT>.
+In the <EVENT eid="e10" class="OCCURRENCE" stem="file" offsets="295 301" sent_idx="2">filing</EVENT>, Crane <EVENT eid="e11" class="REPORTING" stem="say" offsets="309 313" sent_idx="2">said</EVENT> that in <TIMEX3 tid="t84" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="322 330" sent_idx="2">the past</TIMEX3> it <EVENT eid="e12" class="I_STATE" stem="consider" offsets="334 344" sent_idx="2">considered</EVENT> <EVENT eid="e13" class="I_ACTION" stem="seek" offsets="345 352" sent_idx="2">seeking</EVENT> control of Milton Roy, of St. Petersburg, Fla., through a <EVENT eid="e14" class="OCCURRENCE" stem="merger" offsets="411 417" sent_idx="2">merger</EVENT> or tender <EVENT eid="e15" class="OCCURRENCE" stem="offer" offsets="428 433" sent_idx="2">offer</EVENT> and that it <EVENT eid="e16" class="I_STATE" stem="expect" offsets="446 453" sent_idx="2">expects</EVENT> to <EVENT eid="e18" class="ASPECTUAL" stem="continue" offsets="457 465" sent_idx="2">continue</EVENT> to <EVENT eid="e20" class="I_ACTION" stem="evaluate" offsets="469 477" sent_idx="2">evaluate</EVENT> an <EVENT eid="e21" class="OCCURRENCE" stem="acquisition" offsets="481 492" sent_idx="2">acquisition</EVENT> <TIMEX3 tid="t88" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="493 510" sent_idx="2">from time to time</TIMEX3>. Crane officials didn't <EVENT eid="e25" class="OCCURRENCE" stem="return" offsets="535 541" sent_idx="2">return</EVENT> phone <EVENT eid="e89" class="OCCURRENCE" stem="call" offsets="548 553" sent_idx="2">calls</EVENT> seeking comment.
+Crane holds 504,200 Milton Roy shares, including 254,200 <EVENT eid="e30" class="OCCURRENCE" stem="buy" offsets="628 634" sent_idx="3">bought</EVENT> from <TIMEX3 tid="t91" type="DATE" value="1989-09-14" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="640 648" sent_idx="3">Sept. 14</TIMEX3> to <TIMEX3 tid="t92" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="652 660" sent_idx="3">Thursday</TIMEX3> for $15.50 to $16.75 each. In New York Stock Exchange composite trading <TIMEX3 tid="t94" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="733 739" sent_idx="3">Friday</TIMEX3>, Milton Roy shares <EVENT eid="e31" class="OCCURRENCE" stem="leap" offsets="759 765" sent_idx="3">leaped</EVENT> $2, to $18.375 each, while Crane <EVENT eid="e33" class="OCCURRENCE" stem="sink" offsets="799 803" sent_idx="3">sank</EVENT> $1.125, to $21.125 a share.
+John M. McNamara, chief financial officer of Milton Roy, <EVENT eid="e34" class="REPORTING" stem="say" offsets="889 893" sent_idx="4">said</EVENT> the company <EVENT eid="e35" class="STATE" stem="have" offsets="906 909" sent_idx="4">has</EVENT> no <EVENT eid="e36" class="I_STATE" stem="comment" offsets="913 920" sent_idx="4">comment</EVENT> on Crane's <EVENT eid="e37" class="OCCURRENCE" stem="file" offsets="932 938" sent_idx="4">filing</EVENT>.
+Milton Roy <TIMEX3 tid="t100" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="951 959" sent_idx="5">recently</TIMEX3> <EVENT eid="e38" class="OCCURRENCE" stem="fend" offsets="960 966" sent_idx="5">fended</EVENT> off unsolicited overtures from Thermo Electron Corp., a Waltham, Mass., maker of biomedical products. Milton Roy <EVENT eid="e40" class="REPORTING" stem="disclose" offsets="1080 1089" sent_idx="5">disclosed</EVENT> in <TIMEX3 tid="t101" type="DATE" value="1989-05" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1093 1096" sent_idx="5">May</TIMEX3> that it was <EVENT eid="e41" class="I_ACTION" stem="approach" offsets="1109 1119" sent_idx="5">approached</EVENT> for a possible <EVENT eid="e42" class="OCCURRENCE" stem="acquisition" offsets="1135 1146" sent_idx="5">acquisition</EVENT> by Thermo Electron, which <EVENT eid="e43" class="I_ACTION" stem="agree" offsets="1173 1179" sent_idx="5">agreed</EVENT> to <EVENT eid="e45" class="OCCURRENCE" stem="purchase" offsets="1183 1191" sent_idx="5">purchase</EVENT> Milton Roy's liquid-chromatography line for $22 million in <TIMEX3 tid="t104" type="DATE" value="1990-02" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1251 1259" sent_idx="5">February</TIMEX3>. Thermo Electron <EVENT eid="e47" class="OCCURRENCE" stem="acquire" offsets="1277 1285" sent_idx="5">acquired</EVENT> some 6% of Milton Roy's common stock before <EVENT eid="e49" class="OCCURRENCE" stem="throw" offsets="1330 1338" sent_idx="5">throwing</EVENT> in the towel and <EVENT eid="e50" class="OCCURRENCE" stem="reduce" offsets="1356 1364" sent_idx="5">reducing</EVENT> its stake in <TIMEX3 tid="t105" type="DATE" value="1989-09" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1378 1393" sent_idx="5">early September</TIMEX3>.
+Gabelli Group <EVENT eid="e52" class="ASPECTUAL" stem="begin" offsets="1409 1414" sent_idx="6">began</EVENT> <EVENT eid="e53" class="OCCURRENCE" stem="raise" offsets="1415 1422" sent_idx="6">raising</EVENT> its Milton Roy stake in <TIMEX3 tid="t108" type="DATE" value="1989-07" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1447 1451" sent_idx="6">July</TIMEX3>, and <EVENT eid="e54" class="STATE" stem="hold" offsets="1457 1462" sent_idx="6">holds</EVENT> 14.6%, <EVENT eid="e109" class="REPORTING" stem="accord" offsets="1470 1479" sent_idx="6">according</EVENT> to a <TIMEX3 tid="t110" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1485 1491" sent_idx="6">recent</TIMEX3> SEC filing. It hasn't <EVENT eid="e56" class="OCCURRENCE" stem="make" offsets="1514 1518" sent_idx="6">made</EVENT> merger <EVENT eid="e58" class="I_ACTION" stem="overture" offsets="1526 1535" sent_idx="6">overtures</EVENT> to the board.
+<TIMEX3 tid="t113" type="DATE" value="1989-10" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1550 1568" sent_idx="7">Earlier this month</TIMEX3>, Milton Roy <EVENT eid="e59" class="OCCURRENCE" stem="sign" offsets="1581 1587" sent_idx="7">signed</EVENT> a letter of intent to <EVENT eid="e63" class="OCCURRENCE" stem="acquire" offsets="1610 1617" sent_idx="7">acquire</EVENT> Automated Custom Systems Inc., Orange, Calif., and its sister operation, Environmental Testing Co., in Aurora, Colo.
+The companies are automotive-emissions-testing concerns.
+Under the terms, Milton Roy will <EVENT eid="e65" class="OCCURRENCE" stem="pay" offsets="1825 1828" sent_idx="9">pay</EVENT> an initial $4 million for the <EVENT eid="e66" class="OCCURRENCE" stem="operation" offsets="1859 1869" sent_idx="9">operations</EVENT> and additional <EVENT eid="e67" class="OCCURRENCE" stem="payment" offsets="1885 1893" sent_idx="9">payments</EVENT> during <TIMEX3 tid="t114" type="DURATION" value="P4Y" temporalFunction="true" functionInDocument="NONE" beginPoint="t0" offsets="1901 1920" sent_idx="9">the next four years</TIMEX3> based on the earnings performance of the businesses.
+In <TIMEX3 tid="t115" type="DURATION" value="P9M" temporalFunction="false" functionInDocument="NONE" offsets="1977 1992" sent_idx="10">the nine months</TIMEX3>, Milton Roy <EVENT eid="e72" class="OCCURRENCE" stem="earn" offsets="2005 2011" sent_idx="10">earned</EVENT> $6.6 million, or $1.18 a share, on <EVENT eid="e118" class="OCCURRENCE" stem="sale" offsets="2047 2052" sent_idx="10">sales</EVENT> of $94.3 million.</TEXT>
+<MAKEINSTANCE eid="e72" eiid="ei475" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei453" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei447" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei450" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei438" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei461" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei429" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e40" eiid="ei454" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei439" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e42" eiid="ei456" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e67" eiid="ei474" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei431" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei451" tense="NONE" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e49" eiid="ei460" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei437" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei432" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e59" eiid="ei469" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e89" eiid="ei441" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e45" eiid="ei458" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei457" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e65" eiid="ei472" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei434" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e118" eiid="ei476" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e54" eiid="ei464" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e31" eiid="ei445" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei452" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e30" eiid="ei444" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei463" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei423" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei459" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e109" eiid="ei465" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei424" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="may" />
+<MAKEINSTANCE eid="e58" eiid="ei468" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e1" eiid="ei422" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei435" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e63" eiid="ei471" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e56" eiid="ei466" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei430" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei462" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e81" eiid="ei428" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei427" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei436" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei455" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e66" eiid="ei473" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei426" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei440" tense="PAST" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei449" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l65" relType="BEGUN_BY" from="ei463" to="t108" />
+<TLINK lid="l64" relType="BEFORE" from="ei449" to="t0" />
+<TLINK lid="l1" relType="BEFORE" from="ei422" to="t0" />
+<TLINK lid="l2" relType="IDENTITY" from="ei426" to="ei427" />
+<TLINK lid="l3" relType="IDENTITY" from="ei427" to="ei422" />
+<TLINK lid="l4" relType="IS_INCLUDED" from="ei427" to="ei428" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei430" to="ei429" />
+<TLINK lid="l6" relType="IDENTITY" from="ei430" to="ei427" />
+<TLINK lid="l7" relType="IDENTITY" from="ei429" to="ei428" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei431" to="t84" />
+<TLINK lid="l9" relType="BEGUN_BY" from="ei432" to="ei434" />
+<TLINK lid="l10" relType="BEGUN_BY" from="ei432" to="ei435" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei438" to="t88" />
+<TLINK lid="l12" relType="AFTER" from="t88" to="ei430" />
+<TLINK lid="l13" relType="BEFORE" from="ei441" to="ei440" />
+<TLINK lid="l15" relType="BEGUN_BY" from="ei444" to="t91" />
+<TLINK lid="l16" relType="ENDED_BY" from="ei444" to="t92" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei445" to="t94" />
+<TLINK lid="l19" relType="SIMULTANEOUS" from="ei445" to="ei447" />
+<TLINK lid="l21" relType="IDENTITY" from="ei450" to="ei451" />
+<TLINK lid="l22" relType="IS_INCLUDED" from="ei453" to="t100" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei454" to="t101" />
+<TLINK lid="l24" relType="SIMULTANEOUS" from="ei457" to="ei455" />
+<TLINK lid="l25" relType="IS_INCLUDED" from="ei458" to="t104" />
+<TLINK lid="l26" relType="BEFORE" from="ei459" to="ei460" />
+<TLINK lid="l27" relType="SIMULTANEOUS" from="ei460" to="ei461" />
+<TLINK lid="l28" relType="BEFORE" from="ei459" to="ei461" />
+<TLINK lid="l29" relType="IS_INCLUDED" from="ei461" to="t105" />
+<TLINK lid="l30" relType="IS_INCLUDED" from="ei462" to="t108" />
+<TLINK lid="l31" relType="INCLUDES" from="ei464" to="t0" />
+<TLINK lid="l32" relType="IS_INCLUDED" from="ei465" to="t110" />
+<TLINK lid="l33" relType="IDENTITY" from="ei466" to="ei468" />
+<TLINK lid="l34" relType="BEFORE" from="ei466" to="t0" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei469" to="t113" />
+<TLINK lid="l37" relType="AFTER" from="ei472" to="t0" />
+<TLINK lid="l38" relType="BEFORE" from="ei472" to="ei473" />
+<TLINK lid="l39" relType="AFTER" from="ei474" to="ei472" />
+<TLINK lid="l40" relType="DURING" from="ei474" to="t114" />
+<TLINK lid="l41" relType="DURING" from="ei475" to="t115" />
+<TLINK lid="l42" relType="AFTER" from="ei475" to="ei476" />
+<SLINK lid="l63" relType="FACTIVE" from="ei440" to="ei441" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei422" to="ei423" />
+<SLINK lid="l44" relType="EVIDENTIAL" from="ei422" to="ei424" />
+<SLINK lid="l46" relType="EVIDENTIAL" from="ei430" to="ei431" />
+<SLINK lid="l47" relType="MODAL" from="ei431" to="ei432" />
+<SLINK lid="l49" relType="EVIDENTIAL" from="ei430" to="ei436" />
+<SLINK lid="l50" relType="MODAL" from="ei436" to="ei437" />
+<SLINK lid="l51" relType="MODAL" from="ei438" to="ei439" />
+<SLINK lid="l53" relType="EVIDENTIAL" from="ei449" to="ei450" />
+<SLINK lid="l54" relType="FACTIVE" from="ei451" to="ei452" />
+<SLINK lid="l55" relType="EVIDENTIAL" from="ei454" to="ei455" />
+<SLINK lid="l56" relType="MODAL" from="ei455" to="ei456" />
+<SLINK lid="l57" relType="MODAL" from="ei457" to="ei458" />
+<SLINK lid="l58" relType="EVIDENTIAL" from="ei465" to="ei464" />
+<ALINK lid="l61" relType="CONTINUES" from="ei437" to="ei438" />
+<ALINK lid="l62" relType="INITIATES" from="ei462" to="ei463" />
+</TimeML>

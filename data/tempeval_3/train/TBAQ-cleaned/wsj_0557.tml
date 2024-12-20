@@ -1,0 +1,106 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0557</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0143 = 891030 891030-0143.
+RJR Is Selling @ Candy Brands @ For $370 Million @ ---- @ By Peter Waldman @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) RJR Z.NES TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) FOOD PRODUCTS (FOD)
+</EXTRAINFO>
+<TEXT>RJR Nabisco Inc. <EVENT eid="e1" class="REPORTING" offsets="17 21" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_STATE" offsets="25 31" sent_idx="0">agreed</EVENT> to <EVENT eid="e4" class="OCCURRENCE" offsets="35 39" sent_idx="0">sell</EVENT> its Baby Ruth, Butterfinger and Pearson candy businesses to Nestle S.A.'s Nestle Foods unit for $370 million.
+The <EVENT eid="e5" class="OCCURRENCE" offsets="154 158" sent_idx="1">sale</EVENT>, at a higher price than some analysts had <EVENT eid="e7" class="I_STATE" offsets="201 209" sent_idx="1">expected</EVENT>, <EVENT eid="e8" class="I_ACTION" offsets="211 216" sent_idx="1">helps</EVENT> the food and tobacco giant <EVENT eid="e72" class="OCCURRENCE" offsets="244 249" sent_idx="1">raise</EVENT> funds to <EVENT eid="e10" class="OCCURRENCE" offsets="259 262" sent_idx="1">pay</EVENT> debt and <EVENT eid="e11" class="OCCURRENCE" offsets="272 278" sent_idx="1">boosts</EVENT> Nestle's 7% share of the U.S. candy market to about 12%.
+The candy businesses <EVENT eid="e75" class="STATE" offsets="357 360" sent_idx="2">had</EVENT> <EVENT eid="e76" class="STATE" offsets="361 366" sent_idx="2">sales</EVENT> of about $154 million <TIMEX3 tid="t79" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="389 398" sent_idx="2">last year</TIMEX3>, which was roughly 12% of total revenue for RJR's Planters LifeSavers unit, <EVENT eid="e80" class="REPORTING" offsets="475 484" sent_idx="2">according</EVENT> to a memorandum <EVENT eid="e14" class="OCCURRENCE" offsets="501 512" sent_idx="2">distributed</EVENT> by RJR's owner, Kohlberg Kravis Roberts amp Co., to bankers <TIMEX3 tid="t82" type="DATE" value="1988-12" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="573 586" sent_idx="2">last December</TIMEX3>.
+The Nestle acquisition includes a candy plant in Franklin Park, Ill., which employs about 800 workers.
+The <EVENT eid="e17" class="OCCURRENCE" offsets="695 699" sent_idx="4">sale</EVENT>, which had been <EVENT eid="e18" class="I_STATE" offsets="716 724" sent_idx="4">expected</EVENT>, is part of KKR's <EVENT eid="e83" class="I_STATE" offsets="743 750" sent_idx="4">program</EVENT> to <EVENT eid="e20" class="OCCURRENCE" offsets="754 757" sent_idx="4">pay</EVENT> down $5 billion of a $6 billion bridge loan by <TIMEX3 tid="t85" type="DATE" value="1990-02" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="805 813" sent_idx="4">February</TIMEX3>. Roughly $2 billion of that debt has already been <EVENT eid="e21" class="OCCURRENCE" offsets="864 870" sent_idx="4">repaid</EVENT> from previous asset sales, and RJR <EVENT eid="e23" class="I_STATE" offsets="906 913" sent_idx="4">expects</EVENT> to <EVENT eid="e24" class="OCCURRENCE" offsets="917 920" sent_idx="4">use</EVENT> another $2 billion from the pending, two-part <EVENT eid="e25" class="OCCURRENCE" offsets="967 971" sent_idx="4">sale</EVENT> of most of its Del Monte unit. That <EVENT eid="e26" class="OCCURRENCE" offsets="1008 1012" sent_idx="4">sale</EVENT>, however, could still <EVENT eid="e89" class="OCCURRENCE" offsets="1035 1039" sent_idx="4">fall</EVENT> through if financing problems <EVENT eid="e29" class="OCCURRENCE" offsets="1070 1077" sent_idx="4">develop</EVENT>. Thus, it remains crucial for RJR to obtain top dollar for its smaller assets like the candy brands.
+Louis Gerstner Jr., chairman and chief executive officer of New York-based RJR, called the sale a "significant step" in the company's divestiture program, as well as a "a strategic divestiture." Since KKR <EVENT eid="e38" class="OCCURRENCE" offsets="1384 1390" sent_idx="5">bought</EVENT> RJR in <TIMEX3 tid="t91" type="DATE" value="1989-02" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1398 1406" sent_idx="5">February</TIMEX3> for $25 billion of debt, it has <EVENT eid="e39" class="I_STATE" offsets="1439 1445" sent_idx="5">agreed</EVENT> to <EVENT eid="e41" class="OCCURRENCE" offsets="1449 1453" sent_idx="5">sell</EVENT> nearly $5 billion of RJR assets. RJR's executives have <EVENT eid="e42" class="REPORTING" offsets="1509 1513" sent_idx="5">said</EVENT> they will <EVENT eid="e43" class="OCCURRENCE" offsets="1524 1532" sent_idx="5">dispense</EVENT> with certain brands, in particular, that aren't <EVENT eid="e93" class="STATE" offsets="1581 1588" sent_idx="5">leaders</EVENT> in their markets. "RJR Nabisco and Planters LifeSavers will <EVENT eid="e94" class="OCCURRENCE" offsets="1649 1660" sent_idx="5">concentrate</EVENT> more on our own core businesses," Mr. Gerstner <EVENT eid="e50" class="REPORTING" offsets="1708 1712" sent_idx="5">said</EVENT> <TIMEX3 tid="t95" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1713 1719" sent_idx="5">Friday</TIMEX3>.
+Baby Ruth and Butterfinger are both among the top-selling 15 chocolate bars in the U.S., but RJR's overall share of the roughly $5.1 billion market is less than 5%. Nestle's share of 7% before <TIMEX3 tid="t99" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1914 1920" sent_idx="6">Friday</TIMEX3>'s <EVENT eid="e52" class="OCCURRENCE" offsets="1923 1932" sent_idx="6">purchases</EVENT> is far below the shares of market leaders Hershey Foods Corp. and Mars Inc., which have about 40% and 36% of the market, respectively.
+"This means Nestle is now in the candybar business in a big way," <EVENT eid="e61" class="REPORTING" offsets="2134 2138" sent_idx="7">said</EVENT> Lisbeth Echeandia, publisher of Orlando, Fla.-based Confectioner Magazine. "For them, it makes all kinds of sense. They've been <EVENT eid="e64" class="OCCURRENCE" offsets="2267 2272" sent_idx="7">given</EVENT> a mandate from Switzerland" to <EVENT eid="e67" class="I_ACTION" offsets="2304 2310" sent_idx="7">expand</EVENT> their U.S. chocolate operations. Nestle S.A. is based in Vevey, Switzerland.
+The new candy bars, "<EVENT eid="e69" class="OCCURRENCE" offsets="2409 2413" sent_idx="8">make</EVENT> an important <EVENT eid="e70" class="OCCURRENCE" offsets="2427 2439" sent_idx="8">contribution</EVENT> to our Nestle Foods commitment to this very important strategic unit," <EVENT eid="e71" class="REPORTING" offsets="2511 2515" sent_idx="8">said</EVENT> C. Alan MacDonald, president of Nestle Foods in Purchase, N.Y.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei1989" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei1990" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei1991" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei1992" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei1994" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei1995" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e72" eiid="ei1996" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei1997" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei1998" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e75" eiid="ei2000" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e76" eiid="ei2001" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e80" eiid="ei2002" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2003" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei2004" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e18" eiid="ei2005" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e83" eiid="ei2006" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e20" eiid="ei2007" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei2008" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2009" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2010" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2011" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e26" eiid="ei2012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e89" eiid="ei2013" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e29" eiid="ei2014" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei2015" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e39" eiid="ei2016" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei2017" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2018" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei2019" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e93" eiid="ei2020" tense="PRESENT" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e94" eiid="ei2021" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei2022" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei2024" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e61" eiid="ei2025" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei2026" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2027" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e69" eiid="ei2029" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e70" eiid="ei2030" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e71" eiid="ei2031" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l54" relType="IS_INCLUDED" from="ei2002" to="t82" />
+<TLINK lid="l1" relType="BEFORE" from="ei1989" to="t0" />
+<TLINK lid="l2" relType="IDENTITY" from="ei1992" to="ei1991" />
+<TLINK lid="l3" relType="BEFORE" from="ei1994" to="ei1992" />
+<TLINK lid="l4" relType="BEFORE" from="ei1994" to="ei1990" />
+<TLINK lid="l5" relType="BEFORE" from="ei1992" to="ei1995" />
+<TLINK lid="l6" relType="BEFORE" from="ei1992" to="ei1998" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="ei1995" to="ei1998" />
+<TLINK lid="l9" relType="IDENTITY" from="ei2000" to="ei2001" />
+<TLINK lid="l10" relType="BEFORE" from="ei2000" to="t0" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei2000" to="t79" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei2003" to="t82" />
+<TLINK lid="l13" relType="IDENTITY" from="ei2004" to="ei1992" />
+<TLINK lid="l14" relType="BEFORE" from="ei2005" to="t0" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei2004" to="ei2006" />
+<TLINK lid="l16" relType="ENDED_BY" from="ei2007" to="t85" />
+<TLINK lid="l17" relType="BEFORE" from="ei2008" to="t0" />
+<TLINK lid="l18" relType="INCLUDES" from="ei2009" to="t0" />
+<TLINK lid="l19" relType="BEFORE" from="ei2011" to="ei2010" />
+<TLINK lid="l20" relType="IDENTITY" from="ei2012" to="ei2011" />
+<TLINK lid="l21" relType="AFTER" from="ei2013" to="ei2014" />
+<TLINK lid="l22" relType="BEFORE" from="ei2013" to="ei2012" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2015" to="t91" />
+<TLINK lid="l24" relType="AFTER" from="ei2016" to="ei2015" />
+<TLINK lid="l25" relType="BEFORE" from="ei2018" to="t0" />
+<TLINK lid="l26" relType="BEFORE" from="ei2020" to="ei2019" />
+<TLINK lid="l27" relType="AFTER" from="ei2021" to="t0" />
+<TLINK lid="l28" relType="IS_INCLUDED" from="ei2022" to="t95" />
+<TLINK lid="l30" relType="IS_INCLUDED" from="ei2024" to="t99" />
+<TLINK lid="l31" relType="SIMULTANEOUS" from="ei2024" to="ei1991" />
+<TLINK lid="l32" relType="BEFORE" from="ei2025" to="t0" />
+<TLINK lid="l33" relType="BEFORE" from="ei2026" to="t0" />
+<TLINK lid="l34" relType="BEFORE" from="ei2026" to="ei2025" />
+<TLINK lid="l35" relType="BEFORE" from="ei2031" to="t0" />
+<TLINK lid="l36" relType="IDENTITY" from="ei2029" to="ei2030" />
+<SLINK lid="l37" relType="CONDITIONAL" from="ei2014" to="ei2013" />
+<SLINK lid="l38" relType="EVIDENTIAL" from="ei1989" to="ei1990" />
+<SLINK lid="l39" relType="MODAL" from="ei1990" to="ei1991" />
+<SLINK lid="l41" relType="MODAL" from="ei1995" to="ei1996" />
+<SLINK lid="l42" relType="FACTIVE" from="ei1996" to="ei1997" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei2002" to="ei2000" />
+<SLINK lid="l44" relType="MODAL" from="ei2005" to="ei2004" />
+<SLINK lid="l45" relType="MODAL" from="ei2006" to="ei2007" />
+<SLINK lid="l46" relType="MODAL" from="ei2009" to="ei2010" />
+<SLINK lid="l47" relType="MODAL" from="ei2016" to="ei2017" />
+<SLINK lid="l48" relType="EVIDENTIAL" from="ei2018" to="ei2019" />
+<SLINK lid="l49" relType="EVIDENTIAL" from="ei2022" to="ei2021" />
+<SLINK lid="l50" relType="MODAL" from="ei2026" to="ei2027" />
+<SLINK lid="l52" relType="EVIDENTIAL" from="ei2025" to="ei2026" />
+<SLINK lid="l53" relType="EVIDENTIAL" from="ei2031" to="ei2029" />
+</TimeML>

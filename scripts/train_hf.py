@@ -12,7 +12,6 @@ import transformers
 from datasets import load_dataset
 
 from src.constants import HF_TOKEN, NEW_TOKENS
-
 from transformers import (
     AutoConfig,
     AutoModelForSequenceClassification,
@@ -202,7 +201,7 @@ def get_label_list(raw_dataset, split="train") -> List[str]:
 
 
 def main(
-    batch_size: int = 64,
+    batch_size: int = 16,
     gradient_accumulation_steps: int = 8,
     num_train_epochs: int = 30,
 ):
@@ -213,7 +212,7 @@ def main(
     )
 
     data_args = DataTrainingArguments(
-        dataset_name="hugosousa/QTimelines",
+        dataset_name="hugosousa/TemporalQuestions",
         dataset_config_name="default",
         max_seq_length=2048,  # TODO: Get from model
         pad_to_max_length=False,  # To pad each batch at runtime
@@ -224,7 +223,7 @@ def main(
         max_predict_samples=100 if DEBUG else None,
     )
     training_args = TrainingArguments(
-        output_dir="models/SmolLM-135M-QTimelines",
+        output_dir="models/SmolLM-135M-TemporalQuestions",
         eval_strategy="epoch",
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
@@ -251,7 +250,7 @@ def main(
         seed=42,
         bf16=True,
         push_to_hub=True,
-        hub_model_id="hugosousa/SmolLM-135M-QTimelines",
+        hub_model_id="hugosousa/SmolLM-135M-TemporalQuestions",
         hub_strategy="every_save",
         hub_token=HF_TOKEN,
         do_train=True,

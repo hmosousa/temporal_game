@@ -1,0 +1,249 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0781</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-27" temporalFunction="false" functionInDocument="CREATION_TIME">10/27/89</TIMEX3>
+<EXTRAINFO>
+WSJ891027-0114 = 891027 891027-0114.
+Chip by Intel @ Contains Flaw @ In Calculating @ --- @ `Bugs' Could Stall Makers @ Of Certain Computers; @ Most Users Unaffected @ ---- @ By Stephen Kreider Yoder @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) INTC IBM CPQ SEMICONDUCTORS, INTEGRATED CHIPS (SEM) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
+</EXTRAINFO>
+<TEXT>Intel Corp.'s most powerful computer chip <EVENT eid="e1" class="STATE" offsets="42 45" sent_idx="0">has</EVENT> flaws that could <EVENT eid="e2" class="I_ACTION" offsets="63 68" sent_idx="0">delay</EVENT> several computer makers' marketing <EVENT eid="e4" class="OCCURRENCE" offsets="104 111" sent_idx="0">efforts</EVENT>, but the "bugs" aren't <EVENT eid="e5" class="I_STATE" offsets="135 143" sent_idx="0">expected</EVENT> to <EVENT eid="e8" class="OCCURRENCE" offsets="147 151" sent_idx="0">hurt</EVENT> Intel and most computer makers.
+Computer experts familiar with the flaws, found in Intel's 80486 chip, <EVENT eid="e10" class="REPORTING" offsets="255 258" sent_idx="1">say</EVENT> the defects don't <EVENT eid="e11" class="STATE" offsets="277 283" sent_idx="1">affect</EVENT> the average user and are likely to be <EVENT eid="e14" class="OCCURRENCE" offsets="322 329" sent_idx="1">cleared</EVENT> up before most computers using the chip as their " brains " <EVENT eid="e16" class="OCCURRENCE" offsets="390 396" sent_idx="1">appear</EVENT> on the market <TIMEX3 tid="t278" type="DATE" value="1990-XX-XX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="411 429" sent_idx="1">sometime next year</TIMEX3>.
+Intel <EVENT eid="e19" class="REPORTING" offsets="437 441" sent_idx="2">said</EVENT> that <TIMEX3 tid="t279" type="DATE" value="1989-WXX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="447 456" sent_idx="2">last week</TIMEX3> a customer <EVENT eid="e20" class="OCCURRENCE" offsets="468 478" sent_idx="2">discovered</EVENT> two flaws in its 80486 microprocessor chip's "floating-point unit", a set of circuits that do certain calculations. On <TIMEX3 tid="t280" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="598 604" sent_idx="2">Friday</TIMEX3>, Intel <EVENT eid="e24" class="ASPECTUAL" offsets="612 617" sent_idx="2">began</EVENT> <EVENT eid="e25" class="I_ACTION" offsets="618 627" sent_idx="2">notifying</EVENT> customers about the bugs which <EVENT eid="e26" class="OCCURRENCE" offsets="659 664" sent_idx="2">cause</EVENT> the chip to <EVENT eid="e28" class="OCCURRENCE" offsets="677 681" sent_idx="2">give</EVENT> wrong answers for some mathematical calculations.
+But while International Business Machines Corp. and Compaq Computer Corp. <EVENT eid="e32" class="REPORTING" offsets="806 809" sent_idx="3">say</EVENT> the bugs will <EVENT eid="e33" class="I_ACTION" offsets="824 829" sent_idx="3">delay</EVENT> products, most big computer makers <EVENT eid="e34" class="REPORTING" offsets="865 869" sent_idx="3">said</EVENT> the flaws don't <EVENT eid="e35" class="STATE" offsets="886 892" sent_idx="3">affect</EVENT> them. "Bugs like this are just a normal part of product development," <EVENT eid="e38" class="REPORTING" offsets="963 967" sent_idx="3">said</EVENT> Richard Archuleta, director of Hewlett-Packard Co.'s advanced systems development. Hewlett <EVENT eid="e41" class="I_ACTION" offsets="1059 1068" sent_idx="3">announced</EVENT> <TIMEX3 tid="t281" type="DATE" value="1989-WXX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1069 1078" sent_idx="3">last week</TIMEX3> that it <EVENT eid="e42" class="I_STATE" offsets="1087 1094" sent_idx="3">planned</EVENT> to <EVENT eid="e44" class="OCCURRENCE" offsets="1098 1102" sent_idx="3">ship</EVENT> a computer based on the 486 chip <TIMEX3 tid="t282" type="DATE" value="1990" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1136 1151" sent_idx="3">early next year</TIMEX3>. "These bugs don't <EVENT eid="e46" class="STATE" offsets="1171 1177" sent_idx="3">affect</EVENT> our schedule at all," he <EVENT eid="e49" class="REPORTING" offsets="1203 1207" sent_idx="3">said</EVENT>.
+Likewise, AST Research Inc. and Sun Microsystems Inc. <EVENT eid="e50" class="REPORTING" offsets="1263 1267" sent_idx="4">said</EVENT> the bugs won't <EVENT eid="e51" class="I_ACTION" offsets="1283 1288" sent_idx="4">delay</EVENT> their <EVENT eid="e53" class="OCCURRENCE" offsets="1295 1306" sent_idx="4">development</EVENT> of 486-based machines. "We haven't <EVENT eid="e54" class="OCCURRENCE" offsets="1342 1350" sent_idx="4">modified</EVENT> our schedules in any way," <EVENT eid="e59" class="REPORTING" offsets="1378 1382" sent_idx="4">said</EVENT> a Sun spokesman. To <EVENT eid="e61" class="OCCURRENCE" offsets="1403 1409" sent_idx="4">switch</EVENT> to another vendor's chips, "would not definitely be an option," he <EVENT eid="e65" class="REPORTING" offsets="1477 1481" sent_idx="4">said</EVENT>.
+Nonetheless, concern about the chip may have been responsible for a <EVENT eid="e236" class="OCCURRENCE" offsets="1551 1558" sent_idx="5">decline</EVENT> of 87.5 cents in Intel's stock to $32 a share <TIMEX3 tid="t283" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1605 1614" sent_idx="5">yesterday</TIMEX3> in over-the-counter <EVENT eid="e67" class="OCCURRENCE" offsets="1635 1642" sent_idx="5">trading</EVENT>, on volume of 3,609,800 shares, and partly responsible for a <EVENT eid="e242" class="OCCURRENCE" offsets="1704 1708" sent_idx="5">drop</EVENT> in Compaq's stock in New York Stock Exchange composite <EVENT eid="e243" class="OCCURRENCE" offsets="1764 1771" sent_idx="5">trading</EVENT> on <TIMEX3 tid="t284" type="DATE" value="1989-10-25" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1775 1784" sent_idx="5">Wednesday</TIMEX3>. <TIMEX3 tid="t285" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1786 1795" sent_idx="5">Yesterday</TIMEX3>, Compaq <EVENT eid="e69" class="OCCURRENCE" offsets="1804 1811" sent_idx="5">plunged</EVENT> further, <EVENT eid="e247" class="OCCURRENCE" offsets="1821 1828" sent_idx="5">closing</EVENT> at $100 a share, off $8.625 a share, on volume of 2,633,700 shares.
+Most of Compaq's <EVENT eid="e249" class="OCCURRENCE" offsets="1914 1921" sent_idx="6">decline</EVENT> is being <EVENT eid="e70" class="I_ACTION" offsets="1931 1941" sent_idx="6">attributed</EVENT> to a <TIMEX3 tid="t1000" type="DATE" value="1989-Q3" offsets="1947 1960" sent_idx="6">third-quarter</TIMEX3> earnings report that came in at the low end of analysts' expectations.
+Intel <EVENT eid="e74" class="REPORTING" offsets="2038 2042" sent_idx="7">said</EVENT> it had <EVENT eid="e75" class="OCCURRENCE" offsets="2050 2059" sent_idx="7">corrected</EVENT> the problems and would <EVENT eid="e76" class="ASPECTUAL" offsets="2083 2088" sent_idx="7">start</EVENT> <EVENT eid="e78" class="OCCURRENCE" offsets="2089 2098" sent_idx="7">producing</EVENT> bugless chips <TIMEX3 tid="t286" type="DATE" value="1989-WXX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2113 2122" sent_idx="7">next week</TIMEX3>. "We should not be <EVENT eid="e79" class="PERCEPTION" offsets="2142 2148" sent_idx="7">seeing</EVENT> any more," <EVENT eid="e82" class="REPORTING" offsets="2160 2164" sent_idx="7">said</EVENT> Bill Rash, Intel's director for the 486 chip.
+What's more, the bugs only <EVENT eid="e83" class="OCCURRENCE" offsets="2238 2244" sent_idx="8">emerge</EVENT> on esoteric applications such as computer-aided design and scientific calculations, he <EVENT eid="e88" class="REPORTING" offsets="2332 2336" sent_idx="8">said</EVENT>, and then very seldom. "These errata do not <EVENT eid="e90" class="STATE" offsets="2381 2387" sent_idx="8">affect</EVENT> business programs," he <EVENT eid="e92" class="REPORTING" offsets="2411 2415" sent_idx="8">said</EVENT>. The bugs will <EVENT eid="e93" class="OCCURRENCE" offsets="2431 2436" sent_idx="8">cause</EVENT> problems in "specific and rare circumstances that will not occur in typical applications" such as word-processing and spreadsheets, <EVENT eid="e99" class="REPORTING" offsets="2569 2573" sent_idx="8">said</EVENT> Michael Slater, editor of the Microprocessor Report, an industry newsletter.
+Sun, Hewlett-Packard and others <EVENT eid="e102" class="REPORTING" offsets="2683 2686" sent_idx="9">say</EVENT> Intel isn't wholly to blame for the snafu. The real culprits, they <EVENT eid="e105" class="REPORTING" offsets="2754 2758" sent_idx="9">said</EVENT>, are computer makers such as IBM that have <EVENT eid="e106" class="OCCURRENCE" offsets="2802 2808" sent_idx="9">jumped</EVENT> the gun to <EVENT eid="e108" class="OCCURRENCE" offsets="2820 2826" sent_idx="9">unveil</EVENT> 486-based products. "The reason this is getting so much visibility is that some <EVENT eid="e111" class="ASPECTUAL" offsets="2907 2914" sent_idx="9">started</EVENT> <EVENT eid="e112" class="OCCURRENCE" offsets="2915 2923" sent_idx="9">shipping</EVENT> and <EVENT eid="e113" class="I_ACTION" offsets="2928 2937" sent_idx="9">announced</EVENT> early availability," <EVENT eid="e114" class="REPORTING" offsets="2959 2963" sent_idx="9">said</EVENT> Hewlett-Packard's Mr. Archuleta. "You can do that but you're taking a risk. Those companies are paying the price for taking the risk."
+In <TIMEX3 tid="t287" type="DATE" value="1989-09" mod="END" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3102 3116" sent_idx="10">late September</TIMEX3>, IBM <EVENT eid="e122" class="ASPECTUAL" offsets="3122 3127" sent_idx="10">began</EVENT> <EVENT eid="e123" class="OCCURRENCE" offsets="3128 3136" sent_idx="10">shipping</EVENT> a plug-in card that converts its PS/2 model 70-A21 from a 80386 machine to an 80486 machine. An IBM spokeswoman <EVENT eid="e126" class="REPORTING" offsets="3249 3253" sent_idx="10">said</EVENT> the company <EVENT eid="e127" class="REPORTING" offsets="3266 3270" sent_idx="10">told</EVENT> customers <TIMEX3 tid="t288" type="DATE" value="1989-10-23" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3281 3287" sent_idx="10">Monday</TIMEX3> about the bugs and temporarily <EVENT eid="e128" class="ASPECTUAL" offsets="3319 3326" sent_idx="10">stopped</EVENT> <EVENT eid="e129" class="OCCURRENCE" offsets="3327 3335" sent_idx="10">shipping</EVENT> the product.
+IBM <EVENT eid="e130" class="I_STATE" offsets="3353 3356" sent_idx="11">has</EVENT> no plans to <EVENT eid="e133" class="OCCURRENCE" offsets="3369 3375" sent_idx="11">recall</EVENT> its add-on cards, the spokeswoman <EVENT eid="e135" class="REPORTING" offsets="3410 3414" sent_idx="11">said</EVENT>, and could probably <EVENT eid="e136" class="OCCURRENCE" offsets="3435 3445" sent_idx="11">circumvent</EVENT> the bugs without long product <EVENT eid="e138" class="OCCURRENCE" offsets="3476 3482" sent_idx="11">delays</EVENT>. "We don't <EVENT eid="e139" class="OCCURRENCE" offsets="3494 3498" sent_idx="11">look</EVENT> at this as a major problem for us," she <EVENT eid="e141" class="REPORTING" offsets="3539 3543" sent_idx="11">said</EVENT>.
+Compaq, which <EVENT eid="e142" class="REPORTING" offsets="3559 3563" sent_idx="12">said</EVENT> it <EVENT eid="e143" class="OCCURRENCE" offsets="3567 3577" sent_idx="12">discovered</EVENT> the bugs, still <EVENT eid="e144" class="I_STATE" offsets="3594 3599" sent_idx="12">plans</EVENT> to <EVENT eid="e146" class="OCCURRENCE" offsets="3603 3611" sent_idx="12">announce</EVENT> new 486 products on <TIMEX3 tid="t289" type="DATE" value="1989-11-06" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3632 3638" sent_idx="12">Nov. 6</TIMEX3>. Because of the glitch, however, the company <EVENT eid="e147" class="REPORTING" offsets="3684 3688" sent_idx="12">said</EVENT> it doesn't <EVENT eid="e148" class="I_STATE" offsets="3700 3704" sent_idx="12">know</EVENT> when its machine will be commercially <EVENT eid="e262" class="STATE" offsets="3743 3752" sent_idx="12">available</EVENT>. That's a break from Compaq tradition, because the company doesn't announce products until they're actually at the dealers.
+The problem is being <EVENT eid="e154" class="OCCURRENCE" offsets="3898 3908" sent_idx="13">ballyhooed</EVENT>, experts <EVENT eid="e155" class="REPORTING" offsets="3918 3921" sent_idx="13">say</EVENT>, because the 486 is Intel's future flagship. Intel's microprocessors are the chips of choice in many of today's personal computers and the 80486 microprocessor is the spearhead of the company's bid to guard that spot in the next generation of machines.
+"Although these sorts of bugs are not at all uncommon, the 486 is an extremely high-profile product," <EVENT eid="e163" class="REPORTING" offsets="4277 4281" sent_idx="14">said</EVENT> Mr. Slater, the newsletter editor.
+Intel's 80486 chip is the Corvette of Intel's microprocessors, a super-fast, super-expensive chip that only the most power-hungry computer users are likely to buy for at least <TIMEX3 tid="t1001" type="DURATION" value="PXY" offsets="4493 4506" sent_idx="15">several years</TIMEX3>.
+Unveiled <TIMEX3 tid="t291" type="DATE" value="1989-04" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4517 4527" sent_idx="16">last April</TIMEX3>, the chip crams 1.2 million transistors on a sliver of silicon, more than four times as many as on Intel's earlier model, 80386. Intel clocks the chip's speed at 15 million instructions per second, or MIPs. That's four times as fast as the 386.
+Machines <EVENT eid="e171" class="OCCURRENCE" offsets="4782 4787" sent_idx="17">using</EVENT> the 486 are <EVENT eid="e172" class="I_STATE" offsets="4800 4808" sent_idx="17">expected</EVENT> to <EVENT eid="e174" class="OCCURRENCE" offsets="4812 4821" sent_idx="17">challenge</EVENT> higher-priced work stations and minicomputers in applications such as so-called servers, which connect groups of computers together, and in computer-aided design.
+But while the chip's speed in processing power is dazzling, it's real strength lies in its software inheritance. The 486 is the descendant of a long series of Intel chips that <EVENT eid="e185" class="ASPECTUAL" offsets="5161 5166" sent_idx="18">began</EVENT> <EVENT eid="e186" class="OCCURRENCE" offsets="5167 5177" sent_idx="18">dominating</EVENT> the market ever since IBM <EVENT eid="e188" class="OCCURRENCE" offsets="5204 5210" sent_idx="18">picked</EVENT> the 16-bit 8088 chip for its first personal computer. (A 16-bit microprocessor processes 16 pieces of data at a time and is slower than newer, 32-bit chips.) Since then, Intel has <EVENT eid="e192" class="OCCURRENCE" offsets="5391 5399" sent_idx="18">cornered</EVENT> a large part of the market with successive generations of 16-bit and 32-bit chips, all of which can run software written for previous models.
+That's what will <EVENT eid="e198" class="ASPECTUAL" offsets="5559 5563" sent_idx="19">keep</EVENT> computer makers <EVENT eid="e199" class="OCCURRENCE" offsets="5580 5586" sent_idx="19">coming</EVENT> in spite of the irritation of bugs. Big personal computer makers and many makers of engineering workstations are <EVENT eid="e200" class="OCCURRENCE" offsets="5700 5710" sent_idx="19">developing</EVENT> 486-based machines, which are <EVENT eid="e201" class="I_STATE" offsets="5741 5749" sent_idx="19">expected</EVENT> to <EVENT eid="e203" class="OCCURRENCE" offsets="5753 5758" sent_idx="19">reach</EVENT> the market <TIMEX3 tid="t292" type="DATE" value="1990" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="5770 5785" sent_idx="19">early next year</TIMEX3>.
+Of the big computer makers, only Apple Computer Co. bases its machines on Motorola chips instead. "The 486 is going to <EVENT eid="e210" class="OCCURRENCE" offsets="5906 5910" sent_idx="20">have</EVENT> a big <EVENT eid="e273" class="OCCURRENCE" offsets="5917 5923" sent_idx="20">impact</EVENT> on the industry," <EVENT eid="e213" class="REPORTING" offsets="5942 5946" sent_idx="20">said</EVENT> Hewlett-Packard's Mr. Archuleta. "It's going to be the leading edge technology in personal computers for <TIMEX3 tid="t293" type="DURATION" value="PXY" temporalFunction="true" functionInDocument="NONE" beginPoint="t0" offsets="6052 6070" sent_idx="20">the next few years</TIMEX3>. This bug is not going to <EVENT eid="e220" class="STATE" offsets="6097 6101" sent_idx="20">have</EVENT> any affect on that at all."
+Andy Zipser in Dallas contributed to this article.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2216" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei2217" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e4" eiid="ei2218" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei2219" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei2220" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei2221" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei2222" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2223" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" modality="none" />
+<MAKEINSTANCE eid="e16" eiid="ei2224" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2225" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2226" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2228" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2229" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2231" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei2232" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei2234" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei2235" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei2237" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei2238" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei2240" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei2241" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2242" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei2243" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei2244" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e49" eiid="ei2245" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei2246" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e51" eiid="ei2247" tense="FUTURE" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei2248" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e54" eiid="ei2249" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e59" eiid="ei2250" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e61" eiid="ei2251" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e65" eiid="ei2253" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e236" eiid="ei2256" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e67" eiid="ei2258" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e242" eiid="ei2260" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e243" eiid="ei2261" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e69" eiid="ei2262" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e247" eiid="ei2263" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e249" eiid="ei2265" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e70" eiid="ei2266" tense="PRESENT" aspect="PERFECTIVE_PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e74" eiid="ei2268" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e75" eiid="ei2269" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e76" eiid="ei2271" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="would" />
+<MAKEINSTANCE eid="e78" eiid="ei2272" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e79" eiid="ei2273" tense="NONE" aspect="PROGRESSIVE" polarity="NEG" pos="VERB" modality="should" />
+<MAKEINSTANCE eid="e82" eiid="ei2274" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e83" eiid="ei2275" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e88" eiid="ei2276" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e90" eiid="ei2277" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e92" eiid="ei2278" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e93" eiid="ei2279" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e99" eiid="ei2281" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei2282" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e105" eiid="ei2283" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e106" eiid="ei2284" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e108" eiid="ei2285" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e111" eiid="ei2286" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e112" eiid="ei2287" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e113" eiid="ei2288" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e114" eiid="ei2290" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e122" eiid="ei2291" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e123" eiid="ei2292" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e126" eiid="ei2293" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e127" eiid="ei2294" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e128" eiid="ei2296" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e129" eiid="ei2297" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e130" eiid="ei2298" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e133" eiid="ei2299" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e135" eiid="ei2300" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e136" eiid="ei2301" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e138" eiid="ei2302" tense="NONE" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e139" eiid="ei2303" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e141" eiid="ei2304" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e142" eiid="ei2305" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e143" eiid="ei2306" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e144" eiid="ei2307" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e146" eiid="ei2308" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e147" eiid="ei2310" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e148" eiid="ei2311" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e262" eiid="ei2312" tense="FUTURE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e154" eiid="ei2313" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e155" eiid="ei2314" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e163" eiid="ei2316" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e171" eiid="ei2318" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e172" eiid="ei2319" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e174" eiid="ei2320" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e185" eiid="ei2321" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e186" eiid="ei2322" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e188" eiid="ei2323" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e192" eiid="ei2324" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e198" eiid="ei2325" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e199" eiid="ei2326" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e200" eiid="ei2327" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e201" eiid="ei2328" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e203" eiid="ei2329" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e210" eiid="ei2330" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e273" eiid="ei2331" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e213" eiid="ei2332" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e220" eiid="ei2334" tense="FUTURE" aspect="NONE" polarity="NEG" pos="VERB" />
+<TLINK lid="l155" relType="AFTER" from="ei2326" to="t0" />
+<TLINK lid="l154" relType="IAFTER" from="ei2322" to="ei2323" />
+<TLINK lid="l153" relType="IDENTITY" from="ei2304" to="ei2300" />
+<TLINK lid="l152" relType="AFTER" from="ei2299" to="t0" />
+<TLINK lid="l151" relType="BEFORE" from="ei2300" to="t0" />
+<TLINK lid="l150" relType="IS_INCLUDED" from="ei2297" to="t288" />
+<TLINK lid="l149" relType="IDENTITY" from="ei2292" to="ei2287" />
+<TLINK lid="l148" relType="BEFORE" from="ei2287" to="t0" />
+<TLINK lid="l147" relType="IS_INCLUDED" from="ei2272" to="t286" />
+<TLINK lid="l146" relType="IS_INCLUDED" from="ei2229" to="t280" />
+<TLINK lid="l1" relType="INCLUDES" from="ei2216" to="t0" />
+<TLINK lid="l2" relType="BEFORE" from="ei2216" to="ei2217" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei2216" to="ei2219" />
+<TLINK lid="l4" relType="BEFORE" from="ei2221" to="t0" />
+<TLINK lid="l5" relType="BEFORE" from="ei2223" to="ei2224" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei2224" to="t278" />
+<TLINK lid="l7" relType="AFTER" from="ei2224" to="t0" />
+<TLINK lid="l8" relType="AFTER" from="ei2223" to="t0" />
+<TLINK lid="l9" relType="BEFORE" from="ei2225" to="t0" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei2226" to="t279" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei2228" to="t280" />
+<TLINK lid="l12" relType="BEFORE" from="ei2228" to="t0" />
+<TLINK lid="l17" relType="BEFORE" from="ei2231" to="ei2232" />
+<TLINK lid="l19" relType="BEFORE" from="ei2234" to="t0" />
+<TLINK lid="l20" relType="BEFORE" from="ei2237" to="t0" />
+<TLINK lid="l21" relType="SIMULTANEOUS" from="ei2237" to="ei2234" />
+<TLINK lid="l22" relType="BEFORE" from="ei2240" to="t0" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2241" to="t281" />
+<TLINK lid="l24" relType="IS_INCLUDED" from="ei2243" to="t282" />
+<TLINK lid="l25" relType="IDENTITY" from="ei2245" to="ei2240" />
+<TLINK lid="l26" relType="BEFORE" from="ei2246" to="t0" />
+<TLINK lid="l27" relType="IS_INCLUDED" from="ei2250" to="ei2246" />
+<TLINK lid="l28" relType="IDENTITY" from="ei2253" to="ei2250" />
+<TLINK lid="l34" relType="IS_INCLUDED" from="ei2256" to="t283" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei2258" to="t283" />
+<TLINK lid="l36" relType="IS_INCLUDED" from="ei2256" to="ei2258" />
+<TLINK lid="l39" relType="IS_INCLUDED" from="ei2260" to="ei2261" />
+<TLINK lid="l40" relType="IS_INCLUDED" from="ei2261" to="t284" />
+<TLINK lid="l41" relType="IS_INCLUDED" from="ei2262" to="t285" />
+<TLINK lid="l44" relType="INCLUDES" from="ei2265" to="ei2260" />
+<TLINK lid="l45" relType="INCLUDES" from="ei2265" to="ei2262" />
+<TLINK lid="l47" relType="INCLUDES" from="ei2266" to="t0" />
+<TLINK lid="l48" relType="BEFORE" from="ei2268" to="t0" />
+<TLINK lid="l49" relType="IS_INCLUDED" from="ei2271" to="t286" />
+<TLINK lid="l50" relType="BEFORE" from="ei2274" to="t0" />
+<TLINK lid="l51" relType="IDENTITY" from="ei2276" to="ei2274" />
+<TLINK lid="l52" relType="IDENTITY" from="ei2278" to="ei2276" />
+<TLINK lid="l53" relType="BEFORE" from="ei2278" to="t0" />
+<TLINK lid="l54" relType="BEFORE" from="ei2281" to="t0" />
+<TLINK lid="l56" relType="BEFORE" from="ei2282" to="t0" />
+<TLINK lid="l57" relType="IDENTITY" from="ei2282" to="ei2283" />
+<TLINK lid="l58" relType="IS_INCLUDED" from="ei2290" to="ei2283" />
+<TLINK lid="l59" relType="IS_INCLUDED" from="ei2291" to="t287" />
+<TLINK lid="l60" relType="BEFORE" from="ei2293" to="t0" />
+<TLINK lid="l61" relType="IS_INCLUDED" from="ei2294" to="t288" />
+<TLINK lid="l62" relType="INCLUDES" from="ei2298" to="t0" />
+<TLINK lid="l63" relType="BEFORE" from="ei2302" to="ei2301" />
+<TLINK lid="l64" relType="BEFORE" from="ei2305" to="t0" />
+<TLINK lid="l65" relType="AFTER" from="ei2307" to="ei2305" />
+<TLINK lid="l66" relType="IS_INCLUDED" from="ei2308" to="t289" />
+<TLINK lid="l69" relType="INCLUDES" from="ei2314" to="t0" />
+<TLINK lid="l70" relType="BEFORE" from="ei2316" to="t0" />
+<TLINK lid="l72" relType="INCLUDES" from="ei2319" to="t0" />
+<TLINK lid="l73" relType="SIMULTANEOUS" from="ei2318" to="ei2320" />
+<TLINK lid="l74" relType="BEFORE" from="ei2321" to="t0" />
+<TLINK lid="l75" relType="BEGUN_BY" from="ei2321" to="ei2323" />
+<TLINK lid="l76" relType="BEGINS" from="ei2321" to="ei2324" />
+<TLINK lid="l77" relType="AFTER" from="ei2325" to="t0" />
+<TLINK lid="l78" relType="INCLUDES" from="ei2327" to="t0" />
+<TLINK lid="l79" relType="SIMULTANEOUS" from="ei2327" to="ei2328" />
+<TLINK lid="l80" relType="IS_INCLUDED" from="ei2329" to="t292" />
+<TLINK lid="l81" relType="AFTER" from="ei2330" to="t0" />
+<TLINK lid="l82" relType="IDENTITY" from="ei2330" to="ei2331" />
+<TLINK lid="l83" relType="BEFORE" from="ei2332" to="t0" />
+<SLINK lid="l145" relType="MODAL" from="ei2298" to="ei2299" />
+<SLINK lid="l86" relType="MODAL" from="ei2217" to="ei2218" />
+<SLINK lid="l87" relType="MODAL" from="ei2219" to="ei2220" />
+<SLINK lid="l88" relType="EVIDENTIAL" from="ei2221" to="ei2222" />
+<SLINK lid="l89" relType="EVIDENTIAL" from="ei2221" to="ei2223" />
+<SLINK lid="l90" relType="EVIDENTIAL" from="ei2225" to="ei2226" />
+<SLINK lid="l93" relType="EVIDENTIAL" from="ei2234" to="ei2235" />
+<SLINK lid="l95" relType="EVIDENTIAL" from="ei2237" to="ei2238" />
+<SLINK lid="l97" relType="EVIDENTIAL" from="ei2241" to="ei2242" />
+<SLINK lid="l98" relType="MODAL" from="ei2242" to="ei2243" />
+<SLINK lid="l99" relType="EVIDENTIAL" from="ei2245" to="ei2244" />
+<SLINK lid="l100" relType="EVIDENTIAL" from="ei2246" to="ei2247" />
+<SLINK lid="l101" relType="MODAL" from="ei2247" to="ei2248" />
+<SLINK lid="l102" relType="EVIDENTIAL" from="ei2250" to="ei2249" />
+<SLINK lid="l104" relType="FACTIVE" from="ei2266" to="ei2265" />
+<SLINK lid="l105" relType="EVIDENTIAL" from="ei2268" to="ei2269" />
+<SLINK lid="l106" relType="EVIDENTIAL" from="ei2268" to="ei2271" />
+<SLINK lid="l107" relType="EVIDENTIAL" from="ei2274" to="ei2273" />
+<SLINK lid="l109" relType="EVIDENTIAL" from="ei2276" to="ei2275" />
+<SLINK lid="l110" relType="EVIDENTIAL" from="ei2278" to="ei2277" />
+<SLINK lid="l111" relType="EVIDENTIAL" from="ei2281" to="ei2279" />
+<SLINK lid="l112" relType="EVIDENTIAL" from="ei2283" to="ei2284" />
+<SLINK lid="l113" relType="MODAL" from="ei2284" to="ei2285" />
+<SLINK lid="l114" relType="EVIDENTIAL" from="ei2290" to="ei2286" />
+<SLINK lid="l115" relType="EVIDENTIAL" from="ei2290" to="ei2288" />
+<SLINK lid="l117" relType="EVIDENTIAL" from="ei2293" to="ei2294" />
+<SLINK lid="l119" relType="EVIDENTIAL" from="ei2293" to="ei2296" />
+<SLINK lid="l120" relType="EVIDENTIAL" from="ei2300" to="ei2298" />
+<SLINK lid="l121" relType="EVIDENTIAL" from="ei2300" to="ei2301" />
+<SLINK lid="l122" relType="EVIDENTIAL" from="ei2304" to="ei2303" />
+<SLINK lid="l123" relType="EVIDENTIAL" from="ei2305" to="ei2306" />
+<SLINK lid="l124" relType="MODAL" from="ei2307" to="ei2308" />
+<SLINK lid="l125" relType="EVIDENTIAL" from="ei2310" to="ei2311" />
+<SLINK lid="l126" relType="MODAL" from="ei2311" to="ei2312" />
+<SLINK lid="l127" relType="EVIDENTIAL" from="ei2314" to="ei2313" />
+<SLINK lid="l129" relType="MODAL" from="ei2319" to="ei2320" />
+<SLINK lid="l130" relType="MODAL" from="ei2328" to="ei2329" />
+<SLINK lid="l131" relType="EVIDENTIAL" from="ei2332" to="ei2330" />
+<SLINK lid="l133" relType="EVIDENTIAL" from="ei2332" to="ei2334" />
+<ALINK lid="l134" relType="INITIATES" from="ei2228" to="ei2229" />
+<ALINK lid="l135" relType="INITIATES" from="ei2271" to="ei2272" />
+<ALINK lid="l136" relType="INITIATES" from="ei2286" to="ei2287" />
+<ALINK lid="l137" relType="INITIATES" from="ei2291" to="ei2292" />
+<ALINK lid="l138" relType="TERMINATES" from="ei2296" to="ei2297" />
+<ALINK lid="l139" relType="INITIATES" from="ei2321" to="ei2322" />
+<ALINK lid="l140" relType="CONTINUES" from="ei2325" to="ei2326" />
+</TimeML>

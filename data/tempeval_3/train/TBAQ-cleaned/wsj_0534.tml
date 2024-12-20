@@ -1,0 +1,30 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0534</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0167 = 891030 891030-0167.
+Conseco to Redeem Preferred 10/30/89 WALL STREET JOURNAL (J) CNC BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) CARMEL, Ind.
+</EXTRAINFO>
+<TEXT>Conseco Inc. <EVENT eid="e1" class="REPORTING" stem="say" offsets="13 17" sent_idx="0">said</EVENT> it is <EVENT eid="e2" class="I_ACTION" stem="call" offsets="24 31" sent_idx="0">calling</EVENT> for the <EVENT eid="e3" class="OCCURRENCE" stem="redemption" offsets="40 50" sent_idx="0">redemption</EVENT> on <TIMEX3 tid="t15" type="DATE" value="1989-12-07" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="54 60" sent_idx="0">Dec. 7</TIMEX3> of all the 800,000 remaining shares outstanding of its $1.875 Series A convertible preferred stock at $26.805 a share.
+The insurance concern <EVENT eid="e5" class="REPORTING" stem="say" offsets="202 206" sent_idx="1">said</EVENT> all conversion rights on the stock will <EVENT eid="e7" class="ASPECTUAL" stem="terminate" offsets="247 256" sent_idx="1">terminate</EVENT> on <TIMEX3 tid="t18" type="DATE" value="1989-11-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="260 267" sent_idx="1">Nov. 30</TIMEX3>. Until <TIMEX3 tid="t22" type="DATE" value="1989-11-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t18" offsets="275 279" sent_idx="1">then</TIMEX3>, Conseco <EVENT eid="e8" class="REPORTING" stem="say" offsets="289 293" sent_idx="1">said</EVENT> the stock <EVENT eid="e9" class="STATE" stem="remains" offsets="304 311" sent_idx="1">remains</EVENT> convertible into common stock at the rate of 1.439 shares of common stock for each share of preferred stock, which is equivalent to a conversion price of $17.50 a common share. In New York Stock Exchange trading <TIMEX3 tid="t19" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="524 530" sent_idx="1">Friday</TIMEX3>, Conseco <EVENT eid="e12" class="OCCURRENCE" stem="close" offsets="540 546" sent_idx="1">closed</EVENT> at $19.50, down 25 cents.</TEXT>
+<MAKEINSTANCE eid="e2" eiid="ei88" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei94" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei87" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei92" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei90" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei93" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei95" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei89" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l15" relType="IDENTITY" from="ei93" to="ei90" />
+<TLINK lid="l1" relType="BEFORE" from="ei90" to="t0" />
+<TLINK lid="l2" relType="IDENTITY" from="ei87" to="ei90" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei92" to="t18" />
+<TLINK lid="l5" relType="ENDED_BY" from="ei94" to="t22" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei95" to="t19" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei89" to="t15" />
+<TLINK lid="l9" relType="BEFORE" from="ei87" to="t0" />
+<SLINK lid="l10" relType="EVIDENTIAL" from="ei90" to="ei92" />
+<SLINK lid="l11" relType="EVIDENTIAL" from="ei93" to="ei94" />
+<SLINK lid="l12" relType="MODAL" from="ei88" to="ei89" />
+<SLINK lid="l13" relType="EVIDENTIAL" from="ei87" to="ei88" />
+</TimeML>

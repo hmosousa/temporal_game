@@ -1,0 +1,79 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0679</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0016 = 891030 891030-0016.
+Business Brief -- Octel Communications Corp.: @ Hewlett-Packard Co.
+Raises @ Stake to 8.5% of Common 10/30/89 WALL STREET JOURNAL (J) HWP OCTL TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+<TEXT>Hewlett-Packard Co. <EVENT eid="e1" class="REPORTING" offsets="20 24" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="OCCURRENCE" offsets="28 34" sent_idx="0">raised</EVENT> its stake in Octel Communications Corp. to 8.5% of the common shares outstanding.
+In a Securities and Exchange Commission filing, Hewlett-Packard <EVENT eid="e4" class="REPORTING" offsets="181 185" sent_idx="1">said</EVENT> it now <EVENT eid="e5" class="STATE" offsets="193 198" sent_idx="1">holds</EVENT> 1,384,119 Octel common shares, including 100,000 shares <EVENT eid="e6" class="OCCURRENCE" offsets="255 261" sent_idx="1">bought</EVENT> from <TIMEX3 tid="t94" type="DATE" value="1989-08-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="267 274" sent_idx="1">Aug. 26</TIMEX3> to <TIMEX3 tid="t51" type="DATE" value="1989-10-20" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="278 285" sent_idx="1">Oct. 20</TIMEX3> for $23.31 to $24.25 a share.
+Hewlett-Packard, a Palo Alto, Calif., computer company, <EVENT eid="e7" class="REPORTING" offsets="372 376" sent_idx="2">said</EVENT> it <EVENT eid="e8" class="OCCURRENCE" offsets="380 388" sent_idx="2">acquired</EVENT> the stock "to <EVENT eid="e10" class="OCCURRENCE" offsets="403 410" sent_idx="2">develop</EVENT> and <EVENT eid="e11" class="STATE" offsets="415 423" sent_idx="2">maintain</EVENT> a strategic partnership in which each company <EVENT eid="e13" class="STATE" offsets="470 477" sent_idx="2">remains</EVENT> independent while <EVENT eid="e15" class="OCCURRENCE" offsets="496 503" sent_idx="2">working</EVENT> together to <EVENT eid="e16" class="OCCURRENCE" offsets="516 522" sent_idx="2">market</EVENT> and <EVENT eid="e17" class="OCCURRENCE" offsets="527 531" sent_idx="2">sell</EVENT> their products."
+Octel <EVENT eid="e18" class="REPORTING" offsets="555 559" sent_idx="3">said</EVENT> the <EVENT eid="e19" class="OCCURRENCE" offsets="564 572" sent_idx="3">purchase</EVENT> was <EVENT eid="e20" class="I_STATE" offsets="577 585" sent_idx="3">expected</EVENT>. Hewlett-Packard <EVENT eid="e21" class="REPORTING" offsets="603 611" sent_idx="3">affirmed</EVENT> it doesn't <EVENT eid="e22" class="I_STATE" offsets="623 627" sent_idx="3">plan</EVENT> to <EVENT eid="e25" class="OCCURRENCE" offsets="631 637" sent_idx="3">obtain</EVENT> control of Octel, a Milpitas, Calif., maker of voice-processing systems.
+<EVENT eid="e59" class="REPORTING" offsets="711 720" sent_idx="4">According</EVENT> to the filing, Hewlett-Packard <EVENT eid="e27" class="OCCURRENCE" offsets="752 760" sent_idx="4">acquired</EVENT> 730,070 common shares from Octel as a result of an <TIMEX3 tid="t57" type="DATE" value="1988-08-10" temporalFunction="false" functionInDocument="NONE" offsets="812 825" sent_idx="4">Aug. 10, 1988</TIMEX3>, stock purchase <EVENT eid="e29" class="I_ACTION" offsets="842 851" sent_idx="4">agreement</EVENT>. That <EVENT eid="e58" class="I_ACTION" offsets="858 864" sent_idx="4">accord</EVENT> also <EVENT eid="e30" class="I_ACTION" offsets="870 876" sent_idx="4">called</EVENT> for Hewlett-Packard to <EVENT eid="e32" class="OCCURRENCE" offsets="900 903" sent_idx="4">buy</EVENT> 730,070 Octel shares in the open market within <TIMEX3 tid="t60" type="DURATION" value="P18M" temporalFunction="false" functionInDocument="NONE" offsets="951 960" sent_idx="4">18 months</TIMEX3>. In addition, Hewlett-Packard <EVENT eid="e36" class="OCCURRENCE" offsets="991 999" sent_idx="4">acquired</EVENT> a <TIMEX3 tid="t61" type="DURATION" value="P2Y" temporalFunction="false" functionInDocument="NONE" offsets="1002 1010" sent_idx="4">two-year</TIMEX3> option to <EVENT eid="e39" class="OCCURRENCE" offsets="1021 1024" sent_idx="4">buy</EVENT> an extra 10%, of which half may be <EVENT eid="e40" class="OCCURRENCE" offsets="1060 1064" sent_idx="4">sold</EVENT> directly to Hewlett-Packard by Octel.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei306" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei307" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei309" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei310" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei311" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei312" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei313" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei314" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei315" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei316" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei317" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei318" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei319" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e18" eiid="ei320" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei321" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e20" eiid="ei322" tense="PAST" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e21" eiid="ei323" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei324" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei325" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei327" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei329" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e58" eiid="ei330" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e30" eiid="ei331" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei332" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei333" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e39" eiid="ei335" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei336" tense="NONE" aspect="PERFECTIVE" polarity="POS" pos="VERB" modality="may" />
+<MAKEINSTANCE eid="e59" eiid="ei337" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l46" relType="IS_INCLUDED" from="ei337" to="t0" />
+<TLINK lid="l1" relType="BEFORE" from="ei335" to="ei336" />
+<TLINK lid="l2" relType="AFTER" from="t0" to="ei311" />
+<TLINK lid="l6" relType="BEFORE" from="ei311" to="ei310" />
+<TLINK lid="l7" relType="BEFORE" from="ei311" to="t0" />
+<TLINK lid="l8" relType="AFTER" from="ei311" to="t94" />
+<TLINK lid="l9" relType="BEFORE" from="ei311" to="t51" />
+<TLINK lid="l10" relType="SIMULTANEOUS" from="ei312" to="ei306" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei314" to="ei315" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei315" to="ei316" />
+<TLINK lid="l13" relType="SIMULTANEOUS" from="ei316" to="ei317" />
+<TLINK lid="l14" relType="AFTER" from="ei314" to="t0" />
+<TLINK lid="l15" relType="AFTER" from="ei315" to="t0" />
+<TLINK lid="l16" relType="BEFORE" from="ei320" to="t0" />
+<TLINK lid="l17" relType="SIMULTANEOUS" from="ei320" to="ei306" />
+<TLINK lid="l18" relType="SIMULTANEOUS" from="ei323" to="ei320" />
+<TLINK lid="l20" relType="AFTER" from="ei327" to="ei329" />
+<TLINK lid="l21" relType="SIMULTANEOUS" from="ei329" to="t57" />
+<TLINK lid="l22" relType="IDENTITY" from="ei330" to="ei329" />
+<TLINK lid="l23" relType="INCLUDES" from="ei330" to="ei331" />
+<TLINK lid="l24" relType="DURING" from="t60" to="ei332" />
+<TLINK lid="l25" relType="AFTER" from="t60" to="t57" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei333" to="ei327" />
+<TLINK lid="l29" relType="IAFTER" from="ei335" to="ei333" />
+<SLINK lid="l30" relType="EVIDENTIAL" from="ei306" to="ei307" />
+<SLINK lid="l31" relType="EVIDENTIAL" from="ei309" to="ei310" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei312" to="ei313" />
+<SLINK lid="l33" relType="MODAL" from="ei313" to="ei314" />
+<SLINK lid="l34" relType="MODAL" from="ei313" to="ei315" />
+<SLINK lid="l35" relType="MODAL" from="ei317" to="ei318" />
+<SLINK lid="l36" relType="MODAL" from="ei317" to="ei319" />
+<SLINK lid="l37" relType="EVIDENTIAL" from="ei320" to="ei322" />
+<SLINK lid="l38" relType="MODAL" from="ei322" to="ei321" />
+<SLINK lid="l39" relType="EVIDENTIAL" from="ei323" to="ei324" />
+<SLINK lid="l40" relType="MODAL" from="ei324" to="ei325" />
+<SLINK lid="l42" relType="MODAL" from="ei331" to="ei332" />
+<SLINK lid="l44" relType="EVIDENTIAL" from="ei337" to="ei327" />
+</TimeML>

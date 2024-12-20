@@ -1,0 +1,41 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>PRI19980205.2000.1998</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-02-05" temporalFunction="false" functionInDocument="CREATION_TIME">19980205</TIMEX3>
+<EXTRAINFO>
+PRI19980205.2000.1998 NEWS STORY
+</EXTRAINFO>
+<TEXT>Thousands of people in Germany have been <EVENT eid="e1" class="OCCURRENCE" offsets="41 54" sent_idx="0">demonstrating</EVENT> <TIMEX3 tid="t38" type="DATE" value="1998-02-05" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="55 60" sent_idx="0">today</TIMEX3> against the high level of unemployment in the country. Latest figures show a sharp <EVENT eid="e4" class="OCCURRENCE" offsets="144 148" sent_idx="0">rise</EVENT>, with nearly five million Germans out of work. Caroline Wyatt reports.
+<EVENT eid="e6" class="OCCURRENCE" offsets="220 228" sent_idx="1">Chanting</EVENT> Helmut Kohl must <EVENT eid="e7" class="OCCURRENCE" offsets="246 248" sent_idx="1">go</EVENT> the unemployed <EVENT eid="e9" class="OCCURRENCE" offsets="264 268" sent_idx="1">took</EVENT> to the streets of the German capital, Berlin, mirroring <EVENT eid="e10" class="OCCURRENCE" offsets="325 333" sent_idx="1">protests</EVENT> around the country. Joblessness is <TIMEX3 tid="t42" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="369 372" sent_idx="1">now</TIMEX3> at its highest level in Germany since the second world <EVENT eid="e12" class="OCCURRENCE" offsets="428 431" sent_idx="1">war</EVENT>. With the general <EVENT eid="e14" class="OCCURRENCE" offsets="450 458" sent_idx="1">election</EVENT> due <TIMEX3 tid="t44" type="DATE" value="1998-09" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="463 477" sent_idx="1">this September</TIMEX3>, record figures couldn't have <EVENT eid="e19" class="OCCURRENCE" offsets="508 512" sent_idx="1">come</EVENT> at a worst time for Chancellor Kohl. His <EVENT eid="e22" class="I_ACTION" offsets="554 561" sent_idx="1">promise</EVENT> to <EVENT eid="e24" class="OCCURRENCE" offsets="565 569" sent_idx="1">half</EVENT> unemployment by <TIMEX3 tid="t45" type="DATE" value="2000" temporalFunction="false" functionInDocument="NONE" offsets="586 607" sent_idx="1">the year two thousand</TIMEX3> has <TIMEX3 tid="t47" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="612 615" sent_idx="1">now</TIMEX3> been <EVENT eid="e25" class="ASPECTUAL" offsets="621 630" sent_idx="1">abandoned</EVENT>. And the German electorate appears increasingly <EVENT eid="e49" class="I_STATE" offsets="679 684" sent_idx="1">eager</EVENT> to <EVENT eid="e28" class="OCCURRENCE" offsets="688 696" sent_idx="1">dispense</EVENT> with the services of Europe's longest serving leader. Caroline Wyatt, BBC news, Bonn.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2001" tense="PRESENT" aspect="PERFECTIVE_PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei2003" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei2005" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei2006" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e9" eiid="ei2007" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei2009" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei2011" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e14" eiid="ei2012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e19" eiid="ei2013" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2015" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei2016" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2017" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e49" eiid="ei2018" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e28" eiid="ei2019" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l24" relType="BEFORE" from="ei2015" to="t0" />
+<TLINK lid="l21" relType="BEFORE" from="ei2011" to="t0" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2001" to="t38" />
+<TLINK lid="l2" relType="IDENTITY" from="t38" to="t0" />
+<TLINK lid="l3" relType="IDENTITY" from="ei2007" to="ei2001" />
+<TLINK lid="l4" relType="IS_INCLUDED" from="ei2005" to="ei2007" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei2012" to="t44" />
+<TLINK lid="l7" relType="BEFORE" from="t38" to="t44" />
+<TLINK lid="l8" relType="BEFORE" from="ei2013" to="ei2012" />
+<TLINK lid="l9" relType="BEFORE" from="ei2013" to="t38" />
+<TLINK lid="l10" relType="IDENTITY" from="t47" to="t42" />
+<TLINK lid="l11" relType="INCLUDES" from="t47" to="ei2017" />
+<TLINK lid="l12" relType="ENDED_BY" from="ei2016" to="t45" />
+<TLINK lid="l13" relType="DURING" from="ei2018" to="t47" />
+<SLINK lid="l14" relType="MODAL" from="ei2018" to="ei2019" />
+<SLINK lid="l15" relType="EVIDENTIAL" from="ei2005" to="ei2006" />
+<SLINK lid="l17" relType="MODAL" from="ei2015" to="ei2016" />
+<ALINK lid="l18" relType="TERMINATES" from="ei2017" to="ei2015" />
+</TimeML>

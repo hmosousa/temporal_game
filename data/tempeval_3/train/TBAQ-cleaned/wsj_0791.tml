@@ -1,0 +1,60 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0791</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-27" temporalFunction="false" functionInDocument="CREATION_TIME">10/27/89</TIMEX3>
+<EXTRAINFO>
+WSJ891027-0104 = 891027 891027-0104.
+Norwood May Offer @ To Acquire Phoenix @ Technologies Shares 10/27/89 WALL STREET JOURNAL (J) PTEC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) WASHINGTON
+</EXTRAINFO>
+<TEXT>Norwood Partners Limited Partnership of Boston <EVENT eid="e1" class="REPORTING" stem="say" offsets="47 51" sent_idx="0">said</EVENT> it may <EVENT eid="e2" class="OCCURRENCE" stem="make" offsets="59 63" sent_idx="0">make</EVENT> a tender <EVENT eid="e4" class="OCCURRENCE" stem="offer" offsets="73 78" sent_idx="0">offer</EVENT> for some or all of Phoenix Technologies Ltd.'s common shares.
+Norwood, Mass.-based Phoenix, a once-high-flying maker of software for personal computers, has <EVENT eid="e6" class="OCCURRENCE" stem="have" offsets="236 239" sent_idx="1">had</EVENT> substantial <EVENT eid="e33" class="OCCURRENCE" stem="loss" offsets="252 258" sent_idx="1">losses</EVENT> in <TIMEX3 tid="t46" type="DURATION" value="P2Q" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="262 283" sent_idx="1">the past two quarters</TIMEX3>. Its stock, which was as high as $18.75 a share, has been <EVENT eid="e7" class="OCCURRENCE" stem="trade" offsets="342 349" sent_idx="1">trading</EVENT> under $4 a share <TIMEX3 tid="t47" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="367 375" sent_idx="1">recently</TIMEX3>. <TIMEX3 tid="t48" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="377 386" sent_idx="1">Yesterday</TIMEX3> it <EVENT eid="e8" class="OCCURRENCE" stem="close" offsets="390 396" sent_idx="1">closed</EVENT> at $4.375 a share, up $1.125, in national over-the-counter <EVENT eid="e9" class="OCCURRENCE" stem="trade" offsets="456 463" sent_idx="1">trading</EVENT>.
+In a Securities and Exchange Commission filing, Norwood <EVENT eid="e11" class="REPORTING" stem="say" offsets="521 525" sent_idx="2">said</EVENT> it's part of a group that <EVENT eid="e12" class="OCCURRENCE" stem="hold" offsets="552 557" sent_idx="2">holds</EVENT> 525,546 Phoenix Technologies common shares, or a 5.3% stake.
+Norwood has <EVENT eid="e14" class="OCCURRENCE" stem="make" offsets="631 635" sent_idx="3">made</EVENT> "no detailed <EVENT eid="e43" class="OCCURRENCE" stem="plan" offsets="649 654" sent_idx="3">plans</EVENT>," but it has <EVENT eid="e16" class="OCCURRENCE" stem="engage" offsets="668 675" sent_idx="3">engaged</EVENT> in <EVENT eid="e17" class="OCCURRENCE" stem="talk" offsets="679 684" sent_idx="3">talks</EVENT> with other shareholders, the filing <EVENT eid="e20" class="REPORTING" stem="say" offsets="721 725" sent_idx="3">said</EVENT>. Phoenix <EVENT eid="e21" class="I_ACTION" stem="decline" offsets="735 743" sent_idx="3">declined</EVENT> to <EVENT eid="e23" class="OCCURRENCE" stem="comment" offsets="747 754" sent_idx="3">comment</EVENT>.
+Norwood is <EVENT eid="e24" class="OCCURRENCE" stem="control" offsets="767 777" sent_idx="4">controlled</EVENT> by Daniel L. Barnett and Paul A. Reese, both officers of Boston-based Oasis Capital Management Inc., a small Boston money management firm. Also <EVENT eid="e25" class="OCCURRENCE" stem="involve" offsets="922 930" sent_idx="4">involved</EVENT> in the group is Robert F. Angelo, formerly Phoenix's senior vice president, field operations, who <EVENT eid="e29" class="OCCURRENCE" stem="leave" offsets="1029 1033" sent_idx="4">left</EVENT> Phoenix at <TIMEX3 tid="t49" type="DATE" value="1989-10" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1045 1069" sent_idx="4">the beginning of October</TIMEX3>. Mr. Angelo was <EVENT eid="e30" class="I_ACTION" stem="describe" offsets="1086 1095" sent_idx="4">described</EVENT> in the filing as a <EVENT eid="e170" class="STATE" stem="consultant" offsets="1115 1125" sent_idx="4">consultant</EVENT> to Oasis.</TEXT>
+<MAKEINSTANCE eid="e7" eiid="ei185" tense="PRESENT" aspect="PERFECTIVE_PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e170" eiid="ei203" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei197" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei191" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei183" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e29" eiid="ei201" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei179" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei182" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei196" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei180" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="may" />
+<MAKEINSTANCE eid="e16" eiid="ei194" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei181" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e30" eiid="ei202" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei193" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei189" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei190" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei192" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei200" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei187" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei195" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei198" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei199" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l31" relType="BEFORE" from="ei202" to="t0" />
+<TLINK lid="l30" relType="BEFORE" from="ei196" to="t0" />
+<TLINK lid="l1" relType="BEFORE" from="ei179" to="t0" />
+<TLINK lid="l2" relType="IDENTITY" from="ei180" to="ei181" />
+<TLINK lid="l3" relType="IDENTITY" from="ei182" to="ei183" />
+<TLINK lid="l4" relType="INCLUDES" from="ei199" to="t0" />
+<TLINK lid="l5" relType="AFTER" from="ei200" to="ei201" />
+<TLINK lid="l6" relType="BEFORE" from="ei182" to="ei179" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei182" to="t46" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei200" to="ei199" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei187" to="t48" />
+<TLINK lid="l16" relType="IDENTITY" from="ei190" to="ei179" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei201" to="t49" />
+<TLINK lid="l18" relType="BEFORE" from="ei192" to="t0" />
+<TLINK lid="l19" relType="IDENTITY" from="ei192" to="ei193" />
+<TLINK lid="l20" relType="BEFORE" from="ei197" to="t0" />
+<TLINK lid="l21" relType="IS_INCLUDED" from="ei194" to="ei195" />
+<TLINK lid="l22" relType="BEFORE" from="ei194" to="t0" />
+<SLINK lid="l29" relType="EVIDENTIAL" from="ei196" to="ei194" />
+<SLINK lid="l28" relType="FACTIVE" from="ei194" to="ei195" />
+<SLINK lid="l23" relType="EVIDENTIAL" from="ei179" to="ei180" />
+<SLINK lid="l24" relType="COUNTER_FACTIVE" from="ei197" to="ei198" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei196" to="ei192" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei202" to="ei203" />
+<SLINK lid="l27" relType="EVIDENTIAL" from="ei190" to="ei191" />
+</TimeML>

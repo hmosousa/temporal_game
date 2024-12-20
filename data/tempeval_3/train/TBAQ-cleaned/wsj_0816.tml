@@ -1,0 +1,124 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0816</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-27" temporalFunction="false" functionInDocument="CREATION_TIME">10/27/89</TIMEX3>
+<EXTRAINFO>
+WSJ891027-0078 = 891027 891027-0078.
+Thursday's Markets: @ Earnings @ Data Cause @ Stock Fall @ --- @ Industrials Sink 39.55; @ Bonds Slip, but Dollar @ Soars Against Pound @ ---- @ By Douglas R. Sease @ Staff Reporter of The Wall Street Journal 10/27/89 WALL STREET JOURNAL (J) MONETARY NEWS, FOREIGN EXCHANGE, TRADE (MON) STOCK INDEXES (NDX) STOCK MARKET, OFFERINGS (STK) FINANCIAL, ACCOUNTING, LEASING (FIN) BOND MARKET NEWS (BON) FOREIGN-EXCHANGE MARKETS (FRX) TREASURY DEPARTMENT (TRE)
+</EXTRAINFO>
+<TEXT>Some lousy earnings reports <EVENT eid="e2" class="OCCURRENCE" offsets="28 35" sent_idx="0">whacked</EVENT> the stock market, but bond prices <EVENT eid="e89" class="OCCURRENCE" offsets="70 74" sent_idx="0">fell</EVENT> only slightly and the dollar <EVENT eid="e6" class="OCCURRENCE" offsets="104 108" sent_idx="0">rose</EVENT> a little against most major currencies.
+The Dow Jones Industrial Average <EVENT eid="e8" class="OCCURRENCE" offsets="182 189" sent_idx="1">tumbled</EVENT> 39.55 points, to 2613.73, in active trading. Long-term Treasury bonds <EVENT eid="e11" class="ASPECTUAL" offsets="260 265" sent_idx="1">ended</EVENT> slightly higher. The dollar <EVENT eid="e13" class="OCCURRENCE" offsets="294 298" sent_idx="1">rose</EVENT> modestly against the mark and the yen, but <EVENT eid="e15" class="OCCURRENCE" offsets="342 348" sent_idx="1">soared</EVENT> against the pound following the <EVENT eid="e17" class="OCCURRENCE" offsets="381 392" sent_idx="1">resignation</EVENT> of Britain's chancellor of the Exchequer, Nigel Lawson.
+Analysts have <EVENT eid="e18" class="I_ACTION" offsets="463 473" sent_idx="2">complained</EVENT> that <TIMEX3 tid="t176" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="479 492" sent_idx="2">third-quarter</TIMEX3> corporate earnings haven't been very <EVENT eid="e135" class="STATE" offsets="530 534" sent_idx="2">good</EVENT>, but the effect <EVENT eid="e20" class="OCCURRENCE" offsets="551 554" sent_idx="2">hit</EVENT> home particularly hard <TIMEX3 tid="t95" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="578 587" sent_idx="2">yesterday</TIMEX3>. Compaq Computer <EVENT eid="e21" class="OCCURRENCE" offsets="605 615" sent_idx="2">nose-dived</EVENT> $8.625 a share, to $100, and <EVENT eid="e22" class="OCCURRENCE" offsets="645 651" sent_idx="2">pulled</EVENT> other technology issues lower after <EVENT eid="e24" class="REPORTING" offsets="688 697" sent_idx="2">reporting</EVENT> lower-than-expected earnings after the stock market <EVENT eid="e27" class="OCCURRENCE" offsets="750 756" sent_idx="2">closed</EVENT> <TIMEX3 tid="t99" type="DATE" value="1989-10-25" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="757 766" sent_idx="2">Wednesday</TIMEX3>. <TIMEX3 tid="t100" type="DATE" value="1989-10-26" mod="END" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="768 783" sent_idx="2">Later yesterday</TIMEX3> the nation's major auto makers <EVENT eid="e28" class="OCCURRENCE" offsets="815 820" sent_idx="2">added</EVENT> to the gloom when they each <EVENT eid="e30" class="REPORTING" offsets="849 857" sent_idx="2">reported</EVENT> their core auto operations were net <EVENT eid="e101" class="STATE" offsets="894 900" sent_idx="2">losers</EVENT> in <TIMEX3 tid="t103" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="904 921" sent_idx="2">the third quarter</TIMEX3>.
+The less-than-robust <TIMEX3 tid="t104" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="944 957" sent_idx="3">third-quarter</TIMEX3> <EVENT eid="e32" class="STATE" offsets="958 965" sent_idx="3">results</EVENT> came amid renewed concern about the volatility of stock prices and the role of computer-aided program trading. Taken together, the worries <EVENT eid="e37" class="OCCURRENCE" offsets="1105 1113" sent_idx="3">prompted</EVENT> a broad <EVENT eid="e109" class="OCCURRENCE" offsets="1122 1130" sent_idx="3">sell-off</EVENT> of stocks. The number of stocks on the New York Stock Exchange that <EVENT eid="e38" class="OCCURRENCE" offsets="1199 1203" sent_idx="3">fell</EVENT> in price <TIMEX3 tid="t110" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1213 1222" sent_idx="3">yesterday</TIMEX3> exceeded 1,000, a key measure of underlying sentiment among technical analysts.
+Although the government <EVENT eid="e43" class="REPORTING" offsets="1327 1331" sent_idx="4">said</EVENT> the economy <EVENT eid="e44" class="OCCURRENCE" offsets="1344 1348" sent_idx="4">grew</EVENT> an estimated 2.5% in <TIMEX3 tid="t112" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1370 1387" sent_idx="4">the third quarter</TIMEX3>, in line with expectations, analysts are increasingly <EVENT eid="e47" class="I_ACTION" offsets="1442 1452" sent_idx="4">predicting</EVENT> much more sluggish <EVENT eid="e114" class="OCCURRENCE" offsets="1472 1478" sent_idx="4">growth</EVENT> -- and therefore more corporate earnings <EVENT eid="e48" class="OCCURRENCE" offsets="1520 1535" sent_idx="4">disappointments</EVENT> -- for <TIMEX3 tid="t116" type="DATE" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1543 1561" sent_idx="4">the fourth quarter</TIMEX3>.
+"There are a lot more downward <EVENT eid="e49" class="OCCURRENCE" offsets="1594 1603" sent_idx="5">revisions</EVENT> of earnings forecasts than upward <EVENT eid="e51" class="OCCURRENCE" offsets="1638 1647" sent_idx="5">revisions</EVENT>," <EVENT eid="e52" class="REPORTING" offsets="1650 1654" sent_idx="5">said</EVENT> Abby Joseph Cohen, a market strategist at Drexel Burnham Lambert. "People are <EVENT eid="e53" class="OCCURRENCE" offsets="1733 1744" sent_idx="5">questioning</EVENT> corporate profits as a pillar of support for the equity market."
+The bond market was <EVENT eid="e117" class="OCCURRENCE" offsets="1830 1837" sent_idx="6">unmoved</EVENT> by the economic statistics. While bond investors would have <EVENT eid="e118" class="I_STATE" offsets="1898 1907" sent_idx="6">preferred</EVENT> <EVENT eid="e119" class="OCCURRENCE" offsets="1908 1914" sent_idx="6">growth</EVENT> to <EVENT eid="e134" class="STATE" offsets="1918 1920" sent_idx="6">be</EVENT> a little slower, they were <EVENT eid="e60" class="OCCURRENCE" offsets="1948 1955" sent_idx="6">cheered</EVENT> by inflation measures in the data that showed prices <EVENT eid="e63" class="OCCURRENCE" offsets="2009 2015" sent_idx="6">rising</EVENT> at a modest annual rate of 2.9%. That is another small <EVENT eid="e65" class="I_ACTION" offsets="2071 2084" sent_idx="6">encouragement</EVENT> for the Federal Reserve to <EVENT eid="e120" class="OCCURRENCE" offsets="2112 2117" sent_idx="6">lower</EVENT> interest rates in <TIMEX3 tid="t121" type="DURATION" value="PXW" temporalFunction="true" functionInDocument="NONE" beginPoint="t0" offsets="2136 2148" sent_idx="6">coming weeks</TIMEX3>, they <EVENT eid="e68" class="I_ACTION" offsets="2155 2163" sent_idx="6">reasoned</EVENT>.
+In major market <EVENT eid="e123" class="OCCURRENCE" offsets="2181 2189" sent_idx="7">activity</EVENT>: Stock prices <EVENT eid="e70" class="OCCURRENCE" offsets="2204 2208" sent_idx="7">fell</EVENT> sharply in active trading. Volume on the New York Stock Exchange <EVENT eid="e73" class="OCCURRENCE" offsets="2274 2281" sent_idx="7">totaled</EVENT> 175.2 million shares. Declining issues on the Big Board <EVENT eid="e75" class="OCCURRENCE" offsets="2338 2349" sent_idx="7">outstripped</EVENT> gainers 1,141 to 406.
+Bond prices were barely <EVENT eid="e124" class="STATE" offsets="2396 2402" sent_idx="8">higher</EVENT>. The Treasury's benchmark <TIMEX3 tid="t500" type="DURATION" value="P30Y" temporalFunction="false" functionInDocument="NONE" offsets="2429 2436" sent_idx="8">30-year</TIMEX3> <EVENT eid="e76" class="OCCURRENCE" offsets="2437 2441" sent_idx="8">rose</EVENT> fractionally. Yield on the issue was 7.88%.
+The dollar <EVENT eid="e80" class="OCCURRENCE" offsets="2497 2501" sent_idx="9">rose</EVENT> modestly against most major currencies. In late New York trading the dollar was at 1.8400 marks and 142.10 yen compared with 1.8353 marks and 141.52 yen <TIMEX3 tid="t130" type="DATE" value="1989-10-25" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2655 2664" sent_idx="9">Wednesday</TIMEX3>. The dollar <EVENT eid="e85" class="OCCURRENCE" offsets="2677 2683" sent_idx="9">soared</EVENT> against the pound, which was at $1.5765 compared with $1.6145 <TIMEX3 tid="t131" type="DATE" value="1989-10-25" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2746 2755" sent_idx="9">Wednesday</TIMEX3>.</TEXT>
+<MAKEINSTANCE eid="e2" eiid="ei481" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e89" eiid="ei482" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei483" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei484" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei486" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei487" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei488" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei489" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e18" eiid="ei490" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei492" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei493" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei495" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei496" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e27" eiid="ei498" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei499" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei500" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e101" eiid="ei501" tense="PAST" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e32" eiid="ei502" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e37" eiid="ei507" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e109" eiid="ei508" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e38" eiid="ei509" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei510" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei511" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei513" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e114" eiid="ei514" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e48" eiid="ei515" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e49" eiid="ei516" tense="PRESENT" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e51" eiid="ei518" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e52" eiid="ei519" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei520" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e117" eiid="ei521" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e118" eiid="ei522" tense="NONE" aspect="PERFECTIVE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e119" eiid="ei523" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e60" eiid="ei524" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei525" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e65" eiid="ei526" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e120" eiid="ei527" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei528" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e123" eiid="ei529" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e70" eiid="ei530" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e73" eiid="ei531" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e75" eiid="ei532" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e124" eiid="ei533" tense="PAST" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e76" eiid="ei534" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei535" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e85" eiid="ei538" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e134" eiid="ei541" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e135" eiid="ei542" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="ADJECTIVE" />
+<TLINK lid="l76" relType="IS_INCLUDED" from="ei523" to="t116" />
+<TLINK lid="l75" relType="SIMULTANEOUS" from="ei542" to="t176" />
+<TLINK lid="l74" relType="BEFORE" from="ei490" to="t0" />
+<TLINK lid="l2" relType="BEFORE" from="ei481" to="t0" />
+<TLINK lid="l3" relType="BEFORE" from="ei481" to="ei482" />
+<TLINK lid="l4" relType="SIMULTANEOUS" from="ei482" to="ei483" />
+<TLINK lid="l5" relType="SIMULTANEOUS" from="ei484" to="ei482" />
+<TLINK lid="l8" relType="IDENTITY" from="ei487" to="ei483" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei488" to="ei487" />
+<TLINK lid="l10" relType="AFTER" from="ei488" to="ei489" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei492" to="t95" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei493" to="ei492" />
+<TLINK lid="l14" relType="SIMULTANEOUS" from="ei493" to="ei495" />
+<TLINK lid="l15" relType="AFTER" from="ei495" to="ei496" />
+<TLINK lid="l16" relType="AFTER" from="ei496" to="ei498" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei498" to="t99" />
+<TLINK lid="l18" relType="AFTER" from="ei495" to="t99" />
+<TLINK lid="l19" relType="IS_INCLUDED" from="ei499" to="t100" />
+<TLINK lid="l20" relType="AFTER" from="ei499" to="ei500" />
+<TLINK lid="l21" relType="ENDS" from="ei501" to="t103" />
+<TLINK lid="l22" relType="ENDS" from="ei502" to="t104" />
+<TLINK lid="l27" relType="BEFORE" from="ei507" to="ei508" />
+<TLINK lid="l28" relType="IS_INCLUDED" from="ei509" to="t110" />
+<TLINK lid="l29" relType="IS_INCLUDED" from="ei511" to="t112" />
+<TLINK lid="l31" relType="INCLUDES" from="ei513" to="t0" />
+<TLINK lid="l32" relType="BEFORE" from="ei510" to="t0" />
+<TLINK lid="l33" relType="DURING" from="ei514" to="t116" />
+<TLINK lid="l34" relType="BEFORE" from="ei514" to="ei515" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei515" to="t116" />
+<TLINK lid="l38" relType="BEFORE" from="ei519" to="t0" />
+<TLINK lid="l39" relType="IS_INCLUDED" from="ei519" to="ei516" />
+<TLINK lid="l40" relType="INCLUDES" from="ei520" to="ei519" />
+<TLINK lid="l41" relType="BEFORE" from="ei521" to="t0" />
+<TLINK lid="l42" relType="SIMULTANEOUS" from="ei524" to="ei521" />
+<TLINK lid="l43" relType="AFTER" from="ei524" to="ei522" />
+<TLINK lid="l44" relType="BEFORE" from="ei525" to="ei524" />
+<TLINK lid="l45" relType="SIMULTANEOUS" from="ei528" to="ei524" />
+<TLINK lid="l46" relType="IS_INCLUDED" from="ei527" to="t121" />
+<TLINK lid="l47" relType="BEFORE" from="ei529" to="t0" />
+<TLINK lid="l48" relType="IS_INCLUDED" from="ei530" to="ei529" />
+<TLINK lid="l49" relType="IS_INCLUDED" from="ei531" to="ei529" />
+<TLINK lid="l50" relType="IS_INCLUDED" from="ei532" to="ei529" />
+<TLINK lid="l51" relType="IS_INCLUDED" from="ei533" to="ei529" />
+<TLINK lid="l52" relType="IS_INCLUDED" from="ei534" to="ei529" />
+<TLINK lid="l53" relType="IS_INCLUDED" from="ei535" to="ei529" />
+<TLINK lid="l54" relType="AFTER" from="ei529" to="t130" />
+<TLINK lid="l55" relType="IS_INCLUDED" from="ei529" to="t110" />
+<TLINK lid="l57" relType="IS_INCLUDED" from="ei538" to="ei529" />
+<SLINK lid="l73" relType="EVIDENTIAL" from="ei519" to="ei516" />
+<SLINK lid="l71" relType="MODAL" from="ei490" to="ei542" />
+<SLINK lid="l60" relType="EVIDENTIAL" from="ei500" to="ei501" />
+<SLINK lid="l63" relType="EVIDENTIAL" from="ei510" to="ei511" />
+<SLINK lid="l65" relType="MODAL" from="ei513" to="ei514" />
+<SLINK lid="l66" relType="MODAL" from="ei513" to="ei515" />
+<SLINK lid="l67" relType="EVIDENTIAL" from="ei519" to="ei520" />
+<SLINK lid="l68" relType="MODAL" from="ei528" to="ei526" />
+<SLINK lid="l69" relType="MODAL" from="ei526" to="ei527" />
+<SLINK lid="l70" relType="MODAL" from="ei522" to="ei541" />
+</TimeML>

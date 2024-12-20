@@ -1,0 +1,85 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0187</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0003 = 891102 891102-0003.
+International: @ Finland, Big Creditors @ To Set Up Company @ To Complete Ships 11/02/89 WALL STREET JOURNAL (J) EUROP CCL BANKRUPTCIES (BCY) TRANSPORTATION, TRUCK AND SHIP LINES, RAILROADS (TRA) STOCKHOLM
+</EXTRAINFO>
+<TEXT>The Finnish government and major creditors of bankrupt shipyard Waertsilae Marine Industries Oy <EVENT eid="e1" class="I_ACTION" stem="agree" offsets="96 102" sent_idx="0">agreed</EVENT> in principle to <EVENT eid="e2" class="OCCURRENCE" stem="form" offsets="119 123" sent_idx="0">form</EVENT> a new company to <EVENT eid="e3" class="OCCURRENCE" stem="complete" offsets="141 149" sent_idx="0">complete</EVENT> most of the troubled shipyard's backlog of 15 ships.
+The new company will <EVENT eid="e4" class="I_ACTION" stem="attempt" offsets="224 231" sent_idx="1">attempt</EVENT> to <EVENT eid="e5" class="OCCURRENCE" stem="limit" offsets="235 240" sent_idx="1">limit</EVENT> the shipyard's losses, participants <EVENT eid="e6" class="REPORTING" stem="say" offsets="277 281" sent_idx="1">said</EVENT>. "The situation is that the bankruptcy court will <EVENT eid="e7" class="OCCURRENCE" stem="get" offsets="332 335" sent_idx="1">get</EVENT> out of the shipbuilding business. Everything will be taken over by the new company," <EVENT eid="e9" class="REPORTING" stem="say" offsets="421 425" sent_idx="1">said</EVENT> Christian Andersson, executive vice president of Oy Waertsilae, former parent of Waertsilae Marine.
+Once its ownership is <EVENT eid="e10" class="OCCURRENCE" stem="finalize" offsets="548 557" sent_idx="2">finalized</EVENT>, the new company will <EVENT eid="e40" class="ASPECTUAL" stem="open" offsets="580 584" sent_idx="2">open</EVENT> <EVENT eid="e41" class="OCCURRENCE" stem="talk" offsets="585 590" sent_idx="2">talks</EVENT> with state-appointed receivers to <EVENT eid="e12" class="OCCURRENCE" stem="buy" offsets="625 628" sent_idx="2">buy</EVENT> or <EVENT eid="e43" class="OCCURRENCE" stem="lease" offsets="632 637" sent_idx="2">lease</EVENT> Waertsilae Marine's shipyard facilities. Subcontractors will be <EVENT eid="e13" class="I_ACTION" stem="offer" offsets="702 709" sent_idx="2">offered</EVENT> a <EVENT eid="e44" class="OCCURRENCE" stem="settlement" offsets="712 722" sent_idx="2">settlement</EVENT> and a swift <EVENT eid="e45" class="OCCURRENCE" stem="transition" offsets="735 745" sent_idx="2">transition</EVENT> to new management is <EVENT eid="e14" class="I_STATE" stem="expect" offsets="767 775" sent_idx="2">expected</EVENT> to <EVENT eid="e15" class="I_ACTION" stem="avert" offsets="779 784" sent_idx="2">avert</EVENT> an <EVENT eid="e46" class="OCCURRENCE" stem="exodus" offsets="788 794" sent_idx="2">exodus</EVENT> of skilled workers from Waertsilae Marine's two big shipyards, government officials <EVENT eid="e16" class="REPORTING" stem="say" offsets="879 883" sent_idx="2">said</EVENT>.
+Under an accord <EVENT eid="e17" class="OCCURRENCE" stem="sign" offsets="901 907" sent_idx="3">signed</EVENT> <TIMEX3 tid="t35" type="DATE" value="1989-11-01" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="908 917" sent_idx="3">yesterday</TIMEX3>, the government and Union Bank of Finland would <EVENT eid="e18" class="OCCURRENCE" stem="become" offsets="966 972" sent_idx="3">become</EVENT> major shareholders in the new company, each <EVENT eid="e20" class="OCCURRENCE" stem="inject" offsets="1017 1026" sent_idx="3">injecting</EVENT> 100 million Finnish markkaa ($23.5 million). Oy Waertsilae is to <EVENT eid="e21" class="OCCURRENCE" stem="contribute" offsets="1092 1102" sent_idx="3">contribute</EVENT> 200 million markkaa, most of it as subordinated debt, and <EVENT eid="e22" class="OCCURRENCE" stem="take" offsets="1161 1165" sent_idx="3">take</EVENT> a minority stake in the new company.
+Customers <EVENT eid="e23" class="STATE" stem="hold" offsets="1213 1220" sent_idx="4">holding</EVENT> contracts for Waertsilae Marine's undelivered ships are <EVENT eid="e24" class="I_STATE" stem="expect" offsets="1277 1285" sent_idx="4">expected</EVENT> to <EVENT eid="e25" class="OCCURRENCE" stem="subscribe" offsets="1289 1298" sent_idx="4">subscribe</EVENT> most of the remaining 170 million markkaa in share capital, government officials <EVENT eid="e27" class="REPORTING" stem="say" offsets="1380 1384" sent_idx="4">said</EVENT>.
+Waertsilae Marine's biggest creditor is Miami-based Carnival Cruise Lines Inc. Carnival, which <EVENT eid="e28" class="STATE" stem="have" offsets="1481 1484" sent_idx="5">has</EVENT> three ships on order from Waertsilae Marine, <EVENT eid="e232" class="OCCURRENCE" stem="present" offsets="1530 1539" sent_idx="5">presented</EVENT> claims for $1.5 billion damages in the bankruptcy court <TIMEX3 tid="t37" type="DATE" value="1989-W44" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1596 1605" sent_idx="5">this week</TIMEX3>.
+Waertsilae Marine's bankruptcy <EVENT eid="e50" class="OCCURRENCE" stem="proceedings" offsets="1638 1649" sent_idx="6">proceedings</EVENT> <EVENT eid="e32" class="ASPECTUAL" stem="begin" offsets="1650 1655" sent_idx="6">began</EVENT> <TIMEX3 tid="t36" type="DATE" value="1989-10-31" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1656 1663" sent_idx="6">Tuesday</TIMEX3> in a Helsinki court.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei249" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei250" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei251" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei252" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei253" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei254" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei255" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei257" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei258" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei259" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei260" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei261" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei262" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei263" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei264" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e45" eiid="ei265" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e14" eiid="ei266" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei267" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei268" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei269" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei270" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei271" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e20" eiid="ei272" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei273" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="none" />
+<MAKEINSTANCE eid="e22" eiid="ei274" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" modality="none" />
+<MAKEINSTANCE eid="e23" eiid="ei275" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei276" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei277" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei278" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei279" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e232" eiid="ei281" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei282" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e32" eiid="ei283" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l41" relType="BEGUN_BY" from="ei282" to="t36" />
+<TLINK lid="l40" relType="BEFORE" from="ei278" to="t0" />
+<TLINK lid="l39" relType="SIMULTANEOUS" from="ei274" to="ei273" />
+<TLINK lid="l38" relType="AFTER" from="ei273" to="t0" />
+<TLINK lid="l37" relType="BEFORE" from="ei269" to="t0" />
+<TLINK lid="l36" relType="DURING" from="ei264" to="ei260" />
+<TLINK lid="l35" relType="AFTER" from="ei260" to="ei258" />
+<TLINK lid="l34" relType="AFTER" from="ei252" to="t0" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei283" to="t36" origin="USER" />
+<TLINK lid="l2" relType="BEFORE" from="ei249" to="t0" origin="USER" />
+<TLINK lid="l3" relType="BEFORE" from="ei254" to="t0" origin="USER" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei257" to="ei254" origin="USER" />
+<TLINK lid="l7" relType="BEFORE" from="ei258" to="ei259" origin="USER" />
+<TLINK lid="l8" relType="AFTER" from="ei263" to="t0" origin="USER" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei270" to="t35" origin="USER" />
+<TLINK lid="l11" relType="AFTER" from="ei272" to="ei271" origin="USER" />
+<TLINK lid="l12" relType="DURING" from="ei275" to="t0" origin="USER" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei281" to="t37" origin="USER" />
+<TLINK lid="l14" relType="DURING" from="ei279" to="t0" origin="USER" />
+<SLINK lid="l33" relType="MODAL" from="ei266" to="ei267" />
+<SLINK lid="l32" relType="MODAL" from="ei263" to="ei264" />
+<SLINK lid="l31" relType="EVIDENTIAL" from="ei254" to="ei252" />
+<SLINK lid="l15" relType="MODAL" from="ei249" to="ei250" />
+<SLINK lid="l16" relType="MODAL" from="ei250" to="ei251" />
+<SLINK lid="l17" relType="MODAL" from="ei252" to="ei253" />
+<SLINK lid="l18" relType="EVIDENTIAL" from="ei257" to="ei255" />
+<SLINK lid="l20" relType="MODAL" from="ei260" to="ei261" />
+<SLINK lid="l21" relType="MODAL" from="ei260" to="ei262" />
+<SLINK lid="l22" relType="MODAL" from="ei266" to="ei265" />
+<SLINK lid="l23" relType="MODAL" from="ei265" to="ei267" />
+<SLINK lid="l24" relType="COUNTER_FACTIVE" from="ei267" to="ei268" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei269" to="ei263" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei269" to="ei266" />
+<SLINK lid="l27" relType="MODAL" from="ei276" to="ei277" />
+<SLINK lid="l28" relType="EVIDENTIAL" from="ei278" to="ei276" />
+<ALINK lid="l29" relType="INITIATES" from="ei283" to="ei282" />
+<ALINK lid="l30" relType="INITIATES" from="ei259" to="ei260" />
+</TimeML>

@@ -1,0 +1,67 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0670</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0027 = 891030 891030-0027.
+National Intergroup @ To Report Charge @ For Third Quarter 10/30/89 WALL STREET JOURNAL (J) NII TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) PITTSBURGH
+</EXTRAINFO>
+<TEXT>National Intergroup Inc. <EVENT eid="e1" class="REPORTING" offsets="25 29" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_STATE" offsets="33 40" sent_idx="0">expects</EVENT> to <EVENT eid="e4" class="REPORTING" offsets="44 50" sent_idx="0">report</EVENT> a <EVENT eid="e48" class="STATE" offsets="53 59" sent_idx="0">charge</EVENT> of $5.3 million related to the <EVENT eid="e6" class="OCCURRENCE" offsets="91 95" sent_idx="0">sale</EVENT> of its aluminum unit's extrusion division for <TIMEX3 tid="t52" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="142 159" sent_idx="0">the third quarter</TIMEX3>.
+The company <EVENT eid="e7" class="REPORTING" offsets="173 177" sent_idx="1">said</EVENT> it has <EVENT eid="e8" class="I_ACTION" offsets="185 191" sent_idx="1">agreed</EVENT> to <EVENT eid="e10" class="OCCURRENCE" offsets="195 199" sent_idx="1">sell</EVENT> the extrusion division for $15 million to R.D. Werner Co., a closely held firm based in Greenville, Pa.
+The <EVENT eid="e123" class="STATE" offsets="308 314" sent_idx="2">charge</EVENT> is offset by an after-tax <EVENT eid="e54" class="STATE" offsets="341 345" sent_idx="2">gain</EVENT> of about $30 million in <TIMEX3 tid="t53" type="DATE" value="1989-Q3" temporalFunction="false" functionInDocument="NONE" anchorTimeID="t52" offsets="370 381" sent_idx="2">the quarter</TIMEX3> from the previously announced pact to <EVENT eid="e17" class="OCCURRENCE" offsets="420 424" sent_idx="2">sell</EVENT> National Aluminum's rolling division.
+National Intergroup in <TIMEX3 tid="t59" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t52" offsets="486 512" sent_idx="3">the year-ago third quarter</TIMEX3> <EVENT eid="e19" class="OCCURRENCE" offsets="513 519" sent_idx="3">earned</EVENT> $22.5 million, or 97 cents a share, including a <EVENT eid="e60" class="OCCURRENCE" offsets="568 572" sent_idx="3">gain</EVENT> of $18 million from the <EVENT eid="e20" class="OCCURRENCE" offsets="597 601" sent_idx="3">sale</EVENT> of a steel tube company. Revenue was $778.6 million.
+The company also <EVENT eid="e22" class="REPORTING" offsets="672 676" sent_idx="4">said</EVENT> it <EVENT eid="e23" class="ASPECTUAL" offsets="680 689" sent_idx="4">continues</EVENT> to <EVENT eid="e25" class="I_ACTION" offsets="693 700" sent_idx="4">explore</EVENT> all options concerning the possible <EVENT eid="e28" class="OCCURRENCE" offsets="737 741" sent_idx="4">sale</EVENT> of National Aluminum's 54.5% stake in an aluminum smelter in Hawesville, Ky.
+The <EVENT eid="e31" class="OCCURRENCE" offsets="823 827" sent_idx="5">sale</EVENT> of the extrusion division is subject to audit <EVENT eid="e34" class="OCCURRENCE" offsets="874 885" sent_idx="5">adjustments</EVENT> for working capital changes through the closing.
+The agreement also provides for potential <EVENT eid="e41" class="OCCURRENCE" offsets="977 985" sent_idx="6">payments</EVENT> of additional proceeds to National Aluminum over <TIMEX3 tid="t220" type="DURATION" value="P2Y" temporalFunction="true" functionInDocument="NONE" beginPoint="t0" offsets="1035 1053" sent_idx="6">the next two years</TIMEX3>, depending on the plant's shipping levels.
+The extrusion unit produces bare and painted custom extrusions for building products and construction industries. In <TIMEX3 tid="t68" type="DATE" value="1989" temporalFunction="false" functionInDocument="NONE" offsets="1214 1225" sent_idx="7">fiscal 1989</TIMEX3>, it <EVENT eid="e69" class="STATE" offsets="1230 1233" sent_idx="7">had</EVENT> <EVENT eid="e70" class="STATE" offsets="1234 1239" sent_idx="7">sales</EVENT> of about $40 million and an operating <EVENT eid="e47" class="STATE" offsets="1278 1282" sent_idx="7">loss</EVENT> of $1.5 million.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei1990" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei1991" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei1992" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e48" eiid="ei1993" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei1994" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei1995" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei1996" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei1997" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e123" eiid="ei1998" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e54" eiid="ei1999" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e17" eiid="ei2002" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2003" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei2004" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e20" eiid="ei2005" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e22" eiid="ei2006" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2007" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2008" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei2009" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e31" eiid="ei2010" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e34" eiid="ei2012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e41" eiid="ei2014" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e69" eiid="ei2016" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e70" eiid="ei2017" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e47" eiid="ei2018" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l37" relType="INCLUDES" from="ei2008" to="ei2007" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2017" to="t68" />
+<TLINK lid="l2" relType="BEFORE" from="ei1990" to="t0" />
+<TLINK lid="l3" relType="BEFORE" from="ei1994" to="ei1993" />
+<TLINK lid="l4" relType="BEFORE" from="ei1994" to="ei1990" />
+<TLINK lid="l5" relType="BEFORE" from="ei1993" to="ei1990" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei1993" to="t52" />
+<TLINK lid="l7" relType="IDENTITY" from="ei1995" to="ei1990" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei1999" to="t53" />
+<TLINK lid="l9" relType="IDENTITY" from="ei1998" to="ei1993" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei2003" to="t59" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei2004" to="ei2003" />
+<TLINK lid="l14" relType="AFTER" from="ei2004" to="ei2005" />
+<TLINK lid="l15" relType="IDENTITY" from="ei2006" to="ei1995" />
+<TLINK lid="l16" relType="IDENTITY" from="ei2010" to="ei1994" />
+<TLINK lid="l18" relType="BEFORE" from="ei2012" to="ei2010" />
+<TLINK lid="l21" relType="DURING" from="ei2014" to="t220" />
+<TLINK lid="l23" relType="IDENTITY" from="ei2016" to="ei2017" />
+<TLINK lid="l24" relType="IS_INCLUDED" from="ei2018" to="t68" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei1990" to="ei1991" />
+<SLINK lid="l26" relType="MODAL" from="ei1991" to="ei1992" />
+<SLINK lid="l27" relType="EVIDENTIAL" from="ei1992" to="ei1993" />
+<SLINK lid="l28" relType="EVIDENTIAL" from="ei1995" to="ei1996" />
+<SLINK lid="l29" relType="MODAL" from="ei1996" to="ei1997" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei2006" to="ei2007" />
+<SLINK lid="l33" relType="MODAL" from="ei2008" to="ei2009" />
+<ALINK lid="l36" relType="CONTINUES" from="ei2007" to="ei2008" />
+</TimeML>

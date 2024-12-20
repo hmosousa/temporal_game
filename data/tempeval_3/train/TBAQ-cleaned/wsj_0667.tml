@@ -1,0 +1,50 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0667</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0030 = 891030 891030-0030.
+Shoney's to Report @ Write-Off in Quarter @ Totaling $2.5 Million 10/30/89 WALL STREET JOURNAL (J) SHN NASHVILLE, Tenn.
+</EXTRAINFO>
+<TEXT>Shoney's Inc. <EVENT eid="e1" class="REPORTING" offsets="14 18" sent_idx="0">said</EVENT> it will <EVENT eid="e2" class="REPORTING" offsets="27 33" sent_idx="0">report</EVENT> a write-off of $2.5 million, or seven cents a share, for its <TIMEX3 tid="t41" type="DATE" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="95 109" sent_idx="0">fourth quarter</TIMEX3> ended <TIMEX3 tid="t42" type="DATE" value="1989-10-29" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="116 125" sent_idx="0">yesterday</TIMEX3>. The restaurant operator <EVENT eid="e5" class="REPORTING" offsets="151 156" sent_idx="0">cited</EVENT> transaction costs from its <TIMEX3 tid="t47" type="DATE" value="1988" temporalFunction="false" functionInDocument="NONE" offsets="184 188" sent_idx="0">1988</TIMEX3> <EVENT eid="e45" class="OCCURRENCE" offsets="189 205" sent_idx="0">recapitalization</EVENT> as a result of a $160 million <EVENT eid="e46" class="OCCURRENCE" offsets="236 249" sent_idx="0">restructuring</EVENT> of its bank debt.
+The write-off will be <EVENT eid="e9" class="REPORTING" offsets="290 298" sent_idx="1">reported</EVENT> as an extraordinary item in the company's <TIMEX3 tid="t49" type="DATE" value="1989" temporalFunction="false" functionInDocument="NONE" offsets="341 345" sent_idx="1">1989</TIMEX3> operating <EVENT eid="e10" class="STATE" offsets="356 363" sent_idx="1">results</EVENT>.
+In addition, the effective interest rate on the $410 million of total remaining bank debt after the <EVENT eid="e50" class="OCCURRENCE" offsets="465 478" sent_idx="2">restructuring</EVENT> is 10.66%. The combined effect of these <EVENT eid="e13" class="OCCURRENCE" offsets="519 526" sent_idx="2">changes</EVENT> is <EVENT eid="e14" class="I_STATE" offsets="530 538" sent_idx="2">expected</EVENT> to <EVENT eid="e16" class="OCCURRENCE" offsets="542 546" sent_idx="2">save</EVENT> the company about $4 million in interest expenses <TIMEX3 tid="t53" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="597 606" sent_idx="2">next year</TIMEX3>, or six cents a share.
+Shoney's <EVENT eid="e19" class="REPORTING" offsets="639 643" sent_idx="3">said</EVENT> the latest <EVENT eid="e57" class="OCCURRENCE" offsets="655 668" sent_idx="3">restructuring</EVENT> affected bank indebtedness that was <EVENT eid="e22" class="OCCURRENCE" offsets="705 713" sent_idx="3">incurred</EVENT> to <EVENT eid="e24" class="OCCURRENCE" offsets="717 724" sent_idx="3">finance</EVENT> $585 million of the company's $728 million <EVENT eid="e56" class="OCCURRENCE" offsets="768 784" sent_idx="3">recapitalization</EVENT> that <EVENT eid="e198" class="OCCURRENCE" offsets="790 794" sent_idx="3">took</EVENT> place in <TIMEX3 tid="t54" type="DATE" value="1988" temporalFunction="false" functionInDocument="NONE" offsets="804 808" sent_idx="3">1988</TIMEX3>.
+The company has <EVENT eid="e26" class="OCCURRENCE" offsets="826 830" sent_idx="4">made</EVENT> <EVENT eid="e27" class="OCCURRENCE" offsets="831 839" sent_idx="4">payments</EVENT> of $175 million against the original $585 million of bank debt <EVENT eid="e28" class="OCCURRENCE" offsets="903 911" sent_idx="4">incurred</EVENT> in connection with the recapitalization. These payments consisted of $54 million in scheduled payments and $121 million in prepayments, funded by $82.8 million from operating cash flow, zero-coupon subordinated debt and assets sales.</TEXT>
+<MAKEINSTANCE eid="e50" eiid="ei2003" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei1992" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2015" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2011" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei2016" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e57" eiid="ei2009" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e1" eiid="ei1991" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei2001" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e14" eiid="ei2006" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei1994" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei2017" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei1997" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei2012" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2008" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2007" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei1999" tense="FUTURE" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei1996" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei2005" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e56" eiid="ei2013" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e198" eiid="ei2014" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l35" relType="AFTER" from="ei2006" to="t0" />
+<TLINK lid="l2" relType="BEFORE" from="ei1991" to="t0" />
+<TLINK lid="l4" relType="ENDED_BY" from="t41" to="t42" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei1994" to="ei1991" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei1996" to="t47" />
+<TLINK lid="l8" relType="BEFORE" from="ei1997" to="ei1996" />
+<TLINK lid="l10" relType="AFTER" from="ei1999" to="t0" />
+<TLINK lid="l18" relType="IS_INCLUDED" from="ei2007" to="t53" />
+<TLINK lid="l19" relType="IDENTITY" from="ei2008" to="ei1991" />
+<TLINK lid="l22" relType="IS_INCLUDED" from="ei2013" to="t54" />
+<TLINK lid="l23" relType="IDENTITY" from="ei2013" to="ei2014" />
+<TLINK lid="l24" relType="IDENTITY" from="ei2015" to="ei2016" />
+<TLINK lid="l25" relType="BEFORE" from="ei2017" to="ei2015" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei1991" to="ei1992" />
+<SLINK lid="l31" relType="MODAL" from="ei2006" to="ei2007" />
+<SLINK lid="l33" relType="MODAL" from="ei2011" to="ei2012" />
+<SLINK lid="l34" relType="FACTIVE" from="ei2012" to="ei2013" />
+</TimeML>

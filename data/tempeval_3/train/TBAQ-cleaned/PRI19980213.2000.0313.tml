@@ -1,0 +1,69 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>PRI19980213.2000.0313</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-02-13" temporalFunction="false" functionInDocument="CREATION_TIME">19980213</TIMEX3>
+<EXTRAINFO>
+PRI19980213.2000.0313 NEWS STORY
+</EXTRAINFO>
+<TEXT>Officials in California are <EVENT eid="e1" class="I_ACTION" offsets="28 35" sent_idx="0">warning</EVENT> residents that oncoming <EVENT eid="e40" class="OCCURRENCE" offsets="60 65" sent_idx="0">rains</EVENT> will <EVENT eid="e3" class="OCCURRENCE" offsets="71 76" sent_idx="0">cause</EVENT> dangerous and unpredictable <EVENT eid="e41" class="OCCURRENCE" offsets="105 115" sent_idx="0">landslides</EVENT>. From member station KQED, Auncil Martinez <EVENT eid="e42" class="REPORTING" offsets="159 166" sent_idx="0">reports</EVENT>.
+Experts <EVENT eid="e5" class="REPORTING" offsets="176 179" sent_idx="1">say</EVENT> the ground is so <EVENT eid="e6" class="STATE" offsets="197 206" sent_idx="1">saturated</EVENT> it cannot <EVENT eid="e8" class="OCCURRENCE" offsets="217 223" sent_idx="1">absorb</EVENT> any more water. So that <EVENT eid="e9" class="I_STATE" offsets="248 253" sent_idx="1">means</EVENT> soil will <EVENT eid="e43" class="OCCURRENCE" offsets="264 268" sent_idx="1">fall</EVENT> off in chunks and <EVENT eid="e11" class="OCCURRENCE" offsets="287 294" sent_idx="1">destroy</EVENT> anything in its path. In Los Angeles that lesson was brought home <TIMEX3 tid="t38" type="DATE" value="1998-02-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="361 366" sent_idx="1">today</TIMEX3> when tons of earth <EVENT eid="e16" class="OCCURRENCE" offsets="386 394" sent_idx="1">cascaded</EVENT> down a hillside, <EVENT eid="e17" class="OCCURRENCE" offsets="412 419" sent_idx="1">ripping</EVENT> two houses from their foundations. No one was <EVENT eid="e18" class="OCCURRENCE" offsets="466 470" sent_idx="1">hurt</EVENT>, but firefighters <EVENT eid="e19" class="I_ACTION" offsets="489 496" sent_idx="1">ordered</EVENT> the <EVENT eid="e45" class="OCCURRENCE" offsets="501 511" sent_idx="1">evacuation</EVENT> of nearby homes and <EVENT eid="e20" class="REPORTING" offsets="532 536" sent_idx="1">said</EVENT> they'll <EVENT eid="e21" class="OCCURRENCE" offsets="545 552" sent_idx="1">monitor</EVENT> the shifting ground. In the northern California town of Rio Nido, officials <EVENT eid="e23" class="REPORTING" offsets="629 632" sent_idx="1">say</EVENT> a football field sized slab of hillside could still <EVENT eid="e25" class="OCCURRENCE" offsets="685 690" sent_idx="1">break</EVENT> loose at any time and <EVENT eid="e29" class="OCCURRENCE" offsets="713 720" sent_idx="1">destroy</EVENT> an entire neighborhood. And in San Francisco, a mansion overlooking the Pacific Ocean and the Golden Gate Bridge is <EVENT eid="e31" class="OCCURRENCE" offsets="837 845" sent_idx="1">slipping</EVENT> toward the sea. Forecasters <EVENT eid="e32" class="REPORTING" offsets="874 877" sent_idx="1">say</EVENT> the picture will <EVENT eid="e33" class="ASPECTUAL" offsets="895 898" sent_idx="1">get</EVENT> worse because more <EVENT eid="e47" class="STATE" offsets="918 923" sent_idx="1">rains</EVENT> are on the way. For NPR news, I'm Auncil Martinez <EVENT eid="e36" class="REPORTING" offsets="974 983" sent_idx="1">reporting</EVENT>.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei203" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei204" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei205" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei206" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e42" eiid="ei207" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei208" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei209" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei211" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei212" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei213" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei214" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei216" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei217" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei218" tense="PAST" aspect="NONE" polarity="NEG" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e19" eiid="ei219" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei220" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e20" eiid="ei221" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei222" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei223" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei224" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e29" eiid="ei225" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e31" eiid="ei226" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei227" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei228" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei230" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e36" eiid="ei231" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l37" relType="IS_INCLUDED" from="ei223" to="t0" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei212" to="ei208" />
+<TLINK lid="l34" relType="IS_INCLUDED" from="ei208" to="t0" />
+<TLINK lid="l1" relType="BEFORE" from="ei209" to="ei211" />
+<TLINK lid="l2" relType="INCLUDES" from="ei203" to="t0" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei213" to="ei214" />
+<TLINK lid="l4" relType="INCLUDES" from="t38" to="ei216" />
+<TLINK lid="l5" relType="INCLUDES" from="t0" to="ei216" />
+<TLINK lid="l6" relType="INCLUDES" from="ei216" to="ei217" />
+<TLINK lid="l7" relType="AFTER" from="ei218" to="ei216" />
+<TLINK lid="l8" relType="IAFTER" from="ei219" to="ei216" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei219" to="ei221" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei207" to="t0" />
+<TLINK lid="l12" relType="AFTER" from="ei230" to="ei227" />
+<TLINK lid="l13" relType="BEFORE" from="ei204" to="ei206" />
+<TLINK lid="l14" relType="IDENTITY" from="ei204" to="ei205" />
+<TLINK lid="l15" relType="BEFORE" from="ei203" to="ei204" />
+<TLINK lid="l16" relType="INCLUDES" from="ei226" to="t0" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei227" to="t0" />
+<TLINK lid="l19" relType="IDENTITY" from="ei231" to="ei207" />
+<TLINK lid="l20" relType="BEFORE" from="ei230" to="ei228" />
+<SLINK lid="l33" relType="EVIDENTIAL" from="ei231" to="ei227" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei223" to="ei225" />
+<SLINK lid="l31" relType="MODAL" from="ei212" to="ei214" />
+<SLINK lid="l30" relType="EVIDENTIAL" from="ei208" to="ei211" />
+<SLINK lid="l29" relType="EVIDENTIAL" from="ei207" to="ei208" />
+<SLINK lid="l28" relType="MODAL" from="ei203" to="ei205" />
+<SLINK lid="l21" relType="MODAL" from="ei212" to="ei213" />
+<SLINK lid="l22" relType="MODAL" from="ei219" to="ei220" />
+<SLINK lid="l23" relType="EVIDENTIAL" from="ei208" to="ei209" />
+<SLINK lid="l24" relType="EVIDENTIAL" from="ei221" to="ei222" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei223" to="ei224" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei221" to="ei225" />
+<SLINK lid="l27" relType="EVIDENTIAL" from="ei227" to="ei228" />
+</TimeML>

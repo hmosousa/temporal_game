@@ -1,0 +1,111 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0027</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0166 = 891102 891102-0166.
+Who's News: @ Magna International's @ Financial Chief Quits; @ Chairman Stepping In 11/02/89 WALL STREET JOURNAL (J) MAGAF WNEWS TORONTO
+</EXTRAINFO>
+<TEXT>Magna International Inc.'s chief financial officer, James McAlpine, <EVENT eid="e1" class="OCCURRENCE" offsets="68 76" sent_idx="0">resigned</EVENT> and its chairman, Frank Stronach, is <EVENT eid="e2" class="OCCURRENCE" offsets="114 122" sent_idx="0">stepping</EVENT> in to <EVENT eid="e5" class="I_ACTION" offsets="129 133" sent_idx="0">help</EVENT> <EVENT eid="e60" class="OCCURRENCE" offsets="134 138" sent_idx="0">turn</EVENT> the automotive-parts manufacturer around, the company <EVENT eid="e6" class="REPORTING" offsets="193 197" sent_idx="0">said</EVENT>.
+Mr. Stronach will <EVENT eid="e7" class="I_ACTION" offsets="217 223" sent_idx="1">direct</EVENT> an <EVENT eid="e8" class="I_ACTION" offsets="227 233" sent_idx="1">effort</EVENT> to <EVENT eid="e10" class="OCCURRENCE" offsets="237 243" sent_idx="1">reduce</EVENT> overhead and <EVENT eid="e11" class="OCCURRENCE" offsets="257 261" sent_idx="1">curb</EVENT> capital <EVENT eid="e12" class="OCCURRENCE" offsets="270 278" sent_idx="1">spending</EVENT> "until a more satisfactory level of profit is <EVENT eid="e14" class="OCCURRENCE" offsets="325 333" sent_idx="1">achieved</EVENT> and <EVENT eid="e15" class="OCCURRENCE" offsets="338 348" sent_idx="1">maintained</EVENT>," Magna <EVENT eid="e16" class="REPORTING" offsets="357 361" sent_idx="1">said</EVENT>.
+Stephen Akerfeldt, currently vice president finance, will <EVENT eid="e19" class="OCCURRENCE" offsets="421 428" sent_idx="2">succeed</EVENT> Mr. McAlpine.
+An ambitious <EVENT eid="e20" class="OCCURRENCE" offsets="456 465" sent_idx="3">expansion</EVENT> has <EVENT eid="e21" class="OCCURRENCE" offsets="470 474" sent_idx="3">left</EVENT> Magna with excess capacity and a heavy debt load as the automotive industry <EVENT eid="e23" class="ASPECTUAL" offsets="551 557" sent_idx="3">enters</EVENT> a <EVENT eid="e24" class="OCCURRENCE" offsets="560 568" sent_idx="3">downturn</EVENT>. The company has <EVENT eid="e25" class="REPORTING" offsets="586 594" sent_idx="3">reported</EVENT> <EVENT eid="e62" class="OCCURRENCE" offsets="595 603" sent_idx="3">declines</EVENT> in operating profit in <TIMEX3 tid="t180" type="DURATION" value="P3Y" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="627 655" sent_idx="3">each of the past three years</TIMEX3>, despite steady sales <EVENT eid="e187" class="OCCURRENCE" offsets="678 684" sent_idx="3">growth</EVENT>.
+Magna <TIMEX3 tid="t66" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="692 700" sent_idx="4">recently</TIMEX3> <EVENT eid="e27" class="OCCURRENCE" offsets="701 704" sent_idx="4">cut</EVENT> its quarterly dividend in half and the company's Class A shares are <EVENT eid="e29" class="OCCURRENCE" offsets="773 782" sent_idx="4">wallowing</EVENT> far below their <TIMEX3 tid="t68" type="DURATION" value="P52W" temporalFunction="false" functionInDocument="NONE" offsets="799 806" sent_idx="4">52-week</TIMEX3> <EVENT eid="e67" class="OCCURRENCE" offsets="807 811" sent_idx="4">high</EVENT> of 16.125 Canadian dollars (US$13.73). On the Toronto Stock Exchange <TIMEX3 tid="t69" type="DATE" value="1989-11-01" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="881 890" sent_idx="4">yesterday</TIMEX3>, Magna shares <EVENT eid="e30" class="OCCURRENCE" offsets="905 911" sent_idx="4">closed</EVENT> up 37.5 Canadian cents to C$9.625.
+Mr. Stronach, founder and controlling shareholder of Magna, <EVENT eid="e32" class="OCCURRENCE" offsets="1007 1015" sent_idx="5">resigned</EVENT> as chief executive officer <TIMEX3 tid="t228" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1043 1052" sent_idx="5">last year</TIMEX3> to <EVENT eid="e59" class="I_ACTION" offsets="1056 1060" sent_idx="5">seek</EVENT>, unsuccessfully, a seat in Canada's Parliament.
+Analysts <EVENT eid="e35" class="REPORTING" offsets="1118 1122" sent_idx="6">said</EVENT> Mr. Stronach <EVENT eid="e36" class="I_STATE" offsets="1136 1141" sent_idx="6">wants</EVENT> to <EVENT eid="e38" class="ASPECTUAL" offsets="1145 1151" sent_idx="6">resume</EVENT> a more influential role in <EVENT eid="e41" class="OCCURRENCE" offsets="1179 1186" sent_idx="6">running</EVENT> the company. They <EVENT eid="e42" class="I_STATE" offsets="1205 1211" sent_idx="6">expect</EVENT> him to <EVENT eid="e44" class="OCCURRENCE" offsets="1219 1222" sent_idx="6">cut</EVENT> costs throughout the organization.
+The company <EVENT eid="e45" class="REPORTING" offsets="1270 1274" sent_idx="7">said</EVENT> Mr. Stronach will personally <EVENT eid="e46" class="I_ACTION" offsets="1304 1310" sent_idx="7">direct</EVENT> the <EVENT eid="e289" class="OCCURRENCE" offsets="1315 1328" sent_idx="7">restructuring</EVENT>, <EVENT eid="e47" class="OCCURRENCE" offsets="1330 1338" sent_idx="7">assisted</EVENT> by Manfred Gingl, president and chief executive. Neither they nor Mr. McAlpine could be <EVENT eid="e48" class="OCCURRENCE" offsets="1427 1434" sent_idx="7">reached</EVENT> for comment.
+Magna <EVENT eid="e51" class="REPORTING" offsets="1454 1458" sent_idx="8">said</EVENT> Mr. McAlpine <EVENT eid="e52" class="OCCURRENCE" offsets="1472 1480" sent_idx="8">resigned</EVENT> to <EVENT eid="e54" class="OCCURRENCE" offsets="1484 1490" sent_idx="8">pursue</EVENT> a consulting career, with Magna as one of his clients.</TEXT>
+<MAKEINSTANCE eid="e20" eiid="ei2003" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei1993" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2023" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei1989" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2021" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e48" eiid="ei2027" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e35" eiid="ei2017" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei2010" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2000" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2030" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e38" eiid="ei2019" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei2008" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e19" eiid="ei2002" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei1990" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei2029" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei1995" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e10" eiid="ei1996" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2005" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei2020" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei1998" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e32" eiid="ei2014" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei1992" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei2018" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei2026" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei2004" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei2024" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e59" eiid="ei2015" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei2011" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei1991" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e187" eiid="ei2009" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei2001" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2006" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei1994" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei1997" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2007" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei1999" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e289" eiid="ei2025" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e51" eiid="ei2028" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei2013" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei2022" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l54" relType="BEFORE" from="ei2028" to="t0" />
+<TLINK lid="l53" relType="AFTER" from="ei2020" to="ei2019" />
+<TLINK lid="l52" relType="IS_INCLUDED" from="ei1998" to="t0" />
+<TLINK lid="l1" relType="AFTER" from="t0" to="ei1993" />
+<TLINK lid="l2" relType="AFTER" from="ei1990" to="ei1989" />
+<TLINK lid="l3" relType="AFTER" from="ei1994" to="t0" />
+<TLINK lid="l4" relType="SIMULTANEOUS" from="ei1994" to="ei1995" />
+<TLINK lid="l5" relType="ENDED_BY" from="ei1994" to="ei1999" />
+<TLINK lid="l6" relType="ENDED_BY" from="ei1994" to="ei2000" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="ei2001" to="ei1993" />
+<TLINK lid="l8" relType="SIMULTANEOUS" from="ei2002" to="ei1994" />
+<TLINK lid="l9" relType="BEFORE" from="ei2003" to="ei2004" />
+<TLINK lid="l10" relType="BEFORE" from="ei2004" to="t0" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei2004" to="ei2005" />
+<TLINK lid="l12" relType="BEGINS" from="ei2005" to="ei2006" />
+<TLINK lid="l13" relType="BEFORE" from="ei2007" to="ei1993" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei2008" to="t180" />
+<TLINK lid="l15" relType="SIMULTANEOUS" from="ei2009" to="ei2008" />
+<TLINK lid="l16" relType="BEFORE" from="t66" to="t0" />
+<TLINK lid="l17" relType="SIMULTANEOUS" from="t66" to="ei2010" />
+<TLINK lid="l18" relType="INCLUDES" from="ei2011" to="t0" />
+<TLINK lid="l19" relType="INCLUDES" from="t68" to="ei2012" />
+<TLINK lid="l20" relType="ENDED_BY" from="t68" to="t0" />
+<TLINK lid="l21" relType="BEFORE" from="t69" to="t0" />
+<TLINK lid="l22" relType="INCLUDES" from="t69" to="ei2013" />
+<TLINK lid="l23" relType="BEFORE" from="t228" to="t0" />
+<TLINK lid="l24" relType="INCLUDES" from="t228" to="ei2014" />
+<TLINK lid="l25" relType="BEFORE" from="ei2017" to="t0" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei2017" to="ei2021" />
+<TLINK lid="l27" relType="SIMULTANEOUS" from="ei2023" to="ei1993" />
+<TLINK lid="l28" relType="IDENTITY" from="ei1994" to="ei2024" />
+<TLINK lid="l29" relType="SIMULTANEOUS" from="ei2024" to="ei2026" />
+<TLINK lid="l30" relType="BEFORE" from="ei2027" to="t0" />
+<SLINK lid="l50" relType="FACTIVE" from="ei1994" to="ei1995" />
+<SLINK lid="l49" relType="EVIDENTIAL" from="ei1993" to="ei1990" />
+<SLINK lid="l31" relType="MODAL" from="ei2029" to="ei2030" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei1993" to="ei1989" />
+<SLINK lid="l33" relType="MODAL" from="ei1990" to="ei1991" />
+<SLINK lid="l34" relType="MODAL" from="ei1991" to="ei1992" />
+<SLINK lid="l35" relType="MODAL" from="ei1995" to="ei1996" />
+<SLINK lid="l36" relType="MODAL" from="ei1995" to="ei1997" />
+<SLINK lid="l37" relType="EVIDENTIAL" from="ei2001" to="ei1994" />
+<SLINK lid="l38" relType="EVIDENTIAL" from="ei2007" to="ei2008" />
+<SLINK lid="l39" relType="MODAL" from="ei2014" to="ei2015" />
+<SLINK lid="l41" relType="EVIDENTIAL" from="ei2017" to="ei2018" />
+<SLINK lid="l42" relType="MODAL" from="ei2018" to="ei2019" />
+<SLINK lid="l43" relType="MODAL" from="ei2021" to="ei2022" />
+<SLINK lid="l44" relType="EVIDENTIAL" from="ei2023" to="ei2024" />
+<SLINK lid="l45" relType="FACTIVE" from="ei2024" to="ei2025" />
+<SLINK lid="l46" relType="EVIDENTIAL" from="ei2028" to="ei2029" />
+<ALINK lid="l51" relType="INITIATES" from="ei2005" to="ei2006" />
+<ALINK lid="l47" relType="CONTINUES" from="ei1997" to="ei1998" />
+<ALINK lid="l48" relType="REINITIATES" from="ei2019" to="ei2020" />
+</TimeML>

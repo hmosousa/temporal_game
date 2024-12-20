@@ -1,0 +1,147 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>CNN19980213.2130.0155</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-02-13" temporalFunction="false" functionInDocument="CREATION_TIME">19980213</TIMEX3>
+<EXTRAINFO>
+CNN19980213.2130.0155 NEWS STORY
+</EXTRAINFO>
+<TEXT>President Clinton <EVENT eid="e1" class="REPORTING" offsets="18 22" sent_idx="0">says</EVENT> he is <EVENT eid="e2" class="I_STATE" offsets="29 38" sent_idx="0">committed</EVENT> to a possible <EVENT eid="e3" class="OCCURRENCE" offsets="53 59" sent_idx="0">strike</EVENT> against Iraq, despite <EVENT eid="e4" class="OCCURRENCE" offsets="82 92" sent_idx="0">objections</EVENT> from other countries. Steve Hurst has that.
+The US military <EVENT eid="e103" class="OCCURRENCE" offsets="153 160" sent_idx="1">buildup</EVENT> in the Persian gulf <EVENT eid="e6" class="ASPECTUAL" offsets="181 190" sent_idx="1">continues</EVENT> apace, more planes <EVENT eid="e7" class="OCCURRENCE" offsets="210 216" sent_idx="1">headed</EVENT> from the united states and senior officials <EVENT eid="e9" class="REPORTING" offsets="261 264" sent_idx="1">say</EVENT> Iraq's president Saddam Hussein can <EVENT eid="e10" class="I_STATE" offsets="301 307" sent_idx="1">expect</EVENT> punishing air <EVENT eid="e13" class="OCCURRENCE" offsets="322 329" sent_idx="1">strikes</EVENT> to <EVENT eid="e15" class="ASPECTUAL" offsets="333 341" sent_idx="1">continue</EVENT> well into <TIMEX3 tid="t105" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="352 362" sent_idx="1">the future</TIMEX3> if he doesn't <EVENT eid="e17" class="ASPECTUAL" offsets="377 381" sent_idx="1">stop</EVENT> <EVENT eid="e19" class="OCCURRENCE" offsets="382 390" sent_idx="1">building</EVENT> biological and chemical weapons.
+Saddam will <EVENT eid="e21" class="I_STATE" offsets="436 440" sent_idx="2">know</EVENT> by our <EVENT eid="e22" class="OCCURRENCE" offsets="448 455" sent_idx="2">actions</EVENT> and our <EVENT eid="e23" class="OCCURRENCE" offsets="464 471" sent_idx="2">warning</EVENT> that we will be <EVENT eid="e24" class="I_STATE" offsets="488 496" sent_idx="2">prepared</EVENT> to <EVENT eid="e26" class="OCCURRENCE" offsets="500 503" sent_idx="2">act</EVENT> again if we have evidence he is <EVENT eid="e29" class="I_ACTION" offsets="536 542" sent_idx="2">trying</EVENT> to <EVENT eid="e31" class="OCCURRENCE" offsets="546 553" sent_idx="2">rebuild</EVENT> his weapons of mass destruction capabilities.
+In a bit of television diplomacy, Iraq's deputy foreign minister <EVENT eid="e34" class="OCCURRENCE" offsets="665 674" sent_idx="3">responded</EVENT> from Baghdad in <TIMEX3 tid="t111" type="DURATION" value="PT1H" mod="LESS_THAN" temporalFunction="false" functionInDocument="NONE" offsets="691 709" sent_idx="3">less than one hour</TIMEX3>, <EVENT eid="e35" class="REPORTING" offsets="711 717" sent_idx="3">saying</EVENT> Washington would <EVENT eid="e36" class="OCCURRENCE" offsets="735 740" sent_idx="3">break</EVENT> international law by <EVENT eid="e39" class="OCCURRENCE" offsets="762 771" sent_idx="3">attacking</EVENT> without UN <EVENT eid="e113" class="OCCURRENCE" offsets="783 791" sent_idx="3">approval</EVENT>.
+The united states is not <EVENT eid="e40" class="I_STATE" offsets="818 828" sent_idx="4">authorized</EVENT> to <EVENT eid="e43" class="OCCURRENCE" offsets="832 835" sent_idx="4">use</EVENT> force before <EVENT eid="e45" class="OCCURRENCE" offsets="849 854" sent_idx="4">going</EVENT> to the council.
+President Clinton, meantime, <EVENT eid="e46" class="REPORTING" offsets="900 907" sent_idx="5">glossed</EVENT> over stern <EVENT eid="e47" class="I_ACTION" offsets="919 927" sent_idx="5">warnings</EVENT> from Moscow on <TIMEX3 tid="t116" type="DATE" value="1998-02-12" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="943 951" sent_idx="5">Thursday</TIMEX3> that US air <EVENT eid="e117" class="OCCURRENCE" offsets="964 971" sent_idx="5">strikes</EVENT> against Iraq could <EVENT eid="e118" class="OCCURRENCE" offsets="991 993" sent_idx="5">do</EVENT> serious harm to relations with the Kremlin.
+We're <EVENT eid="e52" class="I_ACTION" offsets="1044 1050" sent_idx="6">trying</EVENT> to <EVENT eid="e54" class="OCCURRENCE" offsets="1054 1058" sent_idx="6">find</EVENT> a diplomatic solution. And I <EVENT eid="e56" class="I_STATE" offsets="1088 1092" sent_idx="6">hope</EVENT> that, whatever <EVENT eid="e57" class="OCCURRENCE" offsets="1108 1115" sent_idx="6">happens</EVENT> <TIMEX3 tid="t119" type="DATE" value="1998-02-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1116 1121" sent_idx="6">today</TIMEX3>, that our relationships with Russia will <EVENT eid="e58" class="ASPECTUAL" offsets="1163 1171" sent_idx="6">continue</EVENT> to be productive and constructive and strong, because that's very important to the future of our peoples.
+One contrary view of the issue <EVENT eid="e60" class="OCCURRENCE" offsets="1309 1318" sent_idx="7">presented</EVENT> itself to the president as he <EVENT eid="e61" class="OCCURRENCE" offsets="1349 1356" sent_idx="7">arrived</EVENT> in Philadelphia later in <TIMEX3 tid="t126" type="DATE" value="1998-02-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t119" offsets="1382 1389" sent_idx="7">the day</TIMEX3>. Nevertheless, the president <EVENT eid="e62" class="REPORTING" offsets="1419 1423" sent_idx="7">said</EVENT> Washington would <EVENT eid="e63" class="OCCURRENCE" offsets="1441 1444" sent_idx="7">use</EVENT> force if diplomacy <EVENT eid="e67" class="I_ACTION" offsets="1464 1469" sent_idx="7">fails</EVENT> to <EVENT eid="e128" class="I_ACTION" offsets="1473 1478" sent_idx="7">force</EVENT> Saddam Hussein to <EVENT eid="e129" class="OCCURRENCE" offsets="1497 1501" sent_idx="7">back</EVENT> down. The Russian foreign minister, meanwhile, <EVENT eid="e68" class="I_ACTION" offsets="1549 1555" sent_idx="7">sought</EVENT> to <EVENT eid="e70" class="OCCURRENCE" offsets="1559 1565" sent_idx="7">soften</EVENT> the harsh words of his military counterpart, <EVENT eid="e72" class="REPORTING" offsets="1611 1617" sent_idx="7">saying</EVENT> on <TIMEX3 tid="t133" type="DATE" value="1998-02-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1621 1627" sent_idx="7">Friday</TIMEX3> that Russia <TIMEX3 tid="t135" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t133" offsets="1640 1643" sent_idx="7">now</TIMEX3> <EVENT eid="e73" class="I_STATE" offsets="1644 1649" sent_idx="7">feels</EVENT> the US must <EVENT eid="e74" class="OCCURRENCE" offsets="1662 1666" sent_idx="7">hold</EVENT> off at least until UN secretary general Kofi Annan <EVENT eid="e137" class="OCCURRENCE" offsets="1718 1724" sent_idx="7">visits</EVENT> Baghdad in a last-ditch effort at diplomacy. Annan has no <EVENT eid="e78" class="OCCURRENCE" offsets="1783 1787" sent_idx="7">trip</EVENT> <EVENT eid="e141" class="I_STATE" offsets="1788 1795" sent_idx="7">planned</EVENT> so far. Meanwhile, secretary of state Madeleine Albright, Berger and defense secretary William Cohen <EVENT eid="e80" class="I_ACTION" offsets="1897 1906" sent_idx="7">announced</EVENT> <EVENT eid="e144" class="I_STATE" offsets="1907 1912" sent_idx="7">plans</EVENT> to <EVENT eid="e82" class="OCCURRENCE" offsets="1916 1922" sent_idx="7">travel</EVENT> to an unnamed city in the US heartland <TIMEX3 tid="t145" type="DATE" value="1998-WXX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1962 1971" sent_idx="7">next week</TIMEX3>, to <EVENT eid="e84" class="I_ACTION" offsets="1976 1983" sent_idx="7">explain</EVENT> to the American people just why military force will be <EVENT eid="e146" class="STATE" offsets="2039 2048" sent_idx="7">necessary</EVENT> if diplomacy <EVENT eid="e87" class="OCCURRENCE" offsets="2062 2067" sent_idx="7">fails</EVENT>. Steve Hurst, CNN, the state department.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei573" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei574" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei575" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="possible" />
+<MAKEINSTANCE eid="e4" eiid="ei576" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e103" eiid="ei577" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei578" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei579" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei580" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei581" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="can" />
+<MAKEINSTANCE eid="e13" eiid="ei582" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e15" eiid="ei583" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei584" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei585" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei586" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei587" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei588" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei589" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei590" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei593" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e31" eiid="ei594" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei596" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei597" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei598" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e39" eiid="ei599" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e113" eiid="ei600" tense="NONE" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e40" eiid="ei601" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei602" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei603" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei604" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei605" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e117" eiid="ei606" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e118" eiid="ei607" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e52" eiid="ei609" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei610" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e56" eiid="ei611" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e57" eiid="ei612" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e58" eiid="ei613" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei617" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e61" eiid="ei618" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei619" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei620" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e67" eiid="ei621" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e128" eiid="ei622" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e129" eiid="ei623" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei624" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e70" eiid="ei625" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e72" eiid="ei626" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e73" eiid="ei627" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e74" eiid="ei628" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e137" eiid="ei629" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e78" eiid="ei630" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e141" eiid="ei631" tense="PASTPART" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei632" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e144" eiid="ei633" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e82" eiid="ei634" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e84" eiid="ei635" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e146" eiid="ei636" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e87" eiid="ei637" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l84" relType="IS_INCLUDED" from="ei601" to="t0" />
+<TLINK lid="l83" relType="INCLUDES" from="ei582" to="ei583" />
+<TLINK lid="l82" relType="BEFORE" from="ei585" to="t0" />
+<TLINK lid="l81" relType="INCLUDES" from="ei577" to="ei578" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei573" to="t0" />
+<TLINK lid="l2" relType="SIMULTANEOUS" from="ei576" to="ei574" />
+<TLINK lid="l3" relType="INCLUDES" from="ei578" to="t0" />
+<TLINK lid="l4" relType="BEFORE" from="ei579" to="t0" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei579" to="ei578" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei580" to="t0" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei583" to="t105" />
+<TLINK lid="l8" relType="AFTER" from="ei583" to="ei584" />
+<TLINK lid="l9" relType="AFTER" from="ei586" to="ei587" />
+<TLINK lid="l10" relType="AFTER" from="ei586" to="ei588" />
+<TLINK lid="l14" relType="AFTER" from="ei596" to="ei580" />
+<TLINK lid="l15" relType="INCLUDES" from="ei596" to="ei597" />
+<TLINK lid="l16" relType="SIMULTANEOUS" from="ei598" to="ei599" />
+<TLINK lid="l17" relType="AFTER" from="ei599" to="ei600" />
+<TLINK lid="l18" relType="IS_INCLUDED" from="ei599" to="ei590" />
+<TLINK lid="l19" relType="BEFORE" from="ei602" to="ei603" />
+<TLINK lid="l20" relType="AFTER" from="ei604" to="ei605" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei605" to="t116" />
+<TLINK lid="l24" relType="AFTER" from="ei613" to="ei612" />
+<TLINK lid="l25" relType="IS_INCLUDED" from="ei612" to="t119" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei617" to="ei618" />
+<TLINK lid="l27" relType="AFTER" from="ei618" to="ei604" />
+<TLINK lid="l28" relType="IS_INCLUDED" from="ei618" to="t126" />
+<TLINK lid="l29" relType="IS_INCLUDED" from="ei604" to="t126" />
+<TLINK lid="l30" relType="AFTER" from="ei619" to="ei618" />
+<TLINK lid="l31" relType="AFTER" from="ei620" to="ei621" />
+<TLINK lid="l32" relType="SIMULTANEOUS" from="ei624" to="ei619" />
+<TLINK lid="l33" relType="IS_INCLUDED" from="ei626" to="ei624" />
+<TLINK lid="l34" relType="IS_INCLUDED" from="ei626" to="t133" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei624" to="t133" />
+<TLINK lid="l36" relType="IS_INCLUDED" from="ei627" to="t135" />
+<TLINK lid="l37" relType="ENDED_BY" from="ei628" to="ei629" />
+<TLINK lid="l38" relType="IS_INCLUDED" from="ei631" to="t0" />
+<TLINK lid="l39" relType="SIMULTANEOUS" from="ei624" to="ei632" />
+<TLINK lid="l40" relType="IS_INCLUDED" from="ei634" to="t145" />
+<TLINK lid="l41" relType="AFTER" from="ei636" to="ei637" />
+<TLINK lid="l42" relType="BEGINS" from="ei580" to="t111" />
+<TLINK lid="l43" relType="ENDS" from="ei596" to="t111" />
+<SLINK lid="l44" relType="CONDITIONAL" from="ei637" to="ei636" />
+<SLINK lid="l45" relType="CONDITIONAL" from="ei584" to="ei581" />
+<SLINK lid="l47" relType="CONDITIONAL" from="ei621" to="ei620" />
+<SLINK lid="l48" relType="EVIDENTIAL" from="ei573" to="ei574" />
+<SLINK lid="l49" relType="MODAL" from="ei574" to="ei575" />
+<SLINK lid="l50" relType="EVIDENTIAL" from="ei580" to="ei581" />
+<SLINK lid="l51" relType="MODAL" from="ei581" to="ei583" />
+<SLINK lid="l52" relType="EVIDENTIAL" from="ei580" to="ei586" />
+<SLINK lid="l53" relType="FACTIVE" from="ei586" to="ei589" />
+<SLINK lid="l54" relType="MODAL" from="ei589" to="ei590" />
+<SLINK lid="l56" relType="MODAL" from="ei593" to="ei594" />
+<SLINK lid="l57" relType="EVIDENTIAL" from="ei597" to="ei598" />
+<SLINK lid="l58" relType="MODAL" from="ei601" to="ei602" />
+<SLINK lid="l59" relType="MODAL" from="ei605" to="ei607" />
+<SLINK lid="l60" relType="EVIDENTIAL" from="ei604" to="ei609" />
+<SLINK lid="l61" relType="MODAL" from="ei609" to="ei610" />
+<SLINK lid="l62" relType="EVIDENTIAL" from="ei604" to="ei611" />
+<SLINK lid="l63" relType="MODAL" from="ei611" to="ei613" />
+<SLINK lid="l64" relType="EVIDENTIAL" from="ei619" to="ei620" />
+<SLINK lid="l65" relType="COUNTER_FACTIVE" from="ei621" to="ei622" />
+<SLINK lid="l66" relType="MODAL" from="ei622" to="ei623" />
+<SLINK lid="l67" relType="MODAL" from="ei624" to="ei625" />
+<SLINK lid="l68" relType="EVIDENTIAL" from="ei626" to="ei627" />
+<SLINK lid="l69" relType="MODAL" from="ei627" to="ei628" />
+<SLINK lid="l70" relType="MODAL" from="ei631" to="ei630" />
+<SLINK lid="l71" relType="EVIDENTIAL" from="ei632" to="ei633" />
+<SLINK lid="l72" relType="MODAL" from="ei633" to="ei634" />
+<SLINK lid="l73" relType="MODAL" from="ei634" to="ei635" />
+<SLINK lid="l74" relType="FACTIVE" from="ei635" to="ei636" />
+<ALINK lid="l75" relType="CONTINUES" from="ei578" to="ei577" />
+<ALINK lid="l76" relType="CONTINUES" from="ei583" to="ei582" />
+<ALINK lid="l77" relType="TERMINATES" from="ei584" to="ei585" />
+</TimeML>

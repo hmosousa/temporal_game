@@ -1,0 +1,43 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0751</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-27" temporalFunction="false" functionInDocument="CREATION_TIME">10/27/89</TIMEX3>
+<EXTRAINFO>
+WSJ891027-0144 = 891027 891027-0144.
+Dime Savings Bank Purchase 10/27/89 WALL STREET JOURNAL (J) DME STPT TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) SAVINGS AND LOANS, THRIFTS, CREDIT UNIONS (SAL) GARDEN CITY, N.Y.
+</EXTRAINFO>
+<TEXT>Dime Savings Bank of New York was <EVENT eid="e1" class="I_ACTION" stem="clear" offsets="34 41" sent_idx="0">cleared</EVENT> by the Federal Deposit Insurance Corp. to <EVENT eid="e3" class="OCCURRENCE" stem="acquire" offsets="84 91" sent_idx="0">acquire</EVENT> Starpointe Savings Bank of Somerset, N.J., the banks <EVENT eid="e4" class="REPORTING" stem="say" offsets="145 149" sent_idx="0">said</EVENT>.
+Starpointe holders, who <EVENT eid="e5" class="I_ACTION" stem="approve" offsets="175 183" sent_idx="1">approved</EVENT> the plan <TIMEX3 tid="t24" type="DATE" value="1989-04" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="193 203" sent_idx="1">last April</TIMEX3>, will <EVENT eid="e6" class="OCCURRENCE" stem="receive" offsets="210 217" sent_idx="1">receive</EVENT> $21 in cash a share, or a total $63 million. The FDIC <EVENT eid="e9" class="I_ACTION" stem="clear" offsets="272 279" sent_idx="1">cleared</EVENT> the <EVENT eid="e10" class="OCCURRENCE" stem="move" offsets="284 288" sent_idx="1">move</EVENT> <TIMEX3 tid="t25" type="DATE" value="1989-10-26" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="289 298" sent_idx="1">yesterday</TIMEX3>, and the banks must <EVENT eid="e11" class="OCCURRENCE" stem="wait" offsets="319 323" sent_idx="1">wait</EVENT> <TIMEX3 tid="t26" type="DURATION" value="P30D" mod="EQUAL_OR_MORE" temporalFunction="false" functionInDocument="NONE" offsets="324 340" sent_idx="1">at least 30 days</TIMEX3> before <EVENT eid="e14" class="ASPECTUAL" stem="close" offsets="348 355" sent_idx="1">closing</EVENT> the <EVENT eid="e15" class="OCCURRENCE" stem="purchase" offsets="360 368" sent_idx="1">purchase</EVENT>. A closing date hasn't been <EVENT eid="e16" class="OCCURRENCE" stem="set" offsets="397 400" sent_idx="1">set</EVENT>. The thrifts <EVENT eid="e18" class="I_ACTION" stem="agree" offsets="414 420" sent_idx="1">agreed</EVENT> to the <EVENT eid="e19" class="OCCURRENCE" stem="transaction" offsets="428 439" sent_idx="1">transaction</EVENT> in <TIMEX3 tid="t27" type="DATE" value="1988-08" temporalFunction="false" functionInDocument="NONE" offsets="443 454" sent_idx="1">August 1988</TIMEX3>.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei138" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei139" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei140" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei141" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei143" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei144" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei145" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei146" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e14" eiid="ei147" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e15" eiid="ei148" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei149" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei150" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei151" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l22" relType="IDENTITY" from="ei148" to="ei139" />
+<TLINK lid="l1" relType="BEFORE" from="ei138" to="t0" origin="USER" />
+<TLINK lid="l2" relType="BEFORE" from="ei140" to="t0" origin="USER" />
+<TLINK lid="l3" relType="ENDED_BY" from="ei146" to="ei147" origin="USER" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei141" to="t24" origin="USER" />
+<TLINK lid="l6" relType="INCLUDES" from="ei149" to="t0" origin="USER" />
+<TLINK lid="l7" relType="AFTER" from="ei143" to="t0" origin="USER" />
+<TLINK lid="l8" relType="IDENTITY" from="ei144" to="ei138" origin="USER" />
+<TLINK lid="l9" relType="IDENTITY" from="ei145" to="ei139" origin="USER" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei150" to="t27" origin="USER" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei144" to="t25" origin="USER" />
+<TLINK lid="l12" relType="DURING" from="ei146" to="t26" origin="USER" />
+<TLINK lid="l13" relType="INCLUDES" from="ei151" to="ei139" origin="USER" />
+<TLINK lid="l14" relType="INCLUDES" from="ei150" to="ei141" origin="USER" />
+<TLINK lid="l15" relType="BEFORE" from="ei150" to="t0" origin="USER" />
+<SLINK lid="l16" relType="MODAL" from="ei138" to="ei139" />
+<SLINK lid="l17" relType="EVIDENTIAL" from="ei140" to="ei138" />
+<SLINK lid="l19" relType="MODAL" from="ei144" to="ei145" />
+<SLINK lid="l20" relType="MODAL" from="ei150" to="ei151" />
+<ALINK lid="l21" relType="CULMINATES" from="ei147" to="ei148" />
+</TimeML>

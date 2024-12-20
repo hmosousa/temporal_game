@@ -1,0 +1,61 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980213.1320</DOCID>
+<TIMEX3 tid="t0" type="TIME" value="1998-02-13T14:35:00" temporalFunction="false" functionInDocument="CREATION_TIME">02/13/1998 14:35:00</TIMEX3>
+<EXTRAINFO>
+APW19980213.1320 NEWS STORY 02/13/1998 14:35:00
+w2122 Cx1f wstmr f Cx13 Cx11 BC-Australia-India-Qanta 02-13 0223
+BC-Australia-India-Qantas,0225
+Qantas to run daily flights between Australia and India
+</EXTRAINFO>
+<TEXT>CANBERRA, Australia (AP)_ Qantas will almost <EVENT eid="e1" class="OCCURRENCE" stem="double" offsets="45 51" sent_idx="0">double</EVENT> its flights between Australia and India by <TIMEX3 tid="t43" type="DATE" value="1998-08" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="95 101" sent_idx="0">August</TIMEX3> in the <EVENT eid="e2" class="OCCURRENCE" stem="search" offsets="109 115" sent_idx="0">search</EVENT> for new markets untouched by the crippling Asian financial <EVENT eid="e26" class="OCCURRENCE" stem="crisis" offsets="175 181" sent_idx="0">crisis</EVENT>. This <EVENT eid="e28" class="OCCURRENCE" stem="move" offsets="188 192" sent_idx="0">move</EVENT> comes barely <TIMEX3 tid="t44" type="DURATION" value="P1M" temporalFunction="false" functionInDocument="NONE" offsets="206 213" sent_idx="0">a month</TIMEX3> after Qantas <EVENT eid="e5" class="ASPECTUAL" stem="suspend" offsets="227 236" sent_idx="0">suspended</EVENT> a number of services between Australia, Indonesia, Thailand and Malaysia in the wake of the Asian economic <EVENT eid="e30" class="OCCURRENCE" stem="crisis" offsets="344 350" sent_idx="0">crisis</EVENT>. The airline has also <EVENT eid="e7" class="ASPECTUAL" stem="cut" offsets="373 376" sent_idx="0">cut</EVENT> all flights to South Korea. Qantas <EVENT eid="e8" class="I_ACTION" stem="plan" offsets="412 417" sent_idx="0">plans</EVENT> daily flights between Sydney and Bombay, up from the <TIMEX3 tid="t46" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="471 478" sent_idx="0">current</TIMEX3> four flights a week, to <EVENT eid="e9" class="I_ACTION" stem="boost" offsets="503 508" sent_idx="0">boost</EVENT> business and tourism ties with India, the airline <EVENT eid="e10" class="REPORTING" stem="announce" offsets="559 568" sent_idx="0">announced</EVENT> <TIMEX3 tid="t47" type="DATE" value="1998-02-13" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="569 575" sent_idx="0">Friday</TIMEX3>. In a joint statement with Tourism Minister Andrew Thomson, it <EVENT eid="e11" class="REPORTING" stem="say" offsets="639 643" sent_idx="0">said</EVENT> two new flights would <EVENT eid="e12" class="OCCURRENCE" stem="leave" offsets="666 671" sent_idx="0">leave</EVENT> Bombay on <TIMEX3 tid="t190" type="SET" value="XXXX-WXX-1TNI" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t189" quant="" freq="7D" offsets="682 688" sent_idx="0">Monday</TIMEX3> and <TIMEX3 tid="t189" type="SET" value="XXXX-WXX-2TNI" temporalFunction="false" functionInDocument="NONE" quant="" freq="7D" offsets="693 707" sent_idx="0">Tuesday nights</TIMEX3> from <TIMEX3 tid="t56" type="DATE" value="1998-03-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="713 721" sent_idx="0">March 30</TIMEX3>, with the third <EVENT eid="e65" class="OCCURRENCE" stem="depart" offsets="738 747" sent_idx="0">departing</EVENT> <TIMEX3 tid="t54" type="SET" value="XXXX-WXX-4" temporalFunction="false" functionInDocument="NONE" quant="each" freq="1W" offsets="748 761" sent_idx="0">each Thursday</TIMEX3> from <TIMEX3 tid="t55" type="DATE" value="1998-08-06" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="767 775" sent_idx="0">August 6</TIMEX3>. This will <EVENT eid="e14" class="OCCURRENCE" stem="add" offsets="787 790" sent_idx="0">add</EVENT> nearly 700 seats a week on the route. Thomson, in India to <EVENT eid="e16" class="OCCURRENCE" stem="talk" offsets="850 854" sent_idx="0">talk</EVENT> to tourism leaders, <EVENT eid="e17" class="REPORTING" stem="say" offsets="875 879" sent_idx="0">said</EVENT> the flights would <EVENT eid="e18" class="I_STATE" stem="provide" offsets="898 905" sent_idx="0">provide</EVENT> extra support to the growing tourism market. Qantas' India manager Khursheed Lam <EVENT eid="e20" class="REPORTING" stem="say" offsets="987 991" sent_idx="0">said</EVENT> the airline was <EVENT eid="e21" class="OCCURRENCE" stem="work" offsets="1008 1015" sent_idx="0">working</EVENT> closely with the Australian Tourist Commission to <EVENT eid="e22" class="I_ACTION" stem="develop" offsets="1066 1073" sent_idx="0">develop</EVENT> greater awareness of Australia in the Indian market. Qantas will also <EVENT eid="e25" class="OCCURRENCE" stem="appoint" offsets="1144 1151" sent_idx="0">appoint</EVENT> a Bombay-based public relations consultant.</TEXT>
+<LASTEXTRAINFO>
+(PROFILE (WS SL:BC-Australia-India-Qantas; CT:f; (REG:MEST;) (REG:INDI;) (REG:ENGL;) (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (LANG:ENGLISH;)) )
+AP-NY-02-13-98 1435EST
+</LASTEXTRAINFO>
+<MAKEINSTANCE eid="e1" eiid="ei321" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei322" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e26" eiid="ei324" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e28" eiid="ei325" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei326" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei328" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei329" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei331" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei334" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei336" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei338" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei340" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e65" eiid="ei341" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei342" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei344" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei345" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei346" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e20" eiid="ei348" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei349" tense="PAST" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei350" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei352" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei354" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<TLINK lid="l1" relType="ENDED_BY" from="ei321" to="t43" origin="USER" />
+<TLINK lid="l3" relType="AFTER" from="ei324" to="t0" origin="USER" />
+<TLINK lid="l4" relType="IDENTITY" from="ei325" to="ei321" origin="USER" />
+<TLINK lid="l5" relType="AFTER" from="ei325" to="ei326" origin="USER" />
+<TLINK lid="l6" relType="AFTER" from="ei326" to="ei328" origin="USER" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei329" to="ei326" origin="USER" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei336" to="t47" origin="USER" />
+<TLINK lid="l13" relType="BEGUN_BY" from="ei340" to="t56" origin="USER" />
+<TLINK lid="l14" relType="BEGUN_BY" from="ei354" to="t56" origin="USER" />
+<TLINK lid="l20" relType="IS_INCLUDED" from="ei341" to="t54" origin="USER" />
+<TLINK lid="l21" relType="BEGUN_BY" from="ei341" to="t55" origin="USER" />
+<TLINK lid="l22" relType="AFTER" from="ei342" to="t0" origin="USER" />
+<TLINK lid="l25" relType="BEFORE" from="ei348" to="t0" origin="USER" />
+<TLINK lid="l26" relType="AFTER" from="ei352" to="t0" origin="USER" />
+<TLINK lid="l27" relType="BEGINS" from="ei326" to="t44" origin="USER" />
+<TLINK lid="l28" relType="ENDS" from="ei325" to="t44" origin="USER" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei338" to="ei341" />
+<SLINK lid="l30" relType="MODAL" from="ei321" to="ei322" />
+<SLINK lid="l31" relType="MODAL" from="ei331" to="ei334" />
+<SLINK lid="l33" relType="EVIDENTIAL" from="ei336" to="ei331" />
+<SLINK lid="l34" relType="EVIDENTIAL" from="ei338" to="ei340" />
+<SLINK lid="l36" relType="EVIDENTIAL" from="ei345" to="ei346" />
+<SLINK lid="l38" relType="EVIDENTIAL" from="ei348" to="ei349" />
+<SLINK lid="l39" relType="MODAL" from="ei349" to="ei350" />
+</TimeML>

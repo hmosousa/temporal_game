@@ -1,0 +1,133 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980501.0480</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-05-01T09:13:00" temporalFunction="false" functionInDocument="CREATION_TIME">05/01/1998 09:13:00</TIMEX3>
+<EXTRAINFO>
+APW19980501.0480 NEWS STORY 05/01/1998 09:13:00
+w2844 Cx1f wstmr w Cx13 Cx11 SETTING-THE-STAGEsked 05-01 0665
+SETTING-THE-STAGE sked
+MALAYSIA Setting the stage for Net convergence, NEW STRAITS TIMES-MANAGEMENT TIMES QL xfdws SETTING-THE-STAGE sked Emerging Markets Datafile April 30, 1998 NEW STRAITS TIMES-MANAGEMENT TIMES ENGLISH COPYRIGHT 1998 BY WORLDSOURCES, INC., A JOINT VENTURE OF FDCH, INC.
+AND WORLD TIMES, INC.
+NO PORTION OF THE MATERIALS CONTAINED HEREIN MAY BE USED IN ANY MEDIA WITHOUT ATTRIBUTION TO WORLDSOURCES, INC.
+</EXTRAINFO>
+<TEXT>MALAYSIA's aggressive <EVENT eid="e1" class="OCCURRENCE" offsets="22 26" sent_idx="0">move</EVENT> into the information age could not <EVENT eid="e3" class="OCCURRENCE" offsets="62 66" sent_idx="0">come</EVENT> in a more opportune time. With the <EVENT eid="e8" class="OCCURRENCE" offsets="102 113" sent_idx="0">convergence</EVENT> of communications and information technologies (IT) coupled with the <EVENT eid="e139" class="OCCURRENCE" offsets="183 189" sent_idx="0">coming</EVENT> of age for the Internet and its related technologies, the stage is <EVENT eid="e13" class="OCCURRENCE" offsets="257 260" sent_idx="0">set</EVENT> for Malaysians to <EVENT eid="e15" class="OCCURRENCE" offsets="279 284" sent_idx="0">seize</EVENT> the chance to <EVENT eid="e17" class="OCCURRENCE" offsets="299 308" sent_idx="0">transform</EVENT> into a knowledge society and <EVENT eid="e18" class="ASPECTUAL" offsets="338 344" sent_idx="0">become</EVENT> worthy opponents/players in the global market space. The Internet, the global network of computers, is now far <EVENT eid="e20" class="OCCURRENCE" offsets="456 464" sent_idx="0">reaching</EVENT> into the country - <EVENT eid="e21" class="OCCURRENCE" offsets="484 493" sent_idx="0">extending</EVENT> its embrace to <EVENT eid="e24" class="OCCURRENCE" offsets="509 516" sent_idx="0">include</EVENT> every nook and cranny of the nation - <EVENT eid="e154" class="OCCURRENCE" offsets="555 562" sent_idx="0">opening</EVENT> doors to not only a diverse range of information sources but also an exhaustive list of possibilities to <EVENT eid="e28" class="OCCURRENCE" offsets="668 674" sent_idx="0">create</EVENT> new applications which <EVENT eid="e30" class="OCCURRENCE" offsets="698 701" sent_idx="0">add</EVENT> value to people's lives. In the business world, the Internet - through intranet and extranet solutions - has <EVENT eid="e32" class="ASPECTUAL" offsets="811 817" sent_idx="0">become</EVENT> an invaluable tool for companies to harness so as to <EVENT eid="e35" class="OCCURRENCE" offsets="871 875" sent_idx="0">gain</EVENT> a competitive edge. The solutions are also vital components in <EVENT eid="e38" class="OCCURRENCE" offsets="939 949" sent_idx="0">developing</EVENT> the borderless marketing flagship application which is a vital element for <EVENT eid="e40" class="OCCURRENCE" offsets="1025 1037" sent_idx="0">spearheading</EVENT> the <EVENT eid="e41" class="OCCURRENCE" offsets="1042 1053" sent_idx="0">development</EVENT> of the Multimedia Super Corridor (MSC) project. The application will <EVENT eid="e44" class="OCCURRENCE" offsets="1123 1129" sent_idx="0">create</EVENT> the necessary framework and infrastructure to <EVENT eid="e46" class="OCCURRENCE" offsets="1176 1183" sent_idx="0">support</EVENT> electronic commerce (e-commerce) <EVENT eid="e48" class="OCCURRENCE" offsets="1217 1228" sent_idx="0">initiatives</EVENT> in the country. However, it is important to note that <EVENT eid="e51" class="OCCURRENCE" offsets="1283 1293" sent_idx="0">installing</EVENT> or <EVENT eid="e52" class="OCCURRENCE" offsets="1297 1309" sent_idx="0">implementing</EVENT> Internet technologies for technology's sake would not <EVENT eid="e55" class="OCCURRENCE" offsets="1364 1370" sent_idx="0">ensure</EVENT> instant <EVENT eid="e58" class="OCCURRENCE" offsets="1379 1386" sent_idx="0">success</EVENT>. For e-commerce to <EVENT eid="e157" class="OCCURRENCE" offsets="1406 1414" sent_idx="0">flourish</EVENT> with full-blown end-to-end business <EVENT eid="e155" class="OCCURRENCE" offsets="1451 1463" sent_idx="0">transactions</EVENT>, strategic <EVENT eid="e156" class="OCCURRENCE" offsets="1475 1483" sent_idx="0">planning</EVENT> which incorporates both business and technology plans that are complementary is necessary for an organisation to <EVENT eid="e159" class="PERCEPTION" offsets="1597 1600" sent_idx="0">see</EVENT> feasible returns on investment. Intranets, through the use of Internet technology, are <EVENT eid="e142" class="STATE" offsets="1688 1698" sent_idx="0">positioned</EVENT> as a platform for companies to <EVENT eid="e143" class="OCCURRENCE" offsets="1730 1738" sent_idx="0">optimise</EVENT>, <EVENT eid="e144" class="OCCURRENCE" offsets="1740 1746" sent_idx="0">expand</EVENT> and <EVENT eid="e145" class="OCCURRENCE" offsets="1751 1760" sent_idx="0">transform</EVENT> new channels of business. When strategically <EVENT eid="e146" class="OCCURRENCE" offsets="1806 1817" sent_idx="0">implemented</EVENT>, an intranet solution will <EVENT eid="e147" class="OCCURRENCE" offsets="1845 1852" sent_idx="0">provide</EVENT> the ability to <EVENT eid="e149" class="OCCURRENCE" offsets="1868 1875" sent_idx="0">mediate</EVENT> mission-critical, decision support functions in organisations. It will also <EVENT eid="e86" class="OCCURRENCE" offsets="1952 1956" sent_idx="0">help</EVENT> further <EVENT eid="e150" class="OCCURRENCE" offsets="1965 1972" sent_idx="0">improve</EVENT> communications and collaboration at all levels in an organisation. With intranets in place, it is only logical for organisations to respectively <EVENT eid="e151" class="OCCURRENCE" offsets="2118 2122" sent_idx="0">link</EVENT> the network to other companies' for extended business purposes through extranets. While this will <EVENT eid="e91" class="OCCURRENCE" offsets="2221 2227" sent_idx="0">enable</EVENT> the sharing of information among enterprises, security issues such as firewalls and encryption as well as access and control procedures, and the trust levels that enterprises have with each other will <EVENT eid="e99" class="OCCURRENCE" offsets="2429 2435" sent_idx="0">emerge</EVENT> and there will be a need to <EVENT eid="e101" class="OCCURRENCE" offsets="2464 2471" sent_idx="0">address</EVENT> them. Other than <EVENT eid="e102" class="OCCURRENCE" offsets="2489 2494" sent_idx="0">usage</EVENT> in business, Internet technology is also <EVENT eid="e105" class="I_ACTION" offsets="2536 2545" sent_idx="0">beginning</EVENT> to <EVENT eid="e107" class="OCCURRENCE" offsets="2549 2559" sent_idx="0">infiltrate</EVENT> the lifestyle domain. ``Smart homes'' have <EVENT eid="e108" class="OCCURRENCE" offsets="2603 2610" sent_idx="0">emerged</EVENT> <EVENT eid="e109" class="OCCURRENCE" offsets="2611 2619" sent_idx="0">bringing</EVENT> a wealth of information and entertainment to families over telecommunications lines. The art of socialising is also <EVENT eid="e114" class="OCCURRENCE" offsets="2736 2748" sent_idx="0">experiencing</EVENT> a <EVENT eid="e115" class="OCCURRENCE" offsets="2751 2757" sent_idx="0">change</EVENT> where Net/virtual relationships are fast <EVENT eid="e116" class="OCCURRENCE" offsets="2799 2809" sent_idx="0">overtaking</EVENT> or <EVENT eid="e117" class="OCCURRENCE" offsets="2813 2821" sent_idx="0">becoming</EVENT> parallel with the normal human relationships. Whether this would <EVENT eid="e118" class="OCCURRENCE" offsets="2887 2892" sent_idx="0">prove</EVENT> positive or otherwise towards society in <TIMEX3 tid="t153" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2934 2944" sent_idx="0">the future</TIMEX3> is yet to be <EVENT eid="e121" class="PERCEPTION" offsets="2958 2962" sent_idx="0">seen</EVENT>. All in all, the Internet <EVENT eid="e122" class="OCCURRENCE" offsets="2989 2992" sent_idx="0">has</EVENT> a lot to <EVENT eid="e123" class="OCCURRENCE" offsets="3002 3007" sent_idx="0">offer</EVENT>. However, its value and benefits are only as good as how we <EVENT eid="e124" class="OCCURRENCE" offsets="3068 3071" sent_idx="0">use</EVENT> it.</TEXT>
+<LASTEXTRAINFO>
+Copyright 1998 NEW STRAITS TIMES-MANAGEMENT TIMES all rights reserved as distributed by WorldSources, Inc.
+(PROFILE (WS SL:SETTING-THE-STAGE sked; CT:w; (REG:ENGL;) (LANG:ENGLISH;)) )
+AP-NY-05-01-98 0913EDT
+</LASTEXTRAINFO>
+<MAKEINSTANCE eid="e1" eiid="ei243" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei244" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e8" eiid="ei245" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e139" eiid="ei246" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei247" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei248" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei249" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei250" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei252" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei253" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei254" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e154" eiid="ei255" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei256" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei257" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei258" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei260" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei261" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei262" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei263" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e44" eiid="ei264" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei265" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e48" eiid="ei266" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e51" eiid="ei267" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei268" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e55" eiid="ei269" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e58" eiid="ei270" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e157" eiid="ei271" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e155" eiid="ei272" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e156" eiid="ei273" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e159" eiid="ei275" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e142" eiid="ei276" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e143" eiid="ei277" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e144" eiid="ei278" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e145" eiid="ei279" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e146" eiid="ei280" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e147" eiid="ei281" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e149" eiid="ei282" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e86" eiid="ei283" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e150" eiid="ei284" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e151" eiid="ei288" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e91" eiid="ei289" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e99" eiid="ei290" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e101" eiid="ei292" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei293" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e105" eiid="ei294" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e107" eiid="ei295" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e108" eiid="ei296" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e109" eiid="ei297" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e114" eiid="ei298" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e115" eiid="ei299" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e116" eiid="ei300" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e117" eiid="ei301" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e118" eiid="ei302" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e121" eiid="ei303" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e122" eiid="ei304" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e123" eiid="ei305" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e124" eiid="ei306" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l74" relType="IS_INCLUDED" from="ei295" to="ei294" />
+<TLINK lid="l73" relType="INCLUDES" from="ei283" to="ei284" />
+<TLINK lid="l72" relType="IDENTITY" from="ei268" to="ei267" />
+<TLINK lid="l71" relType="IS_INCLUDED" from="ei258" to="t0" />
+<TLINK lid="l1" relType="AFTER" from="t0" to="ei243" />
+<TLINK lid="l4" relType="BEGINS" from="ei244" to="ei243" />
+<TLINK lid="l5" relType="BEFORE" from="ei246" to="ei247" />
+<TLINK lid="l6" relType="BEFORE" from="ei245" to="ei247" />
+<TLINK lid="l7" relType="AFTER" from="ei249" to="ei248" />
+<TLINK lid="l8" relType="AFTER" from="ei250" to="ei249" />
+<TLINK lid="l9" relType="DURING" from="ei252" to="t0" />
+<TLINK lid="l10" relType="SIMULTANEOUS" from="ei253" to="ei252" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei254" to="ei253" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei255" to="ei254" />
+<TLINK lid="l13" relType="AFTER" from="ei256" to="ei254" />
+<TLINK lid="l14" relType="DURING" from="ei256" to="ei257" />
+<TLINK lid="l15" relType="DURING" from="ei261" to="t0" />
+<TLINK lid="l16" relType="AFTER" from="ei262" to="ei261" />
+<TLINK lid="l17" relType="BEGUN_BY" from="ei263" to="ei262" />
+<TLINK lid="l18" relType="BEFORE" from="t0" to="ei264" />
+<TLINK lid="l19" relType="AFTER" from="ei306" to="t0" />
+<TLINK lid="l20" relType="DURING" from="ei305" to="ei304" />
+<TLINK lid="l21" relType="DURING" from="ei304" to="t0" />
+<TLINK lid="l22" relType="AFTER" from="ei303" to="t0" />
+<TLINK lid="l23" relType="INCLUDES" from="t153" to="ei302" />
+<TLINK lid="l24" relType="DURING" from="ei301" to="t0" />
+<TLINK lid="l25" relType="DURING" from="ei300" to="t0" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei299" to="ei298" />
+<TLINK lid="l27" relType="DURING" from="ei298" to="t0" />
+<TLINK lid="l28" relType="SIMULTANEOUS" from="ei297" to="ei296" />
+<TLINK lid="l29" relType="BEFORE" from="t0" to="ei296" />
+<TLINK lid="l30" relType="DURING" from="ei294" to="t0" />
+<TLINK lid="l31" relType="DURING" from="ei293" to="t0" />
+<TLINK lid="l32" relType="AFTER" from="ei292" to="ei290" />
+<TLINK lid="l34" relType="AFTER" from="ei290" to="ei289" />
+<TLINK lid="l38" relType="AFTER" from="ei281" to="ei280" />
+<TLINK lid="l39" relType="AFTER" from="ei279" to="ei276" />
+<TLINK lid="l40" relType="AFTER" from="ei278" to="ei276" />
+<TLINK lid="l41" relType="AFTER" from="ei277" to="ei276" />
+<TLINK lid="l43" relType="IS_INCLUDED" from="ei272" to="ei271" />
+<TLINK lid="l44" relType="DURING" from="ei266" to="ei264" />
+<TLINK lid="l45" relType="BEFORE" from="ei267" to="ei269" />
+<SLINK lid="l69" relType="MODAL" from="ei304" to="ei305" />
+<SLINK lid="l68" relType="MODAL" from="ei303" to="ei302" />
+<SLINK lid="l67" relType="FACTIVE" from="ei298" to="ei299" />
+<SLINK lid="l63" relType="MODAL" from="ei276" to="ei279" />
+<SLINK lid="l62" relType="MODAL" from="ei276" to="ei278" />
+<SLINK lid="l61" relType="MODAL" from="ei276" to="ei277" />
+<SLINK lid="l60" relType="FACTIVE" from="ei262" to="ei263" />
+<SLINK lid="l59" relType="MODAL" from="ei255" to="ei256" />
+<SLINK lid="l58" relType="MODAL" from="ei253" to="ei254" />
+<SLINK lid="l57" relType="MODAL" from="ei248" to="ei249" />
+<SLINK lid="l46" relType="MODAL" from="ei247" to="ei248" />
+<SLINK lid="l47" relType="MODAL" from="ei283" to="ei284" />
+<SLINK lid="l48" relType="MODAL" from="ei281" to="ei282" />
+<SLINK lid="l50" relType="MODAL" from="ei269" to="ei270" />
+<SLINK lid="l51" relType="MODAL" from="ei264" to="ei265" />
+<ALINK lid="l56" relType="INITIATES" from="ei294" to="ei295" />
+</TimeML>

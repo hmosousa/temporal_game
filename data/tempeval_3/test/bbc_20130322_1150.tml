@@ -1,0 +1,133 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>bbc_20130322_1150</DOCID>
+<TIMEX3 functionInDocument="CREATION_TIME" temporalFunction="false" tid="t0" type="DATE" value="2013-03-22">2013-03-22</TIMEX3>
+<TITLE>Last 1953 Everest team member George Lowe dies, aged 89</TITLE>
+<TEXT>The last surviving member of the team which first <EVENT class="OCCURRENCE" eid="e1" offsets="50 59" sent_idx="0">conquered</EVENT> Everest in <TIMEX3 tid="t1" type="DATE" value="1953" offsets="71 75" sent_idx="0">1953</TIMEX3> has <EVENT class="OCCURRENCE" eid="e2" offsets="80 84" sent_idx="0">died</EVENT> in a Derbyshire nursing home.
+George Lowe, 89, <EVENT class="OCCURRENCE" eid="e3" offsets="132 136" sent_idx="1">died</EVENT> in Ripley on <TIMEX3 tid="t2" type="DATE" value="2013-03-20" offsets="150 159" sent_idx="1">Wednesday</TIMEX3> after a long-term <EVENT class="OCCURRENCE" eid="e45" offsets="178 185" sent_idx="1">illness</EVENT>, with his wife Mary by his side.
+New Zealand-born Mr Lowe was part of the team that <EVENT class="I_STATE" eid="e4" offsets="270 276" sent_idx="2">helped</EVENT> Sir Edmund Hillary and Tenzing Norgay to the summit in <TIMEX3 tid="t3" type="DATE" value="1953" offsets="332 336" sent_idx="2">1953</TIMEX3>.
+Family friend and historian Dr Huw Lewis-Jones <EVENT class="OCCURRENCE" eid="e6" offsets="385 389" sent_idx="3">paid</EVENT> tribute to a "gentle soul and fine climber" who <EVENT class="OCCURRENCE" eid="e7" offsets="438 445" sent_idx="3">shunned</EVENT> the limelight.
+Mr Lowe also <EVENT class="OCCURRENCE" eid="e8" offsets="474 478" sent_idx="4">took</EVENT> part in the trans-Antarctic <EVENT class="OCCURRENCE" eid="e9" offsets="507 517" sent_idx="4">expedition</EVENT> of <TIMEX3 tid="t2000" type="DATE" value="1957" offsets="521 525" sent_idx="4">1957</TIMEX3>-<TIMEX3 tid="t2001" type="DATE" value="1958" offsets="526 528" sent_idx="4">58</TIMEX3>, which <EVENT class="OCCURRENCE" eid="e10" offsets="536 540" sent_idx="4">made</EVENT> the first successful overland <EVENT class="OCCURRENCE" eid="e11" offsets="571 579" sent_idx="4">crossing</EVENT> of Antarctica via the South Pole.
+He later <EVENT class="OCCURRENCE" eid="e12" offsets="623 627" sent_idx="5">made</EVENT> <EVENT class="OCCURRENCE" eid="e13" offsets="628 639" sent_idx="5">expeditions</EVENT> to Greenland, Greece and Ethiopia.
+Speaking to the BBC in <TIMEX3 tid="t4" type="DATE" value="1995" offsets="698 702" sent_idx="6">1995</TIMEX3>, Mr Lowe <EVENT class="REPORTING" eid="e14" offsets="712 716" sent_idx="6">said</EVENT> of his Antarctic adventure: "We <EVENT class="I_STATE" eid="e15" offsets="749 758" sent_idx="6">estimated</EVENT> we could <EVENT class="OCCURRENCE" eid="e16" offsets="768 770" sent_idx="6">do</EVENT> it in <TIMEX3 tid="t5" type="DURATION" value="P100D" offsets="777 785" sent_idx="6">100 days</TIMEX3>, and we <EVENT class="OCCURRENCE" eid="e17" offsets="794 797" sent_idx="6">got</EVENT> across on <TIMEX3 tid="t6" type="DATE" value="XXXX-XX-XX" offsets="808 820" sent_idx="6">the 99th day</TIMEX3>.
+"There was a great feeling of euphoria from everyone. It <EVENT class="STATE" eid="e18" offsets="879 882" sent_idx="7">had</EVENT> a multiplying effect.
+"We were <EVENT class="I_STATE" eid="e19" offsets="914 921" sent_idx="8">pleased</EVENT> that England and New Zealand <EVENT class="I_STATE" eid="e20" offsets="951 955" sent_idx="8">knew</EVENT> about it, and we <EVENT class="I_STATE" eid="e21" offsets="973 980" sent_idx="8">thought</EVENT> that's where it would <EVENT class="OCCURRENCE" eid="e22" offsets="1003 1007" sent_idx="8">stop</EVENT>."
+He also <EVENT class="REPORTING" eid="e23" offsets="1018 1024" sent_idx="9">talked</EVENT> about his "second job" as the group's cameraman, and having to <EVENT class="OCCURRENCE" eid="e24" offsets="1088 1092" sent_idx="9">wear</EVENT> four pairs of gloves to <EVENT class="OCCURRENCE" eid="e25" offsets="1117 1121" sent_idx="9">work</EVENT> the clockwork camera.
+"When there were dramas, there was a split problem. Do you take part in the urgency - or do you record it?" he <EVENT class="REPORTING" eid="e28" offsets="1255 1259" sent_idx="10">said</EVENT>.
+Dr Lewis-Jones, the former curator at the Scott Polar Research Institute at the University of Cambridge, who first <EVENT class="OCCURRENCE" eid="e29" offsets="1376 1379" sent_idx="11">met</EVENT> Mr Lowe in <TIMEX3 tid="t7" type="DATE" value="2005" offsets="1391 1395" sent_idx="11">2005</TIMEX3>, <EVENT class="REPORTING" eid="e30" offsets="1397 1403" sent_idx="11">called</EVENT> him a "hero".
+"I don't often use that word but then it is not very often that you get to meet one," he <EVENT class="REPORTING" eid="e34" offsets="1507 1511" sent_idx="12">said</EVENT>.
+A book of memoirs and photographs from the <EVENT class="OCCURRENCE" eid="e52" offsets="1556 1561" sent_idx="13">climb</EVENT> by Mr Lowe, which he <EVENT class="OCCURRENCE" eid="e53" offsets="1583 1589" sent_idx="13">worked</EVENT> on with Dr Lewis-Jones, is due to be <EVENT class="OCCURRENCE" eid="e35" offsets="1627 1636" sent_idx="13">published</EVENT> in <TIMEX3 tid="t8" type="DATE" value="2013-05" offsets="1640 1643" sent_idx="13">May</TIMEX3>.
+He <EVENT class="REPORTING" eid="e36" offsets="1648 1652" sent_idx="14">said</EVENT>: "Lowe was a brilliant, kind fellow who never <EVENT class="OCCURRENCE" eid="e37" offsets="1699 1705" sent_idx="14">sought</EVENT> the limelight... and <TIMEX3 tid="t9" type="DURATION" value="P60Y" offsets="1727 1735" sent_idx="14">60 years</TIMEX3> on from <EVENT class="OCCURRENCE" eid="e54" offsets="1744 1751" sent_idx="14">Everest</EVENT> his achievements <EVENT class="OCCURRENCE" eid="e38" offsets="1769 1776" sent_idx="14">deserve</EVENT> wider recognition.
+"He was <EVENT class="OCCURRENCE" eid="e39" offsets="1804 1812" sent_idx="15">involved</EVENT> in two of the most important <EVENT class="OCCURRENCE" eid="e56" offsets="1842 1854" sent_idx="15">explorations</EVENT> of the <TIMEX3 tid="t2002" type="DATE" value="19" offsets="1862 1874" sent_idx="15">20th Century</TIMEX3>... yet <EVENT class="STATE" eid="e40" offsets="1882 1890" sent_idx="15">remained</EVENT> a humble, happy man right to the <EVENT eid="e2000" class="OCCURRENCE" offsets="1924 1927" sent_idx="15">end</EVENT>... an inspirational lesson to us all."
+Before <EVENT class="OCCURRENCE" eid="e41" offsets="1974 1982" sent_idx="16">retiring</EVENT> in <TIMEX3 tid="t10" type="DATE" value="1984" offsets="1986 1990" sent_idx="16">1984</TIMEX3>, Mr Lowe <EVENT class="OCCURRENCE" eid="e42" offsets="2000 2006" sent_idx="16">worked</EVENT> as an Inspector of Schools with the Department of Education and Sciences, and he <EVENT class="OCCURRENCE" eid="e43" offsets="2088 2094" sent_idx="16">leaves</EVENT> three sons from a previous <EVENT class="OCCURRENCE" eid="e57" offsets="2122 2130" sent_idx="16">marriage</EVENT>.
+The last British climbing member of the 1953 team, Mike Westmacott, <EVENT class="OCCURRENCE" eid="e44" offsets="2200 2204" sent_idx="17">died</EVENT> <TIMEX3 tid="t11" type="DATE" value="2012-06" offsets="2205 2214" sent_idx="17">last June</TIMEX3>.</TEXT>
+<MAKEINSTANCE aspect="NONE" eiid="ei1" eid="e1" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="PERFECTIVE" eiid="ei2" eid="e2" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei2000" eid="e2000" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei3" eid="e3" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei4" eid="e4" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei6" eid="e6" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei7" eid="e7" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei8" eid="e8" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei9" eid="e9" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei10" eid="e10" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei11" eid="e11" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei12" eid="e12" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei13" eid="e13" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei14" eid="e14" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei15" eid="e15" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei16" eid="e16" polarity="POS" pos="OTHER" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei17" eid="e17" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei18" eid="e18" polarity="POS" pos="OTHER" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei19" eid="e19" polarity="POS" pos="ADJECTIVE" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei20" eid="e20" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei21" eid="e21" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei22" eid="e22" modality="would" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei23" eid="e23" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei24" eid="e24" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei25" eid="e25" polarity="POS" pos="VERB" tense="INFINITIVE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei28" eid="e28" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei29" eid="e29" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei30" eid="e30" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei34" eid="e34" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei35" eid="e35" polarity="POS" pos="VERB" tense="FUTURE" />
+<MAKEINSTANCE aspect="NONE" eiid="ei36" eid="e36" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei37" eid="e37" polarity="NEG" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei38" eid="e38" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei39" eid="e39" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei40" eid="e40" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei41" eid="e41" polarity="POS" pos="VERB" tense="PRESPART" />
+<MAKEINSTANCE aspect="NONE" eiid="ei42" eid="e42" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei43" eid="e43" polarity="POS" pos="VERB" tense="PRESENT" />
+<MAKEINSTANCE aspect="NONE" eiid="ei44" eid="e44" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei45" eid="e45" modality="" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei52" eid="e52" modality="" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei53" eid="e53" modality="" polarity="POS" pos="VERB" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei54" eid="e54" modality="" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei56" eid="e56" modality="" polarity="POS" pos="NOUN" tense="PAST" />
+<MAKEINSTANCE aspect="NONE" eiid="ei57" eid="e57" modality="" polarity="POS" pos="NOUN" tense="PAST" />
+<TLINK from="ei1" lid="l1" relType="IS_INCLUDED" to="t1" />
+<TLINK from="ei2" lid="l2" relType="BEFORE" to="t0" />
+<TLINK from="ei1" lid="l3" relType="BEFORE" to="ei2" />
+<TLINK from="ei3" lid="l4" relType="IS_INCLUDED" to="t2" />
+<TLINK from="ei3" lid="l5" relType="BEFORE" to="t0" />
+<TLINK from="ei2" lid="l6" relType="SIMULTANEOUS" to="ei3" />
+<TLINK from="ei4" lid="l8" relType="BEFORE" to="t0" />
+<TLINK from="ei3" lid="l9" relType="AFTER" to="ei4" />
+<TLINK from="ei6" lid="l11" relType="BEFORE" to="t0" />
+<TLINK from="ei4" lid="l12" relType="BEFORE" to="ei6" />
+<TLINK from="ei7" lid="l13" relType="BEFORE" to="ei6" />
+<TLINK from="ei8" lid="l14" relType="BEFORE" to="t0" />
+<TLINK from="ei6" lid="l15" relType="AFTER" to="ei8" />
+<TLINK from="ei9" lid="l16" relType="SIMULTANEOUS" to="ei8" />
+<TLINK from="ei10" lid="l17" relType="SIMULTANEOUS" to="ei8" />
+<TLINK from="ei11" lid="l18" relType="SIMULTANEOUS" to="ei8" />
+<TLINK from="ei12" lid="l19" relType="BEFORE" to="t0" />
+<TLINK from="ei8" lid="l20" relType="BEFORE" to="ei12" />
+<TLINK from="ei13" lid="l21" relType="SIMULTANEOUS" to="ei12" />
+<TLINK from="ei14" lid="l22" relType="IS_INCLUDED" to="t4" />
+<TLINK from="ei16" lid="l23" relType="IS_INCLUDED" to="t5" />
+<TLINK from="ei17" lid="l24" relType="IS_INCLUDED" to="t6" />
+<TLINK from="ei15" lid="l25" relType="BEFORE" to="t0" />
+<TLINK from="ei14" lid="l26" relType="BEFORE" to="t0" />
+<TLINK from="ei12" lid="l27" relType="BEFORE" to="ei14" />
+<TLINK from="ei15" lid="l28" relType="BEFORE" to="ei14" />
+<TLINK from="ei16" lid="l29" relType="BEFORE" to="ei14" />
+<TLINK from="ei17" lid="l30" relType="BEFORE" to="ei14" />
+<TLINK from="ei18" lid="l31" relType="BEFORE" to="t0" />
+<TLINK from="ei14" lid="l32" relType="AFTER" to="ei18" />
+<TLINK from="ei21" lid="l33" relType="BEFORE" to="t0" />
+<TLINK from="ei19" lid="l35" relType="SIMULTANEOUS" to="ei21" />
+<TLINK from="ei20" lid="l36" relType="SIMULTANEOUS" to="ei21" />
+<TLINK from="ei22" lid="l37" relType="AFTER" to="ei21" />
+<TLINK from="ei21" lid="l39" relType="BEFORE" to="ei23" />
+<TLINK from="ei24" lid="l40" relType="BEFORE" to="ei23" />
+<TLINK from="ei25" lid="l41" relType="BEFORE" to="ei23" />
+<TLINK from="ei29" lid="l47" relType="IS_INCLUDED" to="t7" />
+<TLINK from="ei29" lid="l50" relType="BEFORE" to="ei30" />
+<TLINK from="ei30" lid="l52" relType="SIMULTANEOUS" to="ei34" />
+<TLINK from="ei35" lid="l56" relType="IS_INCLUDED" to="t8" />
+<TLINK from="ei35" lid="l57" relType="AFTER" to="t0" />
+<TLINK from="ei34" lid="l58" relType="BEFORE" to="ei35" />
+<TLINK from="ei54" lid="l59" relType="IBEFORE" to="t9" />
+<TLINK from="ei35" lid="l61" relType="AFTER" to="ei36" />
+<TLINK from="ei37" lid="l62" relType="BEFORE" to="ei36" />
+<TLINK from="ei38" lid="l63" relType="SIMULTANEOUS" to="ei36" />
+<TLINK from="ei39" lid="l64" relType="BEFORE" to="t0" />
+<TLINK from="ei36" lid="l65" relType="AFTER" to="ei39" />
+<TLINK from="ei40" lid="l66" relType="SIMULTANEOUS" to="ei39" />
+<TLINK from="ei41" lid="l67" relType="IS_INCLUDED" to="t10" />
+<TLINK from="ei42" lid="l68" relType="BEFORE" to="t0" />
+<TLINK from="ei39" lid="l69" relType="BEFORE" to="ei42" />
+<TLINK from="ei41" lid="l70" relType="AFTER" to="ei42" />
+<TLINK from="ei43" lid="l71" relType="IDENTITY" to="ei2" />
+<TLINK from="ei44" lid="l72" relType="IS_INCLUDED" to="t11" />
+<TLINK from="ei44" lid="l73" relType="BEFORE" to="t0" />
+<TLINK from="ei42" lid="l74" relType="BEFORE" to="ei44" />
+<TLINK from="ei1" lid="l75" relType="IDENTITY" to="ei52" />
+<TLINK from="ei1" lid="l76" relType="IDENTITY" to="ei54" />
+<TLINK from="ei2" lid="l77" relType="IDENTITY" to="ei2000" />
+<TLINK from="ei2" lid="l78" relType="ENDS" to="ei40" />
+<TLINK from="ei43" lid="l79" relType="AFTER" to="ei57" />
+<TLINK from="ei56" lid="l80" relType="IS_INCLUDED" to="t2002" />
+<TLINK from="ei4" lid="l81" relType="IS_INCLUDED" to="t3" />
+</TimeML>

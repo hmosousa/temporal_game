@@ -1,0 +1,31 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0805</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-27" temporalFunction="false" functionInDocument="CREATION_TIME">10/27/89</TIMEX3>
+<EXTRAINFO>
+WSJ891027-0090 = 891027 891027-0090.
+Dividend News: @ CMS Energy Corp. 10/27/89 WALL STREET JOURNAL (J) CMS DIVIDENDS (DIV) EARNINGS (ERN)
+</EXTRAINFO>
+<TEXT>CMS ENERGY Corp. <EVENT eid="e1" class="REPORTING" offsets="17 21" sent_idx="0">said</EVENT> management would <EVENT eid="e3" class="I_ACTION" offsets="39 48" sent_idx="0">recommend</EVENT> to its board <TIMEX3 tid="t14" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="62 67" sent_idx="0">today</TIMEX3> that its common stock dividend be <EVENT eid="e5" class="OCCURRENCE" offsets="102 112" sent_idx="0">reinstated</EVENT> at a "modest level" <TIMEX3 tid="t77" type="DATE" value="1989-11-01" mod="ON_OR_AFTER" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="133 148" sent_idx="0">later this year</TIMEX3>. The Dearborn, Mich., energy company <EVENT eid="e6" class="ASPECTUAL" offsets="186 193" sent_idx="0">stopped</EVENT> <EVENT eid="e7" class="OCCURRENCE" offsets="194 200" sent_idx="0">paying</EVENT> a dividend in <TIMEX3 tid="t69" type="DATE" value="1984-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="215 240" sent_idx="0">the third quarter of 1984</TIMEX3> because of <EVENT eid="e8" class="OCCURRENCE" offsets="252 260" sent_idx="0">troubles</EVENT> at its Midland nuclear plant. In addition, CMS <EVENT eid="e10" class="REPORTING" offsets="308 316" sent_idx="0">reported</EVENT> <TIMEX3 tid="t15" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="317 330" sent_idx="0">third-quarter</TIMEX3> net of $68.2 million, or 83 cents a share, <EVENT eid="e121" class="STATE" offsets="374 376" sent_idx="0">up</EVENT> from $66.8 million, or 81 cents a share, <TIMEX3 tid="t21" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t15" offsets="418 428" sent_idx="0">a year ago</TIMEX3>.</TEXT>
+<MAKEINSTANCE eid="e6" eiid="ei162" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei159" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei163" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei165" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei164" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei160" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e121" eiid="ei167" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei161" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei163" to="t69" />
+<TLINK lid="l1" relType="BEFORE" from="t21" to="t15" />
+<TLINK lid="l2" relType="BEFORE" from="ei159" to="t0" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei160" to="t0" />
+<TLINK lid="l4" relType="IDENTITY" from="t14" to="t0" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei161" to="t77" />
+<TLINK lid="l6" relType="AFTER" from="t0" to="t77" />
+<TLINK lid="l7" relType="BEFORE" from="t69" to="t0" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei162" to="t69" />
+<TLINK lid="l9" relType="BEFORE" from="ei164" to="ei162" />
+<TLINK lid="l10" relType="BEFORE" from="ei165" to="t0" />
+<SLINK lid="l11" relType="EVIDENTIAL" from="ei159" to="ei160" />
+<SLINK lid="l12" relType="MODAL" from="ei160" to="ei161" />
+<ALINK lid="l13" relType="TERMINATES" from="ei162" to="ei163" />
+</TimeML>

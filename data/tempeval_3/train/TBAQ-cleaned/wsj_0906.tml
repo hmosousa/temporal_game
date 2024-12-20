@@ -1,0 +1,35 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0906</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-26" temporalFunction="false" functionInDocument="CREATION_TIME">10/26/89</TIMEX3>
+<EXTRAINFO>
+WSJ891026-0153 = 891026 891026-0153.
+Diversified Investment Group 10/26/89 WALL STREET JOURNAL (J) DING STSS TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) PHILADELPHIA
+</EXTRAINFO>
+<TEXT>Diversified Investment Group Inc. <EVENT eid="e1" class="REPORTING" offsets="34 38" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_ACTION" offsets="42 48" sent_idx="0">agreed</EVENT> to be <EVENT eid="e4" class="OCCURRENCE" offsets="55 63" sent_idx="0">acquired</EVENT> by Star States Corp. for stock <EVENT eid="e5" class="OCCURRENCE" offsets="95 101" sent_idx="0">valued</EVENT> at $13.75 a share, or about $24.4 million.
+Diversified, the holding company for Fidelity Federal Savings amp Loan Association, <EVENT eid="e6" class="REPORTING" offsets="229 233" sent_idx="1">said</EVENT> the agreement also <EVENT eid="e8" class="OCCURRENCE" offsets="253 258" sent_idx="1">gives</EVENT> Star States the option to <EVENT eid="e11" class="OCCURRENCE" offsets="285 292" sent_idx="1">acquire</EVENT> 588,300 of Diversified's 1,774,326 shares outstanding "under certain circumstances."
+The <EVENT eid="e12" class="OCCURRENCE" offsets="382 393" sent_idx="2">acquisition</EVENT> would <EVENT eid="e13" class="OCCURRENCE" offsets="400 404" sent_idx="2">give</EVENT> Wilmington, Del.-based Star States access to the Pennsylvania market.
+The agreement is subject to regulatory <EVENT eid="e17" class="OCCURRENCE" offsets="514 522" sent_idx="3">approval</EVENT> and <EVENT eid="e18" class="OCCURRENCE" offsets="527 537" sent_idx="3">resolution</EVENT> of lawsuits <EVENT eid="e20" class="OCCURRENCE" offsets="550 557" sent_idx="3">brought</EVENT> by certain Diversified holders in connection with the proposed <EVENT eid="e22" class="OCCURRENCE" offsets="621 627" sent_idx="3">merger</EVENT>.</TEXT>
+<MAKEINSTANCE eid="e13" eiid="ei124" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e20" eiid="ei130" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei123" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei115" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei128" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei117" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei118" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei131" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei120" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei116" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e1" eiid="ei114" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei129" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei122" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="INCLUDES" from="ei131" to="ei116" />
+<TLINK lid="l2" relType="BEFORE" from="ei114" to="t0" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei116" to="ei117" />
+<TLINK lid="l4" relType="IDENTITY" from="ei118" to="ei114" />
+<TLINK lid="l8" relType="INCLUDES" from="ei123" to="ei116" />
+<TLINK lid="l9" relType="IDENTITY" from="ei123" to="ei124" />
+<TLINK lid="l13" relType="BEFORE" from="ei130" to="ei129" />
+<SLINK lid="l14" relType="EVIDENTIAL" from="ei114" to="ei115" />
+<SLINK lid="l15" relType="MODAL" from="ei115" to="ei116" />
+<SLINK lid="l16" relType="EVIDENTIAL" from="ei118" to="ei120" />
+</TimeML>

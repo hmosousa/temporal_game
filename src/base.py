@@ -1,6 +1,8 @@
 import itertools
 from typing import Dict, List, Literal, Tuple
 
+from tieval.links import TLink
+
 from src.closure import compute_temporal_closure
 
 RELATIONS = ["<", ">", "=", "-"]
@@ -79,8 +81,16 @@ class Relation:
 class Timeline:
     """If on_endpoints is True, add implicit relations between the start and end of each entity."""
 
-    def __init__(self, relations: List[Relation] = None, on_endpoints: bool = True):
-        if relations is None:
+    def __init__(
+        self,
+        relations: List[Relation] = None,
+        on_endpoints: bool = True,
+        tlinks: List[TLink] = None,
+    ):
+        if tlinks is not None:
+            relations = self.tlinks2relations(tlinks)
+
+        elif relations is None:
             relations = set()
 
         self.relations = set(relations)
@@ -217,3 +227,23 @@ class Timeline:
     @classmethod
     def from_relations(cls, relations: List[Dict]) -> "Timeline":
         return cls([Relation(**r) for r in relations])
+
+    @staticmethod
+    def tlinks2relations(tlinks):
+        relations = []
+        for tlink in tlinks:
+            if tlink.source == tlink.target:
+                continue
+
+            pr = [r if r is not None else "-" for r in tlink.relation.point.relation]
+
+            relations += [
+                Relation(f"start {tlink.source}", f"start {tlink.target}", pr[0]),
+                Relation(f"start {tlink.source}", f"end {tlink.target}", pr[1]),
+                Relation(f"end {tlink.source}", f"start {tlink.target}", pr[2]),
+                Relation(f"end {tlink.source}", f"end {tlink.target}", pr[3]),
+                Relation(f"start {tlink.source}", f"end {tlink.source}", "<"),
+                Relation(f"start {tlink.target}", f"end {tlink.target}", "<"),
+            ]
+
+        return set(relations)

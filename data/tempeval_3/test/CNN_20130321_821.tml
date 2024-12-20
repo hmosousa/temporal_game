@@ -1,0 +1,29 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>CNN_20130321_821</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="2013-03-21" temporalFunction="false" functionInDocument="CREATION_TIME">March 21, 2013</TIMEX3>
+<TITLE>How Obama has weaponized wit</TITLE>
+<TEXT>Barack Obama would <EVENT class="OCCURRENCE" eid="e1" offsets="19 23" sent_idx="0">make</EVENT> a great stand-up comic, not because he's the funniest president ever but because he uses jokes the same way many of us comedians do: as a weapon.
+Traditionally, the (intentionally) funny lines by our presidents have <EVENT class="STATE" eid="e4" offsets="240 243" sent_idx="1">had</EVENT> one thing in common: They were self-deprecating. Sure, some presidents have <EVENT class="OCCURRENCE" eid="e5" offsets="320 324" sent_idx="1">used</EVENT> jokes to take jabs at their opponents, but not to the extent of Obama.
+During his <TIMEX3 type="DURATION" value="P5Y" tid="t1" offsets="407 413" sent_idx="2">tenure</TIMEX3>, he has increasingly <EVENT class="OCCURRENCE" eid="e8" offsets="435 444" sent_idx="2">unleashed</EVENT> biting comedic barbs against his critics and political adversaries. These jokes are <EVENT eid="e1000" class="I_ACTION" offsets="529 537" sent_idx="2">intended</EVENT> to do more than simply entertain you. They have an agenda.
+Obama's humor is often delivered the way a comedian dealing with a heckler would do it. He <EVENT class="I_ACTION" eid="e1002" offsets="688 693" sent_idx="3">tries</EVENT> to <EVENT class="OCCURRENCE" eid="e1003" offsets="697 706" sent_idx="3">undermine</EVENT> his opponents with it and get the crowd -- in this case the public -- on his side. I can <EVENT class="I_ACTION" eid="e20" offsets="796 802" sent_idx="3">assure</EVENT> you that having a crowd laugh at your critic/heckler is not only effective in dominating them, it's also very satisfying.</TEXT>
+<MAKEINSTANCE eiid="ei1" eid="e1" pos="VERB" tense="FUTURE" aspect="NONE" polarity="POS" modality="would" />
+<MAKEINSTANCE eiid="ei4" eid="e4" pos="OTHER" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei5" eid="e5" pos="VERB" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei8" eid="e8" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei20" eid="e20" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei1000" eid="e1000" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei1002" eid="e1002" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei1003" eid="e1003" pos="VERB" tense="INFINITIVE" aspect="NONE" polarity="POS" />
+<TLINK lid="l1" relType="AFTER" from="ei1" to="t0" />
+<TLINK lid="l4" relType="BEFORE" from="ei4" to="t0" />
+<TLINK lid="l5" relType="AFTER" from="ei1" to="ei4" />
+<TLINK lid="l6" relType="BEFORE" from="ei5" to="t0" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="ei4" to="ei5" />
+<TLINK lid="l12" relType="BEFORE" from="ei5" to="ei8" />
+<TLINK lid="l28" relType="IS_INCLUDED" from="ei20" to="t0" />
+<TLINK lid="l100" relType="INCLUDES" from="ei8" to="ei20" />
+<TLINK lid="l101" relType="INCLUDES" from="t1" to="t0" />
+<TLINK lid="l102" relType="INCLUDES" from="t1" to="ei8" />
+<TLINK lid="l103" relType="AFTER" from="ei8" to="ei1000" />
+<TLINK lid="l104" relType="AFTER" from="ei1003" to="ei1002" />
+</TimeML>

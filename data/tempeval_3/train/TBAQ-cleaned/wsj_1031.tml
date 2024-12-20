@@ -1,0 +1,40 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_1031</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-26" temporalFunction="false" functionInDocument="CREATION_TIME">10/26/89</TIMEX3>
+<EXTRAINFO>
+WSJ891026-0025 = 891026 891026-0025.
+Business Brief -- Philip Morris Cos.: @ Defense Measure Is Adopted @ By Foods, Tobacco Concern 10/26/89 WALL STREET JOURNAL (J) MO TOBACCO PRODUCTS (TOB) FOOD PRODUCTS (FOD)
+</EXTRAINFO>
+<TEXT>Philip Morris Cos., New York, <EVENT eid="e1" class="OCCURRENCE" stem="adopt" offsets="30 37" sent_idx="0">adopted</EVENT> a defense measure <EVENT eid="e3" class="OCCURRENCE" stem="design" offsets="56 64" sent_idx="0">designed</EVENT> to <EVENT eid="e5" class="OCCURRENCE" stem="make" offsets="68 72" sent_idx="0">make</EVENT> a hostile <EVENT eid="e6" class="OCCURRENCE" stem="takeover" offsets="83 91" sent_idx="0">takeover</EVENT> prohibitively expensive.
+The giant foods, tobacco and brewing company <EVENT eid="e7" class="REPORTING" stem="say" offsets="162 166" sent_idx="1">said</EVENT> it will <EVENT eid="e8" class="OCCURRENCE" stem="issue" offsets="175 180" sent_idx="1">issue</EVENT> common-share purchase rights to shareholders of record <TIMEX3 tid="t24" type="DATE" value="1989-11-08" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="236 242" sent_idx="1">Nov. 8</TIMEX3>. Under certain circumstances, the rights would <EVENT eid="e10" class="I_STATE" stem="entitle" offsets="290 297" sent_idx="1">entitle</EVENT> Philip Morris holders to <EVENT eid="e13" class="OCCURRENCE" stem="buy" offsets="323 326" sent_idx="1">buy</EVENT> shares of either the company or its acquirer for half price.
+The board isn't <EVENT eid="e27" class="STATE" stem="aware" offsets="404 409" sent_idx="2">aware</EVENT> of any <EVENT eid="e15" class="I_ACTION" stem="attempt" offsets="417 425" sent_idx="2">attempts</EVENT> to <EVENT eid="e17" class="OCCURRENCE" stem="take" offsets="429 433" sent_idx="2">take</EVENT> over Philip Morris, the company <EVENT eid="e18" class="REPORTING" stem="say" offsets="466 470" sent_idx="2">said</EVENT>. As of <TIMEX3 tid="t25" type="DATE" value="1989-09-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="478 486" sent_idx="2">Sept. 30</TIMEX3>, Philip Morris <EVENT eid="e28" class="STATE" stem="have" offsets="502 505" sent_idx="2">had</EVENT> 926 million shares outstanding. In composite trading on the New York Stock Exchange, Philip Morris shares <EVENT eid="e20" class="OCCURRENCE" stem="close" offsets="612 618" sent_idx="2">closed</EVENT> <TIMEX3 tid="t26" type="DATE" value="1989-10-25" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="619 628" sent_idx="2">yesterday</TIMEX3> at $43.50 each, down $1.</TEXT>
+<MAKEINSTANCE eid="e28" eiid="ei68" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei63" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei66" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei59" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei58" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei57" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei69" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei62" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e8" eiid="ei60" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei67" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei56" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei64" tense="PRESENT" aspect="NONE" polarity="NEG" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e1" eiid="ei55" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei65" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l16" relType="IS_INCLUDED" from="ei67" to="t0" />
+<TLINK lid="l15" relType="AFTER" from="ei62" to="ei55" />
+<TLINK lid="l14" relType="BEFORE" from="ei56" to="ei55" />
+<TLINK lid="l1" relType="BEFORE" from="ei55" to="t0" />
+<TLINK lid="l2" relType="INCLUDES" from="t26" to="ei69" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei68" to="t25" />
+<TLINK lid="l4" relType="SIMULTANEOUS" from="ei65" to="ei64" />
+<TLINK lid="l6" relType="AFTER" from="t0" to="ei59" />
+<TLINK lid="l7" relType="AFTER" from="ei58" to="ei57" />
+<SLINK lid="l13" relType="MODAL" from="ei64" to="ei65" />
+<SLINK lid="l8" relType="EVIDENTIAL" from="ei67" to="ei64" />
+<SLINK lid="l9" relType="MODAL" from="ei65" to="ei66" />
+<SLINK lid="l10" relType="MODAL" from="ei62" to="ei63" />
+<SLINK lid="l11" relType="EVIDENTIAL" from="ei59" to="ei60" />
+<SLINK lid="l12" relType="MODAL" from="ei56" to="ei57" />
+</TimeML>

@@ -1,0 +1,260 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0568</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0132 = 891030 891030-0132.
+Unisys' $648.2 Million 3rd-Period Loss @ Shows Intensified Fight for Turnaround @ ---- @ By Paul B. Carroll @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) UIS EARNINGS (ERN) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
+</EXTRAINFO>
+<TEXT>Unisys Corp.'s <EVENT eid="e1" class="I_ACTION" offsets="15 27" sent_idx="0">announcement</EVENT> <TIMEX3 tid="t209" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="28 34" sent_idx="0">Friday</TIMEX3> of a $648.2 million <EVENT eid="e2" class="STATE" offsets="55 59" sent_idx="0">loss</EVENT> for <TIMEX3 tid="t211" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="64 81" sent_idx="0">the third quarter</TIMEX3> showed that the company is <EVENT eid="e212" class="OCCURRENCE" offsets="109 115" sent_idx="0">moving</EVENT> even faster than <EVENT eid="e5" class="I_STATE" offsets="133 141" sent_idx="0">expected</EVENT> to <EVENT eid="e7" class="OCCURRENCE" offsets="145 149" sent_idx="0">take</EVENT> <EVENT eid="e2065" class="OCCURRENCE" offsets="150 160" sent_idx="0">write-offs</EVENT> on its various problems and <EVENT eid="e9" class="I_ACTION" offsets="189 196" sent_idx="0">prepare</EVENT> for a <EVENT eid="e213" class="OCCURRENCE" offsets="203 213" sent_idx="0">turnaround</EVENT> <TIMEX3 tid="t214" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="214 223" sent_idx="0">next year</TIMEX3>.
+At the same time, the sheer size of the <EVENT eid="e11" class="STATE" offsets="265 269" sent_idx="1">loss</EVENT>, coupled with a slowing of <EVENT eid="e13" class="OCCURRENCE" offsets="297 303" sent_idx="1">orders</EVENT>, <EVENT eid="e14" class="OCCURRENCE" offsets="305 309" sent_idx="1">made</EVENT> some securities analysts <EVENT eid="e16" class="I_STATE" offsets="335 341" sent_idx="1">wonder</EVENT> just how strong that turnaround will be at the computer maker and defense-electronics concern.
+"Unisys is <EVENT eid="e17" class="I_STATE" offsets="448 455" sent_idx="2">getting</EVENT> <EVENT eid="e18" class="STATE" offsets="456 465" sent_idx="2">clobbered</EVENT>. Just clobbered," <EVENT eid="e20" class="REPORTING" offsets="484 488" sent_idx="2">said</EVENT> Ulric Weil, an analyst at Weil amp Associates who had once been <EVENT eid="e2785" class="STATE" offsets="553 557" sent_idx="2">high</EVENT> on the company. "The quarter was terrible, and the future looks anything but encouraging."
+Unisys, whose revenue <EVENT eid="e22" class="OCCURRENCE" offsets="671 677" sent_idx="3">inched</EVENT> up 3.7% in <TIMEX3 tid="t2135" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t211" offsets="689 700" sent_idx="3">the quarter</TIMEX3> to $2.35 billion from $2.27 billion in <TIMEX3 tid="t225" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t211" offsets="740 764" sent_idx="3">the year-earlier quarter</TIMEX3>, <EVENT eid="e226" class="STATE" offsets="766 769" sent_idx="3">had</EVENT> an operating <EVENT eid="e23" class="STATE" offsets="783 787" sent_idx="3">loss</EVENT> of about $30 million. On top of that, the Blue Bell, Pa., concern <EVENT eid="e24" class="OCCURRENCE" offsets="854 858" sent_idx="3">took</EVENT> a $230 million <EVENT eid="e227" class="OCCURRENCE" offsets="874 880" sent_idx="3">charge</EVENT> related to the <EVENT eid="e26" class="OCCURRENCE" offsets="896 903" sent_idx="3">layoffs</EVENT> of 8,000 employees. That is at the high end of the range of 7,000 to 8,000 employees that Unisys <EVENT eid="e28" class="REPORTING" offsets="1001 1005" sent_idx="3">said</EVENT> <TIMEX3 tid="t228" type="DATE" value="1989-09" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1006 1017" sent_idx="3">a month ago</TIMEX3> would be <EVENT eid="e29" class="STATE" offsets="1027 1031" sent_idx="3">laid</EVENT> off. Unisys <EVENT eid="e31" class="REPORTING" offsets="1044 1048" sent_idx="3">said</EVENT> that should <EVENT eid="e32" class="I_STATE" offsets="1061 1065" sent_idx="3">help</EVENT> it <EVENT eid="e34" class="OCCURRENCE" offsets="1069 1073" sent_idx="3">save</EVENT> $500 million a year in costs, again at the high end of the previously reported range of $400 million to $500 million.
+The company also <EVENT eid="e37" class="OCCURRENCE" offsets="1209 1213" sent_idx="4">took</EVENT> a <EVENT eid="e38" class="OCCURRENCE" offsets="1216 1225" sent_idx="4">write-off</EVENT> of $150 million to <EVENT eid="e40" class="OCCURRENCE" offsets="1245 1250" sent_idx="4">cover</EVENT> <EVENT eid="e229" class="STATE" offsets="1251 1257" sent_idx="4">losses</EVENT> on some fixed-price defense contracts, as some new managers <EVENT eid="e43" class="OCCURRENCE" offsets="1318 1322" sent_idx="4">took</EVENT> a hard <EVENT eid="e44" class="OCCURRENCE" offsets="1330 1334" sent_idx="4">look</EVENT> at the prospects for that slow-growing business. In addition, Unisys <EVENT eid="e47" class="OCCURRENCE" offsets="1404 1407" sent_idx="4">set</EVENT> up an unspecified reserve -- apparently $60 million to $70 million -- to <EVENT eid="e49" class="OCCURRENCE" offsets="1481 1486" sent_idx="4">cover</EVENT> the minimum amount it will have to <EVENT eid="e52" class="OCCURRENCE" offsets="1522 1525" sent_idx="4">pay</EVENT> the government because of its <EVENT eid="e53" class="OCCURRENCE" offsets="1556 1567" sent_idx="4">involvement</EVENT> in the defense-procurement <EVENT eid="e54" class="OCCURRENCE" offsets="1595 1602" sent_idx="4">scandal</EVENT>. Unisys also <EVENT eid="e56" class="REPORTING" offsets="1616 1621" sent_idx="4">noted</EVENT> that it <EVENT eid="e57" class="OCCURRENCE" offsets="1630 1634" sent_idx="4">paid</EVENT> $78.8 million in taxes during <TIMEX3 tid="t235" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t211" offsets="1665 1676" sent_idx="4">the quarter</TIMEX3>, even though tax <EVENT eid="e3000" class="OCCURRENCE" offsets="1694 1702" sent_idx="4">payments</EVENT> normally would be minimal in a quarter that produced such a big loss.
+The tax payments will <EVENT eid="e64" class="OCCURRENCE" offsets="1795 1800" sent_idx="5">leave</EVENT> Unisys with $225 million in loss carry-forwards that will <EVENT eid="e67" class="ASPECTUAL" offsets="1859 1862" sent_idx="5">cut</EVENT> tax <EVENT eid="e68" class="OCCURRENCE" offsets="1867 1875" sent_idx="5">payments</EVENT> in <TIMEX3 tid="t237" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1879 1894" sent_idx="5">future quarters</TIMEX3>. In addition, Unisys <EVENT eid="e70" class="REPORTING" offsets="1916 1920" sent_idx="5">said</EVENT> it <EVENT eid="e2328" class="OCCURRENCE" offsets="1924 1931" sent_idx="5">reduced</EVENT> computer inventories a further $100 million during <TIMEX3 tid="t239" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t211" offsets="1983 1994" sent_idx="5">the quarter</TIMEX3>, <EVENT eid="e73" class="OCCURRENCE" offsets="1996 2003" sent_idx="5">leaving</EVENT> it within $100 million of its goal of a <EVENT eid="e241" class="STATE" offsets="2044 2053" sent_idx="5">reduction</EVENT> of $500 million by <TIMEX3 tid="t243" type="DATE" value="1989" mod="END" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2073 2092" sent_idx="5">the end of the year</TIMEX3>.
+Still, Unisys <EVENT eid="e76" class="REPORTING" offsets="2108 2112" sent_idx="6">said</EVENT> its European business was <EVENT eid="e244" class="STATE" offsets="2139 2143" sent_idx="6">weak</EVENT> during <TIMEX3 tid="t246" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t211" offsets="2151 2162" sent_idx="6">the quarter</TIMEX3>, a worrisome sign given that the company has <EVENT eid="e80" class="I_STATE" offsets="2208 2214" sent_idx="6">relied</EVENT> on solid results overseas to <EVENT eid="e84" class="I_ACTION" offsets="2244 2252" sent_idx="6">overcome</EVENT> weakness in the U.S. over <TIMEX3 tid="t249" type="DATE" value="PAST_REF" temporalFunction="false" functionInDocument="NONE" offsets="2279 2304" sent_idx="6">the past several quarters</TIMEX3>.
+The company also <EVENT eid="e85" class="REPORTING" offsets="2323 2331" sent_idx="7">reported</EVENT> slower <EVENT eid="e250" class="STATE" offsets="2339 2345" sent_idx="7">growth</EVENT> in another important business: systems that use the Unix operating system. That would be a huge <EVENT eid="e2410" class="STATE" offsets="2442 2449" sent_idx="7">problem</EVENT> if it were to <EVENT eid="e2409" class="ASPECTUAL" offsets="2464 2472" sent_idx="7">continue</EVENT>, because Unisys is <EVENT eid="e2405" class="OCCURRENCE" offsets="2492 2499" sent_idx="7">betting</EVENT> its business on the assumption that customers <EVENT eid="e2407" class="I_STATE" offsets="2546 2550" sent_idx="7">want</EVENT> to <EVENT eid="e2408" class="OCCURRENCE" offsets="2554 2558" sent_idx="7">move</EVENT> away from using operating systems that run on only one manufacturer's equipment and toward systems -- mainly Unix -- that work on almost anyone's machines.
+In addition, Unisys must <EVENT eid="e105" class="I_ACTION" offsets="2740 2744" sent_idx="8">deal</EVENT> with its increasingly oppressive debt load. Debt has <EVENT eid="e107" class="OCCURRENCE" offsets="2798 2803" sent_idx="8">risen</EVENT> to around $4 billion, or about 50% of total capitalization. That means Unisys must <EVENT eid="e110" class="OCCURRENCE" offsets="2887 2890" sent_idx="8">pay</EVENT> about $100 million in interest <TIMEX3 tid="t256" type="SET" value="P1Q" temporalFunction="false" functionInDocument="NONE" quant="every" offsets="2922 2935" sent_idx="8">every quarter</TIMEX3>, on top of $27 million in dividends on preferred stock.
+Jim Unruh, Unisys's president, <EVENT eid="e115" class="REPORTING" offsets="3023 3027" sent_idx="9">said</EVENT> he is <EVENT eid="e116" class="OCCURRENCE" offsets="3034 3045" sent_idx="9">approaching</EVENT> next year with caution. He <EVENT eid="e118" class="REPORTING" offsets="3073 3077" sent_idx="9">said</EVENT> the strength of the world-wide economy is <EVENT eid="e1991" class="STATE" offsets="3120 3127" sent_idx="9">suspect</EVENT>, and doesn't see much revenue growth in the cards.
+He also <EVENT eid="e124" class="REPORTING" offsets="3187 3191" sent_idx="10">said</EVENT> that the price wars <EVENT eid="e126" class="OCCURRENCE" offsets="3212 3219" sent_idx="10">flaring</EVENT> up in parts of the computer industry will <EVENT eid="e128" class="ASPECTUAL" offsets="3262 3270" sent_idx="10">continue</EVENT> through <TIMEX3 tid="t259" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3279 3288" sent_idx="10">next year</TIMEX3>. He <EVENT eid="e129" class="REPORTING" offsets="3293 3297" sent_idx="10">said</EVENT> the <EVENT eid="e1992" class="OCCURRENCE" offsets="3302 3306" sent_idx="10">move</EVENT> toward standard operating systems means customers aren't <EVENT eid="e1993" class="OCCURRENCE" offsets="3364 3370" sent_idx="10">locked</EVENT> into buying from their traditional computer supplier and can force prices down. That, he <EVENT eid="e138" class="REPORTING" offsets="3460 3464" sent_idx="10">said</EVENT>, is why Unisys is <EVENT eid="e139" class="OCCURRENCE" offsets="3483 3494" sent_idx="10">overhauling</EVENT> its whole business: It <EVENT eid="e141" class="I_STATE" offsets="3518 3523" sent_idx="10">needs</EVENT> to <EVENT eid="e143" class="OCCURRENCE" offsets="3527 3534" sent_idx="10">prepare</EVENT> for a world in which profit margins will be <EVENT eid="e1995" class="STATE" offsets="3579 3584" sent_idx="10">lower</EVENT> than computer companies have been <EVENT eid="e145" class="OCCURRENCE" offsets="3619 3623" sent_idx="10">used</EVENT> to.
+"We've <EVENT eid="e146" class="OCCURRENCE" offsets="3635 3645" sent_idx="11">approached</EVENT> this not as a response to a temporary condition in the industry but as a fundamental change the industry is going through," Mr. Unruh <EVENT eid="e152" class="REPORTING" offsets="3780 3784" sent_idx="11">said</EVENT>. "The information-systems industry is still going to be a high-growth <EVENT eid="e1997" class="STATE" offsets="3855 3863" sent_idx="11">business</EVENT>, and we're <EVENT eid="e1996" class="I_STATE" offsets="3875 3884" sent_idx="11">confident</EVENT> that we <EVENT eid="e157" class="STATE" offsets="3893 3897" sent_idx="11">have</EVENT> tremendous assets as a company. But we don't <EVENT eid="e158" class="I_STATE" offsets="3943 3951" sent_idx="11">minimize</EVENT> the <EVENT eid="e160" class="OCCURRENCE" offsets="3956 3966" sent_idx="11">challenges</EVENT> of <TIMEX3 tid="t1998" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3970 3983" sent_idx="11">the near term</TIMEX3>."
+Securities analysts were even more <EVENT eid="e1999" class="STATE" offsets="4021 4029" sent_idx="12">cautious</EVENT>, having been <EVENT eid="e162" class="OCCURRENCE" offsets="4043 4049" sent_idx="12">burned</EVENT> repeatedly on Unisys <TIMEX3 tid="t2000" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4071 4080" sent_idx="12">this year</TIMEX3>. Some had <EVENT eid="e163" class="I_ACTION" offsets="4091 4100" sent_idx="12">predicted</EVENT> <EVENT eid="e2784" class="OCCURRENCE" offsets="4101 4109" sent_idx="12">earnings</EVENT> of more than $4 a share for <TIMEX3 tid="t2003" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4138 4147" sent_idx="12">this year</TIMEX3>, up from <TIMEX3 tid="t2008" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4157 4166" sent_idx="12">last year</TIMEX3>'s fully diluted $3.27 a share on earnings of $680.6 million. But the company <EVENT eid="e165" class="REPORTING" offsets="4244 4248" sent_idx="12">said</EVENT> <TIMEX3 tid="t2009" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4249 4255" sent_idx="12">Friday</TIMEX3> that it <EVENT eid="e166" class="OCCURRENCE" offsets="4264 4267" sent_idx="12">had</EVENT> <EVENT eid="e2010" class="STATE" offsets="4268 4274" sent_idx="12">losses</EVENT> of $673.3 million through <TIMEX3 tid="t2012" type="DURATION" value="P9M" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="4301 4322" sent_idx="12">the first nine months</TIMEX3>, compared with <EVENT eid="e2015" class="STATE" offsets="4338 4346" sent_idx="12">earnings</EVENT> <TIMEX3 tid="t2013" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4347 4353" sent_idx="12">a year</TIMEX3> earlier of $382.2 million, or $2.22 a share fully diluted, as revenue <EVENT eid="e169" class="OCCURRENCE" offsets="4424 4430" sent_idx="12">inched</EVENT> up 1.4% to $7.13 billion from $7.03 billion. And Unisys is <EVENT eid="e170" class="I_STATE" offsets="4490 4498" sent_idx="12">expected</EVENT> to <EVENT eid="e172" class="OCCURRENCE" offsets="4502 4504" sent_idx="12">do</EVENT> little better than break even in <TIMEX3 tid="t2021" type="DATE" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4538 4556" sent_idx="12">the fourth quarter</TIMEX3>.
+So Steve Milunovich at First Boston <EVENT eid="e174" class="REPORTING" offsets="4594 4598" sent_idx="13">said</EVENT> he is <EVENT eid="e175" class="OCCURRENCE" offsets="4605 4612" sent_idx="13">cutting</EVENT> his earnings <EVENT eid="e2709" class="I_STATE" offsets="4626 4634" sent_idx="13">estimate</EVENT> for <TIMEX3 tid="t2022" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4639 4648" sent_idx="13">next year</TIMEX3> to $2 a share from $3. "I was feeling like I was too high to begin with," he <EVENT eid="e3001" class="REPORTING" offsets="4726 4730" sent_idx="13">said</EVENT>.
+Mr. Weil of Weil amp Associates said he will <EVENT eid="e181" class="STATE" offsets="4777 4783" sent_idx="14">remain</EVENT> at $1 a share for <TIMEX3 tid="t2029" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4802 4811" sent_idx="14">next year</TIMEX3> but <EVENT eid="e182" class="REPORTING" offsets="4816 4820" sent_idx="14">said</EVENT> he <EVENT eid="e183" class="I_STATE" offsets="4824 4831" sent_idx="14">wonders</EVENT> whether even that low target is <EVENT eid="e2794" class="STATE" offsets="4864 4866" sent_idx="14">at</EVENT> risk. "The break-even point for <TIMEX3 tid="t2034" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="4899 4908" sent_idx="14">next year</TIMEX3> is much <EVENT eid="e2032" class="STATE" offsets="4917 4922" sent_idx="14">lower</EVENT>, but is it <EVENT eid="e2795" class="STATE" offsets="4934 4937" sent_idx="14">low</EVENT> enough?" he <EVENT eid="e187" class="I_ACTION" offsets="4950 4955" sent_idx="14">asked</EVENT>.
+Reflecting the concern, Unisys stock <EVENT eid="e189" class="OCCURRENCE" offsets="4994 4998" sent_idx="15">fell</EVENT> a further 75 cents to $16.25 in composite trading <TIMEX3 tid="t2038" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="5049 5055" sent_idx="15">Friday</TIMEX3> on the New York Stock Exchange.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2806" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei2807" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e212" eiid="ei2808" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei2809" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei2810" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2065" eiid="ei2811" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei2812" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e213" eiid="ei2813" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei2814" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei2815" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e14" eiid="ei2816" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2817" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei2819" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei2820" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2821" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2823" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e226" eiid="ei2826" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2827" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei2828" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e227" eiid="ei2829" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e26" eiid="ei2830" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e28" eiid="ei2831" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei2832" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e31" eiid="ei2833" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei2834" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="should" />
+<MAKEINSTANCE eid="e34" eiid="ei2835" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei2837" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei2838" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e40" eiid="ei2839" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e229" eiid="ei2840" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e43" eiid="ei2841" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei2842" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e47" eiid="ei2844" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e49" eiid="ei2845" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei2846" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" modality="have to" />
+<MAKEINSTANCE eid="e53" eiid="ei2847" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e54" eiid="ei2848" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e56" eiid="ei2849" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e57" eiid="ei2850" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei2852" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2853" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei2854" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e70" eiid="ei2855" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2328" eiid="ei2856" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e73" eiid="ei2857" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e241" eiid="ei2859" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e76" eiid="ei2860" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e244" eiid="ei2861" tense="PAST" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e80" eiid="ei2862" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e84" eiid="ei2863" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e85" eiid="ei2865" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e250" eiid="ei2866" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2410" eiid="ei2867" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="would" />
+<MAKEINSTANCE eid="e2409" eiid="ei2868" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2405" eiid="ei2869" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2407" eiid="ei2871" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2408" eiid="ei2872" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e105" eiid="ei2873" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e107" eiid="ei2875" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e110" eiid="ei2877" tense="NONE" aspect="NONE" polarity="POS" cardinality="every" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e115" eiid="ei2878" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e116" eiid="ei2879" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e118" eiid="ei2880" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1991" eiid="ei2881" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e124" eiid="ei2882" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e126" eiid="ei2883" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e128" eiid="ei2884" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e129" eiid="ei2885" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1992" eiid="ei2886" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e1993" eiid="ei2887" tense="PRESENT" aspect="NONE" polarity="NEG" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e138" eiid="ei2888" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e139" eiid="ei2889" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e141" eiid="ei2890" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e143" eiid="ei2891" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1995" eiid="ei2892" tense="FUTURE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e145" eiid="ei2893" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e146" eiid="ei2894" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e152" eiid="ei2895" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1997" eiid="ei2896" tense="FUTURE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e1996" eiid="ei2897" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e157" eiid="ei2898" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e158" eiid="ei2899" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e160" eiid="ei2900" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e1999" eiid="ei2901" tense="PAST" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e162" eiid="ei2902" tense="PASTPART" aspect="PERFECTIVE" polarity="POS" cardinality="plural" pos="VERB" />
+<MAKEINSTANCE eid="e163" eiid="ei2903" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e165" eiid="ei2906" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e166" eiid="ei2907" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2010" eiid="ei2908" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2015" eiid="ei2909" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e169" eiid="ei2910" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e170" eiid="ei2913" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e172" eiid="ei2914" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e174" eiid="ei2915" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e175" eiid="ei2916" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2709" eiid="ei2918" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e181" eiid="ei2922" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e182" eiid="ei2923" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e183" eiid="ei2924" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2032" eiid="ei2926" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e187" eiid="ei2928" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e189" eiid="ei2930" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2784" eiid="ei2932" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2785" eiid="ei2933" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e2794" eiid="ei2942" tense="PRESENT" aspect="NONE" polarity="POS" pos="PREPOSITION" />
+<MAKEINSTANCE eid="e2795" eiid="ei2943" tense="PRESENT" aspect="NONE" polarity="POS" pos="OTHER" />
+<TLINK lid="l157" relType="IS_INCLUDED" from="ei2943" to="t2034" />
+<TLINK lid="l156" relType="IS_INCLUDED" from="ei2942" to="t0" />
+<TLINK lid="l155" relType="BEFORE" from="ei2915" to="t0" />
+<TLINK lid="l153" relType="IS_INCLUDED" from="ei2910" to="t2013" />
+<TLINK lid="l150" relType="IS_INCLUDED" from="ei2883" to="t0" />
+<TLINK lid="l148" relType="IDENTITY" from="ei2854" to="ei2850" />
+<TLINK lid="l146" relType="IDENTITY" from="ei2833" to="ei2806" />
+<TLINK lid="l143" relType="BEFORE" from="ei2933" to="ei2806" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2930" to="t2038" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei2806" to="t209" />
+<TLINK lid="l3" relType="DURING" from="ei2807" to="t211" />
+<TLINK lid="l4" relType="BEFORE" from="ei2808" to="ei2807" />
+<TLINK lid="l5" relType="BEFORE" from="ei2809" to="ei2808" />
+<TLINK lid="l6" relType="IDENTITY" from="ei2810" to="ei2811" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei2813" to="t214" />
+<TLINK lid="l8" relType="BEFORE" from="ei2806" to="t0" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei2814" to="ei2815" />
+<TLINK lid="l10" relType="IDENTITY" from="ei2814" to="ei2816" />
+<TLINK lid="l11" relType="IDENTITY" from="ei2815" to="ei2816" />
+<TLINK lid="l12" relType="BEFORE" from="ei2816" to="ei2817" />
+<TLINK lid="l13" relType="BEFORE" from="ei2821" to="t0" />
+<TLINK lid="l14" relType="ENDED_BY" from="ei2819" to="ei2820" />
+<TLINK lid="l15" relType="DURING" from="ei2823" to="t2135" />
+<TLINK lid="l16" relType="SIMULTANEOUS" from="ei2826" to="ei2823" />
+<TLINK lid="l17" relType="IDENTITY" from="ei2826" to="ei2827" />
+<TLINK lid="l18" relType="IDENTITY" from="ei2828" to="ei2829" />
+<TLINK lid="l19" relType="IS_INCLUDED" from="ei2828" to="t2135" />
+<TLINK lid="l20" relType="BEFORE" from="ei2830" to="ei2828" />
+<TLINK lid="l21" relType="IS_INCLUDED" from="ei2831" to="t228" />
+<TLINK lid="l24" relType="IDENTITY" from="ei2837" to="ei2838" />
+<TLINK lid="l25" relType="IS_INCLUDED" from="ei2837" to="t0" />
+<TLINK lid="l26" relType="IDENTITY" from="ei2841" to="ei2842" />
+<TLINK lid="l27" relType="BEFORE" from="ei2841" to="ei2837" />
+<TLINK lid="l28" relType="SIMULTANEOUS" from="ei2844" to="ei2837" />
+<TLINK lid="l29" relType="AFTER" from="ei2845" to="ei2846" />
+<TLINK lid="l30" relType="AFTER" from="ei2846" to="ei2847" />
+<TLINK lid="l31" relType="IS_INCLUDED" from="ei2847" to="ei2848" />
+<TLINK lid="l32" relType="BEFORE" from="ei2849" to="t0" />
+<TLINK lid="l33" relType="DURING" from="ei2850" to="t235" />
+<TLINK lid="l36" relType="IS_INCLUDED" from="ei2853" to="t237" />
+<TLINK lid="l37" relType="IDENTITY" from="ei2855" to="ei2849" />
+<TLINK lid="l38" relType="IS_INCLUDED" from="ei2856" to="t239" />
+<TLINK lid="l39" relType="IDENTITY" from="ei2856" to="ei2857" />
+<TLINK lid="l40" relType="BEFORE" from="ei2856" to="ei2859" />
+<TLINK lid="l42" relType="ENDED_BY" from="ei2859" to="t243" />
+<TLINK lid="l43" relType="IDENTITY" from="ei2860" to="ei2855" />
+<TLINK lid="l44" relType="IS_INCLUDED" from="ei2861" to="t246" />
+<TLINK lid="l45" relType="BEFORE" from="ei2862" to="ei2861" />
+<TLINK lid="l47" relType="IDENTITY" from="ei2865" to="ei2860" />
+<TLINK lid="l48" relType="BEFORE" from="ei2868" to="ei2867" />
+<TLINK lid="l49" relType="INCLUDES" from="ei2869" to="t0" />
+<TLINK lid="l51" relType="BEFORE" from="ei2869" to="ei2867" />
+<TLINK lid="l52" relType="SIMULTANEOUS" from="ei2873" to="ei2869" />
+<TLINK lid="l53" relType="BEFORE" from="ei2875" to="t0" />
+<TLINK lid="l54" relType="BEFORE" from="ei2875" to="ei2877" />
+<TLINK lid="l55" relType="IS_INCLUDED" from="ei2877" to="t256" />
+<TLINK lid="l56" relType="IDENTITY" from="ei2880" to="ei2878" />
+<TLINK lid="l57" relType="DURING" from="ei2884" to="t259" />
+<TLINK lid="l58" relType="IDENTITY" from="ei2882" to="ei2880" />
+<TLINK lid="l59" relType="BEFORE" from="ei2882" to="t0" />
+<TLINK lid="l60" relType="IDENTITY" from="ei2885" to="ei2882" />
+<TLINK lid="l61" relType="SIMULTANEOUS" from="ei2886" to="ei2887" />
+<TLINK lid="l62" relType="IDENTITY" from="ei2888" to="ei2885" />
+<TLINK lid="l63" relType="BEFORE" from="ei2887" to="ei2889" />
+<TLINK lid="l64" relType="BEFORE" from="ei2890" to="ei2889" />
+<TLINK lid="l65" relType="BEFORE" from="ei2887" to="ei2890" />
+<TLINK lid="l66" relType="ENDED_BY" from="ei2889" to="ei2891" />
+<TLINK lid="l67" relType="AFTER" from="ei2892" to="ei2893" />
+<TLINK lid="l68" relType="IDENTITY" from="ei2895" to="ei2882" />
+<TLINK lid="l69" relType="IS_INCLUDED" from="ei2900" to="t1998" />
+<TLINK lid="l70" relType="SIMULTANEOUS" from="ei2901" to="ei2897" />
+<TLINK lid="l71" relType="BEFORE" from="ei2902" to="ei2901" />
+<TLINK lid="l72" relType="IS_INCLUDED" from="ei2902" to="t2000" />
+<TLINK lid="l73" relType="BEFORE" from="ei2903" to="ei2901" />
+<TLINK lid="l74" relType="IS_INCLUDED" from="ei2906" to="t2009" />
+<TLINK lid="l75" relType="IDENTITY" from="ei2907" to="ei2908" />
+<TLINK lid="l76" relType="DURING" from="ei2908" to="t2012" />
+<TLINK lid="l77" relType="BEFORE" from="ei2909" to="ei2908" />
+<TLINK lid="l78" relType="INCLUDES" from="ei2913" to="t0" />
+<TLINK lid="l79" relType="IS_INCLUDED" from="ei2914" to="t2021" />
+<TLINK lid="l83" relType="IS_INCLUDED" from="ei2922" to="t2029" />
+<TLINK lid="l85" relType="IS_INCLUDED" from="ei2926" to="t2034" />
+<TLINK lid="l89" relType="BEGINS" from="ei2909" to="t2013" />
+<TLINK lid="l90" relType="ENDS" from="ei2908" to="t2013" />
+<SLINK lid="l142" relType="MODAL" from="ei2928" to="ei2943" />
+<SLINK lid="l141" relType="MODAL" from="ei2924" to="ei2942" />
+<SLINK lid="l140" relType="FACTIVE" from="ei2847" to="ei2848" />
+<SLINK lid="l91" relType="CONDITIONAL" from="ei2868" to="ei2867" />
+<SLINK lid="l92" relType="EVIDENTIAL" from="ei2806" to="ei2807" />
+<SLINK lid="l93" relType="MODAL" from="ei2809" to="ei2808" />
+<SLINK lid="l94" relType="MODAL" from="ei2808" to="ei2810" />
+<SLINK lid="l95" relType="MODAL" from="ei2808" to="ei2812" />
+<SLINK lid="l96" relType="MODAL" from="ei2812" to="ei2813" />
+<SLINK lid="l98" relType="EVIDENTIAL" from="ei2821" to="ei2819" />
+<SLINK lid="l99" relType="EVIDENTIAL" from="ei2831" to="ei2832" />
+<SLINK lid="l100" relType="EVIDENTIAL" from="ei2833" to="ei2834" />
+<SLINK lid="l101" relType="MODAL" from="ei2834" to="ei2835" />
+<SLINK lid="l102" relType="MODAL" from="ei2837" to="ei2839" />
+<SLINK lid="l103" relType="FACTIVE" from="ei2839" to="ei2840" />
+<SLINK lid="l104" relType="MODAL" from="ei2844" to="ei2845" />
+<SLINK lid="l105" relType="EVIDENTIAL" from="ei2849" to="ei2850" />
+<SLINK lid="l106" relType="EVIDENTIAL" from="ei2855" to="ei2856" />
+<SLINK lid="l108" relType="EVIDENTIAL" from="ei2860" to="ei2861" />
+<SLINK lid="l109" relType="MODAL" from="ei2862" to="ei2863" />
+<SLINK lid="l111" relType="EVIDENTIAL" from="ei2865" to="ei2866" />
+<SLINK lid="l113" relType="MODAL" from="ei2871" to="ei2872" />
+<SLINK lid="l115" relType="EVIDENTIAL" from="ei2878" to="ei2879" />
+<SLINK lid="l116" relType="EVIDENTIAL" from="ei2880" to="ei2881" />
+<SLINK lid="l117" relType="EVIDENTIAL" from="ei2882" to="ei2884" />
+<SLINK lid="l118" relType="EVIDENTIAL" from="ei2885" to="ei2887" />
+<SLINK lid="l119" relType="EVIDENTIAL" from="ei2888" to="ei2889" />
+<SLINK lid="l120" relType="MODAL" from="ei2890" to="ei2891" />
+<SLINK lid="l121" relType="MODAL" from="ei2891" to="ei2892" />
+<SLINK lid="l122" relType="EVIDENTIAL" from="ei2895" to="ei2894" />
+<SLINK lid="l123" relType="EVIDENTIAL" from="ei2895" to="ei2897" />
+<SLINK lid="l124" relType="MODAL" from="ei2897" to="ei2898" />
+<SLINK lid="l125" relType="EVIDENTIAL" from="ei2895" to="ei2896" />
+<SLINK lid="l126" relType="EVIDENTIAL" from="ei2895" to="ei2899" />
+<SLINK lid="l127" relType="FACTIVE" from="ei2899" to="ei2900" />
+<SLINK lid="l128" relType="EVIDENTIAL" from="ei2906" to="ei2907" />
+<SLINK lid="l129" relType="MODAL" from="ei2913" to="ei2914" />
+<SLINK lid="l130" relType="EVIDENTIAL" from="ei2915" to="ei2916" />
+<SLINK lid="l131" relType="FACTIVE" from="ei2916" to="ei2918" />
+<SLINK lid="l133" relType="EVIDENTIAL" from="ei2923" to="ei2924" />
+<SLINK lid="l134" relType="EVIDENTIAL" from="ei2923" to="ei2926" />
+<SLINK lid="l135" relType="MODAL" from="ei2903" to="ei2932" />
+<SLINK lid="l136" relType="MODAL" from="ei2841" to="ei2842" />
+<ALINK lid="l137" relType="TERMINATES" from="ei2853" to="ei2854" />
+<ALINK lid="l138" relType="CONTINUES" from="ei2868" to="ei2866" />
+<ALINK lid="l139" relType="CONTINUES" from="ei2884" to="ei2883" />
+</TimeML>

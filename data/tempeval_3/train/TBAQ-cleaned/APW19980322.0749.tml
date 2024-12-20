@@ -1,0 +1,175 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980322.0749</DOCID>
+<TIMEX3 tid="t0" type="TIME" value="1998-03-22T14:57:00" temporalFunction="false" functionInDocument="CREATION_TIME">03/22/1998 14:57:00</TIMEX3>
+<EXTRAINFO>
+APW19980322.0749 NEWS STORY 03/22/1998 14:57:00
+w1834 Cx1f wstmr i Cx13 Cx11 BC-NorthernIreland 1stLd-Writethru 03-22 0720
+BC-Northern Ireland, 1st Ld-Writethru
+Police find bomb on eve of Sinn Fein's return to peace talks
+UR Eds: NEW throughout; RAISES reference to bomb; UPDATES with protest against Protestant marches, comment from Sinn Fein leader; trims pvs QL UR By SHAWN POGATCHNIK QC UR Associated Press Writer QC
+</EXTRAINFO>
+<TEXT>BELFAST, Northern Ireland (AP)_ Police <EVENT eid="e1" class="OCCURRENCE" offsets="39 45" sent_idx="0">seized</EVENT> a car bomb under construction <TIMEX3 tid="t126" type="DATE" value="1998-03-22" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="76 82" sent_idx="0">Sunday</TIMEX3> in a town bordering Northern Ireland on the eve of the <EVENT eid="e4" class="ASPECTUAL" offsets="138 144" sent_idx="0">return</EVENT> to peace <EVENT eid="e5" class="OCCURRENCE" offsets="154 159" sent_idx="0">talks</EVENT> by the IRA-allied Sinn Fein party. Chief Superintendent Al McHugh <EVENT eid="e6" class="REPORTING" offsets="226 230" sent_idx="0">said</EVENT> the bomb <EVENT eid="e7" class="OCCURRENCE" offsets="240 250" sent_idx="0">discovered</EVENT> in the Irish Republic was destined for an unknown target in Northern Ireland and ``would have <EVENT eid="e9" class="OCCURRENCE" offsets="345 351" sent_idx="0">caused</EVENT> massive <EVENT eid="e11" class="OCCURRENCE" offsets="360 371" sent_idx="0">destruction</EVENT>.'' The <EVENT eid="e12" class="OCCURRENCE" offsets="379 388" sent_idx="0">discovery</EVENT> <EVENT eid="e13" class="I_STATE" offsets="389 397" sent_idx="0">appeared</EVENT> to be the latest <EVENT eid="e15" class="I_ACTION" offsets="415 422" sent_idx="0">attempt</EVENT> by extremists opposed to the IRA's <TIMEX3 tid="t127" type="DURATION" value="P8M" temporalFunction="false" functionInDocument="NONE" offsets="458 469" sent_idx="0">8-month-old</TIMEX3> <EVENT eid="e147" class="STATE" offsets="470 475" sent_idx="0">truce</EVENT> to <EVENT eid="e19" class="OCCURRENCE" offsets="479 488" sent_idx="0">undermine</EVENT> the peace process, <EVENT eid="e21" class="I_ACTION" offsets="508 511" sent_idx="0">set</EVENT> to <EVENT eid="e23" class="OCCURRENCE" offsets="515 521" sent_idx="0">resume</EVENT> <TIMEX3 tid="t128" type="DATE" value="1998-03-23" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="522 528" sent_idx="0">Monday</TIMEX3> in Belfast. Extremists have <EVENT eid="e24" class="OCCURRENCE" offsets="557 563" sent_idx="0">bombed</EVENT> two predominantly pro-British Protestant towns and fired mortar shells at a police station since Sinn Fein was <EVENT eid="e26" class="OCCURRENCE" offsets="675 683" sent_idx="0">expelled</EVENT> from peace talks on <TIMEX3 tid="t129" type="DATE" value="1998-02-20" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="704 711" sent_idx="0">Feb. 20</TIMEX3> in <EVENT eid="e29" class="OCCURRENCE" offsets="715 725" sent_idx="0">punishment</EVENT> for two <EVENT eid="e30" class="OCCURRENCE" offsets="734 742" sent_idx="0">killings</EVENT> blamed on the Irish Republican Army. Police <EVENT eid="e32" class="OCCURRENCE" offsets="787 792" sent_idx="0">found</EVENT> more than 1,300 pounds (600 kgs) of fertilizer-based explosives <TIMEX3 tid="t130" type="DATE" value="1998-03-22" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="857 863" sent_idx="0">Sunday</TIMEX3> in a shed in Dundalk, 50 miles (80 kms) south of Belfast. They <EVENT eid="e33" class="OCCURRENCE" offsets="927 935" sent_idx="0">arrested</EVENT> two men in connection with the bomb factory, which also contained circuitry, detonating cord and the Mitsubishi truck that would have <EVENT eid="e36" class="OCCURRENCE" offsets="1070 1077" sent_idx="0">carried</EVENT> the bomb. The British and Irish governments, which <EVENT eid="e38" class="OCCURRENCE" offsets="1129 1138" sent_idx="0">cosponsor</EVENT> the multi-party talks that are <EVENT eid="e40" class="I_STATE" offsets="1170 1178" sent_idx="0">supposed</EVENT> to <EVENT eid="e42" class="OCCURRENCE" offsets="1182 1190" sent_idx="0">conclude</EVENT> by <TIMEX3 tid="t131" type="DATE" value="1998-05" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1194 1197" sent_idx="0">May</TIMEX3>, <EVENT eid="e43" class="I_ACTION" offsets="1199 1206" sent_idx="0">invited</EVENT> Sinn Fein to <EVENT eid="e45" class="OCCURRENCE" offsets="1220 1226" sent_idx="0">rejoin</EVENT> <TIMEX3 tid="t2023" type="DATE" value="1998-03-08" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1227 1240" sent_idx="0">two weeks ago</TIMEX3>. But Sinn Fein leader Gerry Adams <EVENT eid="e46" class="ASPECTUAL" offsets="1275 1279" sent_idx="0">kept</EVENT> his party out pending <EVENT eid="e49" class="OCCURRENCE" offsets="1302 1310" sent_idx="0">meetings</EVENT> with British Prime Minister Tony Blair <TIMEX3 tid="t132" type="DATE" value="1998-03-12" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1350 1361" sent_idx="0">10 days ago</TIMEX3> and President Clinton <TIMEX3 tid="t134" type="DATE" value="1998-W12" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1384 1393" sent_idx="0">last week</TIMEX3>. ``We were unjustly <EVENT eid="e50" class="OCCURRENCE" offsets="1414 1420" sent_idx="0">pushed</EVENT> out of the <EVENT eid="e51" class="OCCURRENCE" offsets="1432 1437" sent_idx="0">talks</EVENT> in <TIMEX3 tid="t135" type="DATE" value="1998-02" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1441 1449" sent_idx="0">February</TIMEX3> but we are back,'' Adams <EVENT eid="e52" class="REPORTING" offsets="1475 1479" sent_idx="0">said</EVENT> <TIMEX3 tid="t136" type="DATE" value="1998-03-22" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1480 1486" sent_idx="0">Sunday</TIMEX3>. He <EVENT eid="e53" class="REPORTING" offsets="1491 1495" sent_idx="0">said</EVENT> the north's substantial Catholic minority <EVENT eid="e54" class="I_ACTION" offsets="1538 1546" sent_idx="0">demanded</EVENT> a settlement that would <EVENT eid="e55" class="I_ACTION" offsets="1571 1578" sent_idx="0">promote</EVENT> Northern Ireland's eventual <EVENT eid="e57" class="OCCURRENCE" offsets="1607 1618" sent_idx="0">unification</EVENT> with the Irish Republic. ``Nationalists in the north are not a minority in someone else's country. We are Irish citizens, <EVENT eid="e59" class="OCCURRENCE" offsets="1741 1747" sent_idx="0">living</EVENT> in our own country,'' Adams <EVENT eid="e60" class="REPORTING" offsets="1776 1780" sent_idx="0">said</EVENT>, <EVENT eid="e61" class="REPORTING" offsets="1782 1788" sent_idx="0">adding</EVENT>: ``Nationalists <EVENT eid="e62" class="I_STATE" offsets="1805 1809" sent_idx="0">want</EVENT> to <EVENT eid="e64" class="OCCURRENCE" offsets="1813 1817" sent_idx="0">move</EVENT> towards Irish unity and see this process as a bridge in that direction.'' But the north's pro-British Protestant majority is bitterly <EVENT eid="e67" class="I_STATE" offsets="1952 1959" sent_idx="0">opposed</EVENT> to <EVENT eid="e68" class="OCCURRENCE" offsets="1963 1970" sent_idx="0">uniting</EVENT> Ireland and instead <EVENT eid="e69" class="I_STATE" offsets="1991 1996" sent_idx="0">wants</EVENT> a strong government for Northern Ireland, which has been <EVENT eid="e70" class="OCCURRENCE" offsets="2054 2059" sent_idx="0">ruled</EVENT> directly by London since <TIMEX3 tid="t137" type="DATE" value="1972" temporalFunction="false" functionInDocument="NONE" offsets="2085 2089" sent_idx="0">1972</TIMEX3>. Northern Ireland's biggest Protestant party, the Ulster Unionists, is <EVENT eid="e72" class="I_ACTION" offsets="2161 2172" sent_idx="0">threatening</EVENT> to <EVENT eid="e74" class="I_ACTION" offsets="2176 2180" sent_idx="0">push</EVENT> for Sinn Fein's <EVENT eid="e75" class="OCCURRENCE" offsets="2197 2206" sent_idx="0">expulsion</EVENT> once again. They <EVENT eid="e76" class="REPORTING" offsets="2224 2227" sent_idx="0">say</EVENT> IRA commanders are <EVENT eid="e152" class="STATE" offsets="2247 2258" sent_idx="0">responsible</EVENT> for the recent bomb <EVENT eid="e78" class="OCCURRENCE" offsets="2279 2286" sent_idx="0">attacks</EVENT>. Also <TIMEX3 tid="t138" type="DATE" value="1998-02-22" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2293 2299" sent_idx="0">Sunday</TIMEX3>, more than 2,000 Catholic protesters <EVENT eid="e79" class="OCCURRENCE" offsets="2337 2344" sent_idx="0">rallied</EVENT> in Portadown against the annual parades by the Orange Order, Northern Ireland's dominant Protestant fraternal group. <EVENT eid="e80" class="OCCURRENCE" offsets="2462 2476" sent_idx="0">Confrontations</EVENT> among Catholic protesters, Protestant marchers and the police have <EVENT eid="e81" class="OCCURRENCE" offsets="2544 2552" sent_idx="0">provoked</EVENT> widespread <EVENT eid="e82" class="OCCURRENCE" offsets="2564 2572" sent_idx="0">violence</EVENT> in Northern Ireland for <TIMEX3 tid="t154" type="SET" value="XXXX-SU" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" freq="3Y" offsets="2597 2619" sent_idx="0">the past three summers</TIMEX3>. The crucible is Portadown, 30 miles (50 kms) southwest of Belfast, where Orangemen march <TIMEX3 tid="t150" value="XXXX-07" type="SET" offsets="2710 2719" sent_idx="0">each July</TIMEX3> from their rural church back downtown _ through the town's main Catholic area. Protesters from several Catholic communities <EVENT eid="e83" class="OCCURRENCE" offsets="2844 2851" sent_idx="0">crowded</EVENT> into Portadown's Catholic Garvaghy Road to <EVENT eid="e85" class="PERCEPTION" offsets="2895 2899" sent_idx="0">hear</EVENT> speakers <EVENT eid="e86" class="I_ACTION" offsets="2909 2915" sent_idx="0">demand</EVENT> <EVENT eid="e87" class="OCCURRENCE" offsets="2916 2928" sent_idx="0">negotiations</EVENT> with Orange Order leaders, and <EVENT eid="e156" class="I_ACTION" offsets="2960 2966" sent_idx="0">pledge</EVENT> to <EVENT eid="e89" class="OCCURRENCE" offsets="2970 2981" sent_idx="0">participate</EVENT> in each others' road-blocking <EVENT eid="e90" class="OCCURRENCE" offsets="3012 3020" sent_idx="0">protests</EVENT> <TIMEX3 tid="t144" type="DATE" value="1998-SU" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3021 3032" sent_idx="0">this summer</TIMEX3>. ``Small nationalist communities are not going to be <EVENT eid="e94" class="OCCURRENCE" offsets="3086 3090" sent_idx="0">left</EVENT> on their own <TIMEX3 tid="t145" type="DATE" value="1998-SU" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3104 3115" sent_idx="0">this summer</TIMEX3>,'' <EVENT eid="e95" class="REPORTING" offsets="3119 3123" sent_idx="0">said</EVENT> Gerard Rice, a former IRA prisoner who leads anti-Orange protests in a Catholic neighborhood of south Belfast. Riot police in armored cars, shields and helmets <EVENT eid="e97" class="I_ACTION" offsets="3284 3293" sent_idx="0">prevented</EVENT> a few hundred Protestants, many <EVENT eid="e98" class="OCCURRENCE" offsets="3326 3332" sent_idx="0">waving</EVENT> British and Ulster flags, from <EVENT eid="e100" class="OCCURRENCE" offsets="3364 3375" sent_idx="0">interfering</EVENT> with the Catholics as they <EVENT eid="e101" class="OCCURRENCE" offsets="3403 3410" sent_idx="0">marched</EVENT> within Portadown's few Catholic streets. <TIMEX3 tid="t146" type="DATE" value="1998-03-22" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3452 3466" sent_idx="0">Earlier Sunday</TIMEX3>, police and militant Protestants <EVENT eid="e102" class="OCCURRENCE" offsets="3500 3507" sent_idx="0">clashed</EVENT> in a religiously polarized part of north Belfast. Police <EVENT eid="e104" class="REPORTING" offsets="3565 3569" sent_idx="0">said</EVENT> an unmarked police car was <EVENT eid="e105" class="OCCURRENCE" offsets="3597 3600" sent_idx="0">hit</EVENT> with gasoline bombs from the Protestant side. Riot police <EVENT eid="e107" class="OCCURRENCE" offsets="3659 3668" sent_idx="0">responded</EVENT> with a volley of plastic bullets that <EVENT eid="e110" class="OCCURRENCE" offsets="3707 3716" sent_idx="0">scattered</EVENT> a 50-strong mob. An elderly Catholic man was <EVENT eid="e111" class="OCCURRENCE" offsets="3762 3774" sent_idx="0">hospitalized</EVENT> from cuts after a Protestant gasoline bomb <EVENT eid="e115" class="OCCURRENCE" offsets="3818 3824" sent_idx="0">landed</EVENT> in his back yard. Police <EVENT eid="e116" class="OCCURRENCE" offsets="3850 3858" sent_idx="0">arrested</EVENT> six Protestants on suspicion of rioting. (sp/eml)</TEXT>
+<LASTEXTRAINFO>
+(PROFILE (WS SL:BC-Northern Ireland, 1st Ld-Writethru; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:MEST;) (REG:AFRI;) (REG:INDI;) (REG:ENGL;) (REG:ASIA;) (LANG:ENGLISH;)) )
+AP-NY-03-22-98 1457EST
+</LASTEXTRAINFO>
+<MAKEINSTANCE eid="e1" eiid="ei2026" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei2027" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei2028" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei2029" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei2031" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei2032" tense="NONE" aspect="PERFECTIVE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e11" eiid="ei2033" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei2034" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei2035" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2036" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e147" eiid="ei2037" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e19" eiid="ei2038" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei2039" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2040" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2041" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" cardinality="PLURAL" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2042" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei2043" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e30" eiid="ei2044" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e32" eiid="ei2045" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei2046" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei2047" tense="NONE" aspect="PERFECTIVE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e38" eiid="ei2048" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei2049" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2050" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei2051" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2052" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei2053" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e49" eiid="ei2054" tense="NONE" aspect="NONE" polarity="POS" cardinality="PLURAL" pos="NOUN" />
+<MAKEINSTANCE eid="e50" eiid="ei2055" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e51" eiid="ei2056" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e52" eiid="ei2057" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei2058" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2059" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e55" eiid="ei2061" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e57" eiid="ei2062" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e59" eiid="ei2063" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei2064" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e61" eiid="ei2065" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei2066" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei2067" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2068" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei2069" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e69" eiid="ei2070" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e70" eiid="ei2072" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e72" eiid="ei2073" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e74" eiid="ei2074" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e75" eiid="ei2075" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e76" eiid="ei2076" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e152" eiid="ei2077" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e78" eiid="ei2078" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e79" eiid="ei2079" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei2080" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e81" eiid="ei2081" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e82" eiid="ei2082" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e83" eiid="ei2083" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e85" eiid="ei2084" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e86" eiid="ei2085" tense="PRESENT" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e87" eiid="ei2086" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e156" eiid="ei2087" tense="PRESENT" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e89" eiid="ei2088" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e90" eiid="ei2089" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e94" eiid="ei2090" tense="PRESENT" aspect="NONE" polarity="NEG" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e95" eiid="ei2091" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e97" eiid="ei2092" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e98" eiid="ei2093" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e100" eiid="ei2094" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e101" eiid="ei2095" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei2096" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e104" eiid="ei2097" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e105" eiid="ei2098" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e107" eiid="ei2099" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e110" eiid="ei2100" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e111" eiid="ei2101" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e115" eiid="ei2103" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e116" eiid="ei2104" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l92" relType="IS_INCLUDED" from="ei2097" to="t146" />
+<TLINK lid="l91" relType="IS_INCLUDED" from="ei2092" to="t144" />
+<TLINK lid="l90" relType="BEFORE" from="ei2091" to="t0" />
+<TLINK lid="l89" relType="INCLUDES" from="ei2076" to="ei2073" />
+<TLINK lid="l88" relType="IS_INCLUDED" from="ei2073" to="t0" />
+<TLINK lid="l87" relType="IS_INCLUDED" from="ei2070" to="t0" />
+<TLINK lid="l86" relType="IS_INCLUDED" from="ei2068" to="t0" />
+<TLINK lid="l85" relType="SIMULTANEOUS" from="ei2064" to="ei2057" />
+<TLINK lid="l84" relType="IAFTER" from="ei2065" to="ei2064" />
+<TLINK lid="l83" relType="IS_INCLUDED" from="ei2058" to="t136" />
+<TLINK lid="l82" relType="IS_INCLUDED" from="ei2049" to="t0" />
+<TLINK lid="l81" relType="IS_INCLUDED" from="ei2035" to="t126" />
+<TLINK lid="l80" relType="BEFORE" from="ei2039" to="t0" />
+<TLINK lid="l79" relType="BEFORE" from="ei2029" to="t0" />
+<TLINK lid="l78" relType="AFTER" from="ei2028" to="t126" />
+<TLINK lid="l77" relType="AFTER" from="ei2027" to="t126" />
+<TLINK lid="l1" relType="AFTER" from="ei2047" to="ei2026" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei2026" to="t126" />
+<TLINK lid="l4" relType="BEFORE" from="ei2032" to="ei2033" />
+<TLINK lid="l5" relType="DURING" from="ei2037" to="t127" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei2040" to="t128" />
+<TLINK lid="l7" relType="BEFORE" from="ei2041" to="ei2042" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei2042" to="t129" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei2045" to="t130" />
+<TLINK lid="l10" relType="IDENTITY" from="ei2031" to="ei2034" />
+<TLINK lid="l11" relType="IDENTITY" from="ei2034" to="ei2045" />
+<TLINK lid="l12" relType="BEFORE" from="ei2050" to="t131" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei2051" to="t2023" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei2054" to="t132" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei2054" to="t134" />
+<TLINK lid="l16" relType="IS_INCLUDED" from="ei2055" to="ei2056" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei2056" to="t135" />
+<TLINK lid="l18" relType="IS_INCLUDED" from="ei2057" to="t136" />
+<TLINK lid="l20" relType="BEGUN_BY" from="ei2072" to="t137" />
+<TLINK lid="l21" relType="IS_INCLUDED" from="ei2079" to="t138" />
+<TLINK lid="l22" relType="BEFORE" from="ei2081" to="ei2082" />
+<TLINK lid="l23" relType="IDENTITY" from="ei2080" to="ei2081" />
+<TLINK lid="l24" relType="IS_INCLUDED" from="ei2081" to="t154" />
+<TLINK lid="l25" relType="SIMULTANEOUS" from="ei2084" to="ei2085" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei2084" to="ei2087" />
+<TLINK lid="l27" relType="IS_INCLUDED" from="ei2089" to="t144" />
+<TLINK lid="l28" relType="IS_INCLUDED" from="ei2090" to="t145" />
+<TLINK lid="l29" relType="SIMULTANEOUS" from="ei2094" to="ei2095" />
+<TLINK lid="l30" relType="IS_INCLUDED" from="t146" to="ei2096" />
+<TLINK lid="l31" relType="AFTER" from="ei2101" to="ei2103" />
+<TLINK lid="l33" relType="IDENTITY" from="ei2042" to="ei2043" />
+<TLINK lid="l34" relType="BEFORE" from="ei2044" to="t129" />
+<TLINK lid="l35" relType="BEFORE" from="ei2045" to="ei2046" />
+<TLINK lid="l36" relType="INCLUDES" from="ei2048" to="t0" />
+<TLINK lid="l37" relType="SIMULTANEOUS" from="ei2053" to="ei2054" />
+<TLINK lid="l38" relType="BEFORE" from="ei2083" to="ei2084" />
+<TLINK lid="l39" relType="IS_INCLUDED" from="ei2093" to="ei2095" />
+<TLINK lid="l40" relType="BEFORE" from="ei2098" to="ei2099" />
+<TLINK lid="l41" relType="BEFORE" from="ei2098" to="ei2100" />
+<TLINK lid="l42" relType="IS_INCLUDED" from="ei2104" to="t146" />
+<SLINK lid="l76" relType="FACTIVE" from="ei2088" to="ei2089" />
+<SLINK lid="l75" relType="EVIDENTIAL" from="ei2084" to="ei2085" />
+<SLINK lid="l74" relType="MODAL" from="ei2083" to="ei2084" />
+<SLINK lid="l73" relType="MODAL" from="ei2081" to="ei2082" />
+<SLINK lid="l71" relType="FACTIVE" from="ei2043" to="ei2044" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei2029" to="ei2031" />
+<SLINK lid="l44" relType="MODAL" from="ei2035" to="ei2034" />
+<SLINK lid="l45" relType="MODAL" from="ei2035" to="ei2036" />
+<SLINK lid="l46" relType="MODAL" from="ei2036" to="ei2038" />
+<SLINK lid="l47" relType="MODAL" from="ei2039" to="ei2040" />
+<SLINK lid="l48" relType="MODAL" from="ei2049" to="ei2050" />
+<SLINK lid="l49" relType="MODAL" from="ei2051" to="ei2052" />
+<SLINK lid="l50" relType="EVIDENTIAL" from="ei2057" to="ei2055" />
+<SLINK lid="l51" relType="EVIDENTIAL" from="ei2058" to="ei2059" />
+<SLINK lid="l53" relType="MODAL" from="ei2061" to="ei2062" />
+<SLINK lid="l54" relType="EVIDENTIAL" from="ei2064" to="ei2063" />
+<SLINK lid="l55" relType="EVIDENTIAL" from="ei2065" to="ei2066" />
+<SLINK lid="l56" relType="MODAL" from="ei2066" to="ei2067" />
+<SLINK lid="l58" relType="MODAL" from="ei2068" to="ei2069" />
+<SLINK lid="l59" relType="MODAL" from="ei2073" to="ei2074" />
+<SLINK lid="l60" relType="MODAL" from="ei2074" to="ei2075" />
+<SLINK lid="l61" relType="EVIDENTIAL" from="ei2076" to="ei2077" />
+<SLINK lid="l62" relType="FACTIVE" from="ei2077" to="ei2078" />
+<SLINK lid="l63" relType="MODAL" from="ei2085" to="ei2086" />
+<SLINK lid="l64" relType="MODAL" from="ei2087" to="ei2088" />
+<SLINK lid="l65" relType="EVIDENTIAL" from="ei2091" to="ei2090" />
+<SLINK lid="l66" relType="COUNTER_FACTIVE" from="ei2092" to="ei2094" />
+<SLINK lid="l67" relType="EVIDENTIAL" from="ei2097" to="ei2098" />
+<ALINK lid="l69" relType="REINITIATES" from="ei2027" to="ei2028" />
+</TimeML>

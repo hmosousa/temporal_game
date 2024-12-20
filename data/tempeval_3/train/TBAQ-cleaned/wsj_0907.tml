@@ -1,0 +1,41 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0907</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-26" temporalFunction="false" functionInDocument="CREATION_TIME">10/26/89</TIMEX3>
+<EXTRAINFO>
+WSJ891026-0152 = 891026 891026-0152.
+Chandler Insurance Earnings 10/26/89 WALL STREET JOURNAL (J) CHANF GRAND CAYMAN, Cayman Islands
+</EXTRAINFO>
+<TEXT>Chandler Insurance Co. <EVENT eid="e1" class="REPORTING" stem="say" offsets="23 27" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_STATE" stem="expect" offsets="31 38" sent_idx="0">expects</EVENT> to <EVENT eid="e4" class="REPORTING" stem="report" offsets="42 48" sent_idx="0">report</EVENT> <TIMEX3 tid="t22" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="49 62" sent_idx="0">third-quarter</TIMEX3> net income <EVENT eid="e5" class="OCCURRENCE" stem="jump" offsets="74 80" sent_idx="0">jumped</EVENT> 97% to $2.8 million, or 51 cents a share.
+In <TIMEX3 tid="t60" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t22" offsets="126 150" sent_idx="1">the year-earlier quarter</TIMEX3>, the automobile and trucking insurer <EVENT eid="e6" class="STATE" stem="have" offsets="188 191" sent_idx="1">had</EVENT> <EVENT eid="e25" class="STATE" stem="earnings" offsets="192 200" sent_idx="1">earnings</EVENT> of $1.4 million, or 48 cents a share on a restated basis, on revenue of $16.5 million. In an <EVENT eid="e7" class="OCCURRENCE" stem="interview" offsets="294 303" sent_idx="1">interview</EVENT>, W. Brent LeGere, chairman and chief executive officer, <EVENT eid="e8" class="REPORTING" stem="say" offsets="360 364" sent_idx="1">said</EVENT> he <EVENT eid="e9" class="I_STATE" stem="expect" offsets="368 375" sent_idx="1">expects</EVENT> revenue in <TIMEX3 tid="t26" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="387 405" sent_idx="1">the latest quarter</TIMEX3> to <EVENT eid="e11" class="OCCURRENCE" stem="total" offsets="409 414" sent_idx="1">total</EVENT> about $28 million. The earnings-per-share figures reflect a 25% stock dividend in <TIMEX3 tid="t31" type="DATE" value="1989-06" temporalFunction="false" functionInDocument="NONE" offsets="497 506" sent_idx="1">June 1989</TIMEX3>.
+Mr. LeGere <EVENT eid="e14" class="I_ACTION" stem="attribute" offsets="519 529" sent_idx="2">attributed</EVENT> the earnings <EVENT eid="e15" class="OCCURRENCE" stem="increase" offsets="543 551" sent_idx="2">increase</EVENT> to <EVENT eid="e17" class="OCCURRENCE" stem="growth" offsets="555 561" sent_idx="2">growth</EVENT> in the company's longhaul trucking insurance lines and the ability to <EVENT eid="e20" class="ASPECTUAL" stem="keep" offsets="632 636" sent_idx="2">keep</EVENT> premium rates firm.</TEXT>
+<MAKEINSTANCE eid="e25" eiid="ei130" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei133" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei134" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei128" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei126" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei132" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei136" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei138" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei131" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e15" eiid="ei137" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e4" eiid="ei127" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei140" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei129" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei125" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="BEFORE" from="ei131" to="t0" />
+<TLINK lid="l2" relType="BEFORE" from="ei125" to="t0" />
+<TLINK lid="l3" relType="DURING" from="ei128" to="t22" />
+<TLINK lid="l4" relType="IS_INCLUDED" from="ei129" to="t60" />
+<TLINK lid="l5" relType="IDENTITY" from="ei129" to="ei130" />
+<TLINK lid="l6" relType="INCLUDES" from="ei131" to="ei132" />
+<TLINK lid="l7" relType="ENDS" from="ei134" to="t26" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei136" to="ei131" />
+<TLINK lid="l10" relType="AFTER" from="ei137" to="ei138" />
+<SLINK lid="l21" relType="MODAL" from="ei136" to="ei138" />
+<SLINK lid="l13" relType="EVIDENTIAL" from="ei125" to="ei126" />
+<SLINK lid="l14" relType="MODAL" from="ei126" to="ei127" />
+<SLINK lid="l15" relType="EVIDENTIAL" from="ei127" to="ei128" />
+<SLINK lid="l16" relType="EVIDENTIAL" from="ei132" to="ei133" />
+<SLINK lid="l17" relType="MODAL" from="ei133" to="ei134" />
+<SLINK lid="l18" relType="FACTIVE" from="ei136" to="ei137" />
+</TimeML>

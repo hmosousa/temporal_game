@@ -1,0 +1,44 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>PRI19980121.2000.2591</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-01-21" temporalFunction="false" functionInDocument="CREATION_TIME">19980121</TIMEX3>
+<EXTRAINFO>
+PRI19980121.2000.2591 NEWS STORY
+</EXTRAINFO>
+<TEXT>Now for <TIMEX3 tid="t33" type="DATE" value="1998-01-21" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="8 13" sent_idx="0">today</TIMEX3>'s geography <EVENT eid="e1985" class="OCCURRENCE" offsets="26 30" sent_idx="0">quiz</EVENT>.
+We're off in <EVENT eid="e2" class="OCCURRENCE" offsets="45 51" sent_idx="1">search</EVENT> of an ancient and exotic city.
+An officially <EVENT eid="e4" class="OCCURRENCE" offsets="97 107" sent_idx="2">sanctioned</EVENT> one, too. UNESCO <EVENT eid="e5" class="I_ACTION" offsets="125 133" sent_idx="2">declared</EVENT> it a protected site for its beauty and its historical significance.
+The city could have <EVENT eid="e6" class="I_ACTION" offsets="222 226" sent_idx="3">used</EVENT> some special protection in <TIMEX3 tid="t34" type="DATE" value="1979" temporalFunction="false" functionInDocument="NONE" offsets="254 275" sent_idx="3">nineteen seventy-nine</TIMEX3> when the Soviet Union <EVENT eid="e10" class="OCCURRENCE" offsets="298 305" sent_idx="3">invaded</EVENT> Afghanistan. Most of the city's monuments were <EVENT eid="e11" class="OCCURRENCE" offsets="353 362" sent_idx="3">destroyed</EVENT>, including a magnificent tiled mosque, which <EVENT eid="e12" class="OCCURRENCE" offsets="408 417" sent_idx="3">dominated</EVENT> the skyline for <TIMEX3 tid="t1982" type="DURATION" value="PXC" temporalFunction="false" functionInDocument="NONE" offsets="434 443" sent_idx="3">centuries</TIMEX3>.
+The people here are famous throughout central Asia for their skill in fashioning pottery and tile, glass too. Some families have <EVENT eid="e1989" class="OCCURRENCE" offsets="574 578" sent_idx="4">kept</EVENT> their glass working secrets for <TIMEX3 tid="t1991" type="DURATION" value="P2L" mod="MORE_THAN" temporalFunction="false" functionInDocument="NONE" offsets="611 639" sent_idx="4">more than two thousand years</TIMEX3>.
+Even though this city is in Afghanistan, most people here <EVENT eid="e19" class="I_ACTION" offsets="699 704" sent_idx="5">speak</EVENT> a dialect of the Persian language, and <EVENT eid="e22" class="STATE" offsets="744 748" sent_idx="5">have</EVENT> long standing cultural ties with neighboring Iran.
+<EVENT eid="e25" class="I_STATE" offsets="800 805" sent_idx="6">Think</EVENT> you <EVENT eid="e26" class="OCCURRENCE" offsets="810 813" sent_idx="6">got</EVENT> it? Well, frankly, I don't, but the answer is <EVENT eid="e30" class="OCCURRENCE" offsets="860 866" sent_idx="6">coming</EVENT> up in just <TIMEX3 tid="t1986" type="DURATION" value="PXM" temporalFunction="false" functionInDocument="NONE" offsets="878 891" sent_idx="6">a few minutes</TIMEX3>.</TEXT>
+<MAKEINSTANCE eid="e1985" eiid="ei1998" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei2000" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e4" eiid="ei2001" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e5" eiid="ei2002" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei2004" tense="NONE" aspect="PERFECTIVE_PROGRESSIVE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e10" eiid="ei2006" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei2007" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei2008" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1989" eiid="ei2009" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2010" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2013" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2015" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2016" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei2019" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<TLINK lid="l26" relType="IS_INCLUDED" from="ei2015" to="t33" />
+<TLINK lid="l24" relType="IS_INCLUDED" from="ei2013" to="t33" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2010" to="t33" />
+<TLINK lid="l20" relType="BEFORE" from="ei2004" to="t0" />
+<TLINK lid="l18" relType="IS_INCLUDED" from="ei2000" to="t0" />
+<TLINK lid="l1" relType="DURING" from="t1982" to="ei2008" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="t34" to="ei2006" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei2001" to="ei2002" />
+<TLINK lid="l4" relType="BEFORE" from="t0" to="ei2002" />
+<TLINK lid="l5" relType="BEFORE" from="t0" to="ei2001" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="t33" to="ei1998" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="t34" to="ei2007" />
+<TLINK lid="l9" relType="AFTER" from="t1986" to="ei2019" />
+<TLINK lid="l10" relType="DURING" from="ei2006" to="ei2007" />
+<TLINK lid="l11" relType="DURING" from="ei2009" to="t1991" />
+<SLINK lid="l12" relType="MODAL" from="ei2015" to="ei2016" />
+</TimeML>

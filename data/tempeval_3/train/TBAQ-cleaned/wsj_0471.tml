@@ -1,0 +1,66 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0471</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-31" temporalFunction="false" functionInDocument="CREATION_TIME">10/31/89 </TIMEX3>
+<EXTRAINFO>
+WSJ891031-0040 = 891031 891031-0040.
+Business Brief -- Dataproducts Inc.: @ Lawsuit Is Filed to Block @ DPC's Hostile Tender Offer
+10/31/89
+WALL STREET JOURNAL (J) DPC TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) COMPUTERS AND INFORMATION TECHNOLOGY (CPR)
+</EXTRAINFO>
+<TEXT>Dataproducts Inc. <EVENT eid="e1" class="REPORTING" offsets="18 22" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_ACTION" offsets="26 31" sent_idx="0">filed</EVENT> a <EVENT eid="e3" class="OCCURRENCE" offsets="34 41" sent_idx="0">lawsuit</EVENT> in Delaware Chancery Court to <EVENT eid="e5" class="I_ACTION" offsets="72 77" sent_idx="0">block</EVENT> a tender <EVENT eid="e36" class="OCCURRENCE" offsets="87 92" sent_idx="0">offer</EVENT> by DPC Acquisition Partners, <EVENT eid="e7" class="REPORTING" offsets="122 130" sent_idx="0">alleging</EVENT> that the hostile <EVENT eid="e8" class="OCCURRENCE" offsets="148 153" sent_idx="0">offer</EVENT> <EVENT eid="e9" class="OCCURRENCE" offsets="154 162" sent_idx="0">violates</EVENT> a standstill <EVENT eid="e10" class="OCCURRENCE" offsets="176 185" sent_idx="0">agreement</EVENT> between the two concerns.
+DPC, an investor group <EVENT eid="e12" class="OCCURRENCE" offsets="235 238" sent_idx="1">led</EVENT> by New York-based Crescott Investment Associates, had itself <EVENT eid="e14" class="I_ACTION" offsets="300 305" sent_idx="1">filed</EVENT> a <EVENT eid="e15" class="OCCURRENCE" offsets="308 312" sent_idx="1">suit</EVENT> in state court in Los Angeles <EVENT eid="e17" class="I_ACTION" offsets="343 350" sent_idx="1">seeking</EVENT> to <EVENT eid="e19" class="I_ACTION" offsets="354 361" sent_idx="1">nullify</EVENT> the <EVENT eid="e20" class="OCCURRENCE" offsets="366 375" sent_idx="1">agreement</EVENT>. <TIMEX3 tid="t39" type="DATE" value="1989" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="377 394" sent_idx="1">Earlier this year</TIMEX3>, Dataproducts had <EVENT eid="e21" class="OCCURRENCE" offsets="413 421" sent_idx="1">rejected</EVENT> a $15 a share <EVENT eid="e22" class="OCCURRENCE" offsets="436 441" sent_idx="1">offer</EVENT> from DPC, <EVENT eid="e23" class="REPORTING" offsets="452 458" sent_idx="1">saying</EVENT> it wasn't adequately <EVENT eid="e24" class="OCCURRENCE" offsets="480 488" sent_idx="1">financed</EVENT>. DPC <TIMEX3 tid="t40" type="DATE" value="1989-W43" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="494 503" sent_idx="1">last week</TIMEX3> <EVENT eid="e26" class="I_ACTION" offsets="504 512" sent_idx="1">launched</EVENT> a new, $10-a-share <EVENT eid="e27" class="OCCURRENCE" offsets="532 537" sent_idx="1">offer</EVENT> for the Woodland Hills, Calif.-based computer printer maker.
+DPC <EVENT eid="e28" class="REPORTING" offsets="603 607" sent_idx="2">said</EVENT> it couldn't <EVENT eid="e29" class="OCCURRENCE" offsets="620 627" sent_idx="2">comment</EVENT> on the suit.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei119" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei120" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei121" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei122" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei124" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei125" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei126" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei127" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei128" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei129" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei130" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e17" eiid="ei131" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei132" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei133" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei134" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei135" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei136" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei137" tense="PAST" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei138" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei139" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e28" eiid="ei140" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei141" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e36" eiid="ei143" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l35" relType="IDENTITY" from="ei140" to="ei119" />
+<TLINK lid="l34" relType="IDENTITY" from="ei139" to="ei143" />
+<TLINK lid="l33" relType="BEFORE" from="ei143" to="ei121" />
+<TLINK lid="l1" relType="AFTER" from="t0" to="ei119" />
+<TLINK lid="l2" relType="BEGUN_BY" from="ei122" to="ei121" />
+<TLINK lid="l3" relType="AFTER" from="ei126" to="ei127" />
+<TLINK lid="l4" relType="INCLUDES" from="ei121" to="ei124" />
+<TLINK lid="l5" relType="IAFTER" from="ei126" to="ei125" />
+<TLINK lid="l6" relType="AFTER" from="ei125" to="ei127" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="t0" to="ei128" />
+<TLINK lid="l8" relType="AFTER" from="t0" to="ei129" />
+<TLINK lid="l9" relType="BEGINS" from="ei130" to="ei131" />
+<TLINK lid="l10" relType="IDENTITY" from="ei127" to="ei133" />
+<TLINK lid="l11" relType="INCLUDES" from="t39" to="ei134" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei136" to="ei134" />
+<TLINK lid="l13" relType="INCLUDES" from="t40" to="ei138" />
+<TLINK lid="l14" relType="AFTER" from="ei134" to="ei135" />
+<SLINK lid="l32" relType="FACTIVE" from="ei132" to="ei133" />
+<SLINK lid="l31" relType="FACTIVE" from="ei138" to="ei139" />
+<SLINK lid="l30" relType="FACTIVE" from="ei134" to="ei135" />
+<SLINK lid="l29" relType="FACTIVE" from="ei129" to="ei130" />
+<SLINK lid="l28" relType="FACTIVE" from="ei126" to="ei127" />
+<SLINK lid="l27" relType="MODAL" from="ei122" to="ei143" />
+<SLINK lid="l26" relType="FACTIVE" from="ei120" to="ei121" />
+<SLINK lid="l25" relType="MODAL" from="ei120" to="ei122" />
+<SLINK lid="l15" relType="EVIDENTIAL" from="ei140" to="ei141" />
+<SLINK lid="l16" relType="EVIDENTIAL" from="ei119" to="ei120" />
+<SLINK lid="l17" relType="EVIDENTIAL" from="ei136" to="ei137" />
+<SLINK lid="l18" relType="MODAL" from="ei131" to="ei132" />
+<SLINK lid="l19" relType="MODAL" from="ei124" to="ei126" />
+</TimeML>

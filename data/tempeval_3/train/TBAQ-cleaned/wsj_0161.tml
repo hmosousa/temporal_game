@@ -1,0 +1,43 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0161</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0030 = 891102 891102-0030.
+Business Brief -- Hadson Corp.: @ Company Expects to Report @ Deficit for Third Quarter 11/02/89 WALL STREET JOURNAL (J) HAD
+</EXTRAINFO>
+<TEXT>Hadson Corp. <EVENT eid="e1" class="REPORTING" offsets="13 17" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_STATE" offsets="21 28" sent_idx="0">expects</EVENT> to <EVENT eid="e4" class="REPORTING" offsets="32 38" sent_idx="0">report</EVENT> a <TIMEX3 tid="t28" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="41 54" sent_idx="0">third-quarter</TIMEX3> net <EVENT eid="e5" class="OCCURRENCE" offsets="59 63" sent_idx="0">loss</EVENT> of $17 million to $19 million because of special reserves and continued low natural-gas prices.
+The Oklahoma City energy and defense concern <EVENT eid="e7" class="REPORTING" offsets="205 209" sent_idx="1">said</EVENT> it will <EVENT eid="e8" class="OCCURRENCE" offsets="218 224" sent_idx="1">record</EVENT> a $7.5 million reserve for its defense group, including a $4.7 million <EVENT eid="e65" class="OCCURRENCE" offsets="296 302" sent_idx="1">charge</EVENT> related to problems under a fixed-price development contract and $2.8 million in overhead <EVENT eid="e66" class="OCCURRENCE" offsets="393 398" sent_idx="1">costs</EVENT> that won't be <EVENT eid="e12" class="OCCURRENCE" offsets="413 423" sent_idx="1">reimbursed</EVENT>.
+In addition, Hadson <EVENT eid="e15" class="REPORTING" offsets="445 449" sent_idx="2">said</EVENT> it will <EVENT eid="e16" class="OCCURRENCE" offsets="458 463" sent_idx="2">write</EVENT> off about $3.5 million in costs related to international exploration leases where exploration efforts have been unsuccessful.
+The company also cited interest costs and <EVENT eid="e21" class="OCCURRENCE" offsets="632 644" sent_idx="3">amortization</EVENT> of goodwill as factors in the <EVENT eid="e23" class="OCCURRENCE" offsets="675 679" sent_idx="3">loss</EVENT>.
+<TIMEX3 tid="t31" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t28" offsets="681 695" sent_idx="4">A year earlier</TIMEX3>, net <EVENT eid="e32" class="STATE" offsets="701 707" sent_idx="4">income</EVENT> was $2.1 million, or six cents a share, on revenue of $169.9 million.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei141" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei142" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei143" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei144" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei145" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei146" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e65" eiid="ei148" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e66" eiid="ei149" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei150" tense="FUTURE" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei151" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei152" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei157" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei158" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e32" eiid="ei159" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l1" relType="BEFORE" from="ei141" to="t0" />
+<TLINK lid="l2" relType="SIMULTANEOUS" from="ei144" to="t28" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei141" to="ei145" />
+<TLINK lid="l6" relType="BEFORE" from="ei149" to="ei150" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="ei151" to="ei141" />
+<TLINK lid="l9" relType="AFTER" from="ei152" to="t0" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei152" to="ei146" />
+<TLINK lid="l13" relType="IDENTITY" from="ei158" to="ei144" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei157" to="ei158" />
+<TLINK lid="l16" relType="BEFORE" from="t31" to="t28" />
+<TLINK lid="l17" relType="SIMULTANEOUS" from="t31" to="ei159" />
+<SLINK lid="l18" relType="EVIDENTIAL" from="ei141" to="ei142" />
+<SLINK lid="l19" relType="MODAL" from="ei142" to="ei143" />
+<SLINK lid="l20" relType="EVIDENTIAL" from="ei143" to="ei144" />
+<SLINK lid="l21" relType="EVIDENTIAL" from="ei145" to="ei146" />
+<SLINK lid="l22" relType="EVIDENTIAL" from="ei151" to="ei152" />
+</TimeML>

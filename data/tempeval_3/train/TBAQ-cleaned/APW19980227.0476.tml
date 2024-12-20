@@ -1,0 +1,53 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980227.0476</DOCID>
+<TIMEX3 tid="t0" type="TIME" value="1998-02-27T08:02:00" temporalFunction="false" functionInDocument="CREATION_TIME">02/27/1998 08:02:00</TIMEX3>
+<EXTRAINFO>
+APW19980227.0476 NEWS STORY 02/27/1998 08:02:00
+w2381 Cx1f wstmu i Cx13 Cx11 BC-WorldCourt-Lockerbie 5thLd 02-27 0169
+BC-World Court-Lockerbie, 5th Ld
+World Court declares jurisdiction in Lockerbie dispute
+UR Eds: RECASTS lead to clarify; ADDS detail of U.S. and British objections in 3rd graf.
+QL UR AP Photo staffing QL UR By MIKE CORDER QC UR Associated Press Writer QC
+</EXTRAINFO>
+<TEXT>THE HAGUE, Netherlands (AP)_ The World Court <TIMEX3 tid="t21" type="DATE" value="1998-02-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="45 51" sent_idx="0">Friday</TIMEX3> <EVENT eid="e1" class="OCCURRENCE" stem="reject" offsets="52 60" sent_idx="0">rejected</EVENT> U.S. and British <EVENT eid="e1996" class="OCCURRENCE" stem="objection" offsets="78 88" sent_idx="0">objections</EVENT> to a Libyan World Court case that has <EVENT eid="e2" class="I_ACTION" stem="block" offsets="127 134" sent_idx="0">blocked</EVENT> the <EVENT eid="e1997" class="OCCURRENCE" stem="trial" offsets="139 144" sent_idx="0">trial</EVENT> of two Libyans <EVENT eid="e3" class="I_STATE" stem="suspect" offsets="160 169" sent_idx="0">suspected</EVENT> of <EVENT eid="e4" class="OCCURRENCE" stem="blow" offsets="173 180" sent_idx="0">blowing</EVENT> up a Pan Am jumbo jet over Scotland in <TIMEX3 tid="t22" type="DATE" value="1988" temporalFunction="false" functionInDocument="NONE" offsets="220 224" sent_idx="0">1988</TIMEX3>. Libya, which <EVENT eid="e5" class="OCCURRENCE" stem="bring" offsets="239 246" sent_idx="0">brought</EVENT> the case to the United Nations' highest judicial body in its <EVENT eid="e6" class="OCCURRENCE" stem="dispute" offsets="308 315" sent_idx="0">dispute</EVENT> with the United States and Britain, <EVENT eid="e8" class="I_ACTION" stem="hail" offsets="352 358" sent_idx="0">hailed</EVENT> the <EVENT eid="e1998" class="OCCURRENCE" stem="rule" offsets="363 369" sent_idx="0">ruling</EVENT> and <EVENT eid="e9" class="REPORTING" stem="say" offsets="374 378" sent_idx="0">said</EVENT> it would <EVENT eid="e10" class="I_ACTION" stem="press" offsets="388 393" sent_idx="0">press</EVENT> anew for a <EVENT eid="e1999" class="OCCURRENCE" stem="trial" offsets="405 410" sent_idx="0">trial</EVENT> in a third neutral country. Both U.S. and British officials <EVENT eid="e12" class="OCCURRENCE" stem="file" offsets="471 476" sent_idx="0">filed</EVENT> objections to the court's jurisdiction in <TIMEX3 tid="t23" type="DATE" value="1995" temporalFunction="false" functionInDocument="NONE" offsets="519 523" sent_idx="0">1995</TIMEX3>, <EVENT eid="e13" class="I_ACTION" stem="claim" offsets="525 533" sent_idx="0">claiming</EVENT> Security Council resolutions <EVENT eid="e14" class="OCCURRENCE" stem="impose" offsets="563 570" sent_idx="0">imposed</EVENT> on Lybia to <EVENT eid="e15" class="OCCURRENCE" stem="force" offsets="583 588" sent_idx="0">force</EVENT> the suspects' extradition <EVENT eid="e16" class="OCCURRENCE" stem="overrule" offsets="615 624" sent_idx="0">overruled</EVENT> a <TIMEX3 tid="t24" type="DATE" value="1971" temporalFunction="false" functionInDocument="NONE" offsets="627 631" sent_idx="0">1971</TIMEX3> Convention which gives Libya the right to try the men. The decision, 3rd graf pvs.</TEXT>
+<LASTEXTRAINFO>
+(PROFILE (WS SL:BC-World Court-Lockerbie, 5th Ld; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (LANG:ENGLISH;)) )
+AP-NY-02-27-98 0802EST
+</LASTEXTRAINFO>
+<MAKEINSTANCE eid="e1" eiid="ei2091" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1996" eiid="ei2092" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei2093" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1997" eiid="ei2094" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei2095" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei2096" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei2097" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei2098" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei2099" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1998" eiid="ei2100" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei2101" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei2102" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e1999" eiid="ei2103" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei2104" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei2105" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2107" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2108" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2109" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="BEFORE" from="ei2101" to="t0" origin="USER" />
+<TLINK lid="l4" relType="INCLUDES" from="t21" to="ei2091" origin="USER" />
+<TLINK lid="l5" relType="BEFORE" from="ei2092" to="ei2091" origin="USER" />
+<TLINK lid="l6" relType="DURING" from="ei2093" to="ei2092" origin="USER" />
+<TLINK lid="l7" relType="INCLUDES" from="ei2095" to="ei2092" origin="USER" />
+<TLINK lid="l8" relType="INCLUDES" from="t22" to="ei2096" origin="USER" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei2097" to="ei2098" origin="USER" />
+<TLINK lid="l10" relType="IDENTITY" from="ei2100" to="ei2091" origin="USER" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei2104" to="t23" origin="USER" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei2105" to="ei2104" origin="USER" />
+<SLINK lid="l20" relType="FACTIVE" from="ei2091" to="ei2092" />
+<SLINK lid="l13" relType="MODAL" from="ei2107" to="ei2108" />
+<SLINK lid="l14" relType="EVIDENTIAL" from="ei2105" to="ei2109" />
+<SLINK lid="l15" relType="FACTIVE" from="ei2093" to="ei2094" />
+<SLINK lid="l16" relType="MODAL" from="ei2095" to="ei2096" />
+<SLINK lid="l17" relType="FACTIVE" from="ei2099" to="ei2100" />
+<SLINK lid="l18" relType="EVIDENTIAL" from="ei2101" to="ei2102" />
+<SLINK lid="l19" relType="MODAL" from="ei2102" to="ei2103" />
+</TimeML>

@@ -1,0 +1,56 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0325</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-01" temporalFunction="false" functionInDocument="CREATION_TIME">11/01/89 </TIMEX3>
+<EXTRAINFO>
+WSJ891101-0039 = 891101 891101-0039.
+Business Brief -- Coast Savings Financial Inc.: @ Thrift Company Posts Loss; @ Restructuring Program Cited
+11/01/89
+WALL STREET JOURNAL (J) CSA EARNINGS (ERN)
+</EXTRAINFO>
+<TEXT>Coast Savings Financial Inc. <EVENT eid="e1" class="REPORTING" stem="report" offsets="29 37" sent_idx="0">reported</EVENT> a <TIMEX3 tid="t31" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="40 53" sent_idx="0">third-quarter</TIMEX3> <EVENT eid="e37" class="STATE" stem="loss" offsets="54 58" sent_idx="0">loss</EVENT>, <EVENT eid="e2" class="REPORTING" stem="cite" offsets="60 66" sent_idx="0">citing</EVENT> a previously announced capital restructuring program.
+The Los Angeles thrift holding company <EVENT eid="e4" class="REPORTING" stem="say" offsets="160 164" sent_idx="1">said</EVENT> it <EVENT eid="e38" class="STATE" stem="have" offsets="168 171" sent_idx="1">had</EVENT> a loss of $92.2 million, or $6.98 a share, for <TIMEX3 tid="t48" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t31" offsets="219 230" sent_idx="1">the quarter</TIMEX3> ended <TIMEX3 tid="t32" type="DATE" value="1989-09-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="237 245" sent_idx="1">Sept. 30</TIMEX3>. Coast <EVENT eid="e7" class="OCCURRENCE" stem="earn" offsets="253 259" sent_idx="1">earned</EVENT> $10.2 million, or 67 cents a share, in <TIMEX3 tid="t49" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t31" offsets="299 319" sent_idx="1">the year-ago quarter</TIMEX3>. The <TIMEX3 tid="t51" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t49" offsets="325 333" sent_idx="1">year-ago</TIMEX3> <EVENT eid="e41" class="STATE" stem="result" offsets="334 341" sent_idx="1">results</EVENT> have been <EVENT eid="e8" class="OCCURRENCE" stem="restate" offsets="352 360" sent_idx="1">restated</EVENT> to <EVENT eid="e9" class="I_STATE" stem="comply" offsets="364 370" sent_idx="1">comply</EVENT> with government regulations.
+The restructuring program is <EVENT eid="e10" class="I_STATE" stem="design" offsets="429 437" sent_idx="2">designed</EVENT> to <EVENT eid="e11" class="I_ACTION" stem="increase" offsets="441 449" sent_idx="2">increase</EVENT> the company's tangible capital ratio. It includes <EVENT eid="e13" class="OCCURRENCE" stem="remove" offsets="500 508" sent_idx="2">removing</EVENT> $242 million in good will from the books, <EVENT eid="e15" class="OCCURRENCE" stem="issue" offsets="551 558" sent_idx="2">issuing</EVENT> $150 million in preferred stock and <EVENT eid="e17" class="ASPECTUAL" stem="commence" offsets="595 605" sent_idx="2">commencing</EVENT> an exchange <EVENT eid="e45" class="OCCURRENCE" stem="offer" offsets="618 623" sent_idx="2">offer</EVENT> for $52 million in convertible bonds.
+During <TIMEX3 tid="t52" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t31" offsets="669 686" sent_idx="3">the third quarter</TIMEX3>, the company <EVENT eid="e20" class="OCCURRENCE" stem="charge" offsets="700 707" sent_idx="3">charged</EVENT> about $46 million against earnings in reducing goodwill, <EVENT eid="e23" class="OCCURRENCE" stem="add" offsets="765 770" sent_idx="3">added</EVENT> $20 million to its general loan loss reserves and <EVENT eid="e24" class="I_ACTION" stem="establish" offsets="821 832" sent_idx="3">established</EVENT> a $30 million reserve for its high-yield bond portfolio. The company <EVENT eid="e25" class="REPORTING" stem="say" offsets="902 906" sent_idx="3">said</EVENT> its junk-bond portfolio after these <EVENT eid="e26" class="OCCURRENCE" stem="move" offsets="943 948" sent_idx="3">moves</EVENT> had been <EVENT eid="e28" class="OCCURRENCE" stem="reduce" offsets="958 965" sent_idx="3">reduced</EVENT> to less than 1% of assets.</TEXT>
+<MAKEINSTANCE eid="e38" eiid="ei203" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei216" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e26" eiid="ei222" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei218" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei213" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei210" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei201" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei211" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei202" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei217" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei223" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei221" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei207" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei204" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei215" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei219" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei206" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei200" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e41" eiid="ei205" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e15" eiid="ei214" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei199" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="INCLUDES" from="ei205" to="ei204" />
+<TLINK lid="l2" relType="AFTER" from="ei206" to="ei205" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei200" to="t31" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei217" to="t52" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei218" to="t52" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei219" to="t52" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei221" to="ei202" />
+<TLINK lid="l13" relType="AFTER" from="ei223" to="ei222" />
+<TLINK lid="l14" relType="INCLUDES" from="t51" to="ei205" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei204" to="t49" />
+<TLINK lid="l16" relType="IS_INCLUDED" from="ei202" to="ei199" />
+<TLINK lid="l17" relType="BEFORE" from="ei204" to="ei203" />
+<TLINK lid="l19" relType="ENDED_BY" from="ei203" to="t32" />
+<TLINK lid="l20" relType="IS_INCLUDED" from="ei203" to="t48" />
+<TLINK lid="l21" relType="SIMULTANEOUS" from="ei199" to="ei201" />
+<SLINK lid="l22" relType="MODAL" from="ei206" to="ei207" />
+<SLINK lid="l24" relType="MODAL" from="ei210" to="ei211" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei199" to="ei200" />
+<SLINK lid="l28" relType="EVIDENTIAL" from="ei221" to="ei223" />
+<SLINK lid="l29" relType="EVIDENTIAL" from="ei202" to="ei203" />
+<ALINK lid="l30" relType="INITIATES" from="ei215" to="ei216" />
+</TimeML>

@@ -1,0 +1,53 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>APW19980418.0210</DOCID>
+<TIMEX3 tid="t0" type="TIME" value="1998-04-18T06:07:00" temporalFunction="false" functionInDocument="CREATION_TIME">04/18/1998 06:07:00</TIMEX3>
+<EXTRAINFO>
+APW19980418.0210 NEWS STORY 04/18/1998 06:07:00
+w1416 Cx1f wstmr i Cx13 Cx11 BC-Hungary-Astronaut 04-18 0248
+BC-Hungary-Astronaut
+First and only Hungarian astronaut moving to the United States
+</EXTRAINFO>
+<TEXT>BUDAPEST, Hungary (AP)_ Tired of being sidelined, Hungarian astronaut Bertalan Farkas is <EVENT eid="e2" class="OCCURRENCE" offsets="89 96" sent_idx="0">leaving</EVENT> for the United States to <EVENT eid="e3" class="OCCURRENCE" offsets="122 127" sent_idx="0">start</EVENT> a new career, he <EVENT eid="e4" class="REPORTING" offsets="145 149" sent_idx="0">said</EVENT> <TIMEX3 tid="t31" type="DATE" value="1998-04-18" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="150 158" sent_idx="0">Saturday</TIMEX3>. ``Being 48 is too early to be retired,'' a fit-looking Farkas <EVENT eid="e7" class="REPORTING" offsets="222 226" sent_idx="0">said</EVENT> on state TV's morning talk show. With American astronaut Jon McBride, Farkas <EVENT eid="e8" class="OCCURRENCE" offsets="304 307" sent_idx="0">set</EVENT> up an American-Hungarian joint venture called Orion 1980, manufacturing space-travel related technology. Farkas will <EVENT eid="e11" class="OCCURRENCE" offsets="425 429" sent_idx="0">move</EVENT> to the company's U.S. headquarters. Farkas, an air force captain, was <EVENT eid="e12" class="OCCURRENCE" offsets="500 504" sent_idx="0">sent</EVENT> into space on board the Soyuz 36 on <TIMEX3 tid="t33" type="DATE" value="1980-05-26" temporalFunction="false" functionInDocument="NONE" offsets="541 553" sent_idx="0">May 26, 1980</TIMEX3>. He <EVENT eid="e14" class="OCCURRENCE" offsets="558 563" sent_idx="0">spent</EVENT> <TIMEX3 tid="t34" type="DURATION" value="P6D" temporalFunction="true" functionInDocument="NONE" beginPoint="t33" offsets="564 572" sent_idx="0">six days</TIMEX3> aboard the Salyut 6 spacecraft with three Soviet astronauts, Valery Kubasov, Leonid Popov and Valery Riumin. McBride, 54, of Lewisburg, West Virginia, was <EVENT eid="e2000" class="STATE" offsets="728 732" sent_idx="0">part</EVENT> of a seven-member crew aboard the Orbiter Challenger in <TIMEX3 tid="t35" type="DATE" value="1984-10" temporalFunction="false" functionInDocument="NONE" offsets="789 801" sent_idx="0">October 1984</TIMEX3> and later <EVENT eid="e15" class="I_ACTION" offsets="812 818" sent_idx="0">served</EVENT> as assistant administrator for congressional relations for NASA. Farkas <EVENT eid="e16" class="I_ACTION" offsets="891 900" sent_idx="0">expressed</EVENT> the hope he one day <EVENT eid="e17" class="ASPECTUAL" offsets="921 927" sent_idx="0">follow</EVENT> in the footsteps of fellow astronaut John Glenn, who at 77 is about to <EVENT eid="e21" class="OCCURRENCE" offsets="999 1001" sent_idx="0">go</EVENT> into space again. On <TIMEX3 tid="t37" type="DATE" value="1995-05-22" temporalFunction="false" functionInDocument="NONE" offsets="1023 1035" sent_idx="0">May 22, 1995</TIMEX3>, Farkas was <EVENT eid="e22" class="I_ACTION" offsets="1048 1052" sent_idx="0">made</EVENT> a brigadier general, and <TIMEX3 tid="t38" type="DATE" value="1996" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t37" offsets="1078 1096" sent_idx="0">the following year</TIMEX3> he was <EVENT eid="e23" class="I_ACTION" offsets="1104 1113" sent_idx="0">appointed</EVENT> military attache at the Hungarian embassy in Washington. However, <EVENT eid="e24" class="OCCURRENCE" offsets="1180 1185" sent_idx="0">cited</EVENT> by District of Columbia traffic police in <TIMEX3 tid="t39" type="DATE" value="1997-12" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1228 1236" sent_idx="0">December</TIMEX3> for <EVENT eid="e25" class="OCCURRENCE" offsets="1241 1248" sent_idx="0">driving</EVENT> under the influence of alcohol, Farkas was <EVENT eid="e26" class="OCCURRENCE" offsets="1292 1299" sent_idx="0">ordered</EVENT> home and <EVENT eid="e27" class="OCCURRENCE" offsets="1309 1316" sent_idx="0">retired</EVENT>. (ab/dc)</TEXT>
+<LASTEXTRAINFO>
+(PROFILE (WS SL:BC-Hungary-Astronaut; CT:i; (REG:EURO;) (REG:BRIT;) (REG:SCAN;) (REG:ENGL;) (LANG:ENGLISH;)) )
+AP-NY-04-18-98 0607EDT
+</LASTEXTRAINFO>
+<MAKEINSTANCE eid="e2" eiid="ei2126" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei2127" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei2128" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei2129" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei2130" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei2132" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei2133" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2134" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2000" eiid="ei2135" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2136" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2138" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei2140" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei2141" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2142" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2144" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2146" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2147" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2148" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei2149" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="AFTER" from="ei2126" to="ei2128" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei2128" to="t31" />
+<TLINK lid="l3" relType="BEFORE" from="ei2129" to="t0" />
+<TLINK lid="l4" relType="SIMULTANEOUS" from="ei2149" to="ei2148" />
+<TLINK lid="l6" relType="BEFORE" from="ei2130" to="t0" />
+<TLINK lid="l7" relType="AFTER" from="ei2132" to="t0" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei2133" to="t33" />
+<TLINK lid="l9" relType="DURING" from="ei2134" to="t34" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei2135" to="t35" />
+<TLINK lid="l11" relType="AFTER" from="ei2136" to="ei2135" />
+<TLINK lid="l13" relType="BEFORE" from="ei2138" to="t0" />
+<TLINK lid="l14" relType="AFTER" from="ei2141" to="t0" />
+<TLINK lid="l15" relType="INCLUDES" from="t37" to="ei2142" />
+<TLINK lid="l16" relType="INCLUDES" from="t38" to="ei2144" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei2146" to="t39" />
+<TLINK lid="l18" relType="BEFORE" from="ei2147" to="ei2146" />
+<TLINK lid="l19" relType="AFTER" from="ei2148" to="ei2146" />
+<SLINK lid="l23" relType="EVIDENTIAL" from="ei2128" to="ei2126" />
+<SLINK lid="l20" relType="MODAL" from="ei2126" to="ei2127" />
+</TimeML>

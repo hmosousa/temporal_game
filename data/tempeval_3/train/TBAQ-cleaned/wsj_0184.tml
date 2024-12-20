@@ -1,0 +1,116 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0184</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0006 = 891102 891102-0006.
+Upjohn Offers @ Plan to Reduce @ Its Work Force @ ---- @ By Bradley A. Stertz @ Staff Reporter of The Wall Street Journal 11/02/89 WALL STREET JOURNAL (J) UPJ DRUG MANUFACTURERS (DRG) KALAMAZOO, Mich.
+</EXTRAINFO>
+<TEXT>Upjohn Co. <EVENT eid="e1" class="REPORTING" offsets="11 15" sent_idx="0">said</EVENT> it will <EVENT eid="e2" class="OCCURRENCE" offsets="24 29" sent_idx="0">offer</EVENT> an early retirement package to as many as 1,100 employees in a cost-cutting <EVENT eid="e3" class="I_ACTION" offsets="106 110" sent_idx="0">move</EVENT> <EVENT eid="e5" class="I_STATE" offsets="111 119" sent_idx="0">expected</EVENT> to <EVENT eid="e7" class="ASPECTUAL" offsets="123 129" sent_idx="0">result</EVENT> in a <TIMEX3 tid="t79" type="DURATION" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="135 149" sent_idx="0">fourth-quarter</TIMEX3> <EVENT eid="e80" class="OCCURRENCE" offsets="150 156" sent_idx="0">charge</EVENT>.
+Upjohn officials <EVENT eid="e8" class="REPORTING" offsets="175 179" sent_idx="1">said</EVENT> they couldn't <EVENT eid="e9" class="I_ACTION" offsets="194 202" sent_idx="1">estimate</EVENT> the size of the <EVENT eid="e81" class="STATE" offsets="219 225" sent_idx="1">charge</EVENT> until they <EVENT eid="e12" class="I_ACTION" offsets="237 246" sent_idx="1">determine</EVENT> which employees, and how many, will <EVENT eid="e14" class="OCCURRENCE" offsets="283 294" sent_idx="1">participate</EVENT> in the retirement plan. But the pharmaceutical company <EVENT eid="e16" class="REPORTING" offsets="350 354" sent_idx="1">said</EVENT> it "<EVENT eid="e17" class="I_STATE" offsets="359 370" sent_idx="1">anticipates</EVENT> the long-term savings resulting from the plan's implementation will more than <EVENT eid="e91" class="OCCURRENCE" offsets="449 455" sent_idx="1">offset</EVENT> short-term costs."
+The program, available to Upjohn employees 55 years old or older, could <EVENT eid="e24" class="OCCURRENCE" offsets="547 555" sent_idx="2">increase</EVENT> an individual's retirement benefits 10% to 20%. In addition, Upjohn is <EVENT eid="e29" class="OCCURRENCE" offsets="627 635" sent_idx="2">offering</EVENT> a one-time retirement bonus equal to six months of base pay.
+Chairman Theodore Cooper <EVENT eid="e31" class="REPORTING" offsets="722 728" sent_idx="3">called</EVENT> the program part of the company's <TIMEX3 tid="t190" type="DURATION" value="P2Y" temporalFunction="false" functionInDocument="NONE" offsets="763 771" sent_idx="3">two-year</TIMEX3> <EVENT eid="e189" class="I_ACTION" offsets="772 780" sent_idx="3">strategy</EVENT> to <EVENT eid="e33" class="I_ACTION" offsets="784 793" sent_idx="3">implement</EVENT> budget constraints and "an effective headcount-control program."
+But some analysts <EVENT eid="e34" class="I_ACTION" offsets="877 887" sent_idx="4">questioned</EVENT> how much of an impact the retirement package will <EVENT eid="e36" class="OCCURRENCE" offsets="938 942" sent_idx="4">have</EVENT>, because few jobs will <EVENT eid="e38" class="ASPECTUAL" offsets="966 969" sent_idx="4">end</EVENT> up being <EVENT eid="e86" class="OCCURRENCE" offsets="979 989" sent_idx="4">eliminated</EVENT>. "It's a cosmetic <EVENT eid="e39" class="OCCURRENCE" offsets="1008 1012" sent_idx="4">move</EVENT>," <EVENT eid="e40" class="REPORTING" offsets="1015 1019" sent_idx="4">said</EVENT> Jonathan S. Gelles of Wertheim Schroder amp Co.
+According to Upjohn's estimates, only 50% to 60% of the 1,100 eligible employees will <EVENT eid="e42" class="OCCURRENCE" offsets="1154 1158" sent_idx="5">take</EVENT> advantage of the plan. Upjohn further <EVENT eid="e43" class="I_ACTION" offsets="1197 1206" sent_idx="5">estimated</EVENT> that about 50% of the employees who <EVENT eid="e44" class="OCCURRENCE" offsets="1243 1248" sent_idx="5">leave</EVENT> for early retirement may be <EVENT eid="e46" class="OCCURRENCE" offsets="1277 1285" sent_idx="5">replaced</EVENT>. As a result, Upjohn will likely <EVENT eid="e50" class="OCCURRENCE" offsets="1319 1323" sent_idx="5">trim</EVENT> only about 275 to 350 of its more than 21,000 jobs world-wide.
+In composite trading on the New York Stock Exchange <TIMEX3 tid="t92" type="DATE" value="1989-11-01" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1439 1448" sent_idx="6">yesterday</TIMEX3>, Upjohn shares <EVENT eid="e53" class="OCCURRENCE" offsets="1464 1468" sent_idx="6">rose</EVENT> 87.5 cents to $38.875 apiece.
+An Upjohn spokesman <EVENT eid="e54" class="REPORTING" offsets="1519 1523" sent_idx="7">said</EVENT> he had " <EVENT eid="e399" class="PERCEPTION" offsets="1533 1538" sent_idx="7">heard</EVENT> nothing" to <EVENT eid="e57" class="I_STATE" offsets="1551 1558" sent_idx="7">suggest</EVENT> the early retirement package was <EVENT eid="e58" class="OCCURRENCE" offsets="1592 1599" sent_idx="7">spurred</EVENT> by shareholder pressure or a potential bidder for the company, which occasionally has been the target of takeover speculation. The company <TIMEX3 tid="t372" type="DATE" value="1989" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1739 1756" sent_idx="7">earlier this year</TIMEX3> <EVENT eid="e61" class="OCCURRENCE" offsets="1757 1764" sent_idx="7">adopted</EVENT> a shareholder-rights plan to <EVENT eid="e63" class="OCCURRENCE" offsets="1794 1798" sent_idx="7">ward</EVENT> off unwanted suitors.
+The spokesman <EVENT eid="e64" class="REPORTING" offsets="1835 1839" sent_idx="8">said</EVENT> it is the first early retirement plan <EVENT eid="e65" class="I_ACTION" offsets="1878 1885" sent_idx="8">offered</EVENT> under its <TIMEX3 tid="t500" type="DURATION" value="P2Y" temporalFunction="false" functionInDocument="NONE" offsets="1896 1904" sent_idx="8">two-year</TIMEX3> cost-control strategy. <TIMEX3 tid="t404" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1928 1935" sent_idx="8">Earlier</TIMEX3> staff-reduction <EVENT eid="e66" class="OCCURRENCE" offsets="1952 1957" sent_idx="8">moves</EVENT> have <EVENT eid="e67" class="OCCURRENCE" offsets="1963 1970" sent_idx="8">trimmed</EVENT> about 300 jobs, the spokesman <EVENT eid="e69" class="REPORTING" offsets="2001 2005" sent_idx="8">said</EVENT>.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei421" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei422" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei424" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei425" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei426" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei427" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei428" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei429" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e81" eiid="ei430" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei431" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei432" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei433" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei434" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e91" eiid="ei435" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei436" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e29" eiid="ei437" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e31" eiid="ei438" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e189" eiid="ei439" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e33" eiid="ei440" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei443" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei445" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei446" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e86" eiid="ei447" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e39" eiid="ei448" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e40" eiid="ei449" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei451" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei453" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei454" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei455" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="may" />
+<MAKEINSTANCE eid="e50" eiid="ei456" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei457" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei458" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e57" eiid="ei460" tense="INFINITIVE" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e58" eiid="ei461" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e61" eiid="ei466" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei467" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei468" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e65" eiid="ei470" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e66" eiid="ei471" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e67" eiid="ei472" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e69" eiid="ei473" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e399" eiid="ei475" tense="PAST" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<TLINK lid="l69" relType="IDENTITY" from="ei473" to="ei468" />
+<TLINK lid="l68" relType="BEFORE" from="ei470" to="t0" />
+<TLINK lid="l66" relType="DURING" from="ei447" to="ei439" />
+<TLINK lid="l65" relType="BEGUN_BY" from="ei430" to="ei426" />
+<TLINK lid="l64" relType="IS_INCLUDED" from="ei425" to="t0" />
+<TLINK lid="l1" relType="AFTER" from="t0" to="ei421" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei422" to="ei424" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei427" to="t79" />
+<TLINK lid="l4" relType="SIMULTANEOUS" from="ei428" to="ei421" />
+<TLINK lid="l5" relType="AFTER" from="ei429" to="ei431" />
+<TLINK lid="l6" relType="SIMULTANEOUS" from="ei433" to="ei421" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei436" to="ei432" />
+<TLINK lid="l8" relType="AFTER" from="ei432" to="t0" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei437" to="ei422" />
+<TLINK lid="l10" relType="SIMULTANEOUS" from="ei438" to="ei428" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei439" to="t190" />
+<TLINK lid="l12" relType="INCLUDES" from="t190" to="t0" />
+<TLINK lid="l13" relType="BEFORE" from="ei443" to="t0" />
+<TLINK lid="l14" relType="AFTER" from="ei443" to="ei421" />
+<TLINK lid="l16" relType="BEFORE" from="ei443" to="ei446" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei449" to="ei443" />
+<TLINK lid="l18" relType="IDENTITY" from="ei448" to="ei424" />
+<TLINK lid="l20" relType="AFTER" from="ei451" to="t0" />
+<TLINK lid="l23" relType="BEFORE" from="ei454" to="ei455" />
+<TLINK lid="l24" relType="AFTER" from="ei454" to="t0" />
+<TLINK lid="l25" relType="AFTER" from="ei454" to="ei422" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei456" to="ei455" />
+<TLINK lid="l27" relType="BEFORE" from="t92" to="t0" />
+<TLINK lid="l28" relType="INCLUDES" from="t92" to="ei457" />
+<TLINK lid="l29" relType="IAFTER" from="ei458" to="ei428" />
+<TLINK lid="l30" relType="BEFORE" from="t372" to="t0" />
+<TLINK lid="l31" relType="IS_INCLUDED" from="ei466" to="t372" />
+<TLINK lid="l32" relType="BEFORE" from="t372" to="ei421" />
+<TLINK lid="l33" relType="SIMULTANEOUS" from="ei468" to="ei428" />
+<TLINK lid="l34" relType="BEFORE" from="t404" to="t0" />
+<TLINK lid="l35" relType="IDENTITY" from="t404" to="ei471" />
+<TLINK lid="l36" relType="IBEFORE" from="ei471" to="ei472" />
+<TLINK lid="l37" relType="BEFORE" from="ei475" to="ei460" />
+<SLINK lid="l63" relType="EVIDENTIAL" from="ei468" to="ei470" />
+<SLINK lid="l62" relType="EVIDENTIAL" from="ei458" to="ei475" />
+<SLINK lid="l38" relType="EVIDENTIAL" from="ei473" to="ei472" />
+<SLINK lid="l39" relType="EVIDENTIAL" from="ei421" to="ei422" />
+<SLINK lid="l40" relType="MODAL" from="ei425" to="ei424" />
+<SLINK lid="l41" relType="EVIDENTIAL" from="ei428" to="ei429" />
+<SLINK lid="l42" relType="MODAL" from="ei431" to="ei432" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei433" to="ei434" />
+<SLINK lid="l44" relType="MODAL" from="ei434" to="ei435" />
+<SLINK lid="l45" relType="EVIDENTIAL" from="ei438" to="ei439" />
+<SLINK lid="l46" relType="MODAL" from="ei439" to="ei440" />
+<SLINK lid="l49" relType="MODAL" from="ei443" to="ei445" />
+<SLINK lid="l50" relType="EVIDENTIAL" from="ei449" to="ei448" />
+<SLINK lid="l52" relType="MODAL" from="ei453" to="ei455" />
+<SLINK lid="l53" relType="MODAL" from="ei460" to="ei461" />
+<SLINK lid="l56" relType="MODAL" from="ei466" to="ei467" />
+<SLINK lid="l58" relType="MODAL" from="ei425" to="ei426" />
+<ALINK lid="l59" relType="INITIATES" from="ei426" to="ei427" />
+<ALINK lid="l60" relType="CULMINATES" from="ei446" to="ei447" />
+</TimeML>

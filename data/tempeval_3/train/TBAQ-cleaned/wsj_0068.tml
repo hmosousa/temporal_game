@@ -1,0 +1,27 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0068</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0124 = 891102 891102-0124.
+Dividend News: @ Goody Products Inc. 11/02/89 WALL STREET JOURNAL (J) GOOD DIVIDENDS (DIV)
+</EXTRAINFO>
+<TEXT>GOODY PRODUCTS Inc. <EVENT eid="e9" class="OCCURRENCE" offsets="20 23" sent_idx="0">cut</EVENT> its quarterly dividend to five cents a share from 11.5 cents a share. The reduced dividend is <EVENT eid="e15" class="OCCURRENCE" offsets="118 125" sent_idx="0">payable</EVENT> <TIMEX3 tid="t18" type="DATE" value="1990-01-02" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="126 132" sent_idx="0">Jan. 2</TIMEX3> to stock of record <TIMEX3 tid="t17" type="DATE" value="1989-12-15" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="152 159" sent_idx="0">Dec. 15</TIMEX3>. The Kearny, N.J.-based maker of hair accessories and other cosmetic products <EVENT eid="e3" class="REPORTING" offsets="238 242" sent_idx="0">said</EVENT> it <EVENT eid="e4" class="OCCURRENCE" offsets="246 249" sent_idx="0">cut</EVENT> the dividend due to its <TIMEX3 tid="t26" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="274 287" sent_idx="0">third-quarter</TIMEX3> <EVENT eid="e5" class="OCCURRENCE" offsets="288 292" sent_idx="0">loss</EVENT> of $992,000, or 15 cents a share. In <TIMEX3 tid="t134" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="330 350" sent_idx="0">the year-ago quarter</TIMEX3>, the company <EVENT eid="e6" class="REPORTING" offsets="364 372" sent_idx="0">reported</EVENT> net income of $1.9 million, or 29 cents a share. The company also <EVENT eid="e7" class="I_ACTION" offsets="439 446" sent_idx="0">adopted</EVENT> an anti-takeover plan.</TEXT>
+<MAKEINSTANCE eid="e9" eiid="ei135" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei139" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e3" eiid="ei141" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei142" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei143" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei144" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei145" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l19" relType="BEFORE" from="ei144" to="t0" />
+<TLINK lid="l2" relType="AFTER" from="t0" to="ei135" />
+<TLINK lid="l4" relType="IS_INCLUDED" from="ei139" to="t18" />
+<TLINK lid="l7" relType="AFTER" from="t18" to="t0" />
+<TLINK lid="l8" relType="AFTER" from="t18" to="t17" />
+<TLINK lid="l9" relType="BEFORE" from="ei141" to="t0" />
+<TLINK lid="l10" relType="IDENTITY" from="ei142" to="ei135" />
+<TLINK lid="l11" relType="BEFORE" from="ei143" to="ei142" />
+<TLINK lid="l12" relType="ENDS" from="ei143" to="t26" />
+<TLINK lid="l13" relType="BEFORE" from="ei145" to="t0" />
+<SLINK lid="l15" relType="EVIDENTIAL" from="ei141" to="ei142" />
+</TimeML>

@@ -1,0 +1,240 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0575</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0125 = 891030 891030-0125.
+Control Data Says It May Repurchase @ Debt Soon, Seeks Alliances With Others @ ---- @ By Richard Gibson @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) CDA COMPUTERS AND INFORMATION TECHNOLOGY (CPR) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) MINNEAPOLIS
+</EXTRAINFO>
+<TEXT>Control Data Corp., which just <TIMEX3 tid="t204" type="DURATION" value="PXM" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="31 41" sent_idx="0">months ago</TIMEX3> was <EVENT eid="e1" class="OCCURRENCE" offsets="46 58" sent_idx="0">hemorrhaging</EVENT> financially, <EVENT eid="e2" class="I_STATE" offsets="72 78" sent_idx="0">thinks</EVENT> it will be <EVENT eid="e2438" class="STATE" offsets="90 97" sent_idx="0">healthy</EVENT> enough <TIMEX3 tid="t206" type="DATE" value="FUTURE_REF" temporalFunction="false" functionInDocument="NONE" offsets="105 109" sent_idx="0">soon</TIMEX3> to <EVENT eid="e3" class="I_STATE" offsets="113 121" sent_idx="0">consider</EVENT> <EVENT eid="e4" class="OCCURRENCE" offsets="122 134" sent_idx="0">repurchasing</EVENT> public debt.
+Moreover, the company, whose go-it-alone approach nearly <EVENT eid="e6" class="OCCURRENCE" offsets="205 211" sent_idx="1">proved</EVENT> fatal, <TIMEX3 tid="t2041" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="219 222" sent_idx="1">now</TIMEX3> <EVENT eid="e7" class="I_STATE" offsets="223 227" sent_idx="1">sees</EVENT> alliances with others as the way back to prosperity in what it calls "the data solutions" business.
+"I'm not saying everything is hunky-dory, but we have <EVENT eid="e15" class="ASPECTUAL" offsets="382 391" sent_idx="2">completed</EVENT> the <EVENT eid="e16" class="OCCURRENCE" offsets="396 406" sent_idx="2">transition</EVENT>," Robert M. Price, chairman and chief executive, <EVENT eid="e17" class="REPORTING" offsets="456 460" sent_idx="2">said</EVENT> in an <EVENT eid="e18" class="OCCURRENCE" offsets="467 476" sent_idx="2">interview</EVENT>. "Transition" is a reference to the company's <TIMEX3 tid="t209" type="DURATION" value="P5Y" temporalFunction="false" functionInDocument="NONE" offsets="523 532" sent_idx="2">five-year</TIMEX3> restructuring <EVENT eid="e22" class="I_ACTION" offsets="547 553" sent_idx="2">effort</EVENT>. During <TIMEX3 tid="t213" type="DURATION" value="P5Y" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t209" offsets="562 571" sent_idx="2">that time</TIMEX3>, Control Data <EVENT eid="e24" class="STATE" offsets="586 589" sent_idx="2">had</EVENT> losses of more than $1 billion.
+Now, following asset sales that <EVENT eid="e26" class="OCCURRENCE" offsets="654 660" sent_idx="3">shrank</EVENT> revenue by more than one-third <TIMEX3 tid="t2110" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="692 701" sent_idx="3">this year</TIMEX3> alone, Control Data is <EVENT eid="e215" class="STATE" offsets="725 730" sent_idx="3">flush</EVENT> with cash. So its senior executives are <EVENT eid="e28" class="I_ACTION" offsets="771 778" sent_idx="3">talking</EVENT> openly about possibly <EVENT eid="e29" class="OCCURRENCE" offsets="801 807" sent_idx="3">buying</EVENT> back some of the company's $172.5 million in subordinated convertible debentures <TIMEX3 tid="t218" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="889 898" sent_idx="3">next year</TIMEX3>.
+"We'd <EVENT eid="e221" class="I_STATE" offsets="906 910" sent_idx="4">like</EVENT> to <EVENT eid="e33" class="ASPECTUAL" offsets="914 922" sent_idx="4">continue</EVENT> to <EVENT eid="e35" class="OCCURRENCE" offsets="926 932" sent_idx="4">reduce</EVENT> debt," President Lawrence Perlman <EVENT eid="e36" class="REPORTING" offsets="967 971" sent_idx="4">said</EVENT>. <EVENT eid="e37" class="REPORTING" offsets="973 979" sent_idx="4">Noting</EVENT> that the company is <EVENT eid="e38" class="I_ACTION" offsets="1000 1008" sent_idx="4">offering</EVENT> to <EVENT eid="e40" class="OCCURRENCE" offsets="1012 1015" sent_idx="4">buy</EVENT> back $154.2 million in senior notes <EVENT eid="e43" class="OCCURRENCE" offsets="1052 1058" sent_idx="4">paying</EVENT> 12 3/4%, he <EVENT eid="e44" class="REPORTING" offsets="1071 1075" sent_idx="4">said</EVENT> the response will <EVENT eid="e45" class="I_STATE" offsets="1094 1098" sent_idx="4">help</EVENT> <EVENT eid="e46" class="I_ACTION" offsets="1099 1108" sent_idx="4">determine</EVENT> future debt-reduction <EVENT eid="e47" class="OCCURRENCE" offsets="1131 1138" sent_idx="4">efforts</EVENT>. The <EVENT eid="e48" class="OCCURRENCE" offsets="1144 1149" sent_idx="4">offer</EVENT> was automatically <EVENT eid="e49" class="ASPECTUAL" offsets="1168 1177" sent_idx="4">triggered</EVENT> by the <TIMEX3 tid="t222" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1185 1191" sent_idx="4">recent</TIMEX3> <EVENT eid="e50" class="OCCURRENCE" offsets="1192 1196" sent_idx="4">sale</EVENT> of Control Data's Imprimis disk-drive business to Seagate Technology Inc.
+Mr. Perlman, who is also acting chief financial officer and the odds-on favorite to become the next chief executive, <EVENT eid="e55" class="REPORTING" offsets="1388 1392" sent_idx="5">said</EVENT> the company is <EVENT eid="e56" class="I_STATE" offsets="1408 1417" sent_idx="5">achieving</EVENT> "modest positive cash <EVENT eid="e57" class="STATE" offsets="1440 1444" sent_idx="5">flow</EVENT> from operations, and we <EVENT eid="e60" class="I_STATE" offsets="1469 1475" sent_idx="5">expect</EVENT> that to <EVENT eid="e62" class="ASPECTUAL" offsets="1484 1492" sent_idx="5">continue</EVENT> into <TIMEX3 tid="t224" type="DATE" value="1990" temporalFunction="false" functionInDocument="NONE" offsets="1498 1502" sent_idx="5">1990</TIMEX3>."
+He <EVENT eid="e63" class="REPORTING" offsets="1508 1512" sent_idx="6">said</EVENT> the company <EVENT eid="e64" class="STATE" offsets="1525 1528" sent_idx="6">has</EVENT> no intention of <EVENT eid="e66" class="OCCURRENCE" offsets="1545 1552" sent_idx="6">tapping</EVENT> its short-term bank lines "for <TIMEX3 tid="t228" type="DATE" value="1990" temporalFunction="false" functionInDocument="NONE" offsets="1584 1603" sent_idx="6">a good part of 1990</TIMEX3>." Sometime <TIMEX3 tid="t229" type="DATE" value="1990" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1615 1624" sent_idx="6">next year</TIMEX3>, Control Data will " <EVENT eid="e68" class="I_ACTION" offsets="1646 1653" sent_idx="6">develop</EVENT> a new bank relationship," Mr. Perlman <EVENT eid="e69" class="REPORTING" offsets="1692 1696" sent_idx="6">said</EVENT>. In <TIMEX3 tid="t232" type="DURATION" value="PXM" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="1701 1714" sent_idx="6">recent months</TIMEX3> a group of lenders, led by Bank of America, has <EVENT eid="e71" class="OCCURRENCE" offsets="1763 1771" sent_idx="6">extended</EVENT> Control Data up to $90 million in revolving loans through <TIMEX3 tid="t237" type="DATE" value="1990-01" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1830 1837" sent_idx="6">January</TIMEX3>, as well as $115 million in standby letters of credit.
+Loan covenants require that the company achieve specified levels of operating earnings and meet a rolling four-quarter profitability test. <TIMEX3 tid="t238" type="DATE" value="1989-WXX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2032 2041" sent_idx="7">Last week</TIMEX3> Control Data <EVENT eid="e80" class="REPORTING" offsets="2055 2063" sent_idx="7">reported</EVENT> <TIMEX3 tid="t239" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2064 2077" sent_idx="7">third-quarter</TIMEX3> <EVENT eid="e240" class="STATE" offsets="2078 2086" sent_idx="7">earnings</EVENT> of $9.8 million, or 23 cents a share, on revenue of $763 million. Through <TIMEX3 tid="t241" type="DURATION" value="P9M" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="2161 2182" sent_idx="7">the first nine months</TIMEX3>, the company <EVENT eid="e242" class="STATE" offsets="2196 2199" sent_idx="7">had</EVENT> a <EVENT eid="e81" class="STATE" offsets="2202 2206" sent_idx="7">loss</EVENT> of $484 million, largely reflecting the <EVENT eid="e83" class="OCCURRENCE" offsets="2247 2254" sent_idx="7">closing</EVENT> of its supercomputer unit.
+While a few assets are still being shopped -- including the sports and entertainment ticketing portion of the company's Ticketron unit -- Mr. Price <EVENT eid="e2338" class="REPORTING" offsets="2430 2434" sent_idx="8">said</EVENT> future restructuring would be a question of strategy. "We don't <EVENT eid="e91" class="I_STATE" offsets="2499 2503" sent_idx="8">need</EVENT> the cash."
+Ticketron's automated wagering business, which operates lotteries in a half dozen states, is not for sale, the company <EVENT eid="e100" class="REPORTING" offsets="2634 2638" sent_idx="9">said</EVENT>. Rather, Mr. Perlman <EVENT eid="e101" class="REPORTING" offsets="2660 2664" sent_idx="9">said</EVENT>, Control Data <EVENT eid="e102" class="I_STATE" offsets="2679 2686" sent_idx="9">intends</EVENT> to <EVENT eid="e104" class="OCCURRENCE" offsets="2690 2693" sent_idx="9">bid</EVENT> for the coming Minnesota lottery contract and is <EVENT eid="e105" class="I_ACTION" offsets="2743 2750" sent_idx="9">seeking</EVENT> new applications for the technology overseas, where "there is great interest in games of skill." He wouldn't <EVENT eid="e110" class="OCCURRENCE" offsets="2860 2869" sent_idx="9">elaborate</EVENT>.
+Control Data's semiconductor business, VTC Inc., <EVENT eid="e114" class="ASPECTUAL" offsets="2920 2929" sent_idx="10">continues</EVENT> to <EVENT eid="e116" class="OCCURRENCE" offsets="2933 2937" sent_idx="10">lose</EVENT> money, the executives <EVENT eid="e118" class="REPORTING" offsets="2960 2972" sent_idx="10">acknowledged</EVENT>, but they <EVENT eid="e119" class="REPORTING" offsets="2983 2987" sent_idx="10">said</EVENT> they consider some of the technology vital to national defense and so are <EVENT eid="e247" class="I_STATE" offsets="3062 3071" sent_idx="10">reluctant</EVENT> to <EVENT eid="e124" class="OCCURRENCE" offsets="3075 3082" sent_idx="10">dispose</EVENT> of it.
+The company's strategy for keeping its computer products business profitable -- it <TIMEX3 tid="t1991" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3173 3181" sent_idx="11">recently</TIMEX3> <EVENT eid="e127" class="I_STATE" offsets="3182 3190" sent_idx="11">achieved</EVENT> profitability after <TIMEX3 tid="t1994" type="DURATION" value="PXQ" temporalFunction="false" functionInDocument="NONE" offsets="3211 3227" sent_idx="11">several quarters</TIMEX3> of <EVENT eid="e2430" class="OCCURRENCE" offsets="3231 3237" sent_idx="11">losses</EVENT> -- calls for a narrow focus and a lid on expenses. Partly, costs will be <EVENT eid="e132" class="OCCURRENCE" offsets="3311 3315" sent_idx="11">held</EVENT> down through strategic technology alliances, management <EVENT eid="e2437" class="REPORTING" offsets="3372 3376" sent_idx="11">said</EVENT>. Control Data <TIMEX3 tid="t1995" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3391 3399" sent_idx="11">recently</TIMEX3> <EVENT eid="e135" class="REPORTING" offsets="3400 3409" sent_idx="11">announced</EVENT> an <EVENT eid="e136" class="STATE" offsets="3413 3422" sent_idx="11">agreement</EVENT> with MIPS Computer Systems Inc. to jointly <EVENT eid="e138" class="OCCURRENCE" offsets="3466 3473" sent_idx="11">develop</EVENT> machines with simplified operating software.
+James E. Ousley, computer products group president, <EVENT eid="e140" class="REPORTING" offsets="3571 3575" sent_idx="12">said</EVENT> such arrangements could <EVENT eid="e141" class="I_STATE" offsets="3600 3604" sent_idx="12">help</EVENT> <EVENT eid="e1998" class="OCCURRENCE" offsets="3605 3610" sent_idx="12">slash</EVENT> Control Data's computer research and development costs in half by <TIMEX3 tid="t2000" type="DATE" value="1990" mod="END" temporalFunction="false" functionInDocument="NONE" offsets="3677 3692" sent_idx="12">the end of 1990</TIMEX3>. He <EVENT eid="e145" class="REPORTING" offsets="3697 3706" sent_idx="12">disclosed</EVENT> that before Control Data <EVENT eid="e147" class="OCCURRENCE" offsets="3732 3740" sent_idx="12">scrapped</EVENT> its ETA Systems Inc. supercomputer business <TIMEX3 tid="t2001" type="DATE" value="1989-SP" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3785 3801" sent_idx="12">this past spring</TIMEX3>, those costs were <EVENT eid="e148" class="OCCURRENCE" offsets="3820 3827" sent_idx="12">running</EVENT> at nearly 35% of group revenue. At the same time four of six design projects were <EVENT eid="e150" class="OCCURRENCE" offsets="3910 3916" sent_idx="12">spiked</EVENT>, he <EVENT eid="e151" class="REPORTING" offsets="3921 3925" sent_idx="12">said</EVENT>.
+<EVENT eid="e152" class="I_ACTION" offsets="3927 3932" sent_idx="13">Asked</EVENT> how the company <EVENT eid="e153" class="I_STATE" offsets="3949 3954" sent_idx="13">hopes</EVENT> to <EVENT eid="e155" class="OCCURRENCE" offsets="3958 3964" sent_idx="13">expand</EVENT> its computer hardware business, Mr. Ousley <EVENT eid="e157" class="REPORTING" offsets="4008 4012" sent_idx="13">said</EVENT> it <EVENT eid="e158" class="I_STATE" offsets="4016 4020" sent_idx="13">sees</EVENT> good opportunities in systems integration. "We <EVENT eid="e161" class="I_STATE" offsets="4068 4073" sent_idx="13">think</EVENT> we're <EVENT eid="e162" class="OCCURRENCE" offsets="4080 4087" sent_idx="13">getting</EVENT> only 10% of the integration dollars our customers are <EVENT eid="e164" class="OCCURRENCE" offsets="4142 4150" sent_idx="13">spending</EVENT>," he <EVENT eid="e165" class="REPORTING" offsets="4156 4160" sent_idx="13">said</EVENT>. "We're in environments that are going to <EVENT eid="e168" class="OCCURRENCE" offsets="4203 4208" sent_idx="13">spend</EVENT> a lot of money on that."
+Control Data mainframes are designed for numerically intensive computing users, such as the scientific, engineering and academic communities. Utilities management is a major commercial niche.
+<EVENT eid="e173" class="I_ACTION" offsets="4426 4435" sent_idx="15">Reviewing</EVENT> the company's <EVENT eid="e174" class="OCCURRENCE" offsets="4450 4456" sent_idx="15">scrape</EVENT> with disaster, Mr. Price <EVENT eid="e176" class="I_ACTION" offsets="4482 4490" sent_idx="15">conceded</EVENT> it had <EVENT eid="e177" class="I_ACTION" offsets="4498 4503" sent_idx="15">tried</EVENT> to <EVENT eid="e178" class="OCCURRENCE" offsets="4507 4509" sent_idx="15">do</EVENT> too much on its own. "Absolutely," he said.
+But while its stock is <EVENT eid="e181" class="OCCURRENCE" offsets="4577 4584" sent_idx="16">selling</EVENT> at about half Control Data's estimated breakup value, neither Messrs. Perlman nor Price <EVENT eid="e183" class="REPORTING" offsets="4673 4677" sent_idx="16">said</EVENT> he <EVENT eid="e184" class="OCCURRENCE" offsets="4681 4687" sent_idx="16">spends</EVENT> much time <EVENT eid="e186" class="I_STATE" offsets="4698 4709" sent_idx="16">considering</EVENT> the possibility of a hostile <EVENT eid="e187" class="OCCURRENCE" offsets="4739 4747" sent_idx="16">takeover</EVENT>. "We've been <EVENT eid="e188" class="OCCURRENCE" offsets="4761 4767" sent_idx="16">listed</EVENT> as a candidate for so long it's not worth worrying about," <EVENT eid="e190" class="REPORTING" offsets="4827 4831" sent_idx="16">said</EVENT> Mr. Price.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2637" tense="PAST" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei2638" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei2640" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei2641" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei2642" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei2643" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2645" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2646" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e17" eiid="ei2647" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei2648" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e22" eiid="ei2650" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei2651" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2653" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e215" eiid="ei2654" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e28" eiid="ei2655" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei2656" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="none" />
+<MAKEINSTANCE eid="e221" eiid="ei2657" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei2658" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei2659" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei2660" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei2661" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei2662" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei2663" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei2664" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei2665" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2666" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei2667" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei2668" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e48" eiid="ei2669" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e49" eiid="ei2670" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei2671" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e55" eiid="ei2672" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e56" eiid="ei2673" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e57" eiid="ei2674" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e60" eiid="ei2676" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei2677" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei2678" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei2679" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e66" eiid="ei2681" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei2682" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e69" eiid="ei2684" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e71" eiid="ei2685" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei2686" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e240" eiid="ei2687" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e242" eiid="ei2688" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e81" eiid="ei2689" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e83" eiid="ei2690" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2338" eiid="ei2691" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e91" eiid="ei2692" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e100" eiid="ei2695" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e101" eiid="ei2696" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei2697" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e104" eiid="ei2698" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e105" eiid="ei2699" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e110" eiid="ei2701" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e114" eiid="ei2702" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e116" eiid="ei2703" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e118" eiid="ei2704" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e119" eiid="ei2705" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e247" eiid="ei2706" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e124" eiid="ei2707" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e127" eiid="ei2708" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2430" eiid="ei2710" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e132" eiid="ei2711" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2437" eiid="ei2712" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e135" eiid="ei2713" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e136" eiid="ei2714" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e138" eiid="ei2715" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e140" eiid="ei2716" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e141" eiid="ei2718" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e1998" eiid="ei2719" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e145" eiid="ei2720" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e147" eiid="ei2721" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e148" eiid="ei2722" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e150" eiid="ei2723" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e151" eiid="ei2724" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e152" eiid="ei2725" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e153" eiid="ei2726" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e155" eiid="ei2727" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e157" eiid="ei2728" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e158" eiid="ei2729" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e161" eiid="ei2730" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e162" eiid="ei2731" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e164" eiid="ei2732" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e165" eiid="ei2733" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e168" eiid="ei2734" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e173" eiid="ei2735" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e174" eiid="ei2736" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e176" eiid="ei2737" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e177" eiid="ei2738" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e178" eiid="ei2739" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e181" eiid="ei2740" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e183" eiid="ei2741" tense="PAST" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e184" eiid="ei2742" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e186" eiid="ei2743" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e187" eiid="ei2744" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="none" />
+<MAKEINSTANCE eid="e188" eiid="ei2745" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e190" eiid="ei2747" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2438" eiid="ei2748" tense="FUTURE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<TLINK lid="l138" relType="BEFORE" from="ei2745" to="t0" />
+<TLINK lid="l136" relType="IDENTITY" from="ei2741" to="ei2737" />
+<TLINK lid="l135" relType="BEFORE" from="ei2736" to="t0" />
+<TLINK lid="l134" relType="IS_INCLUDED" from="ei2726" to="t0" />
+<TLINK lid="l133" relType="BEFORE" from="ei2712" to="t0" />
+<TLINK lid="l132" relType="IS_INCLUDED" from="ei2703" to="ei2702" />
+<TLINK lid="l130" relType="BEFORE" from="ei2695" to="t0" />
+<TLINK lid="l129" relType="IAFTER" from="ei2670" to="ei2671" />
+<TLINK lid="l128" relType="IS_INCLUDED" from="ei2659" to="ei2658" />
+<TLINK lid="l127" relType="IS_INCLUDED" from="ei2748" to="t206" />
+<TLINK lid="l126" relType="IS_INCLUDED" from="ei2640" to="t206" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2637" to="t204" />
+<TLINK lid="l2" relType="AFTER" from="ei2638" to="ei2637" />
+<TLINK lid="l3" relType="INCLUDES" from="ei2638" to="t0" />
+<TLINK lid="l4" relType="BEFORE" from="ei2642" to="ei2643" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei2643" to="t2041" />
+<TLINK lid="l6" relType="BEFORE" from="ei2647" to="t0" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei2647" to="ei2648" />
+<TLINK lid="l8" relType="IDENTITY" from="ei2646" to="ei2650" />
+<TLINK lid="l9" relType="DURING" from="t209" to="ei2650" />
+<TLINK lid="l12" relType="AFTER" from="ei2654" to="ei2653" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei2653" to="t2110" />
+<TLINK lid="l14" relType="INCLUDES" from="ei2655" to="t0" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei2656" to="t218" />
+<TLINK lid="l16" relType="IS_INCLUDED" from="ei2661" to="ei2660" />
+<TLINK lid="l17" relType="IS_INCLUDED" from="ei2664" to="ei2663" />
+<TLINK lid="l18" relType="INCLUDES" from="ei2665" to="ei2661" />
+<TLINK lid="l19" relType="IDENTITY" from="ei2665" to="ei2660" />
+<TLINK lid="l20" relType="BEFORE" from="ei2671" to="ei2669" />
+<TLINK lid="l21" relType="IS_INCLUDED" from="ei2671" to="t222" />
+<TLINK lid="l22" relType="IDENTITY" from="ei2672" to="ei2665" />
+<TLINK lid="l24" relType="IS_INCLUDED" from="ei2677" to="t224" />
+<TLINK lid="l25" relType="IDENTITY" from="ei2678" to="ei2672" />
+<TLINK lid="l27" relType="DURING" from="ei2681" to="t228" />
+<TLINK lid="l28" relType="IDENTITY" from="ei2684" to="ei2678" />
+<TLINK lid="l29" relType="IS_INCLUDED" from="ei2682" to="t229" />
+<TLINK lid="l30" relType="IS_INCLUDED" from="ei2685" to="t232" />
+<TLINK lid="l31" relType="ENDED_BY" from="ei2685" to="t237" />
+<TLINK lid="l32" relType="INCLUDES" from="t238" to="ei2686" />
+<TLINK lid="l33" relType="DURING" from="ei2687" to="t239" />
+<TLINK lid="l34" relType="DURING" from="ei2688" to="t241" />
+<TLINK lid="l35" relType="IDENTITY" from="ei2688" to="ei2689" />
+<TLINK lid="l36" relType="BEFORE" from="ei2690" to="ei2689" />
+<TLINK lid="l37" relType="IDENTITY" from="ei2691" to="ei2647" />
+<TLINK lid="l38" relType="IDENTITY" from="ei2696" to="ei2684" />
+<TLINK lid="l39" relType="SIMULTANEOUS" from="ei2699" to="ei2697" />
+<TLINK lid="l40" relType="BEFORE" from="ei2696" to="ei2701" />
+<TLINK lid="l41" relType="INCLUDES" from="ei2705" to="ei2704" />
+<TLINK lid="l42" relType="INCLUDES" from="t1991" to="ei2708" />
+<TLINK lid="l44" relType="AFTER" from="ei2708" to="t1994" />
+<TLINK lid="l45" relType="IS_INCLUDED" from="ei2710" to="t1994" />
+<TLINK lid="l46" relType="AFTER" from="ei2711" to="t0" />
+<TLINK lid="l47" relType="IS_INCLUDED" from="ei2713" to="t1995" />
+<TLINK lid="l49" relType="IS_INCLUDED" from="ei2719" to="t2000" />
+<TLINK lid="l50" relType="AFTER" from="ei2719" to="t0" />
+<TLINK lid="l51" relType="IDENTITY" from="ei2720" to="ei2716" />
+<TLINK lid="l52" relType="BEFORE" from="ei2722" to="ei2721" />
+<TLINK lid="l53" relType="IS_INCLUDED" from="ei2721" to="t2001" />
+<TLINK lid="l54" relType="SIMULTANEOUS" from="ei2722" to="ei2723" />
+<TLINK lid="l55" relType="IDENTITY" from="ei2724" to="ei2720" />
+<TLINK lid="l56" relType="AFTER" from="ei2728" to="ei2725" />
+<TLINK lid="l57" relType="BEFORE" from="ei2732" to="ei2731" />
+<TLINK lid="l58" relType="IDENTITY" from="ei2733" to="ei2728" />
+<TLINK lid="l59" relType="SIMULTANEOUS" from="ei2737" to="ei2735" />
+<TLINK lid="l60" relType="BEFORE" from="ei2737" to="t0" />
+<TLINK lid="l61" relType="INCLUDES" from="ei2740" to="t0" />
+<TLINK lid="l62" relType="SIMULTANEOUS" from="ei2742" to="ei2743" />
+<TLINK lid="l64" relType="IDENTITY" from="ei2747" to="ei2737" />
+<TLINK lid="l65" relType="IDENTITY" from="ei2747" to="ei2691" />
+<SLINK lid="l125" relType="EVIDENTIAL" from="ei2747" to="ei2745" />
+<SLINK lid="l118" relType="MODAL" from="ei2748" to="ei2640" />
+<SLINK lid="l117" relType="MODAL" from="ei2638" to="ei2748" />
+<SLINK lid="l66" relType="MODAL" from="ei2640" to="ei2641" />
+<SLINK lid="l68" relType="EVIDENTIAL" from="ei2647" to="ei2645" />
+<SLINK lid="l70" relType="MODAL" from="ei2655" to="ei2656" />
+<SLINK lid="l71" relType="EVIDENTIAL" from="ei2660" to="ei2657" />
+<SLINK lid="l72" relType="MODAL" from="ei2657" to="ei2658" />
+<SLINK lid="l73" relType="EVIDENTIAL" from="ei2661" to="ei2662" />
+<SLINK lid="l74" relType="MODAL" from="ei2662" to="ei2663" />
+<SLINK lid="l75" relType="EVIDENTIAL" from="ei2665" to="ei2666" />
+<SLINK lid="l76" relType="MODAL" from="ei2666" to="ei2667" />
+<SLINK lid="l77" relType="MODAL" from="ei2667" to="ei2668" />
+<SLINK lid="l78" relType="EVIDENTIAL" from="ei2672" to="ei2673" />
+<SLINK lid="l79" relType="FACTIVE" from="ei2673" to="ei2674" />
+<SLINK lid="l80" relType="EVIDENTIAL" from="ei2672" to="ei2676" />
+<SLINK lid="l81" relType="MODAL" from="ei2676" to="ei2677" />
+<SLINK lid="l82" relType="EVIDENTIAL" from="ei2678" to="ei2679" />
+<SLINK lid="l84" relType="EVIDENTIAL" from="ei2684" to="ei2682" />
+<SLINK lid="l86" relType="EVIDENTIAL" from="ei2686" to="ei2687" />
+<SLINK lid="l87" relType="EVIDENTIAL" from="ei2691" to="ei2692" />
+<SLINK lid="l89" relType="EVIDENTIAL" from="ei2696" to="ei2697" />
+<SLINK lid="l90" relType="MODAL" from="ei2697" to="ei2698" />
+<SLINK lid="l92" relType="EVIDENTIAL" from="ei2704" to="ei2702" />
+<SLINK lid="l93" relType="EVIDENTIAL" from="ei2705" to="ei2706" />
+<SLINK lid="l94" relType="MODAL" from="ei2706" to="ei2707" />
+<SLINK lid="l95" relType="EVIDENTIAL" from="ei2712" to="ei2711" />
+<SLINK lid="l96" relType="EVIDENTIAL" from="ei2713" to="ei2714" />
+<SLINK lid="l97" relType="MODAL" from="ei2714" to="ei2715" />
+<SLINK lid="l98" relType="EVIDENTIAL" from="ei2716" to="ei2718" />
+<SLINK lid="l99" relType="MODAL" from="ei2718" to="ei2719" />
+<SLINK lid="l100" relType="EVIDENTIAL" from="ei2720" to="ei2722" />
+<SLINK lid="l101" relType="EVIDENTIAL" from="ei2724" to="ei2723" />
+<SLINK lid="l102" relType="MODAL" from="ei2726" to="ei2727" />
+<SLINK lid="l103" relType="EVIDENTIAL" from="ei2728" to="ei2729" />
+<SLINK lid="l104" relType="EVIDENTIAL" from="ei2728" to="ei2730" />
+<SLINK lid="l105" relType="MODAL" from="ei2730" to="ei2731" />
+<SLINK lid="l106" relType="EVIDENTIAL" from="ei2733" to="ei2734" />
+<SLINK lid="l107" relType="FACTIVE" from="ei2737" to="ei2738" />
+<SLINK lid="l108" relType="MODAL" from="ei2738" to="ei2739" />
+<SLINK lid="l109" relType="EVIDENTIAL" from="ei2741" to="ei2742" />
+<SLINK lid="l111" relType="MODAL" from="ei2743" to="ei2744" />
+<ALINK lid="l112" relType="CULMINATES" from="ei2645" to="ei2646" />
+<ALINK lid="l113" relType="CONTINUES" from="ei2658" to="ei2659" />
+<ALINK lid="l114" relType="INITIATES" from="ei2670" to="ei2669" />
+<ALINK lid="l115" relType="CONTINUES" from="ei2677" to="ei2674" />
+<ALINK lid="l116" relType="CONTINUES" from="ei2702" to="ei2703" />
+</TimeML>

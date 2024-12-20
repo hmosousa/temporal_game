@@ -1,0 +1,100 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0558</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0142 = 891030 891030-0142.
+Aetna Life amp Casualty @ Profit Decreased 22% @ In the Third Quarter 10/30/89 WALL STREET JOURNAL (J) AET EARNINGS (ERN) INSURANCE (INS) HARTFORD, Conn.
+</EXTRAINFO>
+<TEXT>Aetna Life amp Casualty Co.'s <TIMEX3 tid="t44" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="30 43" sent_idx="0">third-quarter</TIMEX3> net income <EVENT eid="e1" class="OCCURRENCE" offsets="55 59" sent_idx="0">fell</EVENT> 22% to $182.6 million, or $1.63 a share, reflecting the <EVENT eid="e47" class="STATE" offsets="116 123" sent_idx="0">damages</EVENT> from Hurricane Hugo and lower <EVENT eid="e3" class="STATE" offsets="154 161" sent_idx="0">results</EVENT> for some of the company's major divisions.
+Catastrophe <EVENT eid="e48" class="STATE" offsets="217 223" sent_idx="1">losses</EVENT> <EVENT eid="e4" class="OCCURRENCE" offsets="224 231" sent_idx="1">reduced</EVENT> Aetna's net income by $50 million, including $36 million from Hugo. <TIMEX3 tid="t49" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="300 309" sent_idx="1">Last year</TIMEX3> catastrophe <EVENT eid="e50" class="STATE" offsets="322 328" sent_idx="1">losses</EVENT> totaled $5 million, when <EVENT eid="e7" class="STATE" offsets="354 357" sent_idx="1">net</EVENT> was $235.5 million, or $2.07 a share. The <TIMEX3 tid="t52" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="400 412" sent_idx="1">year-earlier</TIMEX3> <EVENT eid="e8" class="STATE" offsets="413 420" sent_idx="1">results</EVENT> have been <EVENT eid="e9" class="I_ACTION" offsets="431 439" sent_idx="1">restated</EVENT> to <EVENT eid="e11" class="I_STATE" offsets="443 450" sent_idx="1">reflect</EVENT> an accounting <EVENT eid="e12" class="OCCURRENCE" offsets="465 471" sent_idx="1">change</EVENT>.
+The insurer has <EVENT eid="e13" class="ASPECTUAL" offsets="489 496" sent_idx="2">started</EVENT> <EVENT eid="e54" class="OCCURRENCE" offsets="497 507" sent_idx="2">processing</EVENT> <EVENT eid="e14" class="OCCURRENCE" offsets="508 514" sent_idx="2">claims</EVENT> from the Northern California <EVENT eid="e55" class="OCCURRENCE" offsets="544 554" sent_idx="2">earthquake</EVENT> <TIMEX3 tid="t57" type="DATE" value="1989-WXX" mod="EQUAL_OR_LESS" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="555 575" sent_idx="2">nearly two weeks ago</TIMEX3>. But because these claims are more difficult to evaluate and have been <EVENT eid="e18" class="OCCURRENCE" offsets="647 653" sent_idx="2">coming</EVENT> in more slowly, the company <EVENT eid="e19" class="STATE" offsets="682 685" sent_idx="2">has</EVENT> no <EVENT eid="e20" class="I_STATE" offsets="689 697" sent_idx="2">estimate</EVENT> of the <EVENT eid="e21" class="STATE" offsets="705 711" sent_idx="2">impact</EVENT> of the <EVENT eid="e60" class="OCCURRENCE" offsets="719 729" sent_idx="2">earthquake</EVENT> on <TIMEX3 tid="t61" type="DATE" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="733 747" sent_idx="2">fourth-quarter</TIMEX3> <EVENT eid="e22" class="STATE" offsets="748 755" sent_idx="2">results</EVENT>.
+In New York Stock Exchange composite trading <TIMEX3 tid="t63" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="802 808" sent_idx="3">Friday</TIMEX3>, Aetna <EVENT eid="e24" class="OCCURRENCE" offsets="816 822" sent_idx="3">closed</EVENT> at $60, down 50 cents.
+In <TIMEX3 tid="t65" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="849 867" sent_idx="4">the latest quarter</TIMEX3>, Aetna <EVENT eid="e67" class="STATE" offsets="875 878" sent_idx="4">had</EVENT> a $23 million <EVENT eid="e25" class="OCCURRENCE" offsets="893 897" sent_idx="4">loss</EVENT> on its auto/homeowners line, compared with <EVENT eid="e68" class="STATE" offsets="941 949" sent_idx="4">earnings</EVENT> of $33 million <TIMEX3 tid="t69" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t65" offsets="965 974" sent_idx="4">last year</TIMEX3>. Profit for its commercial insurance division <EVENT eid="e28" class="OCCURRENCE" offsets="1021 1025" sent_idx="4">fell</EVENT> 30% to $59 million, reflecting higher catastrophe <EVENT eid="e70" class="OCCURRENCE" offsets="1076 1082" sent_idx="4">losses</EVENT> and the price <EVENT eid="e71" class="OCCURRENCE" offsets="1097 1100" sent_idx="4">war</EVENT> in the property/casualty market for <TIMEX3 tid="t73" type="DURATION" value="P3Y" mod="LESS_THAN" temporalFunction="false" functionInDocument="NONE" offsets="1137 1155" sent_idx="4">nearly three years</TIMEX3>.
+However, Aetna's employee benefits division, which includes its group health insurance operations, <EVENT eid="e34" class="REPORTING" offsets="1256 1262" sent_idx="5">posted</EVENT> a 34% profit <EVENT eid="e74" class="OCCURRENCE" offsets="1276 1280" sent_idx="5">gain</EVENT> to $106 million.
+<TIMEX3 tid="t75" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1298 1311" sent_idx="6">Third-quarter</TIMEX3> <EVENT eid="e35" class="STATE" offsets="1312 1319" sent_idx="6">results</EVENT> included net realized capital <EVENT eid="e76" class="STATE" offsets="1350 1355" sent_idx="6">gains</EVENT> of $48 million, which <EVENT eid="e89" class="STATE" offsets="1378 1386" sent_idx="6">included</EVENT> $27 million from the <EVENT eid="e39" class="OCCURRENCE" offsets="1408 1412" sent_idx="6">sale</EVENT> of Federated Investors in <TIMEX3 tid="t80" type="DATE" value="1989-08" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1439 1445" sent_idx="6">August</TIMEX3> and a $15 million tax credit.
+In <TIMEX3 tid="t81" type="DURATION" value="P9M" temporalFunction="false" functionInDocument="NONE" offsets="1479 1494" sent_idx="7">the nine months</TIMEX3>, net <EVENT eid="e42" class="OCCURRENCE" offsets="1500 1504" sent_idx="7">rose</EVENT> 4.3% to $525.8 million or $4.67 a share, from $504.2 million, or $4.41 a share, <TIMEX3 tid="t85" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1585 1594" sent_idx="7">last year</TIMEX3>.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei1992" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei1994" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei1995" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e48" eiid="ei1996" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e4" eiid="ei1997" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e50" eiid="ei1998" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei1999" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei2000" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei2001" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei2002" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei2003" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei2004" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2005" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2006" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e55" eiid="ei2007" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e18" eiid="ei2008" tense="PRESENT" aspect="PERFECTIVE_PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2009" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2010" tense="NONE" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei2011" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e60" eiid="ei2012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e22" eiid="ei2013" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e24" eiid="ei2014" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2016" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2017" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e68" eiid="ei2018" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e28" eiid="ei2019" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e70" eiid="ei2020" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e71" eiid="ei2021" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e34" eiid="ei2022" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e74" eiid="ei2023" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e35" eiid="ei2024" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e76" eiid="ei2025" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e39" eiid="ei2027" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e42" eiid="ei2028" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e89" eiid="ei2032" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l51" relType="IS_INCLUDED" from="ei2032" to="t75" />
+<TLINK lid="l50" relType="AFTER" from="ei2005" to="ei2007" />
+<TLINK lid="l49" relType="AFTER" from="ei1995" to="ei1992" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="t44" to="t81" />
+<TLINK lid="l2" relType="DURING" from="t44" to="ei1992" />
+<TLINK lid="l3" relType="BEFORE" from="ei1994" to="ei1992" />
+<TLINK lid="l4" relType="AFTER" from="t0" to="ei1992" />
+<TLINK lid="l5" relType="IS_INCLUDED" from="ei1996" to="ei1994" />
+<TLINK lid="l6" relType="BEFORE" from="ei1996" to="ei1997" />
+<TLINK lid="l7" relType="INCLUDES" from="t49" to="ei1998" />
+<TLINK lid="l8" relType="SIMULTANEOUS" from="ei1999" to="ei1998" />
+<TLINK lid="l9" relType="DURING" from="t52" to="ei2000" />
+<TLINK lid="l10" relType="AFTER" from="ei1998" to="ei2000" />
+<TLINK lid="l11" relType="AFTER" from="ei2001" to="ei2003" />
+<TLINK lid="l12" relType="AFTER" from="t0" to="ei2004" />
+<TLINK lid="l13" relType="BEFORE" from="ei2007" to="ei2006" />
+<TLINK lid="l14" relType="INCLUDES" from="t57" to="ei2007" />
+<TLINK lid="l15" relType="BEFORE" from="ei2006" to="ei2004" />
+<TLINK lid="l16" relType="AFTER" from="ei2010" to="ei2008" />
+<TLINK lid="l17" relType="IDENTITY" from="ei2009" to="ei2010" />
+<TLINK lid="l18" relType="BEFORE" from="ei2012" to="ei2011" />
+<TLINK lid="l19" relType="INCLUDES" from="ei2013" to="ei2010" />
+<TLINK lid="l20" relType="DURING" from="t61" to="ei2013" />
+<TLINK lid="l21" relType="IDENTITY" from="ei2012" to="ei2007" />
+<TLINK lid="l22" relType="INCLUDES" from="t63" to="ei2014" />
+<TLINK lid="l24" relType="IDENTITY" from="ei2017" to="ei2016" />
+<TLINK lid="l25" relType="INCLUDES" from="t65" to="ei2016" />
+<TLINK lid="l26" relType="BEFORE" from="t69" to="t65" />
+<TLINK lid="l27" relType="IS_INCLUDED" from="ei2018" to="t69" />
+<TLINK lid="l28" relType="AFTER" from="ei2017" to="ei2018" />
+<TLINK lid="l29" relType="IDENTITY" from="t65" to="t44" />
+<TLINK lid="l30" relType="DURING" from="t65" to="ei2019" />
+<TLINK lid="l31" relType="BEFORE" from="ei2020" to="ei2019" />
+<TLINK lid="l32" relType="BEFORE" from="ei2021" to="ei2019" />
+<TLINK lid="l33" relType="DURING" from="t73" to="ei2021" />
+<TLINK lid="l34" relType="AFTER" from="t0" to="ei2022" />
+<TLINK lid="l35" relType="DURING" from="t75" to="ei2024" />
+<TLINK lid="l36" relType="IDENTITY" from="t44" to="t75" />
+<TLINK lid="l37" relType="IS_INCLUDED" from="ei2025" to="ei2024" />
+<TLINK lid="l38" relType="INCLUDES" from="t80" to="ei2027" />
+<TLINK lid="l39" relType="IS_INCLUDED" from="ei2028" to="t81" />
+<SLINK lid="l47" relType="FACTIVE" from="ei2011" to="ei2012" />
+<SLINK lid="l46" relType="FACTIVE" from="ei2010" to="ei2011" />
+<SLINK lid="l40" relType="FACTIVE" from="ei2001" to="ei2000" />
+<SLINK lid="l41" relType="MODAL" from="ei2001" to="ei2002" />
+<SLINK lid="l42" relType="FACTIVE" from="ei2002" to="ei2003" />
+<SLINK lid="l43" relType="FACTIVE" from="ei2005" to="ei2006" />
+<SLINK lid="l44" relType="EVIDENTIAL" from="ei2022" to="ei2023" />
+<ALINK lid="l45" relType="INITIATES" from="ei2004" to="ei2005" />
+</TimeML>

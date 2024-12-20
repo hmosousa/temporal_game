@@ -1,0 +1,73 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>WSJ_20130318_731</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="2013-03-18" temporalFunction="false" functionInDocument="CREATION_TIME">March 18, 2013</TIMEX3>
+<TITLE>A New Game for Microsoft's Kinect</TITLE>
+<TEXT>Microsoft Corp. <EVENT class="OCCURRENCE" eid="e1" offsets="16 21" sent_idx="0">broke</EVENT> sales records in <TIMEX3 type="DATE" value="2010" tid="t1" offsets="39 43" sent_idx="0">2010</TIMEX3> when it <EVENT class="OCCURRENCE" eid="e2" offsets="52 60" sent_idx="0">released</EVENT> its Kinect - a movement-tracking device that <EVENT class="I_STATE" eid="e3" offsets="106 113" sent_idx="0">enabled</EVENT> Xbox users to play their favorite games through gestures alone, without need of a controller.
+<TIMEX3 type="DATE" value="PRESENT_REF" tid="t1000" offsets="208 211" sent_idx="1">Now</TIMEX3>, with the <EVENT class="OCCURRENCE" eid="e6" offsets="222 226" sent_idx="1">help</EVENT> of outside developers, the software giant is <EVENT class="I_STATE" eid="e7" offsets="272 278" sent_idx="1">hoping</EVENT> to <EVENT class="OCCURRENCE" eid="e8" offsets="282 286" sent_idx="1">move</EVENT> the Kinect beyond gaming.
+Microsoft is <EVENT class="OCCURRENCE" eid="e9" offsets="326 335" sent_idx="2">expanding</EVENT> into China with a company-funded incubator program for outside developers to <EVENT class="OCCURRENCE" eid="e1000" offsets="413 418" sent_idx="2">build</EVENT> products based on Kinect technology for a range of industries including health care and retail.
+In the U.S., 11 companies were <EVENT class="OCCURRENCE" eid="e10" offsets="546 554" sent_idx="3">selected</EVENT> <TIMEX3 type="DATE" value="2012" tid="t2" offsets="555 564" sent_idx="3">last year</TIMEX3> for the accelerator's first <TIMEX3 type="DURATION" value="P3M" tid="t100" offsets="593 604" sent_idx="3">three-month</TIMEX3> class in Seattle, out of nearly 500 applicants. Microsoft <EVENT class="REPORTING" eid="e11" offsets="663 667" sent_idx="3">said</EVENT> it has <EVENT class="OCCURRENCE" eid="e12" offsets="675 685" sent_idx="3">identified</EVENT> three companies for the China program to <EVENT class="OCCURRENCE" eid="e13" offsets="727 730" sent_idx="3">run</EVENT> through <TIMEX3 type="DATE" value="2013-06" tid="t3" offsets="739 743" sent_idx="3">June</TIMEX3>.
+The company <EVENT class="OCCURRENCE" eid="e14" offsets="757 762" sent_idx="4">gives</EVENT> each participating startup in the Seattle program $20,000 to <EVENT class="OCCURRENCE" eid="e15" offsets="824 830" sent_idx="4">create</EVENT> software that can be used with Kinect for Windows, but it is isn't <EVENT class="OCCURRENCE" eid="e17" offsets="898 904" sent_idx="4">asking</EVENT> for any ownership stakes or intellectual property rights. Microsoft also doesn't <EVENT class="STATE" eid="e18" offsets="986 990" sent_idx="4">have</EVENT> any veto power over the ideas.
+What Microsoft <EVENT class="ASPECTUAL" eid="e19" offsets="1037 1041" sent_idx="5">gets</EVENT> are developers around the world <EVENT class="OCCURRENCE" eid="e20" offsets="1074 1081" sent_idx="5">working</EVENT> on ideas that could potentially <EVENT class="ASPECTUAL" eid="e21" offsets="1114 1118" sent_idx="5">open</EVENT> up Kinect for Windows' technology to new markets - and <EVENT class="I_ACTION" eid="e22" offsets="1174 1182" sent_idx="5">convince</EVENT> consumers and businesses to <EVENT class="OCCURRENCE" eid="e23" offsets="1211 1214" sent_idx="5">buy</EVENT> the company's hardware and make <EVENT class="OCCURRENCE" eid="e25" offsets="1247 1250" sent_idx="5">use</EVENT> of the potential apps.
+The Windows-ready Kinect sensor, which would be necessary for any business that <EVENT class="I_STATE" eid="e26" offsets="1354 1359" sent_idx="6">wants</EVENT> to <EVENT class="OCCURRENCE" eid="e27" offsets="1363 1366" sent_idx="6">use</EVENT> these potential new technologies, is <TIMEX3 type="DATE" value="PRESENT_REF" tid="t1001" offsets="1404 1413" sent_idx="6">currently</TIMEX3> selling for <EVENT class="STATE" eid="e28" offsets="1426 1430" sent_idx="6">$250</EVENT> through Microsoft, more than twice what Microsoft charges for the gaming-only Xbox version.</TEXT>
+<MAKEINSTANCE eiid="ei1" eid="e1" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei2" eid="e2" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei3" eid="e3" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei6" eid="e6" pos="NOUN" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei7" eid="e7" pos="VERB" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei8" eid="e8" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei9" eid="e9" pos="VERB" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei1000" eid="e1000" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei10" eid="e10" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei11" eid="e11" pos="VERB" tense="PAST" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei12" eid="e12" pos="VERB" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei13" eid="e13" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei14" eid="e14" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei15" eid="e15" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei17" eid="e17" pos="VERB" tense="PRESENT" aspect="PROGRESSIVE" polarity="NEG" />
+<MAKEINSTANCE eiid="ei18" eid="e18" pos="OTHER" tense="PRESENT" aspect="NONE" polarity="NEG" />
+<MAKEINSTANCE eiid="ei19" eid="e19" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei20" eid="e20" pos="VERB" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" />
+<MAKEINSTANCE eiid="ei21" eid="e21" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei22" eid="e22" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei23" eid="e23" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei25" eid="e25" pos="NOUN" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei26" eid="e26" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei27" eid="e27" pos="VERB" tense="PRESENT" aspect="NONE" polarity="POS" />
+<MAKEINSTANCE eiid="ei28" eid="e28" pos="OTHER" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2" to="t1" />
+<TLINK lid="l2" relType="BEFORE" from="ei1" to="t0" />
+<TLINK lid="l3" relType="BEFORE" from="ei2" to="ei1" />
+<TLINK lid="l4" relType="AFTER" from="ei3" to="ei2" />
+<TLINK lid="l7" relType="INCLUDES" from="ei7" to="t0" />
+<TLINK lid="l1000" relType="SIMULTANEOUS" from="ei7" to="t1000" />
+<TLINK lid="l8" relType="BEFORE" from="ei1" to="ei7" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei6" to="ei7" />
+<TLINK lid="l10" relType="AFTER" from="ei8" to="ei7" />
+<TLINK lid="l11" relType="INCLUDES" from="ei9" to="t0" />
+<TLINK lid="l1001" relType="AFTER" from="ei1000" to="ei9" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei7" to="ei9" />
+<TLINK lid="l13" relType="IS_INCLUDED" from="ei10" to="t2" />
+<TLINK lid="l14" relType="BEFORE" from="ei10" to="t0" />
+<TLINK lid="l15" relType="AFTER" from="ei9" to="ei10" />
+<TLINK lid="l16" relType="ENDED_BY" from="ei13" to="t3" />
+<TLINK lid="l18" relType="SIMULTANEOUS" from="ei10" to="ei12" />
+<TLINK lid="l19" relType="BEFORE" from="ei12" to="ei11" />
+<TLINK lid="l20" relType="AFTER" from="ei13" to="ei11" />
+<TLINK lid="l22" relType="BEFORE" from="ei11" to="ei14" />
+<TLINK lid="l23" relType="AFTER" from="ei15" to="ei14" />
+<TLINK lid="l25" relType="BEFORE" from="ei17" to="ei14" />
+<TLINK lid="l26" relType="INCLUDES" from="ei18" to="t0" />
+<TLINK lid="l27" relType="SIMULTANEOUS" from="ei14" to="ei18" />
+<TLINK lid="l28" relType="INCLUDES" from="ei19" to="t0" />
+<TLINK lid="l29" relType="SIMULTANEOUS" from="ei18" to="ei19" />
+<TLINK lid="l30" relType="IAFTER" from="ei20" to="ei19" />
+<TLINK lid="l31" relType="AFTER" from="ei21" to="ei19" />
+<TLINK lid="l32" relType="AFTER" from="ei22" to="ei21" />
+<TLINK lid="l33" relType="AFTER" from="ei23" to="ei22" />
+<TLINK lid="l35" relType="AFTER" from="ei25" to="ei23" />
+<TLINK lid="l36" relType="INCLUDES" from="ei28" to="t0" />
+<TLINK lid="l37" relType="SIMULTANEOUS" from="ei19" to="ei28" />
+<TLINK lid="l38" relType="AFTER" from="ei26" to="ei28" />
+<TLINK lid="l100" relType="BEFORE" from="t1" to="t0" />
+<TLINK lid="l101" relType="INCLUDES" from="ei28" to="t1001" />
+</TimeML>

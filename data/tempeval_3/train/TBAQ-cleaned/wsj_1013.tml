@@ -1,0 +1,171 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_1013</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-26" temporalFunction="false" functionInDocument="CREATION_TIME">10/26/89</TIMEX3>
+<EXTRAINFO>
+WSJ891026-0043 = 891026 891026-0043.
+Columbia SampL Posts $226.3 Million Loss @ After Writing Down High-Yield Portfolio @ ---- @ By Pauline Yoshihashi @ Staff Reporter of The Wall Street Journal 10/26/89 WALL STREET JOURNAL (J) CSV EARNINGS (ERN) BEVERLY HILLS, Calif.
+</EXTRAINFO>
+<TEXT>Columbia Savings amp Loan Association, <EVENT eid="e1" class="OCCURRENCE" offsets="39 46" sent_idx="0">reeling</EVENT> from thrift-accounting <EVENT eid="e2" class="OCCURRENCE" offsets="70 77" sent_idx="0">changes</EVENT> <EVENT eid="e4" class="OCCURRENCE" offsets="78 86" sent_idx="0">mandated</EVENT> by Congress and the recent <EVENT eid="e5" class="OCCURRENCE" offsets="114 122" sent_idx="0">collapse</EVENT> of the junk-bond market, <EVENT eid="e7" class="REPORTING" offsets="148 157" sent_idx="0">announced</EVENT> a <EVENT eid="e8" class="OCCURRENCE" offsets="160 164" sent_idx="0">loss</EVENT> for <TIMEX3 tid="t164" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="169 186" sent_idx="0">the third quarter</TIMEX3> of $226.3 million, or $11.57 a share.
+For <TIMEX3 tid="t165" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t164" offsets="229 251" sent_idx="1">the quarter a year ago</TIMEX3>, Columbia <EVENT eid="e9" class="REPORTING" offsets="262 270" sent_idx="1">reported</EVENT> earnings of $16.3 million, or 37 cents a share. Total assets <EVENT eid="e10" class="OCCURRENCE" offsets="332 341" sent_idx="1">increased</EVENT> to $12.7 billion in <TIMEX3 tid="t166" type="DATE" value="1989-QX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="362 380" sent_idx="1">the latest quarter</TIMEX3> from $12.4 billion <TIMEX3 tid="t167" type="DATE" value="1988-QX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t166" offsets="400 414" sent_idx="1">a year earlier</TIMEX3>.
+The <EVENT eid="e11" class="OCCURRENCE" offsets="420 424" sent_idx="2">loss</EVENT> <EVENT eid="e12" class="OCCURRENCE" offsets="425 430" sent_idx="2">stems</EVENT> from $357.5 million of <EVENT eid="e168" class="OCCURRENCE" offsets="454 465" sent_idx="2">write-downs</EVENT> on Columbia's $4.4 billion high-yield investment securities portfolio, which includes about $3.7 billion of junk bonds, $400 million of preferred stock, and Treasury securities.
+Columbia <EVENT eid="e15" class="OCCURRENCE" offsets="653 657" sent_idx="3">owes</EVENT> its spectacular <EVENT eid="e2022" class="OCCURRENCE" offsets="674 680" sent_idx="3">growth</EVENT> in <TIMEX3 tid="t169" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="684 696" sent_idx="3">recent years</TIMEX3> to its junk-bond portfolio, the largest of any U.S. thrift. Much of Columbia's junk-bond <EVENT eid="e17" class="OCCURRENCE" offsets="786 793" sent_idx="3">trading</EVENT> has been <EVENT eid="e18" class="OCCURRENCE" offsets="803 807" sent_idx="3">done</EVENT> through the high-yield department of its Beverly Hills neighbor, Drexel Burnham Lambert Inc.
+For <TIMEX3 tid="t170" type="DURATION" value="P9M" temporalFunction="false" functionInDocument="NONE" offsets="905 920" sent_idx="4">the nine months</TIMEX3>, losses <EVENT eid="e19" class="OCCURRENCE" offsets="929 936" sent_idx="4">totaled</EVENT> $212 million, or $10.83 a share, compared with net income of $48.7 million, or $1.11 a share, <TIMEX3 tid="t172" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1031 1045" sent_idx="4">a year earlier</TIMEX3>.
+The results include a $130.2 million write-down of the securities in the high-yield portfolio to the lower of their cost or market value.
+Columbia also <EVENT eid="e26" class="OCCURRENCE" offsets="1199 1204" sent_idx="6">added</EVENT> $227.3 million to reserves for <EVENT eid="e1990" class="OCCURRENCE" offsets="1236 1242" sent_idx="6">losses</EVENT> on the portfolio, <EVENT eid="e29" class="OCCURRENCE" offsets="1261 1271" sent_idx="6">increasing</EVENT> general reserves to $300 million, or about 6.7% of the total portfolio, as of <TIMEX3 tid="t1991" type="DATE" value="1989-09-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1350 1358" sent_idx="6">Sept. 30</TIMEX3>. On <TIMEX3 tid="t1992" type="DATE" value="1989-06-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1363 1370" sent_idx="6">June 30</TIMEX3>, loss reserves <EVENT eid="e31" class="OCCURRENCE" offsets="1386 1391" sent_idx="6">stood</EVENT> at $108.3 million. Thrift officials <EVENT eid="e32" class="REPORTING" offsets="1428 1432" sent_idx="6">said</EVENT> the $300 million reserve will be <EVENT eid="e33" class="OCCURRENCE" offsets="1466 1474" sent_idx="6">adjusted</EVENT> quarterly and will <EVENT eid="e34" class="OCCURRENCE" offsets="1494 1501" sent_idx="6">reflect</EVENT> the rate of dispositions and market conditions.
+The adjustments <EVENT eid="e37" class="OCCURRENCE" offsets="1566 1572" sent_idx="7">result</EVENT> from the recently <EVENT eid="e1993" class="OCCURRENCE" offsets="1591 1597" sent_idx="7">passed</EVENT> thrift-industry bailout legislation, which <EVENT eid="e40" class="OCCURRENCE" offsets="1641 1649" sent_idx="7">requires</EVENT> thrifts to <EVENT eid="e42" class="OCCURRENCE" offsets="1661 1667" sent_idx="7">divest</EVENT> all high-yield bond investments by <TIMEX3 tid="t1994" type="DATE" value="1994" temporalFunction="false" functionInDocument="NONE" offsets="1703 1707" sent_idx="7">1994</TIMEX3>. Previously, Columbia didn't have to <EVENT eid="e47" class="OCCURRENCE" offsets="1745 1751" sent_idx="7">adjust</EVENT> the book value of its junk-bond holdings to <EVENT eid="e50" class="OCCURRENCE" offsets="1796 1803" sent_idx="7">reflect</EVENT> <EVENT eid="e1997" class="OCCURRENCE" offsets="1804 1812" sent_idx="7">declines</EVENT> in market prices, because it <EVENT eid="e52" class="OCCURRENCE" offsets="1842 1846" sent_idx="7">held</EVENT> the bonds as long-term investments. Because Columbia <TIMEX3 tid="t2151" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1900 1903" sent_idx="7">now</TIMEX3> must <EVENT eid="e55" class="OCCURRENCE" offsets="1909 1913" sent_idx="7">sell</EVENT> the bonds within <TIMEX3 tid="t1999" type="DURATION" value="P5Y" temporalFunction="false" functionInDocument="NONE" offsets="1931 1941" sent_idx="7">five years</TIMEX3>, accounting rules <EVENT eid="e58" class="OCCURRENCE" offsets="1960 1967" sent_idx="7">require</EVENT> the thrift to <EVENT eid="e60" class="OCCURRENCE" offsets="1982 1987" sent_idx="7">value</EVENT> the bonds at the lower of cost or market prices.
+For its future strategy, Columbia officials <EVENT eid="e62" class="REPORTING" offsets="2081 2085" sent_idx="8">said</EVENT> the thrift may <EVENT eid="e2000" class="OCCURRENCE" offsets="2101 2107" sent_idx="8">branch</EVENT> out into commercial lending or managing outside investments, as well as <EVENT eid="e67" class="OCCURRENCE" offsets="2180 2187" sent_idx="8">beefing</EVENT> up more traditional thrift activities.
+The quarterly results also <EVENT eid="e70" class="OCCURRENCE" offsets="2254 2263" sent_idx="9">reflected</EVENT> $21.4 million in non-recurring losses from commercial real-estate activities in California.
+Thomas Spiegel, Columbia's chairman, <EVENT eid="e73" class="REPORTING" offsets="2393 2397" sent_idx="10">said</EVENT> in a statement that the thrift was " <EVENT eid="e76" class="OCCURRENCE" offsets="2435 2447" sent_idx="10">disappointed</EVENT>" by the effects of the accounting <EVENT eid="e77" class="OCCURRENCE" offsets="2482 2489" sent_idx="10">changes</EVENT>. But he <EVENT eid="e78" class="REPORTING" offsets="2498 2502" sent_idx="10">said</EVENT> Columbia <EVENT eid="e79" class="STATE" offsets="2512 2519" sent_idx="10">remains</EVENT> "one of the most strongly capitalized thrifts in the industry," based on the economic value of its assets and tangible capital.
+Columbia <EVENT eid="e84" class="REPORTING" offsets="2657 2666" sent_idx="11">announced</EVENT> the results after the <EVENT eid="e2002" class="OCCURRENCE" offsets="2689 2694" sent_idx="11">close</EVENT> of the stock market. Its shares <EVENT eid="e87" class="OCCURRENCE" offsets="2727 2733" sent_idx="11">closed</EVENT> at $5.125 each in composite New York Stock Exchange trading, down 37.5 cents. The price of Columbia shares has been <EVENT eid="e88" class="OCCURRENCE" offsets="2850 2853" sent_idx="11">cut</EVENT> nearly in half since <TIMEX3 tid="t2004" type="DATE" value="1989-08" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2875 2881" sent_idx="11">August</TIMEX3>, when they <EVENT eid="e91" class="OCCURRENCE" offsets="2893 2899" sent_idx="11">traded</EVENT> at about $10, as investors apparently <EVENT eid="e92" class="OCCURRENCE" offsets="2938 2946" sent_idx="11">realized</EVENT> that the thrift would be <EVENT eid="e93" class="OCCURRENCE" offsets="2972 2978" sent_idx="11">forced</EVENT> to <EVENT eid="e96" class="OCCURRENCE" offsets="2982 2986" sent_idx="11">take</EVENT> a big write-down. The stock's <EVENT eid="e2006" class="OCCURRENCE" offsets="3017 3024" sent_idx="11">decline</EVENT> <EVENT eid="e97" class="OCCURRENCE" offsets="3025 3036" sent_idx="11">accelerated</EVENT> in <TIMEX3 tid="t2007" type="DURATION" value="P2W" temporalFunction="true" functionInDocument="NONE" endPoint="t0" offsets="3040 3058" sent_idx="11">the past two weeks</TIMEX3>, from a price of $8 a share on <TIMEX3 tid="t2009" type="DATE" value="1989-10-09" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3090 3096" sent_idx="11">Oct. 9</TIMEX3>.
+Columbia officials <EVENT eid="e99" class="REPORTING" offsets="3117 3121" sent_idx="12">said</EVENT> they don't <EVENT eid="e100" class="OCCURRENCE" offsets="3133 3137" sent_idx="12">know</EVENT> how quickly they will <EVENT eid="e102" class="OCCURRENCE" offsets="3160 3167" sent_idx="12">dispose</EVENT> of the thrift's junk bonds, because federal regulations, such as those that would <EVENT eid="e105" class="OCCURRENCE" offsets="3250 3255" sent_idx="12">allow</EVENT> thrifts to <EVENT eid="e108" class="ASPECTUAL" offsets="3267 3275" sent_idx="12">continue</EVENT> <EVENT eid="e109" class="OCCURRENCE" offsets="3276 3283" sent_idx="12">holding</EVENT> the bonds in separately capitalized subsidiaries, haven't yet been <EVENT eid="e111" class="ASPECTUAL" offsets="3351 3360" sent_idx="12">completed</EVENT>.
+Columbia officials also <EVENT eid="e113" class="REPORTING" offsets="3386 3390" sent_idx="13">said</EVENT> the thrift shouldn't <EVENT eid="e114" class="OCCURRENCE" offsets="3412 3416" sent_idx="13">face</EVENT> problems meeting regulatory capital requirements, despite the large reserves and write-downs and stiffer regulatory requirements that should be in place by <TIMEX3 tid="t2012" type="DATE" value="1989" mod="END" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3573 3583" sent_idx="13">year's end</TIMEX3>. Its ratio of tangible equity to total assets as of <TIMEX3 tid="t2013" type="DATE" value="1989-09-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="3636 3644" sent_idx="13">Sept. 30</TIMEX3> was 3.6%, and total equity was $457.9 million.
+The thrift <EVENT eid="e124" class="REPORTING" offsets="3703 3713" sent_idx="14">emphasized</EVENT> that it <EVENT eid="e125" class="STATE" offsets="3722 3725" sent_idx="14">has</EVENT> a large portfolio of equity securities <EVENT eid="e128" class="OCCURRENCE" offsets="3765 3771" sent_idx="14">issued</EVENT> in connection with corporate restructurings and leveraged <EVENT eid="e2015" class="OCCURRENCE" offsets="3830 3838" sent_idx="14">buy-outs</EVENT>, which <EVENT eid="e130" class="STATE" offsets="3846 3849" sent_idx="14">has</EVENT> a book value of $90 million.
+Although many of the transactions related to those securities haven't been <EVENT eid="e134" class="OCCURRENCE" offsets="3954 3963" sent_idx="15">completed</EVENT>, Columbia <EVENT eid="e136" class="REPORTING" offsets="3974 3978" sent_idx="15">said</EVENT> the ultimate gain on the <EVENT eid="e137" class="OCCURRENCE" offsets="4004 4008" sent_idx="15">sale</EVENT> of those assets will <EVENT eid="e139" class="STATE" offsets="4030 4035" sent_idx="15">range</EVENT> from $200 million to $300 million. Columbia also <EVENT eid="e140" class="STATE" offsets="4085 4088" sent_idx="15">has</EVENT> unrealized gains in its public equity securities portfolio of more than $70 million.
+David B. Hilder in New York <EVENT eid="e143" class="OCCURRENCE" offsets="4202 4213" sent_idx="16">contributed</EVENT> to this article.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2412" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei2413" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e4" eiid="ei2414" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei2415" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei2416" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei2417" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e9" eiid="ei2418" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei2419" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei2422" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e12" eiid="ei2423" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e168" eiid="ei2424" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e15" eiid="ei2426" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2022" eiid="ei2427" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e17" eiid="ei2428" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e18" eiid="ei2429" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei2430" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2435" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1990" eiid="ei2436" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e29" eiid="ei2437" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e31" eiid="ei2439" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei2440" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei2441" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei2442" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei2446" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1993" eiid="ei2447" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e40" eiid="ei2448" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2449" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei2451" tense="PAST" aspect="NONE" polarity="NEG" pos="VERB" modality="have to" />
+<MAKEINSTANCE eid="e50" eiid="ei2452" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1997" eiid="ei2453" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e52" eiid="ei2454" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e55" eiid="ei2455" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="must" />
+<MAKEINSTANCE eid="e58" eiid="ei2456" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei2457" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei2458" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2000" eiid="ei2459" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei2462" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e70" eiid="ei2465" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e73" eiid="ei2468" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e76" eiid="ei2470" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e77" eiid="ei2471" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e78" eiid="ei2472" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e79" eiid="ei2473" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e84" eiid="ei2475" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2002" eiid="ei2477" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e87" eiid="ei2478" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e88" eiid="ei2479" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e91" eiid="ei2480" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e92" eiid="ei2481" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e93" eiid="ei2482" tense="NONE" aspect="PERFECTIVE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e96" eiid="ei2483" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2006" eiid="ei2485" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e97" eiid="ei2486" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e99" eiid="ei2488" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e100" eiid="ei2489" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei2490" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e105" eiid="ei2491" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e108" eiid="ei2492" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e109" eiid="ei2493" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e111" eiid="ei2494" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e113" eiid="ei2495" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e114" eiid="ei2496" tense="NONE" aspect="NONE" polarity="NEG" pos="VERB" modality="should" />
+<MAKEINSTANCE eid="e124" eiid="ei2502" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e125" eiid="ei2503" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e128" eiid="ei2504" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2015" eiid="ei2505" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e130" eiid="ei2506" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e134" eiid="ei2508" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e136" eiid="ei2509" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e137" eiid="ei2511" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e139" eiid="ei2512" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e140" eiid="ei2513" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e143" eiid="ei2515" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l111" relType="IDENTITY" from="ei2509" to="ei2495" />
+<TLINK lid="l106" relType="IS_INCLUDED" from="ei2494" to="t0" />
+<TLINK lid="l105" relType="IS_INCLUDED" from="ei2491" to="ei2493" />
+<TLINK lid="l104" relType="BEFORE" from="ei2488" to="t0" />
+<TLINK lid="l103" relType="INCLUDES" from="ei2493" to="ei2492" />
+<TLINK lid="l102" relType="AFTER" from="ei2482" to="t2004" />
+<TLINK lid="l101" relType="BEFORE" from="ei2458" to="t0" />
+<TLINK lid="l99" relType="IS_INCLUDED" from="ei2448" to="t0" />
+<TLINK lid="l98" relType="BEFORE" from="ei2440" to="t0" />
+<TLINK lid="l1" relType="BEFORE" from="ei2515" to="t0" />
+<TLINK lid="l2" relType="BEFORE" from="t165" to="t164" />
+<TLINK lid="l3" relType="AFTER" from="ei2418" to="t165" />
+<TLINK lid="l4" relType="BEFORE" from="ei2412" to="t0" />
+<TLINK lid="l5" relType="BEFORE" from="ei2413" to="ei2412" />
+<TLINK lid="l6" relType="BEFORE" from="ei2414" to="ei2413" />
+<TLINK lid="l7" relType="BEFORE" from="ei2415" to="ei2412" />
+<TLINK lid="l8" relType="INCLUDES" from="ei2412" to="ei2416" />
+<TLINK lid="l9" relType="ENDED_BY" from="t164" to="ei2417" />
+<TLINK lid="l10" relType="ENDS" from="ei2419" to="t166" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei2423" to="ei2422" />
+<TLINK lid="l12" relType="BEFORE" from="ei2424" to="ei2422" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei2427" to="t169" />
+<TLINK lid="l15" relType="DURING" from="ei2426" to="t0" />
+<TLINK lid="l16" relType="SIMULTANEOUS" from="ei2428" to="ei2429" />
+<TLINK lid="l17" relType="DURING" from="ei2428" to="t0" />
+<TLINK lid="l18" relType="ENDED_BY" from="t170" to="ei2430" />
+<TLINK lid="l20" relType="AFTER" from="ei2435" to="ei2436" />
+<TLINK lid="l21" relType="SIMULTANEOUS" from="ei2437" to="ei2435" />
+<TLINK lid="l22" relType="IS_INCLUDED" from="ei2439" to="t1992" />
+<TLINK lid="l27" relType="BEFORE" from="ei2449" to="t1994" />
+<TLINK lid="l28" relType="BEFORE" from="ei2453" to="ei2452" />
+<TLINK lid="l29" relType="BEFORE" from="ei2454" to="ei2451" />
+<TLINK lid="l30" relType="DURING" from="ei2455" to="t2151" />
+<TLINK lid="l31" relType="IS_INCLUDED" from="ei2455" to="t1999" />
+<TLINK lid="l32" relType="BEGUN_BY" from="t1999" to="t0" />
+<TLINK lid="l33" relType="DURING" from="ei2456" to="t0" />
+<TLINK lid="l36" relType="BEFORE" from="ei2459" to="ei2462" />
+<TLINK lid="l42" relType="BEFORE" from="ei2471" to="ei2470" />
+<TLINK lid="l44" relType="AFTER" from="ei2475" to="ei2477" />
+<TLINK lid="l45" relType="IDENTITY" from="ei2478" to="ei2477" />
+<TLINK lid="l46" relType="AFTER" from="ei2479" to="t2004" />
+<TLINK lid="l47" relType="INCLUDES" from="t2004" to="ei2480" />
+<TLINK lid="l48" relType="BEFORE" from="ei2481" to="ei2479" />
+<TLINK lid="l50" relType="INCLUDES" from="ei2485" to="ei2486" />
+<TLINK lid="l51" relType="IS_INCLUDED" from="ei2486" to="t2007" />
+<TLINK lid="l54" relType="AFTER" from="ei2490" to="t0" />
+<TLINK lid="l57" relType="BEFORE" from="ei2504" to="ei2503" />
+<TLINK lid="l58" relType="BEFORE" from="ei2505" to="ei2503" />
+<TLINK lid="l59" relType="DURING" from="ei2506" to="ei2502" />
+<TLINK lid="l61" relType="DURING" from="ei2513" to="t0" />
+<SLINK lid="l92" relType="MODAL" from="ei2489" to="ei2490" />
+<SLINK lid="l91" relType="FACTIVE" from="ei2481" to="ei2482" />
+<SLINK lid="l90" relType="FACTIVE" from="ei2470" to="ei2471" />
+<SLINK lid="l87" relType="FACTIVE" from="ei2452" to="ei2453" />
+<SLINK lid="l84" relType="FACTIVE" from="ei2426" to="ei2427" />
+<SLINK lid="l83" relType="FACTIVE" from="ei2412" to="ei2415" />
+<SLINK lid="l82" relType="FACTIVE" from="ei2412" to="ei2413" />
+<SLINK lid="l63" relType="EVIDENTIAL" from="ei2416" to="ei2417" />
+<SLINK lid="l64" relType="EVIDENTIAL" from="ei2440" to="ei2441" />
+<SLINK lid="l65" relType="EVIDENTIAL" from="ei2440" to="ei2442" />
+<SLINK lid="l66" relType="MODAL" from="ei2448" to="ei2449" />
+<SLINK lid="l67" relType="MODAL" from="ei2451" to="ei2452" />
+<SLINK lid="l68" relType="MODAL" from="ei2456" to="ei2457" />
+<SLINK lid="l69" relType="EVIDENTIAL" from="ei2458" to="ei2459" />
+<SLINK lid="l70" relType="EVIDENTIAL" from="ei2468" to="ei2470" />
+<SLINK lid="l71" relType="EVIDENTIAL" from="ei2472" to="ei2473" />
+<SLINK lid="l73" relType="MODAL" from="ei2482" to="ei2483" />
+<SLINK lid="l74" relType="EVIDENTIAL" from="ei2488" to="ei2489" />
+<SLINK lid="l75" relType="MODAL" from="ei2491" to="ei2492" />
+<SLINK lid="l76" relType="EVIDENTIAL" from="ei2495" to="ei2496" />
+<SLINK lid="l77" relType="EVIDENTIAL" from="ei2502" to="ei2503" />
+<SLINK lid="l78" relType="EVIDENTIAL" from="ei2509" to="ei2512" />
+<ALINK lid="l80" relType="CONTINUES" from="ei2492" to="ei2493" />
+</TimeML>

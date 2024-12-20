@@ -1,0 +1,53 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>PRI19980205.2000.1890</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-02-05" temporalFunction="false" functionInDocument="CREATION_TIME">19980205</TIMEX3>
+<EXTRAINFO>
+PRI19980205.2000.1890 NEWS STORY
+</EXTRAINFO>
+<TEXT>The US is <EVENT eid="e1" class="OCCURRENCE" offsets="10 20" sent_idx="0">bolstering</EVENT> its military presence in the gulf, as President Clinton <EVENT eid="e2" class="I_ACTION" offsets="77 86" sent_idx="0">discussed</EVENT> the Iraq <EVENT eid="e32" class="OCCURRENCE" offsets="96 102" sent_idx="0">crisis</EVENT> with the one ally who has <EVENT eid="e3" class="I_ACTION" offsets="129 135" sent_idx="0">backed</EVENT> his <EVENT eid="e4" class="OCCURRENCE" offsets="140 146" sent_idx="0">threat</EVENT> of force, British prime minister Tony Blair. The World's Nancy Marshall reports on Mr. Blair's current visit to Washington and the special relationship between the two leaders.
+President Clinton <EVENT eid="e6" class="OCCURRENCE" offsets="342 348" sent_idx="1">rolled</EVENT> out the red carpet for prime minister Blair, <EVENT eid="e7" class="OCCURRENCE" offsets="394 403" sent_idx="1">welcoming</EVENT> him not only as a close ally, but a close friend.
+<EVENT eid="e8" class="OCCURRENCE" offsets="454 460" sent_idx="2">Posing</EVENT> for photographers with Clinton, Blair <EVENT eid="e9" class="I_ACTION" offsets="499 506" sent_idx="2">pledged</EVENT> to <EVENT eid="e11" class="I_STATE" offsets="510 515" sent_idx="2">stand</EVENT> united with the president against Iraq, <EVENT eid="e13" class="I_ACTION" offsets="556 563" sent_idx="2">warning</EVENT> Saddam Hussein that the <EVENT eid="e14" class="OCCURRENCE" offsets="588 594" sent_idx="2">threat</EVENT> of force is real. The British aircraft carrier invincible is <TIMEX3 tid="t36" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="656 659" sent_idx="2">now</TIMEX3> <EVENT eid="e34" class="OCCURRENCE" offsets="660 670" sent_idx="2">patrolling</EVENT> the Persian Gulf alongside three US vessels. Washington and London are virtually alone in warning Iraq of military <EVENT eid="e19" class="OCCURRENCE" offsets="786 793" sent_idx="2">strikes</EVENT> if it doesn't <EVENT eid="e21" class="OCCURRENCE" offsets="808 812" sent_idx="2">back</EVENT> down on the weapons inspection issue. President Clinton <EVENT eid="e24" class="REPORTING" offsets="869 873" sent_idx="2">says</EVENT> he and Blair will <EVENT eid="e38" class="STATE" offsets="892 897" sent_idx="2">stand</EVENT> together not just on Iraq but also on <EVENT eid="e27" class="OCCURRENCE" offsets="936 945" sent_idx="2">arresting</EVENT> the terrorists <EVENT eid="e28" class="I_STATE" offsets="961 970" sent_idx="2">suspected</EVENT> of <EVENT eid="e29" class="OCCURRENCE" offsets="974 981" sent_idx="2">blowing</EVENT> up Pan Am flight one oh three over Scotland. For The World I'm Nancy Marshall in Washington.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei158" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei159" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei160" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei161" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei162" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e6" eiid="ei163" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei164" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei165" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei166" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei167" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei168" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei169" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e34" eiid="ei171" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei174" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei175" tense="PRESENT" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei176" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei177" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei178" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei179" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e29" eiid="ei180" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="BEFORE" from="ei180" to="ei179" />
+<TLINK lid="l2" relType="INCLUDES" from="ei158" to="t0" />
+<TLINK lid="l3" relType="AFTER" from="ei158" to="ei159" />
+<TLINK lid="l4" relType="AFTER" from="ei159" to="ei161" />
+<TLINK lid="l5" relType="BEFORE" from="ei162" to="ei161" />
+<TLINK lid="l6" relType="BEFORE" from="ei162" to="ei159" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei163" to="ei159" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei164" to="ei159" />
+<TLINK lid="l9" relType="SIMULTANEOUS" from="ei164" to="ei163" />
+<TLINK lid="l10" relType="SIMULTANEOUS" from="ei165" to="ei166" />
+<TLINK lid="l11" relType="SIMULTANEOUS" from="ei168" to="ei166" />
+<TLINK lid="l12" relType="BEFORE" from="ei169" to="ei168" />
+<TLINK lid="l13" relType="DURING" from="ei171" to="t36" />
+<TLINK lid="l16" relType="BEFORE" from="ei175" to="ei174" />
+<TLINK lid="l17" relType="AFTER" from="ei176" to="ei163" />
+<TLINK lid="l18" relType="DURING" from="ei177" to="ei178" />
+<TLINK lid="l19" relType="AFTER" from="ei178" to="ei179" />
+<SLINK lid="l20" relType="CONDITIONAL" from="ei175" to="ei174" />
+<SLINK lid="l21" relType="FACTIVE" from="ei159" to="ei160" />
+<SLINK lid="l22" relType="FACTIVE" from="ei161" to="ei162" />
+<SLINK lid="l23" relType="MODAL" from="ei166" to="ei167" />
+<SLINK lid="l26" relType="EVIDENTIAL" from="ei176" to="ei177" />
+<SLINK lid="l27" relType="MODAL" from="ei179" to="ei180" />
+</TimeML>

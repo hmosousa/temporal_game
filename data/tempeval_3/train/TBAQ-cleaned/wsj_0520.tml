@@ -1,0 +1,88 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0520</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0181 = 891030 891030-0181.
+Dutch Firm Seeks @ To Buy Up to 25% @ Of Nashua's Stock @ ---- @ By Lawrence Ingrassia @ Staff Reporter of The Wall Street Journal 10/30/89 WALL STREET JOURNAL (J) NSH TENDER OFFERS, MERGERS, ACQUISITIONS (TNM) BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) NASHUA, N.H.
+</EXTRAINFO>
+<TEXT>Nashua Corp., <EVENT eid="e1" class="STATE" offsets="14 21" sent_idx="0">rumored</EVENT> a potential takeover target for <TIMEX3 tid="t77" type="DURATION" value="P6M" temporalFunction="false" functionInDocument="NONE" offsets="54 64" sent_idx="0">six months</TIMEX3>, <EVENT eid="e3" class="REPORTING" offsets="66 70" sent_idx="0">said</EVENT> that a Dutch company has <EVENT eid="e4" class="I_ACTION" offsets="96 102" sent_idx="0">sought</EVENT> U.S. <EVENT eid="e5" class="I_STATE" offsets="108 116" sent_idx="0">approval</EVENT> to <EVENT eid="e7" class="OCCURRENCE" offsets="120 123" sent_idx="0">buy</EVENT> up to 25% of Nashua's shares.
+Nashua immediately <EVENT eid="e8" class="OCCURRENCE" offsets="173 182" sent_idx="1">responded</EVENT> by <EVENT eid="e9" class="OCCURRENCE" offsets="186 199" sent_idx="1">strengthening</EVENT> a poison-pill plan and <EVENT eid="e10" class="REPORTING" offsets="223 229" sent_idx="1">saying</EVENT> it will <EVENT eid="e11" class="OCCURRENCE" offsets="238 241" sent_idx="1">buy</EVENT> back up to one million of its shares, or 10.4% of the 9.6 million outstanding.
+Nashua, whose major business is selling copiers, facsimile machines and related supplies, <EVENT eid="e15" class="REPORTING" offsets="411 415" sent_idx="2">said</EVENT> Reiss amp Co. B.V. of the Netherlands <EVENT eid="e16" class="OCCURRENCE" offsets="454 459" sent_idx="2">filed</EVENT> a request with the Federal Trade Commission under the Hart-Scott-Rodino Act for permission to <EVENT eid="e20" class="OCCURRENCE" offsets="554 557" sent_idx="2">buy</EVENT> more than $15 million of Nashua's stock but less than 25%.
+Previously, an affiliate of Unicorp Canada <EVENT eid="e21" class="OCCURRENCE" offsets="660 669" sent_idx="3">disclosed</EVENT> a stake of less than 5% in Nashua, <EVENT eid="e80" class="REPORTING" offsets="705 714" sent_idx="3">according</EVENT> to Daniel M. Junius, Nashua's treasurer.
+Nashua's stock has <EVENT eid="e23" class="OCCURRENCE" offsets="775 785" sent_idx="4">fluctuated</EVENT> sharply on takeover speculation, <EVENT eid="e26" class="OCCURRENCE" offsets="819 825" sent_idx="4">rising</EVENT> to a high for <TIMEX3 tid="t88" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="840 848" sent_idx="4">the year</TIMEX3> of $42.875 a share in <TIMEX3 tid="t89" type="DATE" value="1989-06" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="871 875" sent_idx="4">June</TIMEX3> from $29.75 in <TIMEX3 tid="t90" type="DATE" value="1989-03" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="891 896" sent_idx="4">March</TIMEX3>.
+But the company has <EVENT eid="e91" class="STATE" offsets="918 921" sent_idx="5">had</EVENT> weak results so far <TIMEX3 tid="t92" type="DATE" value="1989-10-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="942 951" sent_idx="5">this year</TIMEX3>, with earnings <EVENT eid="e28" class="OCCURRENCE" offsets="967 976" sent_idx="5">declining</EVENT> 43% to $13.7 million, or $1.43 a share, on a 4% decline in revenue to $713.5 million through <TIMEX3 tid="t100" type="DURATION" value="P9M" temporalFunction="false" functionInDocument="NONE" offsets="1070 1091" sent_idx="5">the first nine months</TIMEX3> of <TIMEX3 tid="t1000" type="DATE" value="1989" temporalFunction="true" anchorTimeID="t0" offsets="1095 1103" sent_idx="5">the year</TIMEX3>.
+Its stock has <EVENT eid="e30" class="OCCURRENCE" offsets="1119 1126" sent_idx="6">slumped</EVENT> <TIMEX3 tid="t101" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1127 1135" sent_idx="6">recently</TIMEX3>, <EVENT eid="e31" class="OCCURRENCE" offsets="1137 1144" sent_idx="6">closing</EVENT> unchanged <TIMEX3 tid="t103" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1155 1161" sent_idx="6">Friday</TIMEX3> at $29 a share in composite trading on the New York Stock Exchange; at that price, the company has a market value of about $278.4 million. Nashua <EVENT eid="e35" class="I_ACTION" offsets="1308 1317" sent_idx="6">announced</EVENT> the Reiss <EVENT eid="e104" class="OCCURRENCE" offsets="1328 1335" sent_idx="6">request</EVENT> after the market <EVENT eid="e38" class="ASPECTUAL" offsets="1353 1359" sent_idx="6">closed</EVENT>.
+Mr. Junius <EVENT eid="e39" class="REPORTING" offsets="1372 1376" sent_idx="7">said</EVENT> Nashua's "intention is to <EVENT eid="e41" class="STATE" offsets="1403 1409" sent_idx="7">remain</EVENT> an independent public company." The company <EVENT eid="e42" class="REPORTING" offsets="1454 1458" sent_idx="7">said</EVENT> it <EVENT eid="e43" class="OCCURRENCE" offsets="1462 1469" sent_idx="7">amended</EVENT> its shareholder rights plan by <EVENT eid="e45" class="OCCURRENCE" offsets="1501 1509" sent_idx="7">reducing</EVENT> to 10% from 20% the level of ownership by an outsider that would trigger the issuance to other holders of rights to buy additional shares of Nashua common at half price.
+In addition, the company's board <EVENT eid="e53" class="I_ACTION" offsets="1713 1723" sent_idx="8">authorized</EVENT> the <EVENT eid="e54" class="OCCURRENCE" offsets="1728 1736" sent_idx="8">purchase</EVENT> of up to an additional one million shares. Under a program <EVENT eid="e56" class="I_ACTION" offsets="1796 1804" sent_idx="8">approved</EVENT> by the company in <TIMEX3 tid="t109" type="DATE" value="1987" temporalFunction="false" functionInDocument="NONE" offsets="1823 1827" sent_idx="8">1987</TIMEX3> that didn't specify a share amount, Nashua had <EVENT eid="e59" class="OCCURRENCE" offsets="1875 1884" sent_idx="8">purchased</EVENT> 481,000 shares through <TIMEX3 tid="t111" type="DATE" value="1989-09-29" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1908 1916" sent_idx="8">Sept. 29</TIMEX3>.
+Alex Henderson, an analyst at Prudential-Bache Securities, <EVENT eid="e60" class="REPORTING" offsets="1977 1981" sent_idx="9">said</EVENT> that while Nashua's performance <TIMEX3 tid="t112" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2014 2023" sent_idx="9">this year</TIMEX3> has been "atrocious," the company nonetheless is attractive as a "classic breakup candidate because there's no similarity between its {four} businesses." He <EVENT eid="e65" class="I_ACTION" offsets="2181 2190" sent_idx="9">estimated</EVENT> the breakup value at $55 a share. In addition to selling Japanese-made photocopiers and facsimile machines in Europe and copier supplies in the U.S., Nashua has three other major businesses: labels and tapes, data storage disks for computers and mail-order photofinishing.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei1990" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei1991" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei1992" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei1993" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei1994" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei1995" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei1996" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei1997" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei1998" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei1999" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei2000" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2003" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei2004" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei2005" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2006" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2007" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e91" eiid="ei2010" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei2013" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei2017" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e31" eiid="ei2018" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei2020" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e104" eiid="ei2021" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e38" eiid="ei2023" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e39" eiid="ei2024" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei2026" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei2027" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei2028" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2029" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e53" eiid="ei2030" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2031" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e56" eiid="ei2033" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e59" eiid="ei2034" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei2035" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e65" eiid="ei2037" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l56" relType="BEFORE" from="ei2030" to="t0" />
+<TLINK lid="l53" relType="IS_INCLUDED" from="ei2013" to="t92" />
+<TLINK lid="l50" relType="IS_INCLUDED" from="ei2005" to="t0" />
+<TLINK lid="l1" relType="BEGINS" from="t100" to="t1000" />
+<TLINK lid="l2" relType="BEFORE" from="ei1991" to="t0" />
+<TLINK lid="l3" relType="BEFORE" from="ei1990" to="t0" />
+<TLINK lid="l4" relType="DURING" from="ei1990" to="t77" />
+<TLINK lid="l5" relType="IAFTER" from="ei1995" to="ei1991" />
+<TLINK lid="l6" relType="IDENTITY" from="ei1995" to="ei1996" />
+<TLINK lid="l7" relType="IDENTITY" from="ei1995" to="ei1997" />
+<TLINK lid="l8" relType="IDENTITY" from="ei1999" to="ei1997" />
+<TLINK lid="l9" relType="BEFORE" from="ei2004" to="ei2000" />
+<TLINK lid="l10" relType="BEFORE" from="ei2006" to="t0" />
+<TLINK lid="l11" relType="INCLUDES" from="ei2006" to="ei2007" />
+<TLINK lid="l14" relType="DURING" from="ei2007" to="t88" />
+<TLINK lid="l15" relType="BEFORE" from="ei2010" to="t0" />
+<TLINK lid="l17" relType="DURING" from="ei2010" to="t92" />
+<TLINK lid="l20" relType="IS_INCLUDED" from="ei2017" to="t101" />
+<TLINK lid="l21" relType="ENDED_BY" from="ei2017" to="ei2018" />
+<TLINK lid="l22" relType="IS_INCLUDED" from="ei2018" to="t103" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2020" to="t0" />
+<TLINK lid="l24" relType="AFTER" from="ei2020" to="ei2023" />
+<TLINK lid="l25" relType="IDENTITY" from="ei2027" to="ei2024" />
+<TLINK lid="l26" relType="AFTER" from="ei2028" to="ei2029" />
+<TLINK lid="l27" relType="IS_INCLUDED" from="ei2033" to="t109" />
+<TLINK lid="l29" relType="ENDED_BY" from="ei2034" to="t111" />
+<TLINK lid="l31" relType="IS_INCLUDED" from="ei2037" to="ei2035" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei1991" to="ei1992" />
+<SLINK lid="l33" relType="MODAL" from="ei1992" to="ei1993" />
+<SLINK lid="l34" relType="MODAL" from="ei1993" to="ei1994" />
+<SLINK lid="l35" relType="EVIDENTIAL" from="ei1997" to="ei1998" />
+<SLINK lid="l36" relType="EVIDENTIAL" from="ei1999" to="ei2000" />
+<SLINK lid="l40" relType="EVIDENTIAL" from="ei2005" to="ei2004" />
+<SLINK lid="l41" relType="EVIDENTIAL" from="ei2020" to="ei2021" />
+<SLINK lid="l44" relType="EVIDENTIAL" from="ei2027" to="ei2028" />
+<SLINK lid="l45" relType="MODAL" from="ei2030" to="ei2031" />
+</TimeML>

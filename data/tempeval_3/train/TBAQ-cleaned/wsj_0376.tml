@@ -1,0 +1,95 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0376</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-31" temporalFunction="false" functionInDocument="CREATION_TIME">10/31/89</TIMEX3>
+<EXTRAINFO>
+WSJ891031-0138 = 891031 891031-0138.
+International: @ Courtaulds PLC @ Plans to Spin Off @ Textiles Business @ ---- @ By Craig Forman @ Staff Reporter of The Wall Street Journal 10/31/89 WALL STREET JOURNAL (J) COU DIVIDENDS (DIV) STOCK MARKET, OFFERINGS (STK) TEXTILES AND APPAREL (TEX) LONDON
+</EXTRAINFO>
+<TEXT>Courtaulds PLC <EVENT eid="e1" class="I_ACTION" offsets="15 24" sent_idx="0">announced</EVENT> <EVENT eid="e85" class="I_STATE" offsets="25 30" sent_idx="0">plans</EVENT> to <EVENT eid="e3" class="OCCURRENCE" offsets="34 38" sent_idx="0">spin</EVENT> off its textiles operations to existing shareholders in a <EVENT eid="e86" class="OCCURRENCE" offsets="97 110" sent_idx="0">restructuring</EVENT> to <EVENT eid="e8" class="OCCURRENCE" offsets="114 119" sent_idx="0">boost</EVENT> shareholder value.
+The British chemical and textile company's plan, which requires shareholder approval, would <EVENT eid="e11" class="OCCURRENCE" offsets="231 237" sent_idx="1">create</EVENT> a new, listed U.K. stock with a probable market capitalization between #300 million ($473 million) and #400 million, analysts <EVENT eid="e15" class="REPORTING" offsets="364 368" sent_idx="1">said</EVENT>. The <EVENT eid="e16" class="OCCURRENCE" offsets="374 387" sent_idx="1">establishment</EVENT> of the separate company, to be called Courtaulds Textiles, could be effective as early as <TIMEX3 tid="t90" type="DATE" value="1990-Q1" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="478 503" sent_idx="1">next year's first quarter</TIMEX3>.
+Investors <EVENT eid="e20" class="OCCURRENCE" offsets="515 523" sent_idx="2">welcomed</EVENT> the <EVENT eid="e21" class="OCCURRENCE" offsets="528 532" sent_idx="2">move</EVENT>. Courtaulds' shares <EVENT eid="e22" class="OCCURRENCE" offsets="553 557" sent_idx="2">rose</EVENT> 15 pence to 362 pence, valuing the entire company at about #1.44 billion.
+Courtaulds' <EVENT eid="e93" class="OCCURRENCE" offsets="644 651" sent_idx="3">spinoff</EVENT> reflects pressure on British industry to boost share prices beyond the reach of corporate raiders. Courtaulds' <EVENT eid="e94" class="OCCURRENCE" offsets="763 776" sent_idx="3">restructuring</EVENT> is among the largest thus far in Britain, though it is dwarfed by B.A.T Industries PLC's <EVENT eid="e95" class="I_STATE" offsets="866 871" sent_idx="3">plans</EVENT> to <EVENT eid="e31" class="OCCURRENCE" offsets="875 879" sent_idx="3">spin</EVENT> roughly off #4 billion in assets to <EVENT eid="e33" class="I_ACTION" offsets="916 920" sent_idx="3">help</EVENT> <EVENT eid="e34" class="OCCURRENCE" offsets="921 925" sent_idx="3">fend</EVENT> off a takeover bid from Anglo-French financier Sir James Goldsmith. The divested Courtaulds textile operations <EVENT eid="e96" class="STATE" offsets="1037 1040" sent_idx="3">had</EVENT> operating <EVENT eid="e97" class="STATE" offsets="1051 1057" sent_idx="3">profit</EVENT> of #50 million on #980 million in revenue in <TIMEX3 tid="t99" type="DURATION" value="P1Y" temporalFunction="true" functionInDocument="NONE" endPoint="t100" offsets="1103 1111" sent_idx="3">the year</TIMEX3> ended <TIMEX3 tid="t100" type="DATE" value="1989-03-31" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1118 1126" sent_idx="3">March 31</TIMEX3>.
+Some analysts have <EVENT eid="e37" class="REPORTING" offsets="1147 1151" sent_idx="4">said</EVENT> Courtaulds' <EVENT eid="e38" class="OCCURRENCE" offsets="1164 1169" sent_idx="4">moves</EVENT> could <EVENT eid="e39" class="OCCURRENCE" offsets="1176 1181" sent_idx="4">boost</EVENT> the company's value by 5% to 10%, because the two entities separately will <EVENT eid="e41" class="OCCURRENCE" offsets="1257 1262" sent_idx="4">carry</EVENT> a higher price earnings multiple than they did <EVENT eid="e103" class="STATE" offsets="1310 1318" sent_idx="4">combined</EVENT>. In addition, Courtaulds <EVENT eid="e45" class="REPORTING" offsets="1344 1348" sent_idx="4">said</EVENT> the <EVENT eid="e46" class="OCCURRENCE" offsets="1353 1358" sent_idx="4">moves</EVENT> are logical because they will <EVENT eid="e47" class="I_STATE" offsets="1389 1394" sent_idx="4">allow</EVENT> both the chemicals and textile businesses to <EVENT eid="e104" class="OCCURRENCE" offsets="1440 1445" sent_idx="4">focus</EVENT> more closely on core activities.
+Courtaulds has been <EVENT eid="e119" class="STATE" offsets="1499 1504" sent_idx="5">under</EVENT> pressure to <EVENT eid="e54" class="OCCURRENCE" offsets="1517 1524" sent_idx="5">enhance</EVENT> shareholder value since takeover speculators -- including Australian financier Kerry Packer -- <EVENT eid="e55" class="OCCURRENCE" offsets="1620 1628" sent_idx="5">surfaced</EVENT> holding small stakes <TIMEX3 tid="t108" type="DATE" value="1988" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1650 1659" sent_idx="5">last year</TIMEX3>. Though Mr. Packer has since <EVENT eid="e58" class="OCCURRENCE" offsets="1689 1693" sent_idx="5">sold</EVENT> his stake, Courtaulds is <EVENT eid="e60" class="OCCURRENCE" offsets="1719 1725" sent_idx="5">moving</EVENT> to <EVENT eid="e62" class="ASPECTUAL" offsets="1729 1733" sent_idx="5">keep</EVENT> its institutional shareholders happy. Even without a specific takeover threat, Courtaulds is <EVENT eid="e64" class="OCCURRENCE" offsets="1827 1833" sent_idx="5">giving</EVENT> shareholders "choice and value," <EVENT eid="e66" class="REPORTING" offsets="1867 1871" sent_idx="5">said</EVENT> Julia Blake, an analyst at London stockbrokers Barclays de Zoete Wedd.
+In a statement, the company said: "Both parts can only realize their full potential and be appropriately valued by the market if they are separately quoted companies. The sharper definition and the autonomy which each will thereby gain will benefit shareholders, customers and employees."
+Courtaulds Chairman and Chief Executive Sir Christopher Hogg will <EVENT eid="e77" class="STATE" offsets="2298 2304" sent_idx="7">remain</EVENT> in both posts at the surviving chemical company after the spinoff.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei1989" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e85" eiid="ei1990" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei1991" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e86" eiid="ei1992" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei1993" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei1994" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e15" eiid="ei1995" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei1996" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" modality="none" />
+<MAKEINSTANCE eid="e20" eiid="ei1997" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei1998" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e22" eiid="ei1999" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e93" eiid="ei2001" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e94" eiid="ei2002" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e95" eiid="ei2003" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e31" eiid="ei2004" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e33" eiid="ei2005" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei2006" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e96" eiid="ei2007" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e97" eiid="ei2008" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e37" eiid="ei2009" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei2010" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e39" eiid="ei2011" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="could" />
+<MAKEINSTANCE eid="e41" eiid="ei2013" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e103" eiid="ei2015" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2016" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e46" eiid="ei2017" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e47" eiid="ei2018" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e104" eiid="ei2019" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2021" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e55" eiid="ei2022" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e58" eiid="ei2023" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei2024" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e62" eiid="ei2025" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e64" eiid="ei2028" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e66" eiid="ei2030" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e77" eiid="ei2031" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e119" eiid="ei2033" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="PREPOSITION" />
+<TLINK lid="l50" relType="BEFORE" from="ei2033" to="t0" />
+<TLINK lid="l49" relType="AFTER" from="ei1999" to="ei1989" />
+<TLINK lid="l47" relType="AFTER" from="ei1995" to="ei1989" />
+<TLINK lid="l1" relType="BEFORE" from="ei1989" to="t0" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei1991" to="ei1992" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei1996" to="t90" />
+<TLINK lid="l4" relType="BEFORE" from="ei1997" to="t0" />
+<TLINK lid="l5" relType="IDENTITY" from="ei2001" to="ei1991" />
+<TLINK lid="l6" relType="IDENTITY" from="ei2002" to="ei1992" />
+<TLINK lid="l7" relType="SIMULTANEOUS" from="ei2003" to="ei1990" />
+<TLINK lid="l8" relType="IDENTITY" from="ei2007" to="ei2008" />
+<TLINK lid="l9" relType="BEFORE" from="ei2007" to="t0" />
+<TLINK lid="l10" relType="DURING" from="ei2007" to="t99" />
+<TLINK lid="l11" relType="ENDED_BY" from="ei2007" to="t100" />
+<TLINK lid="l12" relType="BEFORE" from="ei2009" to="t0" />
+<TLINK lid="l13" relType="BEFORE" from="ei2010" to="ei2011" />
+<TLINK lid="l14" relType="AFTER" from="ei2013" to="ei2010" />
+<TLINK lid="l15" relType="BEFORE" from="ei2013" to="ei2011" />
+<TLINK lid="l19" relType="BEFORE" from="ei2016" to="t0" />
+<TLINK lid="l20" relType="SIMULTANEOUS" from="ei2017" to="ei2010" />
+<TLINK lid="l21" relType="BEFORE" from="ei2018" to="ei2019" />
+<TLINK lid="l22" relType="IDENTITY" from="ei2017" to="ei2018" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2022" to="t108" />
+<TLINK lid="l24" relType="BEGUN_BY" from="ei2023" to="ei2022" />
+<TLINK lid="l25" relType="SIMULTANEOUS" from="ei2024" to="ei2023" />
+<TLINK lid="l28" relType="BEFORE" from="ei2030" to="t0" />
+<TLINK lid="l29" relType="INCLUDES" from="ei2031" to="t0" />
+<SLINK lid="l46" relType="MODAL" from="ei2018" to="ei2019" />
+<SLINK lid="l31" relType="EVIDENTIAL" from="ei1989" to="ei1990" />
+<SLINK lid="l32" relType="MODAL" from="ei1990" to="ei1991" />
+<SLINK lid="l33" relType="MODAL" from="ei1992" to="ei1993" />
+<SLINK lid="l34" relType="EVIDENTIAL" from="ei1995" to="ei1994" />
+<SLINK lid="l35" relType="FACTIVE" from="ei1997" to="ei1998" />
+<SLINK lid="l36" relType="MODAL" from="ei2003" to="ei2004" />
+<SLINK lid="l37" relType="MODAL" from="ei2004" to="ei2005" />
+<SLINK lid="l38" relType="MODAL" from="ei2005" to="ei2006" />
+<SLINK lid="l39" relType="EVIDENTIAL" from="ei2009" to="ei2011" />
+<SLINK lid="l40" relType="EVIDENTIAL" from="ei2016" to="ei2017" />
+<SLINK lid="l41" relType="EVIDENTIAL" from="ei2016" to="ei2018" />
+<SLINK lid="l42" relType="MODAL" from="ei2024" to="ei2025" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei2030" to="ei2028" />
+<SLINK lid="l44" relType="MODAL" from="ei2033" to="ei2021" />
+</TimeML>

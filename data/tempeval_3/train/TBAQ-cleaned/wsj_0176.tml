@@ -1,0 +1,41 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0176</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0014 = 891102 891102-0014.
+Xerox Will Lay Off 300 @ At Personal Insurance Unit 11/02/89 WALL STREET JOURNAL (J) XRX
+</EXTRAINFO>
+<TEXT>Xerox Corp. has <EVENT eid="e1" class="REPORTING" offsets="16 20" sent_idx="0">told</EVENT> employees in its Crum amp Forster personal insurance operations that it is <EVENT eid="e2" class="OCCURRENCE" offsets="96 102" sent_idx="0">laying</EVENT> off about 300 people, or 25% of the staff.
+A spokeswoman for Crum amp Forster <EVENT eid="e3" class="REPORTING" offsets="181 185" sent_idx="1">said</EVENT> employees were <EVENT eid="e4" class="REPORTING" offsets="201 205" sent_idx="1">told</EVENT> <TIMEX3 tid="t21" type="DATE" value="1989-W44" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="206 221" sent_idx="1">early this week</TIMEX3> that numerous staff functions for the personal insurance lines were going to be <EVENT eid="e6" class="STATE" offsets="302 313" sent_idx="1">centralized</EVENT> as a cost-cutting move.
+She <EVENT eid="e7" class="REPORTING" offsets="342 346" sent_idx="2">said</EVENT> the <EVENT eid="e82" class="OCCURRENCE" offsets="351 355" sent_idx="2">move</EVENT> would <EVENT eid="e8" class="OCCURRENCE" offsets="362 368" sent_idx="2">result</EVENT> in a after-tax charge of less than $4 million to be <EVENT eid="e10" class="OCCURRENCE" offsets="421 427" sent_idx="2">spread</EVENT> over <TIMEX3 tid="t23" type="DURATION" value="P9M" temporalFunction="true" functionInDocument="NONE" beginPoint="t0" offsets="433 456" sent_idx="2">the next three quarters</TIMEX3>. By comparison, for <TIMEX3 tid="t24" type="DURATION" value="P9M" temporalFunction="false" functionInDocument="NONE" offsets="477 498" sent_idx="2">the first nine months</TIMEX3>, Xerox <EVENT eid="e11" class="OCCURRENCE" offsets="506 512" sent_idx="2">earned</EVENT> $492 million, or $4.55 a share, on revenue of $12.97 billion.
+Earnings at Xerox's financial-services operations actually <EVENT eid="e12" class="OCCURRENCE" offsets="634 638" sent_idx="3">rose</EVENT> slightly, but that was largely because capital gains at Crum amp Forster <EVENT eid="e13" class="OCCURRENCE" offsets="712 718" sent_idx="3">offset</EVENT> Hurricane Hugo payments and the reserves set up to cover future <EVENT eid="e3000" class="OCCURRENCE" offsets="783 791" sent_idx="3">payments</EVENT>.
+Property/casualty insurance has been a tough business in <TIMEX3 tid="t25" type="DURATION" value="PXM" temporalFunction="false" functionInDocument="NONE" offsets="850 865" sent_idx="4">recent quarters</TIMEX3>, as pricing has been cutthroat and natural disasters such as Hurricane Hugo and the California earthquake have resulted in huge payments.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei131" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei132" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei133" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei134" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei136" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei137" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e82" eiid="ei138" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei139" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e10" eiid="ei140" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei141" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei142" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei143" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l20" relType="AFTER" from="ei136" to="t0" />
+<TLINK lid="l1" relType="SIMULTANEOUS" from="ei137" to="ei133" />
+<TLINK lid="l2" relType="SIMULTANEOUS" from="ei139" to="ei140" />
+<TLINK lid="l3" relType="IDENTITY" from="ei132" to="ei138" />
+<TLINK lid="l4" relType="BEFORE" from="ei131" to="t0" />
+<TLINK lid="l5" relType="BEFORE" from="ei138" to="ei139" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei140" to="t23" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei141" to="t24" />
+<TLINK lid="l8" relType="BEFORE" from="ei142" to="t0" />
+<TLINK lid="l9" relType="BEFORE" from="ei143" to="ei142" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei134" to="t21" />
+<TLINK lid="l15" relType="BEFORE" from="ei133" to="t0" />
+<SLINK lid="l19" relType="EVIDENTIAL" from="ei134" to="ei136" />
+<SLINK lid="l16" relType="EVIDENTIAL" from="ei137" to="ei139" />
+<SLINK lid="l17" relType="EVIDENTIAL" from="ei133" to="ei134" />
+<SLINK lid="l18" relType="EVIDENTIAL" from="ei131" to="ei132" />
+</TimeML>

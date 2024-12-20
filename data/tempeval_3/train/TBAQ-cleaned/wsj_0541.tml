@@ -1,0 +1,35 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0541</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-30" temporalFunction="false" functionInDocument="CREATION_TIME">10/30/89</TIMEX3>
+<EXTRAINFO>
+WSJ891030-0160 = 891030 891030-0160.
+Automatic Data Processing 10/30/89 WALL STREET JOURNAL (J) AUD BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) ROSELAND, N.J.
+</EXTRAINFO>
+<TEXT>Automatic Data Processing Inc. <EVENT eid="e1" class="I_STATE" offsets="31 36" sent_idx="0">plans</EVENT> to <EVENT eid="e3" class="OCCURRENCE" offsets="40 46" sent_idx="0">redeem</EVENT> on <TIMEX3 tid="t18" type="DATE" value="1989-11-16" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="50 57" sent_idx="0">Nov. 16</TIMEX3> its $150 million of 6.5% convertible subordinated debentures <EVENT eid="e19" class="STATE" offsets="119 122" sent_idx="0">due</EVENT> <TIMEX3 tid="t20" type="DATE" value="2011-03-01" temporalFunction="false" functionInDocument="NONE" offsets="123 136" sent_idx="0">March 1, 2011</TIMEX3>.
+The computing-services concern will <EVENT eid="e4" class="OCCURRENCE" offsets="174 177" sent_idx="1">pay</EVENT> $1,059.04 for each $1,000 face amount of debt. The conversion price for the debentures is $41.725 a share. In New York Stock Exchange composite trading <TIMEX3 tid="t21" type="DATE" value="1989-10-27" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="330 336" sent_idx="1">Friday</TIMEX3>, Automatic Data <EVENT eid="e6" class="OCCURRENCE" offsets="353 359" sent_idx="1">closed</EVENT> at $46.50 a share, down $2.25.
+If all the debt is <EVENT eid="e7" class="OCCURRENCE" offsets="410 419" sent_idx="2">converted</EVENT> to common, Automatic Data will <EVENT eid="e8" class="OCCURRENCE" offsets="451 456" sent_idx="2">issue</EVENT> about 3.6 million shares; <TIMEX3 tid="t24" type="DATE" value="1989-10-23" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="483 494" sent_idx="2">last Monday</TIMEX3>, the company <EVENT eid="e25" class="STATE" offsets="508 511" sent_idx="2">had</EVENT> nearly 73 million shares outstanding.
+Automatic Data is <EVENT eid="e9" class="OCCURRENCE" offsets="568 577" sent_idx="3">redeeming</EVENT> the bonds because the after-tax cost of the interest on the bonds is higher than the dividend yield on the common, a spokesman <EVENT eid="e14" class="REPORTING" offsets="705 709" sent_idx="3">said</EVENT>.</TEXT>
+<MAKEINSTANCE eid="e19" eiid="ei88" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e25" eiid="ei94" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei92" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei87" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei96" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei90" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei86" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei93" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e9" eiid="ei95" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei89" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l1" relType="INCLUDES" from="ei86" to="t0" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei87" to="t18" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei86" to="ei88" />
+<TLINK lid="l4" relType="ENDED_BY" from="ei88" to="t20" />
+<TLINK lid="l5" relType="AFTER" from="ei89" to="t0" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei90" to="t21" />
+<TLINK lid="l8" relType="BEFORE" from="ei92" to="ei93" />
+<TLINK lid="l9" relType="INCLUDES" from="t24" to="ei94" />
+<TLINK lid="l10" relType="INCLUDES" from="ei95" to="t0" />
+<TLINK lid="l11" relType="BEFORE" from="ei96" to="t0" />
+<SLINK lid="l12" relType="CONDITIONAL" from="ei92" to="ei93" />
+<SLINK lid="l13" relType="MODAL" from="ei86" to="ei87" />
+<SLINK lid="l14" relType="EVIDENTIAL" from="ei96" to="ei95" />
+</TimeML>

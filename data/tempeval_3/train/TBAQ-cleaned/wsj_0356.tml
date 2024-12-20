@@ -1,0 +1,32 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0356</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-01" temporalFunction="false" functionInDocument="CREATION_TIME">11/01/89</TIMEX3>
+<EXTRAINFO>
+WSJ891101-0008 = 891101 891101-0008.
+Business Brief -- Rally's Inc.: @ Shareholder Rights Program @ Is Set by Fast-Food Firm 11/01/89 WALL STREET JOURNAL (J) RLLY
+</EXTRAINFO>
+<TEXT>Rally's Inc. <EVENT eid="e1" class="REPORTING" stem="say" offsets="13 17" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="OCCURRENCE" stem="adopt" offsets="21 28" sent_idx="0">adopted</EVENT> a shareholders rights plan to <EVENT eid="e4" class="OCCURRENCE" stem="protect" offsets="59 66" sent_idx="0">protect</EVENT> shareholders from an inadequately priced takeover offer.
+The plan provides for the distribution of one common stock-purchase right as a dividend for each share of common outstanding. Each right entitles shareholders to buy one-half share of common for $30.
+<TIMEX3 tid="t23" type="DATE" value="1989-11" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="324 342" sent_idx="2">Earlier this month</TIMEX3>, a group led by three of the company's directors, Burt Sugarman, James M. Trotter III and Willam E. Trotter II, <EVENT eid="e12" class="REPORTING" stem="indicate" offsets="455 464" sent_idx="2">indicated</EVENT> it <EVENT eid="e24" class="STATE" stem="have" offsets="468 471" sent_idx="2">had</EVENT> a 45.2% stake in the Louisville, Ky., fast-food company and that it <EVENT eid="e14" class="I_STATE" stem="plan" offsets="540 547" sent_idx="2">planned</EVENT> to <EVENT eid="e16" class="I_ACTION" stem="seek" offsets="551 555" sent_idx="2">seek</EVENT> a majority of seats on Rally's nine-member board.
+The company <EVENT eid="e17" class="REPORTING" stem="say" offsets="618 622" sent_idx="3">said</EVENT> it was " <EVENT eid="e18" class="I_STATE" stem="concern" offsets="632 641" sent_idx="3">concerned</EVENT> about the announced intent to <EVENT eid="e21" class="I_ACTION" stem="acquire" offsets="672 679" sent_idx="3">acquire</EVENT> control of the company" by a Sugarman-led group.</TEXT>
+<MAKEINSTANCE eid="e16" eiid="ei97" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei94" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei91" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei92" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e17" eiid="ei99" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei96" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei90" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei93" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei100" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e21" eiid="ei102" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l15" relType="BEFORE" from="ei91" to="ei90" />
+<TLINK lid="l1" relType="BEFORE" from="ei90" to="t0" />
+<TLINK lid="l2" relType="INCLUDES" from="t23" to="ei93" />
+<TLINK lid="l4" relType="IDENTITY" from="ei99" to="ei90" />
+<SLINK lid="l14" relType="EVIDENTIAL" from="ei90" to="ei91" />
+<SLINK lid="l5" relType="MODAL" from="ei91" to="ei92" />
+<SLINK lid="l6" relType="EVIDENTIAL" from="ei93" to="ei94" />
+<SLINK lid="l7" relType="EVIDENTIAL" from="ei93" to="ei96" />
+<SLINK lid="l8" relType="MODAL" from="ei96" to="ei97" />
+<SLINK lid="l10" relType="EVIDENTIAL" from="ei99" to="ei100" />
+</TimeML>

@@ -1,0 +1,94 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0928</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-10-26" temporalFunction="false" functionInDocument="CREATION_TIME">10/26/89</TIMEX3>
+<EXTRAINFO>
+WSJ891026-0130 = 891026 891026-0130.
+Sun Microsystems Inc. @ Posts 1st-Quarter Net @ Totaling $5.2 Million 10/26/89 WALL STREET JOURNAL (J) SUNW EARNINGS (ERN) COMPUTERS AND INFORMATION TECHNOLOGY (CPR) MOUNTAIN VIEW, Calif.
+</EXTRAINFO>
+<TEXT>Sun Microsystems Inc., <EVENT eid="e1" class="OCCURRENCE" offsets="23 31" sent_idx="0">snapping</EVENT> back to profitability after its first quarterly <EVENT eid="e2" class="OCCURRENCE" offsets="80 84" sent_idx="0">loss</EVENT> as a public firm, <EVENT eid="e4" class="REPORTING" offsets="103 107" sent_idx="0">said</EVENT> it <EVENT eid="e5" class="OCCURRENCE" offsets="111 117" sent_idx="0">earned</EVENT> $5.2 million, or seven cents a share, in <TIMEX3 tid="t64" type="DATE" value="1989-Q1" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="159 183" sent_idx="0">the fiscal first quarter</TIMEX3>.
+Sun, a maker of computer workstations, <EVENT eid="e6" class="REPORTING" offsets="224 232" sent_idx="1">reported</EVENT> sales of $538.5 million for <TIMEX3 tid="t68" type="DURATION" value="P1Q" temporalFunction="true" functionInDocument="NONE" endPoint="t69" offsets="261 272" sent_idx="1">the quarter</TIMEX3> ended <TIMEX3 tid="t69" type="DATE" value="1989-09-29" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="279 287" sent_idx="1">Sept. 29</TIMEX3>, up 39% from $388.5 million <TIMEX3 tid="t73" type="DATE" value="1988-QX" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t68" offsets="316 330" sent_idx="1">a year earlier</TIMEX3>. In <TIMEX3 tid="t74" type="DATE" value="1988-Q1" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t64" offsets="335 350" sent_idx="1">the 1988 period</TIMEX3>, the company <EVENT eid="e8" class="OCCURRENCE" offsets="364 370" sent_idx="1">earned</EVENT> $20.6 million, or 26 cents a share.
+Sun's results were slightly better than expectations. Earlier <TIMEX3 tid="t77" type="DATE" value="1989-10" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="469 479" sent_idx="2">this month</TIMEX3>, the company <EVENT eid="e10" class="REPORTING" offsets="493 497" sent_idx="2">said</EVENT> it <EVENT eid="e11" class="I_STATE" offsets="501 509" sent_idx="2">expected</EVENT> to <EVENT eid="e13" class="OCCURRENCE" offsets="513 518" sent_idx="2">break</EVENT> even for <TIMEX3 tid="t78" type="DURATION" value="1989-Q1" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t64" offsets="528 539" sent_idx="2">the quarter</TIMEX3> on sales of $530 million.
+In a statement, Scott McNealy, Sun's chief executive officer, <EVENT eid="e16" class="REPORTING" offsets="628 632" sent_idx="3">said</EVENT> the company's performance was <EVENT eid="e18" class="OCCURRENCE" offsets="663 671" sent_idx="3">hampered</EVENT> by problems tied to the <EVENT eid="e20" class="OCCURRENCE" offsets="696 708" sent_idx="3">introduction</EVENT> of a major new family of computers in <TIMEX3 tid="t83" type="DATE" value="1988-04" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="747 752" sent_idx="3">April</TIMEX3>. One of those new computers, called Sparcstation 1, <EVENT eid="e239" class="I_STATE" offsets="805 814" sent_idx="3">accounted</EVENT> for nearly half of the 28,000 systems Sun <EVENT eid="e23" class="OCCURRENCE" offsets="857 864" sent_idx="3">shipped</EVENT> in <TIMEX3 tid="t84" type="DATE" value="1989-Q1" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t64" offsets="868 879" sent_idx="3">the quarter</TIMEX3>, he <EVENT eid="e24" class="REPORTING" offsets="884 888" sent_idx="3">said</EVENT>. More than two-thirds of the systems <EVENT eid="e25" class="OCCURRENCE" offsets="926 933" sent_idx="3">shipped</EVENT>, meanwhile, were products <EVENT eid="e26" class="OCCURRENCE" offsets="960 970" sent_idx="3">introduced</EVENT> in <TIMEX3 tid="t87" type="DATE" value="1989-04" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="974 979" sent_idx="3">April</TIMEX3>.
+But problems in manufacturing, forecasting demand and getting the bugs out of a new management information system <EVENT eid="e32" class="OCCURRENCE" offsets="1095 1099" sent_idx="4">made</EVENT> it extremely difficult for Sun to <EVENT eid="e34" class="I_ACTION" offsets="1134 1138" sent_idx="4">meet</EVENT> demand for its newest computers well into <TIMEX3 tid="t89" type="DATE" value="1989-SU" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1181 1191" sent_idx="4">the summer</TIMEX3>. These problems also <EVENT eid="e36" class="OCCURRENCE" offsets="1213 1221" sent_idx="4">resulted</EVENT> in Sun <EVENT eid="e37" class="REPORTING" offsets="1229 1238" sent_idx="4">reporting</EVENT> a $20.3 million <EVENT eid="e38" class="OCCURRENCE" offsets="1255 1259" sent_idx="4">loss</EVENT> for <TIMEX3 tid="t94" type="DATE" value="1989-Q4" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1264 1282" sent_idx="4">its fourth quarter</TIMEX3> ended <TIMEX3 tid="t95" type="DATE" value="1989-06-30" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1289 1296" sent_idx="4">June 30</TIMEX3>.
+Mr. McNealy <EVENT eid="e40" class="REPORTING" offsets="1310 1314" sent_idx="5">said</EVENT> the issues that <EVENT eid="e41" class="OCCURRENCE" offsets="1331 1335" sent_idx="5">hurt</EVENT> Sun's performance earlier <TIMEX3 tid="t96" type="DATE" value="1989" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1362 1371" sent_idx="5">this year</TIMEX3> are now " largely" behind the firm, and he <EVENT eid="e44" class="I_ACTION" offsets="1415 1424" sent_idx="5">indicated</EVENT> that Sun's profitability should <EVENT eid="e45" class="OCCURRENCE" offsets="1457 1465" sent_idx="5">increase</EVENT> throughout <TIMEX3 tid="t99" type="DURATION" value="P1Y" temporalFunction="false" functionInDocument="NONE" offsets="1477 1492" sent_idx="5">the fiscal year</TIMEX3>.
+Sun also <EVENT eid="e47" class="REPORTING" offsets="1503 1511" sent_idx="6">reported</EVENT> a record backlog of orders. While this indicates continued strong <EVENT eid="e50" class="OCCURRENCE" offsets="1578 1584" sent_idx="6">demand</EVENT> for the company's desk-top computers, Sun <EVENT eid="e51" class="I_STATE" offsets="1627 1632" sent_idx="6">faces</EVENT> increasing competition from Digital Equipment Corp. and Hewlett-Packard Co. <TIMEX3 tid="t101" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1709 1717" sent_idx="6">Recently</TIMEX3>, analysts have <EVENT eid="e54" class="REPORTING" offsets="1733 1737" sent_idx="6">said</EVENT> Sun also is <EVENT eid="e102" class="I_STATE" offsets="1750 1760" sent_idx="6">vulnerable</EVENT> to competition from International Business Machines Corp., which <EVENT eid="e56" class="I_STATE" offsets="1826 1831" sent_idx="6">plans</EVENT> to <EVENT eid="e58" class="OCCURRENCE" offsets="1835 1844" sent_idx="6">introduce</EVENT> a group of workstations <TIMEX3 tid="t103" type="DATE" value="1990" mod="START" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="1869 1884" sent_idx="6">early next year</TIMEX3>, and Next Inc.</TEXT>
+<MAKEINSTANCE eid="e4" eiid="ei1993" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e45" eiid="ei2023" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="should" />
+<MAKEINSTANCE eid="e58" eiid="ei2033" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e56" eiid="ei2032" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e41" eiid="ei2021" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei2017" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e51" eiid="ei2027" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2010" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e11" eiid="ei2000" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e102" eiid="ei2030" tense="PRESENT" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e38" eiid="ei2019" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e23" eiid="ei2008" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei2029" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei1995" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei2005" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e40" eiid="ei2020" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei1998" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei2014" tense="INFINITIVE" aspect="NONE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei1992" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e37" eiid="ei2018" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e50" eiid="ei2026" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e16" eiid="ei2004" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e47" eiid="ei2024" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei2011" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1" eiid="ei1991" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei2009" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e13" eiid="ei2001" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2006" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e5" eiid="ei1994" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e239" eiid="ei2007" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei1999" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei2013" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e44" eiid="ei2022" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l62" relType="IDENTITY" from="ei2018" to="ei2024" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2033" to="t103" />
+<TLINK lid="l2" relType="AFTER" from="ei1991" to="ei1992" />
+<TLINK lid="l4" relType="BEFORE" from="ei1993" to="t0" />
+<TLINK lid="l5" relType="SIMULTANEOUS" from="ei1994" to="ei1991" />
+<TLINK lid="l6" relType="IS_INCLUDED" from="ei1994" to="t64" />
+<TLINK lid="l7" relType="IDENTITY" from="ei1995" to="ei1993" />
+<TLINK lid="l8" relType="ENDED_BY" from="t68" to="t69" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei1998" to="t74" />
+<TLINK lid="l10" relType="IS_INCLUDED" from="ei1999" to="t77" />
+<TLINK lid="l11" relType="BEFORE" from="ei1999" to="ei1993" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei2001" to="t78" />
+<TLINK lid="l14" relType="BEFORE" from="ei2006" to="ei2005" />
+<TLINK lid="l15" relType="IS_INCLUDED" from="ei2006" to="t83" />
+<TLINK lid="l16" relType="IS_INCLUDED" from="ei2008" to="t84" />
+<TLINK lid="l17" relType="AFTER" from="ei2010" to="ei2011" />
+<TLINK lid="l18" relType="IS_INCLUDED" from="ei2011" to="t87" />
+<TLINK lid="l19" relType="IDENTITY" from="ei2011" to="ei2006" />
+<TLINK lid="l20" relType="IDENTITY" from="ei2009" to="ei2004" />
+<TLINK lid="l23" relType="IS_INCLUDED" from="ei2014" to="t89" />
+<TLINK lid="l27" relType="BEFORE" from="ei2017" to="ei2019" />
+<TLINK lid="l28" relType="DURING" from="ei2019" to="t94" />
+<TLINK lid="l29" relType="ENDED_BY" from="t94" to="t95" />
+<TLINK lid="l30" relType="IS_INCLUDED" from="ei2021" to="t96" />
+<TLINK lid="l31" relType="BEFORE" from="ei2021" to="t0" />
+<TLINK lid="l32" relType="IDENTITY" from="ei2020" to="ei2009" />
+<TLINK lid="l33" relType="IDENTITY" from="ei2022" to="ei2020" />
+<TLINK lid="l34" relType="DURING" from="ei2023" to="t99" />
+<TLINK lid="l35" relType="IDENTITY" from="ei2024" to="ei1995" />
+<TLINK lid="l37" relType="INCLUDES" from="ei2027" to="t0" />
+<TLINK lid="l38" relType="INCLUDES" from="t101" to="ei2029" />
+<TLINK lid="l39" relType="INCLUDES" from="ei2030" to="t0" />
+<TLINK lid="l40" relType="INCLUDES" from="ei2032" to="t0" />
+<TLINK lid="l41" relType="SIMULTANEOUS" from="ei2030" to="ei2032" />
+<SLINK lid="l59" relType="MODAL" from="ei2013" to="ei2014" />
+<SLINK lid="l42" relType="EVIDENTIAL" from="ei1993" to="ei1994" />
+<SLINK lid="l43" relType="EVIDENTIAL" from="ei1999" to="ei2000" />
+<SLINK lid="l44" relType="MODAL" from="ei2000" to="ei2001" />
+<SLINK lid="l45" relType="EVIDENTIAL" from="ei2004" to="ei2005" />
+<SLINK lid="l46" relType="EVIDENTIAL" from="ei2009" to="ei2007" />
+<SLINK lid="l47" relType="FACTIVE" from="ei2007" to="ei2008" />
+<SLINK lid="l50" relType="EVIDENTIAL" from="ei2018" to="ei2019" />
+<SLINK lid="l51" relType="EVIDENTIAL" from="ei2020" to="ei2021" />
+<SLINK lid="l52" relType="EVIDENTIAL" from="ei2022" to="ei2023" />
+<SLINK lid="l55" relType="EVIDENTIAL" from="ei2029" to="ei2030" />
+<SLINK lid="l57" relType="MODAL" from="ei2032" to="ei2033" />
+</TimeML>

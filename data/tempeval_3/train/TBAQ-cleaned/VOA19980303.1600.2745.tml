@@ -1,0 +1,133 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>VOA19980303.1600.2745</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-03-03" temporalFunction="false" functionInDocument="CREATION_TIME">19980303</TIMEX3>
+<EXTRAINFO>
+VOA19980303.1600.2745 NEWS STORY
+</EXTRAINFO>
+<TEXT>While the <EVENT eid="e1" class="OCCURRENCE" offsets="10 19" sent_idx="0">expansion</EVENT> of the Internet has been a <EVENT eid="e2" class="OCCURRENCE" offsets="47 55" sent_idx="0">blessing</EVENT> for researchers, students and the just plain curious, the new opportunities <EVENT eid="e3" class="REPORTING" offsets="132 141" sent_idx="0">mentioned</EVENT> by Mr. Gates are also being <EVENT eid="e4" class="OCCURRENCE" offsets="170 174" sent_idx="0">used</EVENT> by some rather unsavory characters. A new report <EVENT eid="e6" class="REPORTING" offsets="224 228" sent_idx="0">says</EVENT> there has been a dramatic <EVENT eid="e7" class="OCCURRENCE" offsets="255 259" sent_idx="0">rise</EVENT> in the <EVENT eid="e102" class="OCCURRENCE" offsets="267 273" sent_idx="0">growth</EVENT> of hate groups in the United States over <TIMEX3 tid="t168" type="DATE" value="1997" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="315 328" sent_idx="0">the past year</TIMEX3>. And many of them are <EVENT eid="e10" class="OCCURRENCE" offsets="351 356" sent_idx="0">using</EVENT> the Internet to <EVENT eid="e12" class="OCCURRENCE" offsets="373 379" sent_idx="0">spread</EVENT> their messages of racial superiority. VOA's Jim Teple has details from our southeast news bureau.
+The Southern Poverty Law Center, a civil rights monitoring group based in Montgomery, Alabama, has long <EVENT eid="e107" class="OCCURRENCE" offsets="582 591" sent_idx="1">monitored</EVENT> such groups as the Ku Klux Klan. <TIMEX3 tid="t109" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="625 638" sent_idx="1">More recently</TIMEX3> it has <EVENT eid="e18" class="I_ACTION" offsets="646 654" sent_idx="1">followed</EVENT> the <EVENT eid="e110" class="OCCURRENCE" offsets="659 665" sent_idx="1">growth</EVENT> of the militia movement and church groups that preach a message of white supremacy and anti-semitism. The new study written by Mark Potach, who edits the Southern Poverty Law Center's Intelligence Report, <EVENT eid="e25" class="I_ACTION" offsets="871 876" sent_idx="1">warns</EVENT> that such groups <EVENT eid="e26" class="OCCURRENCE" offsets="894 898" sent_idx="1">grew</EVENT> rapidly <TIMEX3 tid="t111" type="DATE" value="1997" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="907 916" sent_idx="1">last year</TIMEX3>, mostly by <EVENT eid="e27" class="OCCURRENCE" offsets="928 938" sent_idx="1">recruiting</EVENT> younger members. Mr. Potach <EVENT eid="e28" class="REPORTING" offsets="967 971" sent_idx="1">says</EVENT> the <EVENT eid="e113" class="OCCURRENCE" offsets="976 982" sent_idx="1">growth</EVENT> is <EVENT eid="e112" class="STATE" offsets="986 996" sent_idx="1">surprising</EVENT> since membership in hate groups usually declines during periods of economic prosperity.
+We in fact have <EVENT eid="e34" class="PERCEPTION" offsets="1101 1105" sent_idx="2">seen</EVENT> hate group numbers <EVENT eid="e37" class="OCCURRENCE" offsets="1125 1133" sent_idx="2">dropping</EVENT> through <TIMEX3 tid="t115" type="DATE" value="199" temporalFunction="false" functionInDocument="NONE" offsets="1142 1154" sent_idx="2">the nineties</TIMEX3>, uh but <TIMEX3 tid="t116" type="DATE" value="1998" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t111" offsets="1163 1172" sent_idx="2">this year</TIMEX3> they <EVENT eid="e38" class="OCCURRENCE" offsets="1178 1184" sent_idx="2">jumped</EVENT> up uh twenty percent, quite a dramatic <EVENT eid="e39" class="OCCURRENCE" offsets="1224 1228" sent_idx="2">rise</EVENT>.
+Mark Potach <EVENT eid="e40" class="REPORTING" offsets="1242 1246" sent_idx="3">says</EVENT> over four hundred hate groups have been <EVENT eid="e42" class="OCCURRENCE" offsets="1287 1297" sent_idx="3">identified</EVENT> and many are <EVENT eid="e43" class="I_STATE" offsets="1311 1319" sent_idx="3">becoming</EVENT> increasingly <EVENT eid="e118" class="I_STATE" offsets="1333 1343" sent_idx="3">successful</EVENT> at recruiting younger members through the <EVENT eid="e46" class="OCCURRENCE" offsets="1386 1389" sent_idx="3">use</EVENT> of Internet web pages and the promotion of racist rock music.
+The Internet has certainly <EVENT eid="e49" class="I_STATE" offsets="1479 1485" sent_idx="4">helped</EVENT> uh hate mongers to <EVENT eid="e52" class="OCCURRENCE" offsets="1505 1513" sent_idx="4">organize</EVENT> and uh to <EVENT eid="e54" class="STATE" offsets="1524 1528" sent_idx="4">feel</EVENT> that they are part of a larger community, even if uh they are essentially uh, you know, angry people sitting in their bedrooms uh all alone. Uh, in addition, white power racist music has <EVENT eid="e60" class="I_STATE" offsets="1716 1722" sent_idx="4">become</EVENT> uh quite popular in certain sectors. Uh, there are over fifty thousand CDs <TIMEX3 tid="t120" type="SET" value="P1Y" temporalFunction="false" functionInDocument="NONE" offsets="1798 1804" sent_idx="4">a year</TIMEX3> <EVENT eid="e61" class="OCCURRENCE" offsets="1805 1809" sent_idx="4">sold</EVENT> with uh lyrics that are quite uh unbelievable.
+Many of these new members are <EVENT eid="e63" class="OCCURRENCE" offsets="1887 1894" sent_idx="5">joining</EVENT> chapters of the so called Christian Identity Movement which cites Biblical scripture as a foundation for a belief in white supremacy and anti-semitism. Mark Potach <EVENT eid="e67" class="REPORTING" offsets="2059 2063" sent_idx="5">says</EVENT> such members are also intensely <EVENT eid="e68" class="OCCURRENCE" offsets="2096 2105" sent_idx="5">attracted</EVENT> to apocalyptical fantasies.
+The <EVENT eid="e72" class="I_STATE" offsets="2138 2146" sent_idx="6">approach</EVENT> of <TIMEX3 tid="t121" type="DATE" value="2000" temporalFunction="false" functionInDocument="NONE" offsets="2150 2171" sent_idx="6">the year two thousand</TIMEX3> has many of these groups in a kind of millennial frenzy. Uh, uh a- they <EVENT eid="e74" class="I_STATE" offsets="2244 2251" sent_idx="6">believe</EVENT>, or at least many of them <EVENT eid="e75" class="I_STATE" offsets="2278 2285" sent_idx="6">believe</EVENT>, uh that they are <EVENT eid="e76" class="I_STATE" offsets="2304 2315" sent_idx="6">approaching</EVENT> the Battle of Armageddon in which they will be pitted against the uh kind of Satanic forces <EVENT eid="e77" class="I_ACTION" offsets="2408 2414" sent_idx="6">trying</EVENT> to <EVENT eid="e80" class="OCCURRENCE" offsets="2418 2422" sent_idx="6">take</EVENT> over the world.
+Mr. Potach <EVENT eid="e81" class="REPORTING" offsets="2450 2455" sent_idx="7">notes</EVENT> older, more traditional groups like the Ku Klux Klan are also <EVENT eid="e82" class="OCCURRENCE" offsets="2518 2525" sent_idx="7">opening</EVENT> new chapters, thanks in part to their <EVENT eid="e124" class="I_STATE" offsets="2564 2571" sent_idx="7">ability</EVENT> to <EVENT eid="e87" class="OCCURRENCE" offsets="2575 2578" sent_idx="7">use</EVENT> new technologies like the Internet. The Federal Bureau of Investigation <EVENT eid="e89" class="REPORTING" offsets="2651 2655" sent_idx="7">says</EVENT> it <EVENT eid="e90" class="OCCURRENCE" offsets="2659 2667" sent_idx="7">received</EVENT> more than eight thousand <EVENT eid="e125" class="REPORTING" offsets="2693 2700" sent_idx="7">reports</EVENT> of hate group <EVENT eid="e93" class="OCCURRENCE" offsets="2715 2721" sent_idx="7">crimes</EVENT> <TIMEX3 tid="t126" type="DATE" value="1997" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2722 2731" sent_idx="7">last year</TIMEX3>. Law enforcement authorities <EVENT eid="e94" class="REPORTING" offsets="2761 2764" sent_idx="7">say</EVENT> such reports are likely to <EVENT eid="e97" class="OCCURRENCE" offsets="2792 2800" sent_idx="7">increase</EVENT> as police departments are <TIMEX3 tid="t129" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2827 2830" sent_idx="7">now</TIMEX3> <EVENT eid="e98" class="ASPECTUAL" offsets="2831 2840" sent_idx="7">beginning</EVENT> to more accurately <EVENT eid="e130" class="REPORTING" offsets="2860 2866" sent_idx="7">report</EVENT> hate <EVENT eid="e100" class="OCCURRENCE" offsets="2872 2878" sent_idx="7">crimes</EVENT> than they <EVENT eid="e101" class="REPORTING" offsets="2889 2893" sent_idx="7">have</EVENT> in <TIMEX3 tid="t133" type="DATE" value="PAST_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="2897 2905" sent_idx="7">the past</TIMEX3>. Jim Teple, VOA News, Miami.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei50001" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei50002" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei50003" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e4" eiid="ei50004" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei50005" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei50006" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e102" eiid="ei50007" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e10" eiid="ei50008" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei50009" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e107" eiid="ei50010" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei50011" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e110" eiid="ei50012" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e25" eiid="ei50013" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei50014" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei50015" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei50016" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e113" eiid="ei50017" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e112" eiid="ei50018" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e34" eiid="ei50019" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e37" eiid="ei50020" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei50021" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e39" eiid="ei50022" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e40" eiid="ei50023" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e42" eiid="ei50024" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e43" eiid="ei50025" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e118" eiid="ei50026" tense="NONE" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e46" eiid="ei50028" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e49" eiid="ei50030" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e52" eiid="ei50031" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e54" eiid="ei50032" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e60" eiid="ei50033" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e61" eiid="ei50035" tense="PAST" aspect="NONE" polarity="POS" cardinality="50000" pos="VERB" />
+<MAKEINSTANCE eid="e63" eiid="ei50036" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e67" eiid="ei50037" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e68" eiid="ei50038" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e72" eiid="ei50039" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e74" eiid="ei50041" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e75" eiid="ei50042" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e76" eiid="ei50043" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e77" eiid="ei50045" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e80" eiid="ei50046" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e81" eiid="ei50047" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e82" eiid="ei50048" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e124" eiid="ei50049" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e87" eiid="ei50050" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e89" eiid="ei50051" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e90" eiid="ei50052" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e125" eiid="ei50053" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e93" eiid="ei50054" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e94" eiid="ei50055" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e97" eiid="ei50056" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" modality="none" />
+<MAKEINSTANCE eid="e98" eiid="ei50057" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e130" eiid="ei50058" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e100" eiid="ei50059" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e101" eiid="ei50060" tense="PRESENT" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<TLINK lid="l70" relType="BEFORE" from="ei50053" to="ei50052" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei50060" to="t133" />
+<TLINK lid="l2" relType="BEFORE" from="ei50001" to="t0" />
+<TLINK lid="l3" relType="IDENTITY" from="ei50002" to="ei50001" />
+<TLINK lid="l4" relType="BEFORE" from="ei50003" to="t0" />
+<TLINK lid="l5" relType="INCLUDES" from="ei50004" to="t0" />
+<TLINK lid="l6" relType="BEFORE" from="ei50005" to="t0" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="ei50006" to="ei50007" />
+<TLINK lid="l8" relType="DURING" from="ei50006" to="t168" />
+<TLINK lid="l9" relType="IDENTITY" from="ei50004" to="ei50008" />
+<TLINK lid="l10" relType="BEFORE" from="ei50010" to="t0" />
+<TLINK lid="l11" relType="BEFORE" from="ei50010" to="ei50005" />
+<TLINK lid="l12" relType="INCLUDES" from="t109" to="ei50011" />
+<TLINK lid="l13" relType="SIMULTANEOUS" from="ei50013" to="ei50005" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei50014" to="t111" />
+<TLINK lid="l15" relType="BEFORE" from="ei50015" to="ei50014" />
+<TLINK lid="l16" relType="IDENTITY" from="ei50016" to="ei50005" />
+<TLINK lid="l17" relType="IDENTITY" from="ei50017" to="ei50014" />
+<TLINK lid="l18" relType="DURING" from="ei50020" to="t115" />
+<TLINK lid="l19" relType="DURING" from="t116" to="ei50021" />
+<TLINK lid="l20" relType="IDENTITY" from="ei50022" to="ei50021" />
+<TLINK lid="l21" relType="IDENTITY" from="ei50023" to="ei50016" />
+<TLINK lid="l22" relType="ENDED_BY" from="ei50025" to="ei50026" />
+<TLINK lid="l25" relType="BEFORE" from="ei50030" to="t0" />
+<TLINK lid="l26" relType="SIMULTANEOUS" from="ei50033" to="ei50030" />
+<TLINK lid="l27" relType="IS_INCLUDED" from="ei50035" to="t120" />
+<TLINK lid="l28" relType="INCLUDES" from="ei50036" to="t0" />
+<TLINK lid="l29" relType="IDENTITY" from="ei50037" to="ei50023" />
+<TLINK lid="l30" relType="BEFORE" from="ei50039" to="ei50041" />
+<TLINK lid="l31" relType="INCLUDES" from="ei50041" to="ei50042" />
+<TLINK lid="l34" relType="SIMULTANEOUS" from="ei50045" to="ei50046" />
+<TLINK lid="l35" relType="IS_INCLUDED" from="ei50047" to="ei50037" />
+<TLINK lid="l36" relType="BEFORE" from="ei50049" to="ei50048" />
+<TLINK lid="l37" relType="SIMULTANEOUS" from="ei50051" to="ei50037" />
+<TLINK lid="l38" relType="BEFORE" from="ei50052" to="t0" />
+<TLINK lid="l39" relType="IS_INCLUDED" from="ei50054" to="t126" />
+<TLINK lid="l40" relType="SIMULTANEOUS" from="ei50055" to="ei50051" />
+<TLINK lid="l41" relType="BEFORE" from="ei50057" to="ei50056" />
+<TLINK lid="l42" relType="IS_INCLUDED" from="ei50057" to="t129" />
+<TLINK lid="l43" relType="BEFORE" from="ei50060" to="ei50058" />
+<TLINK lid="l44" relType="BEFORE" from="ei50060" to="t129" />
+<SLINK lid="l68" relType="FACTIVE" from="ei50018" to="ei50017" />
+<SLINK lid="l45" relType="EVIDENTIAL" from="ei50005" to="ei50006" />
+<SLINK lid="l46" relType="MODAL" from="ei50008" to="ei50009" />
+<SLINK lid="l47" relType="FACTIVE" from="ei50011" to="ei50012" />
+<SLINK lid="l48" relType="MODAL" from="ei50013" to="ei50014" />
+<SLINK lid="l49" relType="EVIDENTIAL" from="ei50016" to="ei50018" />
+<SLINK lid="l50" relType="EVIDENTIAL" from="ei50016" to="ei50019" />
+<SLINK lid="l51" relType="EVIDENTIAL" from="ei50019" to="ei50020" />
+<SLINK lid="l52" relType="EVIDENTIAL" from="ei50023" to="ei50024" />
+<SLINK lid="l53" relType="EVIDENTIAL" from="ei50023" to="ei50025" />
+<SLINK lid="l55" relType="MODAL" from="ei50030" to="ei50031" />
+<SLINK lid="l56" relType="MODAL" from="ei50030" to="ei50032" />
+<SLINK lid="l57" relType="EVIDENTIAL" from="ei50037" to="ei50038" />
+<SLINK lid="l58" relType="MODAL" from="ei50042" to="ei50043" />
+<SLINK lid="l59" relType="MODAL" from="ei50045" to="ei50046" />
+<SLINK lid="l60" relType="EVIDENTIAL" from="ei50047" to="ei50048" />
+<SLINK lid="l61" relType="MODAL" from="ei50049" to="ei50050" />
+<SLINK lid="l62" relType="EVIDENTIAL" from="ei50051" to="ei50052" />
+<SLINK lid="l63" relType="EVIDENTIAL" from="ei50053" to="ei50054" />
+<SLINK lid="l64" relType="EVIDENTIAL" from="ei50055" to="ei50056" />
+<SLINK lid="l65" relType="EVIDENTIAL" from="ei50058" to="ei50059" />
+<ALINK lid="l67" relType="INITIATES" from="ei50057" to="ei50058" />
+</TimeML>

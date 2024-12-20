@@ -1,0 +1,70 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0171</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-02" temporalFunction="false" functionInDocument="CREATION_TIME">11/02/89</TIMEX3>
+<EXTRAINFO>
+WSJ891102-0019 = 891102 891102-0019.
+Business Brief -- Valley Federal SampL: @ California SampL Had Charge, @ Loss in the Third Quarter 11/02/89 WALL STREET JOURNAL (J) VFED EARNINGS (ERN)
+</EXTRAINFO>
+<TEXT>Valley Federal Savings amp Loan Association <EVENT eid="e1" class="OCCURRENCE" offsets="44 48" sent_idx="0">took</EVENT> an $89.9 million <EVENT eid="e1994" class="OCCURRENCE" offsets="66 72" sent_idx="0">charge</EVENT> as it <EVENT eid="e2" class="REPORTING" offsets="79 87" sent_idx="0">reported</EVENT> a <TIMEX3 tid="t28" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="90 103" sent_idx="0">third-quarter</TIMEX3> <EVENT eid="e1995" class="OCCURRENCE" offsets="104 108" sent_idx="0">loss</EVENT> of $70.7 million, or $12.09 a share.
+The Van Nuys, Calif., thrift <EVENT eid="e3" class="OCCURRENCE" offsets="175 178" sent_idx="1">had</EVENT> net income of $132,000, or three cents a share, <TIMEX3 tid="t29" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t28" offsets="227 237" sent_idx="1">a year ago</TIMEX3>.
+The bulk of the pretax charge is a $62 million write-off of capitalized servicing at the mobile home financing subsidiary, which the company <EVENT eid="e5" class="REPORTING" offsets="380 384" sent_idx="2">said</EVENT> had been a big <EVENT eid="e6" class="OCCURRENCE" offsets="400 405" sent_idx="2">drain</EVENT> on earnings. The company <EVENT eid="e7" class="REPORTING" offsets="431 435" sent_idx="2">said</EVENT> the one-time <EVENT eid="e1999" class="OCCURRENCE" offsets="449 458" sent_idx="2">provision</EVENT> would substantially <EVENT eid="e8" class="OCCURRENCE" offsets="479 488" sent_idx="2">eliminate</EVENT> all <TIMEX3 tid="t30" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="493 499" sent_idx="2">future</TIMEX3> <EVENT eid="e2000" class="OCCURRENCE" offsets="500 506" sent_idx="2">losses</EVENT> at the unit. Valley Federal also <EVENT eid="e10" class="OCCURRENCE" offsets="540 545" sent_idx="2">added</EVENT> $18 million to realestate loan reserves and <EVENT eid="e12" class="OCCURRENCE" offsets="590 600" sent_idx="2">eliminated</EVENT> $9.9 million of good will.
+The thrift <EVENT eid="e14" class="REPORTING" offsets="639 643" sent_idx="3">said</EVENT> that "after these <EVENT eid="e15" class="OCCURRENCE" offsets="662 669" sent_idx="3">charges</EVENT> and <EVENT eid="e2126" class="I_ACTION" offsets="674 682" sent_idx="3">assuming</EVENT> no dramatic <EVENT eid="e1997" class="OCCURRENCE" offsets="695 706" sent_idx="3">fluctuation</EVENT> in interest rates, the association <EVENT eid="e2001" class="I_STATE" offsets="742 749" sent_idx="3">expects</EVENT> to <EVENT eid="e20" class="OCCURRENCE" offsets="753 760" sent_idx="3">achieve</EVENT> near record <EVENT eid="e1998" class="OCCURRENCE" offsets="773 781" sent_idx="3">earnings</EVENT> in <TIMEX3 tid="t31" type="DATE" value="1990" temporalFunction="false" functionInDocument="NONE" offsets="785 789" sent_idx="3">1990</TIMEX3>."
+Valley Federal is <TIMEX3 tid="t2003" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="810 819" sent_idx="4">currently</TIMEX3> being <EVENT eid="e21" class="OCCURRENCE" offsets="826 834" sent_idx="4">examined</EVENT> by regulators. New loans <EVENT eid="e22" class="ASPECTUAL" offsets="860 868" sent_idx="4">continue</EVENT> to <EVENT eid="e23" class="OCCURRENCE" offsets="872 876" sent_idx="4">slow</EVENT>; they were $6.6 million in <TIMEX3 tid="t32" type="DATE" value="1989-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="904 915" sent_idx="4">the quarter</TIMEX3> compared with $361.8 million <TIMEX3 tid="t33" type="DATE" value="1988-Q3" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t32" offsets="945 955" sent_idx="4">a year ago</TIMEX3>. The thrift <EVENT eid="e25" class="STATE" offsets="968 971" sent_idx="4">has</EVENT> assets of $3.2 billion.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei2202" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1994" eiid="ei2203" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2" eiid="ei2204" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1995" eiid="ei2205" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e3" eiid="ei2206" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei2210" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei2211" tense="PAST" aspect="PERFECTIVE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e7" eiid="ei2213" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1999" eiid="ei2214" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e8" eiid="ei2215" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="would" />
+<MAKEINSTANCE eid="e2000" eiid="ei2216" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e10" eiid="ei2217" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e12" eiid="ei2218" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei2219" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei2220" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e2126" eiid="ei2221" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1997" eiid="ei2222" tense="NONE" aspect="NONE" polarity="NEG" pos="NOUN" />
+<MAKEINSTANCE eid="e2001" eiid="ei2223" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei2224" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e1998" eiid="ei2225" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei2226" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e22" eiid="ei2227" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e23" eiid="ei2228" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e25" eiid="ei2229" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l40" relType="DURING" from="ei2228" to="ei2227" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei2229" to="t0" />
+<TLINK lid="l3" relType="IDENTITY" from="t33" to="t29" />
+<TLINK lid="l4" relType="IDENTITY" from="t32" to="t28" />
+<TLINK lid="l5" relType="INCLUDES" from="t2003" to="ei2227" />
+<TLINK lid="l6" relType="INCLUDES" from="t2003" to="ei2226" />
+<TLINK lid="l7" relType="AFTER" from="ei2223" to="ei2220" />
+<TLINK lid="l9" relType="INCLUDES" from="t2003" to="t0" />
+<TLINK lid="l10" relType="AFTER" from="ei2213" to="t0" />
+<TLINK lid="l11" relType="AFTER" from="ei2219" to="t0" />
+<TLINK lid="l12" relType="SIMULTANEOUS" from="ei2218" to="ei2217" />
+<TLINK lid="l13" relType="SIMULTANEOUS" from="ei2217" to="ei2202" />
+<TLINK lid="l14" relType="IS_INCLUDED" from="ei2224" to="t31" />
+<TLINK lid="l15" relType="INCLUDES" from="t30" to="ei2216" />
+<TLINK lid="l16" relType="IDENTITY" from="ei2202" to="ei2203" />
+<TLINK lid="l17" relType="AFTER" from="t30" to="t0" />
+<TLINK lid="l18" relType="BEFORE" from="ei2215" to="t30" />
+<TLINK lid="l19" relType="SIMULTANEOUS" from="ei2202" to="ei2204" />
+<TLINK lid="l20" relType="BEFORE" from="ei2204" to="t0" />
+<TLINK lid="l21" relType="INCLUDES" from="t28" to="ei2205" />
+<TLINK lid="l23" relType="SIMULTANEOUS" from="ei2206" to="t29" />
+<TLINK lid="l24" relType="BEFORE" from="t29" to="t0" />
+<TLINK lid="l28" relType="SIMULTANEOUS" from="ei2213" to="ei2210" />
+<SLINK lid="l29" relType="EVIDENTIAL" from="ei2219" to="ei2221" />
+<SLINK lid="l30" relType="COUNTER_FACTIVE" from="ei2215" to="ei2216" />
+<SLINK lid="l31" relType="MODAL" from="ei2221" to="ei2222" />
+<SLINK lid="l32" relType="EVIDENTIAL" from="ei2219" to="ei2223" />
+<SLINK lid="l33" relType="FACTIVE" from="ei2224" to="ei2225" />
+<SLINK lid="l34" relType="EVIDENTIAL" from="ei2204" to="ei2205" />
+<SLINK lid="l36" relType="EVIDENTIAL" from="ei2210" to="ei2211" />
+<SLINK lid="l37" relType="EVIDENTIAL" from="ei2213" to="ei2215" />
+<SLINK lid="l38" relType="MODAL" from="ei2223" to="ei2224" />
+<ALINK lid="l39" relType="CONTINUES" from="ei2227" to="ei2228" />
+</TimeML>

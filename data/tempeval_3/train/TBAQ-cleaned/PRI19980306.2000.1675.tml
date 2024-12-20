@@ -1,0 +1,56 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>PRI19980306.2000.1675</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1998-03-06" temporalFunction="false" functionInDocument="CREATION_TIME">19980306</TIMEX3>
+<EXTRAINFO>
+PRI19980306.2000.1675 NEWS STORY
+</EXTRAINFO>
+<TEXT>For The World, this is Pamela McCall in the BBC news room in London. More heavy <EVENT eid="e20" class="OCCURRENCE" offsets="80 87" sent_idx="0">gunfire</EVENT> in the Serbian province of Kosovo. It's <TIMEX3 tid="t31" type="DATE" value="1998-03-06" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="128 142" sent_idx="0">the second day</TIMEX3> of an <EVENT eid="e21" class="OCCURRENCE" offsets="149 158" sent_idx="0">offensive</EVENT> by the security forces against villages populated by ethnic Albanians. BBC correspondent Karyn Coleman <EVENT eid="e22" class="REPORTING" offsets="262 269" sent_idx="0">reports</EVENT> from Kosovo.
+There were more accounts of people <EVENT eid="e3" class="OCCURRENCE" offsets="318 325" sent_idx="1">fleeing</EVENT> from the villages near where the offensive was <EVENT eid="e5" class="OCCURRENCE" offsets="373 379" sent_idx="1">taking</EVENT> place. They were too <EVENT eid="e24" class="I_STATE" offsets="401 407" sent_idx="1">afraid</EVENT> to <EVENT eid="e6" class="I_STATE" offsets="411 415" sent_idx="1">stay</EVENT>, <EVENT eid="e7" class="I_STATE" offsets="417 424" sent_idx="1">fearing</EVENT> the forces may also <EVENT eid="e8" class="ASPECTUAL" offsets="445 449" sent_idx="1">move</EVENT> their <EVENT eid="e25" class="OCCURRENCE" offsets="456 466" sent_idx="1">operations</EVENT> further afield. By <TIMEX3 tid="t18" type="TIME" value="1998-03-06TAF" mod="MID" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="486 499" sent_idx="1">mid afternoon</TIMEX3>, official Serb sources were <EVENT eid="e10" class="REPORTING" offsets="528 534" sent_idx="1">saying</EVENT> the <EVENT eid="e30" class="OCCURRENCE" offsets="539 548" sent_idx="1">operation</EVENT> was over, but that has not yet been <EVENT eid="e11" class="REPORTING" offsets="585 594" sent_idx="1">confirmed</EVENT> from Belgrade, the capital of Serbia, which is where the whole <EVENT eid="e27" class="OCCURRENCE" offsets="658 664" sent_idx="1">attack</EVENT> is <EVENT eid="e13" class="I_STATE" offsets="668 675" sent_idx="1">thought</EVENT> to have been <EVENT eid="e14" class="I_STATE" offsets="689 696" sent_idx="1">planned</EVENT>. The ethnic Albanians here in Kosovo are considerably <EVENT eid="e32" class="I_STATE" offsets="751 758" sent_idx="1">worried</EVENT> about <TIMEX3 tid="t19" type="DATE" value="FUTURE_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="765 775" sent_idx="1">the future</TIMEX3> and <EVENT eid="e35" class="I_STATE" offsets="780 784" sent_idx="1">fear</EVENT> they are <EVENT eid="e16" class="PERCEPTION" offsets="794 804" sent_idx="1">witnessing</EVENT> the <EVENT eid="e36" class="ASPECTUAL" offsets="809 819" sent_idx="1">beginnings</EVENT> of a much wider <EVENT eid="e37" class="OCCURRENCE" offsets="836 844" sent_idx="1">conflict</EVENT>. Karyn Coleman, BBC news, Pristina.</TEXT>
+<MAKEINSTANCE eid="e20" eiid="ei194" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e21" eiid="ei195" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e22" eiid="ei196" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei198" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e5" eiid="ei200" tense="PAST" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e24" eiid="ei201" tense="PAST" aspect="NONE" polarity="POS" pos="ADJECTIVE" />
+<MAKEINSTANCE eid="e6" eiid="ei202" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei203" tense="PRESPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei204" tense="NONE" aspect="NONE" polarity="POS" pos="VERB" modality="may" />
+<MAKEINSTANCE eid="e25" eiid="ei205" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e10" eiid="ei206" tense="PAST" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e30" eiid="ei207" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e11" eiid="ei209" tense="PRESENT" aspect="PERFECTIVE" polarity="NEG" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei210" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e13" eiid="ei211" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e14" eiid="ei212" tense="PASTPART" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e32" eiid="ei213" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e35" eiid="ei214" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei215" tense="PRESENT" aspect="PROGRESSIVE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e36" eiid="ei216" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<MAKEINSTANCE eid="e37" eiid="ei217" tense="NONE" aspect="NONE" polarity="POS" pos="NOUN" />
+<TLINK lid="l36" relType="BEGUN_BY" from="ei217" to="ei216" />
+<TLINK lid="l35" relType="ENDED_BY" from="ei207" to="t18" />
+<TLINK lid="l34" relType="IS_INCLUDED" from="ei209" to="t0" />
+<TLINK lid="l33" relType="IS_INCLUDED" from="ei211" to="t0" />
+<TLINK lid="l32" relType="BEFORE" from="ei205" to="ei198" />
+<TLINK lid="l1" relType="AFTER" from="ei216" to="t0" />
+<TLINK lid="l2" relType="IS_INCLUDED" from="ei206" to="t18" />
+<TLINK lid="l3" relType="IS_INCLUDED" from="ei214" to="ei213" />
+<TLINK lid="l4" relType="INCLUDES" from="ei213" to="t0" />
+<TLINK lid="l5" relType="BEFORE" from="ei212" to="t0" />
+<TLINK lid="l7" relType="IS_INCLUDED" from="t18" to="t0" />
+<TLINK lid="l8" relType="IDENTITY" from="t0" to="t31" />
+<TLINK lid="l9" relType="IS_INCLUDED" from="ei194" to="t0" />
+<TLINK lid="l10" relType="INCLUDES" from="ei195" to="t0" />
+<TLINK lid="l11" relType="IS_INCLUDED" from="ei196" to="t0" />
+<TLINK lid="l13" relType="INCLUDES" from="ei195" to="ei194" />
+<TLINK lid="l16" relType="INCLUDES" from="ei201" to="ei203" />
+<TLINK lid="l17" relType="BEFORE" from="ei201" to="t0" />
+<SLINK lid="l19" relType="EVIDENTIAL" from="ei215" to="ei216" />
+<SLINK lid="l20" relType="MODAL" from="ei214" to="ei215" />
+<SLINK lid="l21" relType="MODAL" from="ei211" to="ei212" />
+<SLINK lid="l22" relType="MODAL" from="ei212" to="ei210" />
+<SLINK lid="l25" relType="MODAL" from="ei201" to="ei202" />
+<SLINK lid="l26" relType="MODAL" from="ei203" to="ei204" />
+<ALINK lid="l27" relType="INITIATES" from="ei216" to="ei217" />
+<ALINK lid="l29" relType="CONTINUES" from="ei204" to="ei205" />
+</TimeML>

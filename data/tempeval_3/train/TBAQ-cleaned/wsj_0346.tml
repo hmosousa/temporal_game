@@ -1,0 +1,48 @@
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<DOCID>wsj_0346</DOCID>
+<TIMEX3 tid="t0" type="DATE" value="1989-11-01" temporalFunction="false" functionInDocument="CREATION_TIME">11/01/89</TIMEX3>
+<EXTRAINFO>
+WSJ891101-0018 = 891101 891101-0018.
+Business Brief -- Cilcorp Inc.: @ Some Assets to Be Acquired @ From Hunter Environmental 11/01/89 WALL STREET JOURNAL (J) CER HESI BUYBACKS, REDEMPTIONS, SWAP OFFERS (BBK) TENDER OFFERS, MERGERS, ACQUISITIONS (TNM)
+</EXTRAINFO>
+<TEXT>Cilcorp Inc., Peoria, Ill., <EVENT eid="e1" class="REPORTING" stem="say" offsets="28 32" sent_idx="0">said</EVENT> it <EVENT eid="e2" class="I_ACTION" stem="agree" offsets="36 42" sent_idx="0">agreed</EVENT> to <EVENT eid="e3" class="OCCURRENCE" stem="acquire" offsets="46 53" sent_idx="0">acquire</EVENT> the environmental consulting and analytical service businesses of Hunter Environmental Services Inc. of Southport, Conn. The utility holding company <EVENT eid="e6" class="REPORTING" stem="say" offsets="203 207" sent_idx="0">said</EVENT> Hunter will <EVENT eid="e7" class="OCCURRENCE" stem="receive" offsets="220 227" sent_idx="0">receive</EVENT> 390,000 shares of a new series of Cilcorp convertible preferred stock with a face value of $39 million for the businesses. Cilcorp will also <EVENT eid="e8" class="I_ACTION" stem="assume" offsets="369 375" sent_idx="0">assume</EVENT> $22 million of Hunter's existing debt. As part of the agreement, Cilcorp <EVENT eid="e10" class="REPORTING" stem="say" offsets="449 453" sent_idx="0">said</EVENT> it will <EVENT eid="e11" class="OCCURRENCE" stem="pay" offsets="462 465" sent_idx="0">pay</EVENT> Hunter $4 million in exchange for agreements not to compete.
+Cilcorp <EVENT eid="e15" class="REPORTING" stem="say" offsets="535 539" sent_idx="1">said</EVENT> the businesses to be <EVENT eid="e16" class="OCCURRENCE" stem="acquire" offsets="561 569" sent_idx="1">acquired</EVENT> <EVENT eid="e38" class="OCCURRENCE" stem="have" offsets="570 573" sent_idx="1">had</EVENT> revenue of $76 million for <TIMEX3 tid="t33" type="DURATION" value="P1Y" temporalFunction="true" functionInDocument="NONE" endPoint="t32" offsets="601 609" sent_idx="1">the year</TIMEX3> ended <TIMEX3 tid="t32" type="DATE" value="1989-03-31" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="616 624" sent_idx="1">March 31</TIMEX3>.
+Separately, Cilcorp <EVENT eid="e18" class="REPORTING" stem="say" offsets="646 650" sent_idx="2">said</EVENT> it <EVENT eid="e19" class="I_STATE" stem="plan" offsets="654 659" sent_idx="2">plans</EVENT> to <EVENT eid="e20" class="OCCURRENCE" stem="purchase" offsets="663 671" sent_idx="2">purchase</EVENT> as many as 1.4 million shares, or 10% of its common stock outstanding from time to time on the open market and through privately negotiated transactions.
+The company, which <TIMEX3 tid="t34" type="DATE" value="PRESENT_REF" temporalFunction="true" functionInDocument="NONE" anchorTimeID="t0" offsets="845 854" sent_idx="3">currently</TIMEX3> <EVENT eid="e26" class="OCCURRENCE" stem="have" offsets="855 858" sent_idx="3">has</EVENT> 13.5 million common shares outstanding, <EVENT eid="e27" class="REPORTING" stem="say" offsets="899 903" sent_idx="3">said</EVENT> it <EVENT eid="e28" class="OCCURRENCE" stem="have" offsets="907 910" sent_idx="3">has</EVENT> no specific plans for the shares.</TEXT>
+<MAKEINSTANCE eid="e1" eiid="ei211" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e2" eiid="ei212" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e3" eiid="ei213" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e6" eiid="ei215" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e7" eiid="ei216" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e8" eiid="ei217" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e10" eiid="ei220" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e11" eiid="ei221" tense="FUTURE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e15" eiid="ei222" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e16" eiid="ei223" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e38" eiid="ei224" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e18" eiid="ei226" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e19" eiid="ei227" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e20" eiid="ei228" tense="INFINITIVE" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e26" eiid="ei229" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e27" eiid="ei230" tense="PAST" aspect="NONE" polarity="POS" pos="VERB" />
+<MAKEINSTANCE eid="e28" eiid="ei231" tense="PRESENT" aspect="NONE" polarity="POS" pos="VERB" />
+<TLINK lid="l28" relType="BEFORE" from="ei220" to="t0" />
+<TLINK lid="l1" relType="IS_INCLUDED" from="ei230" to="t0" origin="USER" />
+<TLINK lid="l2" relType="SIMULTANEOUS" from="t34" to="ei229" origin="USER" />
+<TLINK lid="l3" relType="SIMULTANEOUS" from="ei222" to="ei211" origin="USER" />
+<TLINK lid="l4" relType="INCLUDES" from="t34" to="t0" origin="USER" />
+<TLINK lid="l6" relType="IDENTITY" from="ei213" to="ei223" origin="USER" />
+<TLINK lid="l8" relType="IS_INCLUDED" from="ei226" to="t0" origin="USER" />
+<TLINK lid="l9" relType="ENDED_BY" from="t33" to="t32" origin="USER" />
+<TLINK lid="l12" relType="IS_INCLUDED" from="ei211" to="t0" origin="USER" />
+<TLINK lid="l14" relType="SIMULTANEOUS" from="ei215" to="ei211" origin="USER" />
+<SLINK lid="l16" relType="EVIDENTIAL" from="ei222" to="ei223" />
+<SLINK lid="l17" relType="EVIDENTIAL" from="ei230" to="ei231" />
+<SLINK lid="l19" relType="EVIDENTIAL" from="ei215" to="ei216" />
+<SLINK lid="l20" relType="EVIDENTIAL" from="ei220" to="ei221" />
+<SLINK lid="l21" relType="MODAL" from="ei227" to="ei228" />
+<SLINK lid="l22" relType="EVIDENTIAL" from="ei226" to="ei227" />
+<SLINK lid="l23" relType="EVIDENTIAL" from="ei211" to="ei212" />
+<SLINK lid="l24" relType="MODAL" from="ei212" to="ei213" />
+<SLINK lid="l25" relType="EVIDENTIAL" from="ei222" to="ei224" />
+</TimeML>
