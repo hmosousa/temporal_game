@@ -200,7 +200,11 @@ def get_label_list(raw_dataset, split="train") -> List[str]:
     return label_list
 
 
-def main():
+def main(
+    batch_size: int = 64,
+    gradient_accumulation_steps: int = 8,
+    num_train_epochs: int = 30,
+):
     model_args = ModelArguments(
         model_name_or_path="HuggingFaceTB/SmolLM-135M",
         token=HF_TOKEN,
@@ -211,36 +215,35 @@ def main():
         dataset_name="hugosousa/QTimelines",
         dataset_config_name="default",
         max_seq_length=2048,  # TODO: Get from model
-        pad_to_max_length=True,
+        pad_to_max_length=False,  # To pad each batch at runtime
         shuffle_train_dataset=True,
         shuffle_seed=42,
         max_train_samples=100 if DEBUG else None,
         max_eval_samples=100 if DEBUG else None,
         max_predict_samples=100 if DEBUG else None,
     )
-
-    batch_size = 16
     training_args = TrainingArguments(
         output_dir="models/SmolLM-135M-QTimelines",
-        eval_strategy="steps",
-        eval_steps=200,
-        # auto_find_batch_size=True,
+        eval_strategy="epoch",
         per_device_train_batch_size=batch_size,
-        per_device_eval_batch_size=batch_size * 2,
-        num_train_epochs=30,
-        gradient_accumulation_steps=8,
+        per_device_eval_batch_size=batch_size,
+        num_train_epochs=num_train_epochs,
+        gradient_accumulation_steps=gradient_accumulation_steps,
         learning_rate=1e-3,
         max_grad_norm=1.0,
         lr_scheduler_type="cosine_with_restarts",
+        lr_scheduler_kwargs={
+            "num_cycles": 1,
+        },
+        warmup_ratio=0.05,  # set here instead on the scheduler
         weight_decay=0.01,
         adam_beta1=0.9,
         adam_beta2=0.999,
         adam_epsilon=1e-8,
         logging_dir="logs",
         logging_steps=1,
-        save_steps=200,
         save_total_limit=2,
-        save_strategy="steps",
+        save_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
@@ -317,13 +320,9 @@ def main():
         token=model_args.token,
         trust_remote_code=model_args.trust_remote_code,
     )
-    # Try print some info about the dataset
+    # Print some info about the dataset
     logger.info(f"Dataset loaded: {raw_datasets}")
     logger.info(raw_datasets)
-
-    is_regression = False
-
-    is_multi_label = True
 
     label_list = ["<", ">", "=", "-"]
     label2id = {label: i for i, label in enumerate(label_list)}
@@ -481,7 +480,7 @@ def main():
     # we already did the padding.
     if data_args.pad_to_max_length:
         data_collator = default_data_collator
-    elif training_args.fp16:
+    elif training_args.fp16 or training_args.bf16:
         data_collator = DataCollatorWithPadding(tokenizer, pad_to_multiple_of=8)
     else:
         data_collator = None
@@ -538,15 +537,12 @@ def main():
         predictions = trainer.predict(
             predict_dataset, metric_key_prefix="predict"
         ).predictions
-        if is_regression:
-            predictions = np.squeeze(predictions)
-        elif is_multi_label:
-            # Convert logits to multi-hot encoding. We compare the logits to 0 instead of 0.5, because the sigmoid is not applied.
-            # You can also pass `preprocess_logits_for_metrics=lambda logits, labels: nn.functional.sigmoid(logits)` to the Trainer
-            # and set p > 0.5 below (less efficient in this case)
-            predictions = np.array([np.where(p > 0, 1, 0) for p in predictions])
-        else:
-            predictions = np.argmax(predictions, axis=1)
+
+        # Convert logits to multi-hot encoding. We compare the logits to 0 instead of 0.5, because the sigmoid is not applied.
+        # You can also pass `preprocess_logits_for_metrics=lambda logits, labels: nn.functional.sigmoid(logits)` to the Trainer
+        # and set p > 0.5 below (less efficient in this case)
+        predictions = np.array([np.where(p > 0, 1, 0) for p in predictions])
+
         output_predict_file = os.path.join(
             training_args.output_dir, "predict_results.txt"
         )
@@ -555,13 +551,10 @@ def main():
                 logger.info("***** Predict results *****")
                 writer.write("index\tprediction\n")
                 for index, item in enumerate(predictions):
-                    if is_multi_label:
-                        # recover from multi-hot encoding
-                        item = [label_list[i] for i in range(len(item)) if item[i] == 1]
-                        writer.write(f"{index}\t{item}\n")
-                    else:
-                        item = label_list[item]
-                        writer.write(f"{index}\t{item}\n")
+                    # recover from multi-hot encoding
+                    item = [label_list[i] for i in range(len(item)) if item[i] == 1]
+                    writer.write(f"{index}\t{item}\n")
+
         logger.info("Predict results saved at {}".format(output_predict_file))
     kwargs = {
         "finetuned_from": model_args.model_name_or_path,
