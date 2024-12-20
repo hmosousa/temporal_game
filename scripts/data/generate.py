@@ -175,7 +175,7 @@ def validate_dataset(dataset: datasets.Dataset):
     return dataset
 
 
-def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5000):
+def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5_000):
     corpus = tieval.datasets.read(dataset_name)
 
     test_examples = transform_corpus(corpus.test, split="test")
@@ -186,7 +186,7 @@ def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5000):
         dev_examples,
         test_size=n_valid_samples,
         random_state=42,
-        stratify=dev_examples["label"],
+        stratify=[example["label"] for example in dev_examples],
         shuffle=True,
     )
 
