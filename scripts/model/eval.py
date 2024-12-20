@@ -22,20 +22,12 @@ def main(
         dataset_name: The name of the dataset to evaluate on.
     """
 
-    try:
-        classifier = pipeline(
-            "text-classification",
-            model=model_name,
-            torch_dtype=torch.bfloat16,
-            device_map="auto",
-        )
-    except ValueError:
-        classifier = pipeline(
-            "text-classification",
-            model=model_name,
-            torch_dtype=torch.bfloat16,
-            device_map="cuda",
-        )
+    classifier = pipeline(
+        "text-classification",
+        model=model_name,
+        torch_dtype=torch.bfloat16,
+        device_map="auto",
+    )
 
     dataset = load_dataset(dataset_name, split="test")
     preds = classifier(dataset["text"], batch_size=32)
