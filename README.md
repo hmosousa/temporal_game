@@ -36,7 +36,8 @@ The developer setup installs Poetry for dependency management, installs all proj
 
 ```sh
 accelerate config
-accelerate launch scripts/classifier/train.py
+export OMP_NUM_THREADS=$(nproc)
+accelerate launch --config_file configs/accelerate/zero2.yaml scripts/train_hf.py 
 ```
 
 ### Profile the code
