@@ -201,7 +201,7 @@ def get_label_list(raw_dataset, split="train") -> List[str]:
 
 
 def main(
-    batch_size: int = 16,
+    batch_size: int = 32,
     gradient_accumulation_steps: int = 8,
     num_train_epochs: int = 30,
 ):
@@ -222,6 +222,7 @@ def main(
         max_eval_samples=100 if DEBUG else None,
         max_predict_samples=100 if DEBUG else None,
     )
+
     training_args = TrainingArguments(
         output_dir="models/SmolLM-135M-TemporalQuestions",
         eval_strategy="epoch",

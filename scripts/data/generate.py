@@ -175,6 +175,12 @@ def validate_dataset(dataset: datasets.Dataset):
     return dataset
 
 
+def drop_long_texts(dataset: datasets.Dataset):
+    """Drop texts that are longer than 512 words."""
+    dataset = dataset.filter(lambda x: len(x["text"].split()) <= 512)
+    return dataset
+
+
 def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5_000):
     corpus = tieval.datasets.read(dataset_name)
 
@@ -197,6 +203,9 @@ def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5_000):
 
     trainset = validate_dataset(trainset)
     validset = validate_dataset(validset)
+
+    # TODO: This is just to iterate fast. Should be removed.
+    trainset = drop_long_texts(trainset)
 
     trainset.push_to_hub("hugosousa/TemporalQuestions", split="train", token=HF_TOKEN)
     validset.push_to_hub("hugosousa/TemporalQuestions", split="valid", token=HF_TOKEN)
