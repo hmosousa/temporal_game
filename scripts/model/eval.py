@@ -30,7 +30,7 @@ def main(
         "text-classification",
         model=model_name,
         torch_dtype=torch.bfloat16,
-        device_map="cpu",
+        device_map="auto",
     )
 
     logging.info(f"Loading dataset {dataset_name}")
