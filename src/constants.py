@@ -19,3 +19,14 @@ MODELS_DIR = ROOT_DIR / "models"
 LOGS_DIR = ROOT_DIR / "logs"
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+NEW_TOKENS = [
+    "<start_source>",
+    "</start_source>",
+    "<end_source>",
+    "</end_source>",
+    "<start_target>",
+    "</start_target>",
+    "<end_target>",
+    "</end_target>",
+]

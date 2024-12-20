@@ -11,7 +11,7 @@ import numpy as np
 import transformers
 from datasets import load_dataset
 
-from src.constants import HF_TOKEN
+from src.constants import HF_TOKEN, NEW_TOKENS
 
 from transformers import (
     AutoConfig,
@@ -353,6 +353,10 @@ def main(
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
         model.config.pad_token_id = model.config.eos_token_id
+
+    # Add new tokens to the tokenizer
+    tokenizer.add_tokens(NEW_TOKENS)
+    model.resize_token_embeddings(len(tokenizer))
 
     # Padding strategy
     if data_args.pad_to_max_length:
