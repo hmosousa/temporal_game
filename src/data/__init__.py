@@ -5,6 +5,7 @@ from torch.utils.data import Dataset
 from src.data.levels import load_levels
 from src.data.q_timelines import load_qtimelines
 from src.data.small_timelines import load_small_timelines
+from src.data.temporal_questions import load_temporal_questions
 from src.data.timeset import load_timeset
 from src.data.utils import balance_dataset_classes
 
@@ -12,6 +13,7 @@ DATASETS = {
     "q_timelines": load_qtimelines,
     "timeset": load_timeset,
     "levels": load_levels,
+    "temporal_questions": load_temporal_questions,
 }
 
 
@@ -31,5 +33,6 @@ __all__ = [
     "load_small_timelines",
     "load_timeset",
     "load_levels",
+    "load_temporal_questions",
     "balance_dataset_classes",
 ]
