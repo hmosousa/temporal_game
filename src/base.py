@@ -86,6 +86,7 @@ class Timeline:
         relations: List[Relation] = None,
         on_endpoints: bool = True,
         tlinks: List[TLink] = None,
+        compute_closure: bool = False,
     ):
         if tlinks is not None:
             relations = self.tlinks2relations(tlinks)
@@ -96,7 +97,7 @@ class Timeline:
         self.relations = set(relations)
         self.entities = self._get_entities()
         self._on_endpoints = on_endpoints
-        if on_endpoints:
+        if compute_closure:
             self.relations.update(self._expand_relations())
         self._relation_dict = self._build_relation_dict()
         self._closure_cache = None
@@ -225,8 +226,17 @@ class Timeline:
         }
 
     @classmethod
-    def from_relations(cls, relations: List[Dict]) -> "Timeline":
-        return cls([Relation(**r) for r in relations])
+    def from_relations(
+        cls,
+        relations: List[Dict],
+        compute_closure: bool = False,
+        on_endpoints: bool = True,
+    ) -> "Timeline":
+        return cls(
+            relations=[Relation(**r) for r in relations],
+            compute_closure=compute_closure,
+            on_endpoints=on_endpoints,
+        )
 
     @staticmethod
     def tlinks2relations(tlinks):

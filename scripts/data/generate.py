@@ -2,13 +2,13 @@
 
 import copy
 import logging
-import random
 from collections import Counter
 from pathlib import Path
 
 import datasets
 import fire
 import tieval.datasets
+from sklearn.model_selection import train_test_split
 
 from src.base import Timeline
 from src.constants import HF_TOKEN
@@ -36,12 +36,19 @@ def add_tags(text: str, entities: list, dct: Timex = None) -> str:
     return context
 
 
-def doc2questions(doc):
-    all_tlinks = doc.temporal_closure
+def doc2questions(doc, split: str = "train"):
+    if split == "train":
+        tlinks = doc.temporal_closure
+    else:
+        tlinks = doc.tlinks
+        for tlink in tlinks:
+            tlink.source = tlink.source.id
+            tlink.target = tlink.target.id
+
     entities_map = {ent.id: ent for ent in doc.entities + [doc.dct]}
 
     samples = []
-    for tlink in all_tlinks:
+    for tlink in tlinks:
         if (
             tlink.source not in entities_map
             or tlink.target not in entities_map
@@ -109,12 +116,12 @@ def doc2questions(doc):
     return samples
 
 
-def transform_corpus(documents):
+def transform_corpus(documents, split: str = "train"):
     # Transform the documents into pair-wise contexts
     # Each tlink has its own context
     samples = []
     for doc in tqdm(documents):
-        samples += doc2questions(doc)
+        samples += doc2questions(doc, split)
 
     # Transform the contexts to have the special tokens
     examples = []
@@ -168,18 +175,20 @@ def validate_dataset(dataset: datasets.Dataset):
     return dataset
 
 
-def main(dataset_name: str = "tempeval_3", train_size: float = 0.8):
+def main(dataset_name: str = "tempeval_3", n_valid_samples: int = 5000):
     corpus = tieval.datasets.read(dataset_name)
 
-    dev_examples = transform_corpus(corpus.train)
+    test_examples = transform_corpus(corpus.test, split="test")
+    dev_examples = transform_corpus(corpus.train, split="train")
 
-    # Split into train and validation
-    random.seed(42)
-    random.shuffle(dev_examples)
-    train_examples = dev_examples[: int(len(dev_examples) * train_size)]
-    valid_examples = dev_examples[int(len(dev_examples) * train_size) :]
-
-    test_examples = transform_corpus(corpus.test)
+    # Stratified split into train and validation
+    train_examples, valid_examples = train_test_split(
+        dev_examples,
+        test_size=n_valid_samples,
+        random_state=42,
+        stratify=dev_examples["label"],
+        shuffle=True,
+    )
 
     logging.info("Pushing to hub")
     trainset = datasets.Dataset.from_list(train_examples)
@@ -188,7 +197,6 @@ def main(dataset_name: str = "tempeval_3", train_size: float = 0.8):
 
     trainset = validate_dataset(trainset)
     validset = validate_dataset(validset)
-    testset = validate_dataset(testset)
 
     trainset.push_to_hub("hugosousa/TemporalQuestions", split="train", token=HF_TOKEN)
     validset.push_to_hub("hugosousa/TemporalQuestions", split="valid", token=HF_TOKEN)

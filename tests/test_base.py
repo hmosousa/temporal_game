@@ -227,7 +227,7 @@ class TestTimeline:
         relations = [
             {"source": "end A", "target": "start B", "type": "<"},
         ]
-        t = Timeline.from_relations(relations)
+        t = Timeline().from_relations(relations, compute_closure=True)
         expected_relations = [
             Relation(source="end A", target="start B", type="<"),
             Relation(source="start A", target="end A", type="<"),
